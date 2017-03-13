@@ -1,4 +1,5 @@
 \documentclass[titlepage,a4paper]{book}
+%\documentclass[12pt]{report}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc} 
 \usepackage{wrapfig}
@@ -14,6 +15,8 @@
 \usepackage{enumerate}
 \usepackage{rotfloat}
 \usepackage[T1]{fontenc}
+\usepackage{braket}
+\usepackage{siunitx}
 
 \newcommand{\wciecie}{\quad\phantom{v}}
 \newcommand{\refe}[1]{(\ref{#1})}
@@ -29,7 +32,6 @@
 
 \begin{document}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-\newcommand{\angstrom}{\text{\normalfont\AA}}
 
 %\begin{titlepage}
 %\begin{center}
@@ -98,34 +100,80 @@
 
 \chapter{Introduction}
 \wciecie
-Since the dawn of science, people always wanted to encounter new frontiers and cross them, expanding the boundaries of the universal knowledge. Even in the modern times, it is still our duty to explore the matter around us and the laws governing it. Although throughout the 19th  and 20th century, chemistry succeed in finding and classifying most of the elements -- building blocks of matter, there is still plenty of work to do in discovery and classification of the distinct states of matter, called phases. Matter in the quantum approach can form different phases, such as crystalline solids, magnets and superconductors. 
+Since the dawn of science, people always wanted to encounter new frontiers and cross them, expanding the boundaries of the universal knowledge. Even in the modern times, it is still our duty to explore the matter around us and the laws governing it. Although throughout the 19th  and 20th century, chemistry succeed in finding and classifying most of the elements -- building blocks of matter, there is still plenty of work to do in discovery and classification of the distinct states of matter, called phases. Matter in the quantum approach can form different phases, such as crystalline solids, magnets and superconductors. All of them are subjects of study of a discipline called condensed matter physics. 
+
+Condensed matter physics is a branch of physics that deals with the physical properties of condensed phases of matter. The goal of the discipline is to understand the behavior of these phases and describe them in mathematical laws. In particular, they include the laws of quantum mechanics, electromagnetism and statistical mechanics.
+
+Recently, the interest of condensed matter physics lies in a discovery and characterization of novel particles and phases, which are present in solid state materials. These particles often behave in the most uncanny manner like the Dirac fermions, which behavior mimics the behavior of relativistic particles, or the exotic Majorana fermions, which are their own antiparticles. These kind of excitations and more can be realized in condensed matter systems.
+
+The most familiar condensed phases are solids and liquids. However, there are more exotic condensed phases, like the superconducting phase exhibited by certain materials at low temperature, the ferromagnetic and antiferromagnetic phases of spins on atomic lattices, and the Bose–Einstein condensate found in cold atomic systems.
 
 \section{Topological states of matter}
 \wciecie
-One of the most remarkable achievements of condensed matter physics in the recent times is the classification of quantum states of matter by the principle of spontaneous symmetry breaking \cite{Anderson_Topology}. The pattern of symmetry breaking led to an unique concept of order parameter, which can be understood in terms of the famous work of Landau-Ginzburg \cite{Landau_Topology}, where the notion of the effective field theory is described. The effective field theory is determined by the general properties like dimensionality and symmetry of the order parameter, and can be used to give an universal description of quantum states of matter. The following examples can be given to better understand the concept of states of matter and symmetry breaking: a crystalline solid breaks translation symmetry, despite the fact that the interaction between its atomic cells is translationally invariant. A rotational symmetry in magnetic systems is spontaneously broken, even though the fundamental interactions are isotropic. A superconductor breaks the more subtle gauge symmetry, which as a consequence leads to phenomena such as flux quantization and Josephson effect \cite{Josephson_Topology}.
+One of the most remarkable achievements of condensed matter physics in the recent times is the classification of quantum states of matter by the principle of spontaneous symmetry breaking \cite{Anderson_Topology}. The pattern of symmetry breaking led to an unique concept of order parameter, which can be understood in terms of the famous work of Landau-Ginzburg \cite{Landau_Topology}, where the notion of the effective field theory is described. The effective field theory is determined by the general properties like dimensionality and symmetry of the order parameter, and can be used to give an universal description of quantum states of matter.
+
+The following examples can be given to better understand the concept of states of matter and symmetry breaking: a crystalline solid breaks translation symmetry, despite the fact that the interaction between its atomic cells is translationally invariant. A rotational symmetry in magnetic systems is spontaneously broken, even though the fundamental interactions are isotropic. A superconductor breaks the more subtle gauge symmetry, which as a consequence leads to phenomena such as flux quantization and Josephson effect \cite{Josephson_Topology}.
 
 The concept of symmetry breaking and local order parameter used to describe the phase transition is well accepted as in general. However, it fails to explain some interesting phenomena such as the integer quantum Hall effect \cite{Klitzing_Topology} and many body phases of the fractional quantum Hall effect \cite{Tsui_Topology}. The study of these effects ultimately led to a new paradigm in the classification of condensed matter systems -- the concept of topological order \cite{Laughlin_Topology} \cite{Thouless_Topology}.
 
 The sample in quantum Hall state has a very particular properties. Its bulk is insulating (there is an energy gap between the highest occupied band and the lowest empty band) and the electric current is carried only along the edges of the sample, forming discrete channels of conductance. The current in the channels avoids dissipation and has a very precise value of resistance, giving rise to a quantized Hall effect. The quantum hall state turned out to be the first example of a quantum state being topologically different from all other states of matter known before. The state in which the quantum Hall occurs, does not break any symmetries but it defines a topological phase, meaning that particular fundamental properties are insensitive to smooth changes in general parameters of the system, and cannot change unless the system undergoes a quantum phase transition. The very fundamental reason for such a quantization is the existence of topological invariants, in case of the quantum Hall effect such an invariant is the conductance. The conductance takes values only in integer units of $e^2/h$, is independent of the type of material investigated and does not change (is invariant) for smooth variations of material parameters – it can be considered as non-local order parameter of the system.  
 
-Topological invariant was introduced as a mathematical concept used to classify different geometrical objects into broad classes. One of such invariants can be the number of holes on the surface. The most famous example is a coffee mug and a torus. Both of them are classify as the same topological object because both of them posses exactly one hole and one can be deformed, via a smooth transformation, into the other, and vice-versa. A sphere can be smoothly deformed into an ellipsoid, because they share the same number of holes (zero), etc. Topology tends to disregard the small differences of objects and focus on their general properties. In this context, quantum Hall effect and quantized conductance, which can be found in a variety of materials of different shape, remains unchanged -- it is an invariant. 
+Topological invariant was introduced as a mathematical concept used to classify different geometrical objects into broad classes. One of such invariants can be the number of holes on the geometrical surface. The most famous example is a coffee mug and a torus. Both of them are classify as the same topological object because both of them posses exactly one hole and one can be deformed, via a smooth transformation, into the other, and vice-versa. A sphere can be smoothly deformed into an ellipsoid, because they share the same number of holes (zero), etc. Topology tends to disregard the small differences of objects and focus on their general properties. In this context, quantum Hall effect and quantized conductance, which can be found in a variety of materials of different shape, remains unchanged -- it is an invariant. 
  
-The link between geometrical classes of objects and condensed matter physics is not direct -- topology in solid state physics has very little to do with shape of considered material, and definately the subject is much broader than just the quantum Hall effect. In topological geometry there are surfaces, holes and smooth transformations of surfaces, which does not require tearing the surface or making holes in it. In condense matter Hamiltonians are used to describe a given system, providing information about energy gaps (which play a role of holes in geometry) and its band structure. There is a possibility to transform given Hamiltonian into a different one, and if the transition is smooth in a sense that it does not require closing a gap (an equivalent of creating a hole in geometry) an any point, then the transition preserves the topology of the system.    
+The link between geometrical classes of objects and condensed matter physics is not direct -- topology in solid state physics has very little to do with shape of considered material, and definitely the subject is much broader than just the quantum Hall effect. In topological geometry there are surfaces, holes and smooth transformations of surfaces, which does not require tearing the surface or making holes in it. In condense matter Hamiltonians are used to describe a given system, providing information about energy gaps (which play a role of holes in geometry) and its band structure. There is a possibility to transform given Hamiltonian into a different one, by changing some parameters that the Hamiltonian depends on. If the transition is smooth in a sense that it does not require closing a gap (an equivalent of creating a hole in geometry) an any point, then the transition preserves the topology of the system. This concept, where number of energy gap closing is a topological invariant, obviously can be applied only to systems, which posses the band gap -- semiconductors and insulators, it cannot be applied to metals or superconductors. 
 
-This concept, where number of gap closing is a topological invariant, can be applied only to systems, which posses the band gap -- semiconductors and insulators, it cannot be applied to metals or superconductors. Following this definition it is clear that two quantum states, having the same topology, put together do not have to host gapless states. However if the topology of two quantum states is different (for example a nontrivial state and vacuum), the interface must host gapless states. In this sense, a topological insulator is related to the two-dimensional integer quantum Hall state, which also posseses  unique edge states. These states, existing at the bonduary (egde in 2D, surface in 3D) of the topological insulator, lead to the existence of conducting states with properties unlike any other electronic systems, and are predicted to have special properties, like a vanishing effective mass and a relativistic (linear) dispersion relation. Effective mass in electronic band in inverted regime is negative. It is nothing unusuall, considering that the effective hole mass in a normal semiconductor is negative as well. This is a consequence of the shape of a band, but can be also understood in a relativistic approach. Einstein in his famous equation stated that energy is proportional to mass, thus in systems which a negative energy gap the mass should be negative. When the bands tend to continously join with a normal insulator at the boundary, the energy gap as well as the effective mass switches to positivie. The transition has to be smooth, so going from negative to positive value at some point the system has to have a gap closure, when the effective mass vanishes as well. At this point the particles have to be described by the relativistic equation with a linear dispersion relation \cite{Zawadzki_Topology}.    
+Therefore, insulators can be divided into two distinct groups, considering the topological phase that they exhibit, called trivial and nontrivial insulators. Each phase can be described by its particular properties. One of them, the most important one, is the band structure. Both trivial and nontrivial insulators share the same property -- they have an energy gap. The trivial case of insulator is generally well known -- a material which energy gap separates the highest energetic filled band in valence band (with a hole-like symmetry) from the lowest energetic empty conduction band (with electron-like). Its worth to mention that the simplest example of an trivial insulator is vacuum. In vacuum, the electronic band is separated by an energy gap from positronic band, and the value of energy is equal to the energy required to create an electron-positron pair. In nontrivial insulator case, there is a band inversion. It means that the electron like states are lower in energy that the hole like states. The bands are still separated by an energy gap.
+
+The interesing phenomena take place when two materials characterized by a different topological phase are joined together. If the topology of two quantum states is different (for example a nontrivial state and vacuum), the interface must host gapless states. In this sense, a topological insulator is related to the two-dimensional integer quantum Hall state, which also posseses unique edge states. These states, existing at the bonduary (egde in 2D, surface in 3D) of the topological insulator, lead to the existence of conducting states with predicted properties unlike any other electronic systems, like a vanishing effective mass and a relativistic (linear) dispersion relation. Effective mass in electronic band in inverted regime is negative. It is nothing unusuall, considering that the effective hole mass in a normal semiconductor is negative as well. This is a consequence of the shape of a band, but can be also understood in a relativistic approach. Einstein, in his famous equation stated, that energy is proportional to mass, thus in systems with a negative energy gap the mass should be negative. When the bands tend to continously join with a trivial insulator at the boundary, the energy gap and the effective mass switches to positivie. The transition has to be smooth, so going from negative to positive value at some point the system has to have a gap closure, when the effective mass collapses as well. At this point the particles have to be described by the relativistic equation with a linear dispersion relation \cite{Zawadzki_Topology}.    
 	
-The 2D topological insulator, called quantum spin Hall insulator (QSHI), was first predicted to occur in graphene \cite{Kane_Topology} and in strained GaAs \cite{Bernevig_Topology2}. One year later, in 2006. it was predicted by Bernevig \cite{Bernevig_Topology2}\cite{Bernevig_Topology1} and experimetally observed in 2007 by König \cite{Konig_Topology} in HgTe/CdTe quantum well system. Two years after the prediction of topological insulating phase in HgTe/CdTe quantum well, in 2008, Liu predicted a similar phase in a different kind of material -- a quantum well made of layers of InAs/GaSb sandwiched between AlSb walls -- a structure called composite quantum well. The quantum well exhibits an inverted phase similar to HgTe/CdTe quantum wells, which is a QSH state when the Fermi level lies inside the gap \cite{Liu_Topology}. 
+The 2D topological insulator, called quantum spin Hall (QSH) insulator, was first predicted to occur in graphene \cite{Kane_Topology} and in strained GaAs \cite{Bernevig_Topology2}. Unfortunately, the proposed realisation of the QSH in graphene turned out to be unrealistic, because the gap opened by the spin-orbit coupling (SOC) is extremaly small, of the order of 1 $\mu$eV \cite{Yao_Topology}\cite{Min_Topology}. One year later, in 2006. QSH effect was predicted by Bernevig \cite{Bernevig_Topology2}\cite{Bernevig_Topology1} and experimetally observed in 2007 by König \cite{Konig_Topology} in HgTe/CdTe quantum well system. Two years after the prediction of topological insulating phase in HgTe/CdTe quantum well, in 2008, Liu predicted a similar phase in a different kind of material -- a quantum well made of layers of InAs/GaSb sandwiched between AlSb walls -- a structure called composite quantum well. The quantum well exhibits an inverted phase similar to HgTe/CdTe quantum wells, which is a QSH state when the Fermi level lies inside the gap \cite{Liu_Topology}. 
 
-The 3D topological insulating phase was predicted in the Bi$_{1-x}$Sb$_x$ alloy for a specyfic compositions $x$ \cite{Fu_Topology}, and shortly after the topologically nontrivial surface states were observed by angle-resolved photoemission spectroscopy (ARPES) by Hsieh \cite{Hsieh}. Similarly, the topological insulators in 3D were predicted in Bi$_2$Te$_3$, Sb$_2$Te$_3$ \cite{Zhang_Topology} and Bi$_2$Se$_3$ \cite{Zhang_Topology}\cite{Xia_Topology}. There compounds exhibit a large bulk band gap and a gapless surface states consisting of a single Dirac cone. Xia \cite{Xia_Topology} and Chen \cite{Chen_Topology} observed a linear disperion relation of this states using ARPES.
-
+The 3D topological insulating phase was predicted in the Bi$_{1-x}$Sb$_x$ alloy for a specific compositions $x$ \cite{Fu_Topology}, and shortly after the topologically nontrivial surface states were observed by angle-resolved photoemission spectroscopy (ARPES) by Hsieh \cite{Hsieh}. Similarly, the topological insulators in 3D were predicted in Bi$_2$Te$_3$, Sb$_2$Te$_3$ \cite{Zhang_Topology} and Bi$_2$Se$_3$ \cite{Zhang_Topology}\cite{Xia_Topology}. There compounds exhibit a large bulk band gap and a gapless surface states consisting of a single Dirac cone. Xia \cite{Xia_Topology} and Chen \cite{Chen_Topology} observed a linear dispersion relation of this states using ARPES.
 
 \section{This work}
 
+\textbf{Edge Channels}
+The discovery of the quantum Hall effect \cite{Klitzing_Topology}, in which the conductance is quantized, was a surprise to the physics community. This effect occurs in layered metallic structures at high magnetic fields. As a result, conducting one-dimensional channels develop at the edges of the sample. In each of the channels the current flows only in one direction and its conductance is quantized, which is a sign of one-dimensional transport \cite{Halperin_State}. Moreover, the current flowing through these edge states is resistant to scattering. The value of the quantum Hall conductance is strictly connected to the number of edge channels in the sample. Before the discovery of quantum spin Hall insulators, the existence of a state exhibiting the quantum Hall conductance was limited to low temperatures and high magnetic field, which was a formidable obstacle to overcome in terms of possible applications.
+   
+In QSH phase the conductance of the edge channels is quantized. The time reversal symmetry requires the edge channels to be helical, which means that electrons with spin up and spin down propagate in opposite directions along the edge of the sample with conserved helicity. As a consequence, carriers on time-reversed paths around a non-magnetic impurity in the helical edge interfere destructively, which results in a zero probability of backscattering. This property was predicted by Murakami \cite{Murakami_State}, Kane \cite{Kane_Topology}, and Bernevig \cite{Bernevig_Topology1}. 
+
+A detection of the edge states is an experimentally difficult task. In an ideal QSH phase the current is carried only via the edge states while the bulk is fully resistant. In practice however, the band gap is small, usually a few meV (4 meV for InAs/GaSb QW \cite{Altarelli_BandStructure}\cite{Yang_BandStructure}, 15 meV for HgTe QW). Because of that, assuring the low temperature of measurements is a necessity to prevent thermal excitations of electrons from occurring. Moreover, a processing of samples is required -- only gated structures have the possibility to tune the Fermi level with enough accuracy into the band gap. Growing the structures where the Fermi level intrinsically lies inside the band gap is a virtually impossible task.
+
+König \cite{Konig_Topology} for the first time observed quantized conductance in HgTe QW in nontrivial regime, which was the first indication of the existence of the edge channels. Later, in 2009, the helicity and dissipationless of the channels was confirmed by the study of nonlocal transport on multiterminal devices carried out by Roth \cite{Roth_State} and Büttiker \cite{Buttiker_State}. However, the direct evidence of the spin polarization of helical states was still missing. 
+
+The existence of the spin polarization was confirmed for the first time by Brüne \cite{Brune_State}. By using specially-designed "H-shaped" HgTe QW-based structures, it was possible to detect the spin polarization of the QSH edge states via the inverse spin Hall effect \cite{Hankiewicz_State}\cite{Valenzuela_State}. The investigated structures were in a two-gate configuration, and could be tuned locally from metallic state into QSH state, as the carrier concentration in two legs could be adjusted separately. This configuration allowed the metallic state to act as a source of spin-polarized carriers and the QSH state as a detector, and vice-versa. 
+
+In the case of InAs/GaSb QWs the situation is more complicated. Except of the quantized channel conductance, there are evidences of residual bulk conductivity, even at very low (20 mK) temperatures. Knez, having studied a set of InAs/GaSb samples with various dimensions and length/width ratios, was able to identify the contribution of the edge channel transport with conductance comparable with the expected value. However, the the highest observed resistance was 2-3 times smaller than $\hbar/2e^2$, which can be attributed to the conductivity of the bulk of the order of $10 e^2/ \hbar$ \cite{Knez1_State}. Theoretical investigations of Naveh and Laikhthman \cite{Naveh_State} concluded that even a finite-level broadening due to the carrier scattering could result in non-zero conductivity, even at $T = 0$.  
+
+Later, in 2011, Knez remarked that edge modes persist alongside the conductive bulk and show only weak magnetic field dependence. This decoupling of the edge from the bulk is a direct result of the gap opening, which takes place away from the Brillouin zone center and, as a consequence, there is a large disparity in Fermi vectors between bulk and edge states. This leads to a qualitatively different QSHI phase than in HgTe/CdTe QW, where the gap opens at the zone center \cite{Knez2_State}. By performing magnetotransport measurements, Knez concluded that despite the fact that conductive bulk allows edge electrons to tunnel from one side to another, the probability of this effect to occur is reduced by a large Fermi wave vector mismatch. The probability of scattering of electrons between the edges is increased if a weak disorder or scattering interactions are taken into account. In a theoretical work Zhou \cite{Zhou_State} found that the edge states on the two sides can couple together to produce a gap in the spectrum. As a result, the single electron elastic backscattering of the edge states is no longer forbidden, and the edge states are not protected completely by time-reversal symmetry. 
+
+Up to this moment, because of the strong bulk influence in transport, all the evidence of the quantized edge channels were indirect and unclear. The solution to this problem was to change the transport properties of the bulk, while preserving the conductance of the edge states.
+There have been several methods applied so far.  
+Suzuki \cite{Suzuki_State} performed a systematic study of a set of specially designed six-terminal small Hall devices with a doping layer of beryllium in the QW barrier. Doping allowed to lower the carrier concentration and place the Fermi level closer to the energy gap. As a result, it was possible to tailor the structure to exhibit conducting edge channels while maintaining the gap in bulk region. Du \cite{Du_State} implemented a Si doping directly in the QW, at the interface of InAs and GaSb layer. Silicon acts as a donor in InAs and acceptor in GaSb, inducing a disorder in the structure. Generally, disorder reduces the transport properties in the structure. However, the edge states are topologically protected in nature, the disorder has a small impact on their existence and transport properties. As a result, the carrier mobility in the bulk is greatly reduced. This idea was followed by Knez \cite{Knez3_State}, who studied InAs/GaSb QW in the disordered regime. A similar concept to suppress the bulk conductivity was implemented by Charpentier \cite{Charpentier_State}. However, his idea was to use a gallium source with charge-neutral impurities, which have a direct influence on the transport properties of the structure. He compared two sources of gallium and obtained a drastically different results in terms of mobility. The sample grown using "low mobility" gallium had more than one order of magnitude lower mobility that the sample grown using "high mobility" gallium. 
+
+
+A remarkable evidence of the edge channels was provided in 2013 at Stanford by usage of a micrometer SQUID (Superconducting Quantum Interference Device) loop \cite{Huber_State} to directly image the current density in HgTe QW \cite{Nowack_State} and in 2014 InAs/GaSb BGQW \cite{Spanton_State}. It was shown that the current in the sample flows via the edge states only when the structure is in inverted regime, which is presented on Figure \ref{fig:Spanton_State} for the case of InAs/GaSb. The edge conductivity persisted despite the fact that the sample was much bigger than the ballistic limit (around 2 $\mu$m \cite{Knez2_State}), even at higher temperatures (up to 30 K). 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=8cm]{gfx/Introduction/State/Spanton.png}
+	\vspace{-10pt}
+	\caption{\textit{Flux and current maps in a four-terminal device made from a Si-doped InAs/GaSb quantum well. (a) Schematic of the device. Si doping (shown in orange) suppresses residual bulk conductance in the gap. (b) Schematic of the measurement. Alternating current (orange arrows) flows from left to right on the positive part of the cycle. A voltage ($V_g$) applied to the front gate (yellow box) tunes the Fermi level. The SQUID’s pickup loop (red circle) scans
+across the sample surface, with lock-in detection of the flux through
+the pickup loop from the out of plane magnetic field produced by the
+applied current. (c) Four-terminal resistance $R_{14,23} = V_{23}/I_{14}$ as a
+function of $V_g$, showing both the upwards (black) and downwards
+(gray) gate sweeps. $R_{14,23}$ is maximized when the chemical
+potential is tuned into the gap. \cite{Spanton_State}}}
+	\label{fig:Spanton_State}
+\end{figure} 
+
+
 \chapter{HgCdTe systems}
 \wciecie
-The Mercury-Cadmium-Telluride (MCT) alloy crystal is formed by II-VI compounds which crystallize in zincblende structure, which consists of two face-centered cubic sublattices. In the zincblende structure each of Te-ions have four nearest neighbours, which in the alloy can be either Hg or Cd. The presence of a different atom on each lattice site breaks the inversion symmetry, which results in reducing the point group symmetry from cubic to tetrahedral. Despite the fact that the inversion symmetry is explicitly broken, this has a small influence on the physics of the QSH effect.
+The Mercury-Cadmium-Telluride (MCT) alloy crystal is formed of II-VI compounds which crystallize in zincblende structure, which consists of two face-centered cubic sublattices. In the zincblende structure each of Te-ions have four nearest neighbors, which in the alloy can be either Hg or Cd. The presence of a different atom on each lattice site breaks the inversion symmetry, which results in reducing the point group symmetry from cubic to tetrahedral. Despite the fact that the inversion symmetry is explicitly broken, this has a small influence on the physics of the QSH effect.
 
-The both compounds, HgTe and CdTe, are well lattice-matched, having the lattice constant parameter equal to 6.45 Å and 6.48 Å respectively. The band gap in Hg$_{1-x}$Cd$_x$Te mixed crystals varies from 1.6 eV for pure CdTe, a relatively large gap semiconductor to -0.3 eV for pure HgTe, a semimetal. The negative band gap is a consequence of the unusual band alignment in the crystal, where $p$-type ($\Gamma_8$) bands lie around 0.3 eV above the $s$-type ($\Gamma_6$) bands. In this work the attention is paid to both 3D (bulk) and 2D (quantum well) structures, based on MCT compounds, because both classes exhibit unusuall properties. HgTe/CdTe quantum well, as mentioned already in the introduction, is a topological insulator and a significant attention is going to be paid to this system in this chapter.  Hg$_{1-x}$Cd$_x$Te bulk system however, can be either a semiconductor or a semimetal, depending on its both internal and external parameters. This system does not exhibit a topological insulator phase, however it will be shown that it is possible to demonstrate a phase transition from negative to positive band gap, which makes this system particularly interesting.
+The both compounds, HgTe and CdTe, are well lattice-matched, having the lattice constant parameter equal to 6.45 Å and 6.48 Å respectively. Hg$_{1-x}$Cd$_x$Te mixed crystals have a direct band gap, which value varies from 1.6 eV for pure CdTe, a relatively large gap semiconductor to -0.3 eV for pure HgTe, a semimetal. The negative band gap is a consequence of the unusual band alignment in the crystal, where $p$-type ($\Gamma_8$) bands lie around 0.3 eV above the $s$-type ($\Gamma_6$) bands. In this work the attention is paid to both 3D (bulk) and 2D (quantum well) structures, based on MCT compounds, because both classes exhibit unusual properties. HgTe/CdTe quantum well, as mentioned already in the introduction, is a topological insulator and a significant attention is going to be paid to this system in this chapter.  Hg$_{1-x}$Cd$_x$Te bulk system however, can be either a semiconductor or a semimetal, depending on its both internal and external parameters. This system does not exhibit a topological insulator phase, however it will be shown that it is possible to demonstrate a phase transition from negative to positive band gap, which makes this system particularly interesting.
 
 \section{MCT Quantum Wells}
 \subsection{Band structure}
@@ -139,7 +187,7 @@ A typical HgTe/CdTe QW is formed when a layer of HgTe is sandwiched between two 
 	\label{fig:BandStructure_HgTe_CdTe}
 \end{figure} 
 
-The energy levels, for both electrons and holes, within the structure lie above the bottom of QW, and their position depends on the QW width. For thin quantum wells with well thickness $d_c$ $<$ 6.3 nanometers, the structure exhibit a normal semiconducting behavior, because the quantum confinement is strong and the energy levels are lifted from their respective QW bottom, and the first electron level ($E_1$) lies above the first hole level ($H_1$). In a different case, for quantum wells of thickness $>$ 6.3 nm, the situation is reversed. The $H_1$ level lies above the $E_1$, which results in semimetalic behavior. This means that for $d_c$ $=$ 6.3 nm the band gap vanishes and the system undergoes a topological phase transition from a trivial insulator to a quantum spin Hall insulator. The other way to understand this is to assume that for thin QW the structure should behave similarly to CdTe and have a regular band ordering, i.e. bands with $\Gamma_6$ symmetry form the conduction subbands and the $\Gamma_8$ symmetry bands form the valence subbands. If the QW thickness $d$ is increased the structure starts to more and more resemlbe the properties of HgTe. When the thickness reaches the critical value $d_c$ = 6.3 nm the $\Gamma_6$ and $\Gamma_8$ subbands cross and the structure becomes inverted -- the $\Gamma_6$ bands become valence subbands and the $\Gamma_8$ bands become conduction subbands. The QW states derived from the heavy hole $\Gamma_8$ band are named $H_n$, where $n = 1, 2, 3, ...$ denotes the states existing in the QW. Similarly, those levels originated from the electron $\Gamma_6$ band are named $E_n$. The band structure and energy levels of a HgTe/CdTe QW as a function of QW width are shown of Figure \ref{fig:BandStructure_HgTe_CdTe2}.  
+The energy levels, for both electrons and holes, within the structure lie above the bottom of QW, and their position depends on the QW width. For thin quantum wells with well thickness $d_c$ $<$ 6.3 nanometers, the structure exhibit a normal semiconducting behavior, because the quantum confinement is strong and the energy levels are lifted from their respective QW bottom, and the first electron level ($E_1$) lies above the first hole level ($H_1$). In a different case, for quantum wells of thickness $>$ 6.3 nm, the situation is reversed. The $H_1$ level lies above the $E_1$, which results in semimetalic behavior. This means that for $d_c$ $=$ 6.3 nm the band gap vanishes and the system undergoes a topological phase transition from a trivial insulator to a quantum spin Hall insulator. The other way to understand this is to assume that for thin QW the structure should behave similarly to CdTe and have a regular band ordering, i.e. bands with $\Gamma_6$ symmetry form the conduction subbands and the $\Gamma_8$ symmetry bands form the valence subbands. If the QW thickness $d$ is increased the structure starts to more and more resemble the properties of HgTe. When the thickness reaches the critical value $d_c$ = 6.3 nm the $\Gamma_6$ and $\Gamma_8$ subbands cross and the structure becomes inverted -- the $\Gamma_6$ bands become valence subbands and the $\Gamma_8$ bands become conduction subbands. The QW states derived from the heavy hole $\Gamma_8$ band are named $H_n$, where $n = 1, 2, 3, ...$ denotes the states existing in the QW. Similarly, those levels originated from the electron $\Gamma_6$ band are named $E_n$. The band structure and energy levels of a HgTe/CdTe QW as a function of QW width are shown of Figure \ref{fig:BandStructure_HgTe_CdTe2}.  
 
 \begin{figure}[ht]
 	\centering
@@ -149,61 +197,171 @@ The energy levels, for both electrons and holes, within the structure lie above 
 	\label{fig:BandStructure_HgTe_CdTe2}
 \end{figure} 
 
-One year after the theoretical proposal of Bernevig \cite{Bernevig_Topology2} the Molenkamp group at the Unversity of Würzburg fabricated the devices and performed the first transport experiments showing the signature of the quantum spin Hall insulator \cite{Konig_Topology}. This work showed that for thin quantum wells with well width $d$ $<$ 6.3 nm, the insulating regime show the conventional behavior of neglectable conductance at low temperature. However, for thicker quantum wells ($d$ $>$ 6.3 nm), the nominally insulating regime showed a plateau of residual conductance close to $2e^2/h$. The residual conductance is independent of the sample dimensions, indicating that it is caused by the edge states \cite{Konig_Topology}. The low temperature ballistic transport via edge states can be understood within a basic Landauer-Büttiker \cite{Landauer_MCT} framework, in which the egde states are populated adequatly to the chemical potential. As a consequence, conductance is quantized and equal to $e^2/h$ for each set of egde states.
+One year after the theoretical proposal of Bernevig \cite{Bernevig_Topology2} the Molenkamp group at the Unversity of Würzburg fabricated the devices and performed the first transport experiments showing the signature of the quantum spin Hall insulator \cite{Konig_Topology}. This work showed that for thin quantum wells with well width $d$ $<$ 6.3 nm, the insulating regime show the conventional behavior of neglectable conductance at low temperature. However, for thicker quantum wells ($d$ $>$ 6.3 nm), the nominally insulating regime showed a plateau of residual conductance close to $2e^2/h$. The residual conductance is independent of the sample dimensions, indicating that it is caused by the edge states \cite{Konig_Topology}. The low temperature ballistic transport via edge states can be understood within a basic Landauer-Büttiker \cite{Landauer_MCT} framework, in which the edge states are populated adequately to the chemical potential. As a consequence, conductance is quantized and equal to $e^2/h$ for each set of edge states. Furthermore, the residual conductance is destroyed by applying a small external magnetic field. The quantum phase transition at the critical thickness, $d_c$ = 6.3 nm, was also determined independently from the insulator-to-semimetal phase transition induced by magnetic field.
+
+\subsection{Topological properties of MCT QW}
 
 
+\begin{equation}
+\label{1}
+\Psi = \left( \ket{\Gamma_6, \frac{1}{2}}, \ket{\Gamma_6, -\frac{1}{2}}, \ket{\Gamma_8, \frac{3}{2}}, \ket{\Gamma_8, \frac{1}{2}}, \ket{\Gamma_8, -\frac{1}{2}}, \ket{\Gamma_8, -\frac{3}{2}}  \right).
+\end{equation}
 
-Furthermore, the residual conductance is destroyed by applying a small external magnetic field. The quantum phase transition at the critical thickness, $d_c$ = 6.3 nm, was also determined independently from the insulator-to-semimetal phase transition induced by magnetic field
+
+\begin{equation}
+\label{2}
+H_{eff}(k_x, k_y) =  \left( \begin{array}{cc}
+H(k) & 0 \\
+0 & H^*(-k) \end{array} \right),
+\end{equation}
+
+where 
+
+\begin{equation}
+\label{3}
+H = \epsilon (k) + d_i (k) \sigma_i,
+\end{equation}
+
+and $\sigma_i$ are Pauli matrices.
+
+\begin{equation}
+\begin{aligned}
+\label{4}
+d_1 + id_2 = A(k_x + ik_y) \equiv Ak_+ \\
+d_3 = M - B(k_x^2 + k_y^2) \\
+\epsilon_k = C - D(k_x^2 + k_y^2).
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\label{asd}
+\hat{H}_{k_x, k_y} = \epsilon_k(k_x, k_y) I_{4 \times 4} + \left( \begin{array}{cccc}
+\mathcal{M}(k) & Ak_- & 0 & 0 \\
+Ak_+ & -\mathcal{M}(k) & 0 & 0 \\
+0 & 0 & \mathcal{M}(k) & -Ak_+ \\
+0 & 0 & -Ak_- & -\mathcal{M}(k) \end{array} \right),
+\end{equation}
+
+where $\epsilon_k(k_x, k_y) = C - D(k_x^2, k_y^2)$, $\mathcal{M}(k) = M - B(k_x^2, k_y^2)$, $k_pm = k_x \pm ik_y$, and \textit{A, B, C, D, M} depend on the specified QW width.
 
 \section{MCT Bulk Crystals}
-The earliest studies of Hg$_{1-x}$Cd$_x$Te crystals were aimed at the development of infrared detectors, especially for wavelenghts around 10 um, which can be tuned via changing composition. This is the range of the second wide atmospheric window, which means it is of great interest for communication. Morover it covers the range of the maximum of thermal radiation at room temperature, which opens possible applications for every day life. Nowadays, besides the infrared detection application, the interest of community is centered at the phenomena relative to the variations of effective mass of electrons and effective g-factor, coupled with the variation of the band gap. The band gap in Hg$_{1-x}$Cd$_x$Te mixed crystals ranges from positive 1.6 eV for pure CdTe to negative -0.3 eV for pure HgTe. The band gap varies continously and almost linearly with the Cadmium content $x$ -- the crystal composition. It means that at some point there must be a very special composition, where the band gap vanishes which, according to [], implies that effective mass vanishes too and g-factor goes to infinity. Crystals close to this composition are ideal materials for studying various quantum and spin effects, especially at the presence of magnetic field, as those effect are usually more pronounced as the g-factor increases, and far more other phenomena.
+The earliest studies of Hg$_{1-x}$Cd$_x$Te crystals were aimed at the development of infrared detectors, especially for wavelengths around 10 $\mu$m. This is the range of the second wide atmospheric window, which means it is of great interest for communication applications. Moreover, it covers the range of the maximum of thermal radiation at room temperature, which opens possible applications for every day life. Nowadays, besides the infrared detection application, the interest of community is centered at the phenomena relative to the variations of effective mass of electrons and effective g-factor, coupled with the variation of the band gap. 
 
-MCT bulk crystals give a special opportunity to realize and investigate a condensed matter system with particles exi
+The band gap in Hg$_{1-x}$Cd$_x$Te mixed crystals ranges from positive 1.6 eV for pure CdTe to negative -0.3 eV for pure HgTe. The band gap varies continously and almost linearly with the Cadmium content $x$ -- the crystal composition. It means that at some point there must be a special composition, where the band gap vanishes which, according to \cite{Zawadzki_Topology}, implies that effective mass collapses and g-factor goes to infinity. Crystals close to this composition are ideal materials for studying various quantum and spin effects, especially at the presence of magnetic field, as those effect are usually more pronounced as the g-factor increases.
 
-Special properties of the band structure of MCT has been known since the first works in early sixties. In seventies \cite{Zawadzki_MCT}
+MCT bulk crystals give a special opportunity to realize and investigate a condensed matter system with particles exhibiting relativistic Dirac-like properties in all three dimensions. Three dimensional topological insulators also exhibit states with a relativistic dispersion relation, but their presence is limited to the 2D surfaces of the sample.
 
-
+Recent experimental \cite{Orlita_MCT} and theoretical \cite{Malcolm_MCT} works on Hg$_{1-x}$Cd$_x$Te crystals close to the critical cadmium concentration led to a discovery of another massless Dirac-like quasiparticle, called Kane fermion \cite{Orlita_MCT}. These three dimensional particles are not equivalent to any other known relativistic particles. Kane fermions show a resemblance to the pseudospin-1 Dirac-Weyl system \cite{Malcolm_MCT} -- the band gap vanishes \cite{Weiler_MCT} and their energy dispersion relation forms a Dirac cone with an additional band crossing the vertex. These conical bands have several spectacular properties similar to those in Dirac and Weyl semimetals (such as Klein tunnelling and suppressed backscattering) \cite{Orlita_MCT}. However the crucial difference between Weyl semimetals and Dirac semimetals is the topological protection of the boundary states, which is absent in the case of the latter.
 
 \subsection{Band Structure}
 \wciecie
-HgCdTe band structure depends on multiple properties. During the study only the chemical composition (Cadmium concentration) and temperature were considered. Temperature
+Hg$_{1-x}$Cd$_x$Te band structure and electronic dispersion relation can be varied both intrinsically and externally. Intrinsic -- by changing the chemical composition. External -- by varying external parameters, like temperature \cite{Capper_MCT} or pressure []. 
+
+However, the variation of chemical composition method of band structure engineering has its limitations. First of all, it can be done only once, during crystal growth, and secondly, it is technologically difficult. Even small composition fluctuations prevent the ability of fine tuning of the band gap in the vicinity of the critical value, where the band gap vanishes and a topological semimetal-to-semiconductor phase transition takes place.
+
+On the other hand, temperature is a perfect parameter allowing to fine tune the band structure, and usually available even in a simple experimental set-up. Temperature regulation allows to precisely control the band structure and provide a method of investigating the relativistic properties of Kane fermions, while the system is tuned across the gapless state at the phase transition \cite{Teppe_MCT}.
+
+For cadmium content higher than the critical value $x > x_c \approx 0.17$, the Hg$_{1-x}$Cd$_x$Te crystal is a trivial semiconductor: the $s$-type $\Gamma_6$ band is energetically higher than $p$-type $\Gamma_8$ bands. On the other hand, if the cadmium content is lower than the critical value $x < x_c$, the structure is inverted, as schematically shown on Figure \ref{fig:MCT_bandStructure}, and the structure exhibits a semimetallic behavior. The two phases are not topologically equivalent, as characterized by the $Z_2$ topological invariant \cite{Bernevig_Topology2}.
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=13cm]{gfx/MCT_bandStructure.png}
+	\includegraphics[width=10cm]{gfx/MCT/bulk/MCT_bandStructure.png}
 	\vspace{-10pt}
 	\caption{\textit{Obsadz}}
-	\label{asdfg}
+	\label{fig:MCT_bandStructure}
 \end{figure} 
 
-\subsection{Physical properties}
-%\label{section:domieszkowanie}
-\wciecie
-Wprowadzeniw:
+As was mentioned before the band structure depends on more parameters than only the cadmium content. If we consider temperature as the second parameter, the point of closing the band gap becomes a curve on the dwo dimensional $(x, T)$ parameter space, as its schematically shown on Figure \ref{fig:MCT_TK}. This means that the critical contentration $x_c \approx 0.17$ is valid only for temperatures close to the absolute zero. However, samples with a little lower cadmium content have the critical temperature elevated. Teppe \cite{Teppe_MCT} for the first time used the temperature as an external parameter to induce a topological phase transition and investigated the Kane fermions arising in the gapless state. The two samples used in that experiment had the cadmium content of $x_A = 0.175$ and $x_B = 0.155$. This allowed to study the physics of Kane fermions at higher temperature, as the temperature of phase transition of the sample B was around 77 K.  
 
-\subsection{Effective electron mass}
-\wciecie
-Donadzenie  
+The appearance of Kane fermions in not restricted only to the gapless state. Their behavior can be regarded as relativistic as long as the energy range is small in terms of the energies of nearby bands, mainly the spin-split $\Gamma_7$ band, which lies $\Delta_{SO} \approx 1$ eV \cite{Novik_MCT} lower in energy.
+
+The simplified Kane model \cite{Kane_MCT}\cite{Kane_Model} can be used to describe the electronic structure near the $\Gamma$ point of the Brillouin zone, where all the interesting physics take place. This model accounts the $k\cdot p$ interaction between the $\Gamma_6$ and $\Gamma_8$ bands, while neglects the influence of the remote spin-split $\Gamma_7$ band. The final Hamiltonian \ref{Eq:MCT_Bulk_Hamiltonian}, neglecting the small quadratic in momentum terms, takes form 
+
+\begin{equation}
+\label{Eq:MCT_Bulk_Hamiltonian}
+\hat{H} = \tilde{\beta} \tilde{m}\tilde{c}^2 + \tilde{c}\tilde{\alpha}_x p_x + \tilde{c}\tilde{\alpha}_y p_y + \tilde{c}\tilde{\alpha}_z p_z ,
+\end{equation}
+where $c$ is Fermi velocity, $m$ is effective mass, and $p_i$ is momentum. This Hamiltonian resembles the one for true 3D Dirac fermions, presented in Dirac equation \ref{Eq:Dirac_Hamiltonian}, 
+
+\begin{equation}
+\label{Eq:Dirac_Hamiltonian}
+i\bar{h} \frac{\partial \Psi}{\partial t} = \left( \beta mc^2 + c\alpha_x p_x + c\alpha_y p_y + c\alpha_z p_z \right) \Psi.
+\end{equation}
+
+However, the matrices $\tilde{\alpha}_i$ are different from $\alpha_i$ \cite{Teppe_MCT}. There are multiple bulk condensed matter systems, which can be well described by the Dirac Hamiltonian \ref{Eq:Dirac_Hamiltonian}. Hamiltonian \ref{Eq:MCT_Bulk_Hamiltonian} does not reduce itself to the Dirac Hamiltonian nor to any other known case of relativistic particles. The 6x6 matrix version of Equation \ref{Eq:MCT_Bulk_Hamiltonian} is
+
+\begin{equation}
+\label{Eq:MCT_Bulk_Hamiltonian_Matrix}
+\hat{H}{p_x, p_y, p_z} = \left( \begin{array}{cccccc}
+\tilde{m}\tilde{c}^2 & \frac{\sqrt{3}}{2}\tilde{c}{p_+} & -\frac{1}{2}\tilde{c}{p_{-}} & 0 & 0 & -\tilde{c}p_z \\
+\frac{\sqrt{3}}{2}\tilde{c}{p_+} & -\tilde{m}\tilde{c}^2 & 0 & 0 & 0 & 0 \\
+-\frac{1}{2}\tilde{c}{p_-} & 0 & -\tilde{m}\tilde{c}^2 & -\tilde{c}p_z & 0 & 0 \\
+0 & 0 & -\tilde{c}p_z & \tilde{m}\tilde{c}^2 & -\frac{\sqrt{3}}{2}\tilde{c}{p_-} & \frac{1}{2}\tilde{c}{p_+} \\
+0 & 0 & 0 & -\frac{\sqrt{3}}{2}\tilde{c}{p_-} & -\tilde{m}\tilde{c}^2 &0 \\
+-\tilde{c}p_z & 0 & 0 & \frac{1}{2}\tilde{c}{p_+} & 0 & -\tilde{m}\tilde{c}^2 \end{array} \right) \equiv \tilde{c}\boldsymbol{\mathrm{p}} \cdot \boldsymbol{\mathrm{J}},
+\end{equation}
+where $p_{\pm} = p_x \pm ip_y$, $E_g = \tilde{m}\tilde{c}^2$ is the energy gap, and $\tilde{c} = \sqrt{2P^2 / 3 \hbar^2}$ is the universal velocity. The material properties are included within the model by the Kane elememt $P$ and $E_g$. There are three eigenvalues of Equation \ref{Eq:MCT_Bulk_Hamiltonian_Matrix}, representing the energetic structure of the sample, each doubly degenerated due to the Kramers theorem. The eigenvalues can be presented as
+
+\begin{equation}
+\label{Eq:MCT_eigenvalues}
+E_\xi (p) = \xi^2 \tilde{m}\tilde{c}^2 + (-1)^{1-\theta (\tilde{m})} \xi \sqrt{\tilde{m}^2\tilde{c}^4 + p^2\tilde{c}^4},
+\end{equation}
+where the $\xi$ parameter takes values of $\xi = -1$ for the light-hole band, $\xi = 0$ for the heavy-hole band, and $\xi = 1$ for the electron band. $\theta(\tilde{m})$ is a Heaviside step function, equals to 1 for $\tilde{m} \geq 0$, and 0 if $\tilde{m}$ is negative. An eigenvalue for $\xi = 0$ means that the heavy-hole band is energetically completely flat (dispersionless), which is a consequence of an assumption that heavy-hole mass is infinite. The assumption is valid as long as the effective electron mass is significantly smaller than the effective heavy-hole mass of about $m_{hh} \approx 0.5$ $m_0$ \cite{Weiler_MCT}, which is the case for narrow gap regime \cite{Orlita_MCT}.
+
+\subsection{Magnetic field}
+The energy structure of the crystals become quantized in a presence of magnetic field. The 3D dispersion relation takes form of a set of unequally spaced Landau levels (LLs), or more precisely, of 1D Landau bands which disperse with the momentum component along the field direction (usually $z$ axis). Moreover, these LLs are characterized by a distinct $E \sim \sqrt{B}$ behavior. In gapless graphene, for example, the LL structure can be expressed by $E_n = \mathrm{sgn}(n) \sqrt{2e\hbar \tilde{c}^2B|n|}$, where sgn($n$) is positive for electronic LLs, and negative for hole-like LLs \cite{Jiang_MCT}. 
+
+Magnetic field forces modification of the Hamiltonian by an inclusion of components related to magnetic vector potential $\boldsymbol{\mathrm{A}}$, through the standard Peierls substitution $\hbar \boldsymbol{\mathrm{k}} \rightarrow \hbar\boldsymbol{\mathrm{k}} - e \boldsymbol{\mathrm{A}}$. In the case of 3D material like MCT, the LL spectrum of massless and massive fermions takes a more complex form
+
+\begin{equation}
+\label{Eq:MCT_LLs}
+E_{\xi,n,\sigma }(p_z) = \xi^2 \tilde{m}\tilde{c}^2 + (-1)^{1-\theta (\tilde{m})} \xi \sqrt{\tilde{m}^2\tilde{c}^4 + \frac{1}{2}e\hbar\tilde{c}^2B (4n - 2 + \sigma) + p_z^2\tilde{c}^4},
+\end{equation}
+where $n$ is a Landau level index, $\sigma$ accounts for the Kramers degeneracy lifted by magnetic field, and can be considered as the Zeeman  (spin) splitting of LLs \cite{Teppe_MCT}. The index $n$ takes only integer values, with respect to the parameter $\xi$. For $\xi = \pm 1$, $n$ takes value of nonzero positive integers $n = 1,2,...$. For $\xi = 0$, $n$ takes value of zero or all positive integers except one $n = 0,2,3,...$. The orbital parameters $\tilde{c}$, $n$, and $p_z$ fully determine the spin splitting. Moreover, when the effective mass $\tilde{m}$ vanishes, and at $p_z = 0$, the spin splitting of LLs is exactly proportional to $\sqrt{B}$. This means that the g-factor, defined in thr standard way as $g_{\xi , n} = (E_{\xi , n , \uparrow} - E_{\xi , n , \downarrow})/(\mu_B B)$ diverges at $B \rightarrow 0$. This in an extraordinary situation in a solid state system, and in particular, does not exist in the case of graphene \cite{Orlita_MCT}. The uncommon case of $\sqrt{B}$ spin splitting takes place in MCT because the strength of SOC becomes effectively infinite as the band gap vanishes. 
+
+The energy spectrum becomes quantized into a set of LLs, and the Fermi energy separates filled LLs from the empty ones. The amount of filled LLs is called filling factor $\nu$. An example of LL structure formed using Equation \ref{Eq:MCT_LLs} is presented on Figure \ref{fig:MCT_LL120_solo}. Electron occupying the filled LL can be excited, for example by absorbing a photon, into an empty LL. This process is called optical transition, and is governed by a set of rules, which describe whether the process is allowed or not. First rule is that the spin in a transition has to be conserved. It means that the transition can take place between two LLs only if they are characterized by the same spin orientation. Second rule is that the transition can take place only for $\Delta n \pm 1$, which means that the electron can switch only into adjacent levels. The allowed transitions are presented as arrows on Figure \ref{fig:MCT_LL120_solo}. The transitions can be divided into two groups, intraband and interband. 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=13cm]{gfx/wyniki/MCTbulk/110429-77K-6T_3.png}
+	\includegraphics[width=8cm]{gfx/MCT/bulk/LL120_solo.png}
 	\vspace{-10pt}
-	\caption{\textit{Pa}}
-	\label{asd}
-\end{figure} 
+	\caption{\textit{Obsadz}}
+	\label{fig:MCT_LL120_solo}
+\end{figure}
 
+Interband transitions take place when an electron changes the entire band while executing a transition, for example from heavy hole into electron band. Interband transitions are marked on Figure \ref{fig:MCT_LL120_solo} as solid arrows. In case of bulk MCT the heavy hole level is independent on $k$ vector or magnetic field. According to the Equation \ref{Eq:MCT_LLs} it has zero energy for all nonzero integer values of $n$ (except $n$ = 1), and both values of $\sigma$. As a consequence, it is not formed by a single level but contains many levels, with the same energy and is $2n$ times degenerate. That is why a transition from a heavy-hole band into an electron LL with index $n = 1$ or $n = 3$  is possible. However, the transition into an electron LL with index $n = 2$ is forbidden, as would require an existence of a heavy-hole LL with $n$ = 1, which is not the case. Interband transitions give a valuable information at zero magnetic field, because the energy of transition is equal to the energy gap itself. 
+
+Intraband transitions, on the other hand, take place when an electron changes only a LL, without changing a band. Intraband transitions are marked on Figure \ref{fig:MCT_LL120_solo} as dashed arrows. Intraband transitions tend to have zero energy at zero magnetic field, as the Landau quantization disappears.
+
+It is worth to mention, that despite the fact that a transition is allowed, it might not be possible to observe it by the means of spectroscopy. The probability of a transition depends on a parameter called oscillator strength.
+
+\subsection{The influence of temperature on the band structure}
+The temperature is an important factor considering the physical phenomena occurring in solid state materials, especially in narrow-gap semiconductors like MCT. Temperature increases disorder within structures -- is an important component of an instability of measurements. Moreover, temperature is always related with thermal energy (in a form of radiation), and as a consequence
+
+Temperature also influence the energy structure via lattice thermal expansion. This obviously modifies the Hamiltonian and the band structure as a consequence. In the case of narrow gap semiconductors, especially if the dependence on temperature is significant, it can lead to gap closure, as in the case of MCT. The energy gap depends on cadmium content $x$ and temperature $T$, and that dependence can be expressed as
+
+\begin{equation}
+\begin{aligned}
+\label{Eq:MCT_ExT}
+E_g (x,T)[eV] = -0.303(1-x) + 1.606x - 0.132x(1-x) +\\ +\frac{6.3(1-x)-3.25x-5.92(1-x)}{11(1-x)+78.7x+T}10^{-4}T^2,
+\end{aligned}
+\end{equation}
+which is a function on two parameter space. If the left side of Equation \ref{Eq:MCT_ExT} is equal to zero, it obviously is the case for gapless state. A dependence $x_c(T)$ can be derived from Equation \ref{Eq:MCT_ExT}, which gives a quantitative information about the band structure in a form of a phase diagram, presented on Figure \ref{fig:MCT_TK}. 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=13cm]{gfx/wyniki/MCTbulk/ThreeGraphs2.png}
+	\includegraphics[width=8cm]{gfx/MCT/bulk/TK.png}
 	\vspace{-10pt}
-	\caption{\textit{Obat).}}
-	\label{asdf}
+	\caption{\textit{Obsadz}}
+	\label{fig:MCT_TK}
 \end{figure} 
 
+Temperature also influences the LL spectrum of the sample
 
 \chapter{InAs/GaSb Quantum Wells}
 \wciecie
-asd
+The first system, where QSH phase was theoretically predicted and experimentally observed, is MCT QW. It allows to investigate and understand easily the physics of topological insulators and phase transitions and is still a subject of great interest of scientists. However, despite the remarkable progress of development of the MCT growth method, there still are plenty of technological challenges, preventing from the wide use of HgTe/CdTe QW in device and industry applications. The first most important problem is the difficulty of processing of mercury-based compounds. Because Hg is highly volatile and quickly diffuses in temperatures above $\SI{80}{\degreeCelsius}$, it excludes the use of standard processing technologies. The second important problem is the general use of Hg and Cd elements, which are highly toxic.
+
+There is a system based on III-V semiconductor groups, which can be used as an alternative to MCT-based systems. The growth and processing of III-V semiconductors is well known as well and their toxicity is relatively low compared to MCT. InAs/GaSb QW also exhibit a band inversion and QSH phase, however, the mechanism behind it differs from the one, responsible for band inversion in HgTe/CdTe QW.
+
 \section{General properties}
 There is a group of well lattice matched materials, so called 6.1 Å family, which consists of compounds such as InAs, GaSb, and AlSb. The name origins from a common lattice constant value, which is similar for all compounds and equals approximately 6.1 Å at the room temperature. InAs, GaSb, And AlSb crystallize in the zincblende structure. The similarity of the lattice constant allows growing lattice-matched heterostructures, without strain or other lattice-mismatch defects, like dislocations etc. The exact values of the lattice constants are 6.0584 Å for InAs, 6.0959 Å for GaSb, and 6.1355 Å for AlSb at 300 K \cite{Sze}.
 
@@ -211,7 +369,7 @@ Both InAs and GaSb are direct-gap semiconductor, with the exact value of energy 
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=10cm]{gfx/BandStructure_InAs_GaSb.png}
+	\includegraphics[width=10cm]{gfx/Introduction/InAs-GaSb/BandStructure_InAs_GaSb.png}
 	\vspace{-10pt}
 	\caption{\textit{Obsadz}}
 	\label{fig:BandStructure_InAs_GaSb}
@@ -232,7 +390,7 @@ below the Fermi level in the well at the observed electron concentrations. But i
 \end{itemize}
 
 \subsection{Carrier mobility}
-One of the most interesting properties of InAs is the second highest electron mobility of all semiconductors (the first being InSb). This is a result of one of the smallest electron effective mass, only 0.023 of the free electron mass. This property makes this material very interesting, especially from a device perspective – high mobility allows to create faster electronics (eg. HEMTs). Also, high mobility improves transport properties – allows to  observe quantum effects such as Shubnikov -- de Haas oscillations or quantum hall effect.
+One of the most interesting properties of InAs is the second highest electron mobility of all semiconductors (the first being InSb). This is a result of one of the smallest electron effective mass, only 0.023 of the free electron mass. This property makes this material very interesting, especially from a device perspective -- high mobility allows to create faster electronics (eg. HEMTs). Also, high mobility improves transport properties -- allows to  observe quantum effects such as Shubnikov-de Haas oscillations or quantum hall effect.
 
 There are multiple factors influencing the mobility of carriers in the quantum well. The is a strong dependence on the well width and on the electron sheet concentration, as well as on the quality of growth. Especially at low temperatures, where mobility is limited by impurity and interface scattering, the growth quality plays a very important role \cite{Nguyen_Mobility}.
 
@@ -260,7 +418,7 @@ The title of the most bizarre lineup of the 6.1 Å family belongs to the InAs/Ga
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=10cm]{gfx/BandStructure_InAs_GaSb2.png}
+	\includegraphics[width=10cm]{gfx/Introduction/InAs-GaSb/BandStructure_InAs_GaSb2.png}
 	\vspace{-10pt}
 	\caption{\textit{Obsadz}}
 	\label{fig:BandStructure_InAs_GaSb2}
@@ -268,7 +426,7 @@ The title of the most bizarre lineup of the 6.1 Å family belongs to the InAs/Ga
 
 The quantum well width governs two fundamentally different regimes of the system. Similarly to MCT QW the energy position of levels in a QW depends strongly on QW width. However, in the case of InAs/GaSb CQW, where none of the compounds used has an inverted structure by itself, the relative position of $E_1$ in InAs well and $H_1$ in GaSb well decides whether the CQW is in an inverted regime or not. For thin layers $E_1$ lies higher in energy than $H_1$ and the structure is in the normal state. On the other hand, for sufficiently thick layers the band order is reversed. In the past, the inverted regime was considered as a semimetallic \cite{Chang_BandStructure}. 
 
-Since the transition between an inverted regime and a normal regime has to be smooth and continuous, there must be a point, where the $E_1 = H_1$, so the momentum and carrier energy in the two wells are close to be equal. In this state the system is strongly coupled, and both the electron states and the hole states are mixed. This mixing leads to hybridization of the bands or, simply, to lifting of degeneracy of the levels. As a consequence, in analogy to bonding and antibonding states, a relativly small (of the order of a few of meV) hybridization gap appears. Thus, the semimetallic band dispersion relation in Figure \ref{fig:BandStructure_InAs_GaSb2}B (dashed), becomes nonmonotonic (full line), with a mini-gap $\Delta$. Because of this, a InAs/GaSb CQW in an inverted regime is not a semimetal, but has a gap \cite{Altarelli_BandStructure}. The presence of the gap means that the bulk of the sample is resisitive, as long as the Fermi energy lies within the gap, which is a case in a theoretical intrinsic case. The existence of the gap was discovered experimentally by Yang \cite{Yang_BandStructure} and Lakrimi \cite{Lakrimi_BandStructure}.
+Since the transition between an inverted regime and a normal regime has to be smooth and continuous, there must be a point, where the $E_1 = H_1$, so the momentum and carrier energy in the two wells are close to be equal. In this state the system is strongly coupled, and both the electron states and the hole states are mixed. This mixing leads to hybridization of the bands or, simply, to lifting of degeneracy of the levels. As a consequence, in analogy to bonding and antibonding states, a relativly small (of the order of a few of meV) hybridization gap appears. Thus, the semimetallic band dispersion relation in Figure \ref{fig:BandStructure_InAs_GaSb2}B (dashed), becomes nonmonotonic (full line), with a mini-gap $\Delta$. Because of this, a InAs/GaSb CQW in an inverted regime is not a semimetal, but has a gap \cite{Altarelli_BandStructure}. The presence of the gap means that the bulk of the sample is resisitive, as long as the Fermi energy lies within the gap, which is a case in a theoretical intrinsic case. The existence of the gap was discovered experimentally by Yang \cite{Yang_BandStructure} and Lakrimi \cite{Lakrimi_BandStructure}. The presence of the hybridization gap makes this system different from HgTe/CdTe QW. This is a consequence of inversion asymmetry present in InAs/GaSb CQW -- the QW is not symmetrical in the growth direction, which is not the case for HgTe/CdTe systems.
 
 Because of the broken gap alignment, the CQW in the inverted regime should have equal intrinsic density of both two-dimensional electron gas (2DEG) and two-dimensional hole gas (2DHG). However, in the actual samples there are localized states at interfaces, defects or inhomogeneities, which potentially lead to unbalanced concentrations of carriers. Magnetotransport studies indicate that the electron density dominates over the hole density \cite{Petchsingh_BandOrdering}\cite{Munekata_BandOrdering}, which is partially caused by surplus of electrons, tunneled from the high surface states. As a consequence, the Fermi level is set around 130 meV above the bottom of the conduction band of InAs \cite{Nguyen_Mobility}, which is different from its bulk value.
 
@@ -276,17 +434,94 @@ Because of the broken gap alignment, the CQW in the inverted regime should have 
 Magnetic field can be used to induce a electron and hole recombination in GaSb/InAs QW in inverted regime. Energy spectrum of 2DEG and 2DHG in magnetic field tends to quantize into a discrete levels called Landau levels. Energy of these levels increases for electrons and decreases for holes as the magnetic field gets stronger, which is a consequence of the opposite sign of carriers. Works of Lo \cite{Lo_MagneticField} and Smith \cite{Smith_MagneticField} show that it is possible, by applying external magnetic field, to bring the hole Landau level and the electron Landau level to the same value of energy, thus effectively crossing them and force electrons to recombine with holes, which leads to semiconductor to semimetal phase transition.
 
 \subsection{Electric field tunability}
-There were studies showing that band relative position can be altered also with electric field. Naveh et al. Found that applying small electric fields in a growth direction of AlSb-InAs-GaSb-AlSb QW, any value can be achieved for such parameters as the energy gaps, effective masses, and carrier types and densities in the material, which is a consequence of a strong electron-hole coupling in this system \cite{Naveh_ElectricField}. The electron and hole levels in this system, when subjected to an external electrical field, usually by a metallic gate on the top (and/or the bottom) of the structure, shift in opposite directions, approaching each other and eventually crossing. In the intrinsic case, thus when n$_H$ = n$_E$, Fermi energy lies somewhere between the first electron level ($E_1$) and the first hole level ($H_1$), and with increasing electric field $H_1$ crosses it first, removing the holes from the system, and $E_1$ follows at higher voltages applied between the gate and the channel, depleting completely the region of carriers. It gives a possibility to control the concentrations of carriers by relatively small electric field and in consequence, induce a semimetal to semiconductor phase transition \cite{Mendez_ElectricField}.
+There were studies showing that band relative position can be altered also with electric field. Naveh et al. Found that applying small electric fields in a growth direction of AlSb-InAs-GaSb-AlSb QW, any value can be achieved for such parameters as the energy gaps, effective masses, and carrier types and densities in the material, which is a consequence of a strong electron-hole coupling in this system \cite{Naveh_ElectricField}. The electron and hole levels in this system, when subjected to an external electrical field, usually by a metallic gate on the top (and/or the bottom) of the structure, shift in opposite directions, approaching each other and eventually crossing. In the intrinsic case, thus when $n_H$ = $n_E$, Fermi energy lies somewhere between the first electron level ($E_1$) and the first hole level ($H_1$), and with increasing electric field $H_1$ crosses it first, removing the holes from the system, and $E_1$ follows at higher voltages applied between the gate and the channel, depleting completely the region of carriers. It gives a possibility to control the concentrations of carriers by relatively small electric field and in consequence, induce a semimetal to semiconductor phase transition \cite{Mendez_ElectricField}.
 
 However, to control both the band structure and the Fermi level position, there is a need to use two gate configuration. A top gate and a back gate are used to tune the concentration of electrons and holes, respectively. Two gate configuration is required because of the screening of top gate induced electric field by electrons in InAs layer. Also, a very important issue is resolved in this way – electron and hole densities can be tuned almost indepentently, with respect to the total charge in the system. This idea was used by Cooper \cite{Cooper_ElectricField} to study a coupling of electrons and holes in InAs/GaSb/AlSb systems as a function of temperature and concentration. The two gate configuration was used as a concept in a theoretical work of Liu, in which the idea of a topological insulator based on a InAs/GaSb/AlSb QW was introduced \cite{Liu_Topology}.
 
+\section{Trilayer QW}
+Since the prediction of QSH effect in InAs/GaSb CQW most of the investigation considered only two layered (InAs layer and GaSb) structure. This introduced an inversion asymmetry into the structure, which does not exist in the case of HgTe/CdTe QW (which is symmetrical). As a consequence, the crossing of $E_1$ and $H_1$ subbands did not occur at the $\Gamma$ point of the Brillouin zone \cite{Murakami_Trilayer} (\ref{fig:BandStructure_InAs_GaSb2}), which had further implications on the shape of Landau levels.
+
+In order to eliminate the problem of asymmetry in a growth direction, Kristophenko [] proposed to attach an additional layer of InAs or GaSb to the structure, which restores the inversion symmetry in the system and brings the crossing of the $E_1$ and $H_1$ subbands at the $\Gamma$ point, as in the case of HgTe/CdTe QW. The layer order and the band structure for InAs-designed (with an additional InAs layer) and GaSb-designed (with an additional GaSb layer) quantum wells are presented on Figure \ref{fig:TrilayerBandStructure1}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=12cm]{gfx/Introduction/InAs-GaSb/TrilayerBandStructure1.png}
+	\vspace{-10pt}
+	\caption{\textit{Obsadz}}
+	\label{fig:TrilayerBandStructure1}
+\end{figure} 
+
+This new class of structures, based on InAs/GaSb, which differ from the broken-gap QWs by the band-gap inversion at the $\Gamma$ point. As hybridization between electron-like and heavy-hole-like subbands vanishes at \textbf{\textit{k}} = 0, the crossing of $E_1$ and $H_1$ subbands at the $\Gamma$ point results in the gapless state with 2D massless DFs.
+
+These materials have zincblende lattice structure and direct energy gaps in the vicinity of $\Gamma$ point, thus the system can be well described by 8-band Kane model \cite{Kane_Model}, like in the case of a BGQW \cite{Liu_Topology}. However, trilayer structure can be considered as a double QW with a middle barrier. In the case of InAs-designed QW, a GaSb layer in the middle plays a role of barrier separating two QW for electrons, and at the same time is a single QW for holes. On the other hand, GaSb-designed QW has a barrier of InAs in the middle, separating two QW for holes, being a single QW for electron itself at the same time. The energy levels in the wells are sensitive to the QW width, like in the case of QW mentioned before. Since the relative position of $E_1$ and $H_1$ subbands decide whether the whole structure is inverted or not, it means that there is a possibility to drive the system from inverted regime to normal, simply by changing the QW width.  
+
 \section{Topological properties}
-The band structure of InAs/GaSb QW is inverted because of the unique relative band alignment of InAs and GaSb layers. As a consequence, the valence band of GaSb is higher energetically than the conduction band of InAs. A smooth connection of bands inside and outside of the sample with a matter of different topology (a regular one, e.g. vacum or trivial insulator) leads to a gapless states at the boundary with a linear dispersion relation. The mechanism of a band inversion differs from the one, which causes the inversion of the band structure of HgTe/CdTe QW, where the SOC was responsible for pushing the $\Gamma_8$ bands above the $\Gamma_6$ bands. SOC is however, still relevant in
-
-From the topological insulator point of view a InAs/GaSb CQW, for a particular space of parameters, exhibits an inverted band order phase with gapless boundary states described by a linear dispersion relation. The bulk of the sample is nonconductuve, because there is a small gap. Those boundary states are protected by the time-reversal symmetry from elastic backscattering and are topologically robust to small perturbations. This means that InAs/GaSb QW shoudl be in a topologically nontrivial QSH phase.
+The band structure of InAs/GaSb QW is inverted because of the unique relative band alignment of InAs and GaSb layers. As a consequence, the valence band of GaSb is higher energetically than the conduction band of InAs. A smooth connection of bands inside and outside of the sample with a matter of different topology (a regular one, e.g. vacuum or trivial insulator) leads to a rise of gapless states at the boundary with a linear dispersion relation. The mechanism of a band inversion differs from the one, which causes the inversion of the band structure of HgTe/CdTe QW, where the SOC was responsible for pushing the $\Gamma_8$ bands above the $\Gamma_6$ bands. 
 
 
+%From the topological insulator point of view a InAs/GaSb CQW, for a particular space of parameters, exhibits an inverted band order phase with gapless boundary states described by a linear dispersion relation. The bulk of the sample is insulating, because there is a small gap. Those boundary states are protected by the time-reversal symmetry from elastic backscattering and are topologically robust to small perturbations. This means that InAs/GaSb QW should be in a topologically nontrivial QSH phase.
 
+
+
+\chapter{Experiment}
+\section{Samples}
+\subsection{MCT bulk}
+The MCT bulk samples were grown using a standard molecular beam epitaxy on a (013)-oriented semi-insulating GaAs substrate. The substrate was followed by a ZnTe nucleation layer and a thick CdTe buffer layer to compensate the lattice mismatch of GaAs. The actual Hg$_{1-x}$Cd$_x$Te layer was approximately 4 micron thick to assure three-dimensionality of the sample, which was further confirmed by absorption coefficent measurements (Figure \ref{fig:Samples_MCT_AbsorptCoeff}). The whole structure was capped by a CdTe layer to prevent oxidation. The cadmium concentration varied from $x_A = 0.175$ for sample A to $x_A = 0.155$ for sample B.  The structure scheme and the cadmium content at different depth of sample A is presented on Figure \ref{fig:Samples_MCT}. Sample A, the same one which was used by Orlita in his work \cite{Orlita_MCT}, is in normal semiconducting regime at the whole temperature range. Sample B, on the other hand, at low temperature is in the inverted band order regime, and as the temperature rises it enters the normal regime. 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=10cm]{gfx/MCT/Bulk/Samples_MCT.png}
+	\vspace{-10pt}
+	\caption{\textit{Obsadz}}
+	\label{fig:Samples_MCT}
+\end{figure} 
+
+
+\textbf{Sample characterization}
+Transport measurements were performed at magnetic field as a function of temperature. Samples were contacted with indium balls in a Van der Pauw configuration and placed in perpendicular quantized magnetic field (Voigt configuration). The Hall measurements allowed to establish a carrier concentrations within the structures for temperatures in a range of 2 K -- 130 K. The result is presented on Figure \ref{fig:Samples_MCT_Transport}.
+
+An interesting consequence of conical dispersion relation on the optical properties of genuine three-dimensionality of the massless fermions is a proportionality of the absorption coefficient $\lambda (\omega)$ to the frequency $\omega$, which resembles a behavior of 3D Weyl systems \cite{Malcolm_MCT}. The situation is qualitatively different from 2D Dirac systems like graphene, where the absorption coefficient is independent on frequency \cite{Kuzmenko_MCTBulk}. This is a direct consequence of the joint density of states, being proportional to $\omega^2$ in 3D, and $\omega$ in a 2D case.  
+
+The analysis of the absorption coefficient, presented on Figure \ref{fig:Samples_MCT_AbsorptCoeff}, provided two pieces of information. First -- the dependence of absorption coefficient is indeed linear as a function of photon energy, thus its frequency, even up to 300 meV. Fits are in a good agreement with experimental data, excluding influence of phonon absorption. Second -- fits for both samples differ from one another. The point of intersection with $x$-axis gives an insight on the value of energy gap at the temperature of measurements, and is equal to 4 $\pm$ 2 meV and -20 $\pm$ 4 meV, for sample A and B, respectively. An appearance of a small energy gap does not influence the relativistic nature of Kane fermions, as is the case for Dirac fermions.   
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=8cm]{gfx/MCT/Bulk/MCT_AbsorptCoeff.png}
+	\vspace{-10pt}
+	\caption{\textit{Optical absorption of pseudo-relativistic Kane fermions in Hg$_{1-x}$Cd$_x$Te at $T$ = 4.2 K. Zero field absorption coefficients exhibit a linear behavior reflecting the relativistic character of the 3D Kane fermions in Hg$_{1-x}$Cd$_x$Te. The band gap values of 4 $\pm$ 2 meV and -20 $\pm$ 4 meV for sample A and B, respectively, are extracted from fits (dashed lines). The inset depicts inter-band transitions that contribute to the linear optical absorption.}}
+	\label{fig:Samples_MCT_AbsorptCoeff}
+\end{figure} 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=8cm]{gfx/MCT/Bulk/Concentration_vs_T.png}
+	\vspace{-10pt}
+	\caption{\textit{Obsadz}}
+	\label{fig:Samples_MCT_Transport}
+\end{figure} 
+
+\subsection{MCT QW}
+The MCT QW samples were grown like MCT bulk samples using a molecular beam epitaxy on a (013)-oriented semi-insulating GaAs substrate \cite{Dvoretsky_Samples} followed by a CdTe buffer layer. The active part of a QW consisted of a HgTe layer sandwiched between 40 nm Cd$_x$Hg$_{1-x}$Te barriers. A 40 nm cap layer of CdTe was added to prevent the oxidation. The QW width $d$ and cadmium concentration $x$ of investigated structures is given in Table . The barriers of both samples were selectively doped with indium, which resulted in a formation of a 2D electron gas in the QW.  
+
+\subsection{InAs/GaSb QW}
+\section{Experimental set-up}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=10cm]{gfx/Setup.png}
+	\vspace{-10pt}
+	\caption{\textit{Obsadz}}
+	\label{fig:Experimental_setup}
+\end{figure}
+
+\subsection{Methods}
+
+\chapter{Results}
+\section{MCT bulk}
+In order to fully investigate the Kane fermions in MCT, arising in the vicinity of a semimetal-to-semiconductor phase transition, there is a need to carry the system through the transition and make measurements along the way. 
+
+\section{MCT QW}
+\section{InAs/GaSb QW}
 
 
 \begin{thebibliography}{99}
@@ -313,6 +548,10 @@ C. L. Kane and E. J. Mele, Quantum Spin Hall Effect in Graphene, \textit{Phys. R
 B. A. Bernevig, T. L. Hughes, S.-C. Zhang, Quantum Spin Hall Effect and Topological Phase Transition in HgTe Quantum Wells, \textit{Science} \textbf{314}, 5806, pp. 1757-1761 (2006).
 \bibitem{Bernevig_Topology1}
 B. A. Bernevig, S.-C. Zhang, Quantum Spin Hall Effect, \textit{Phys. Rev. Lett.} \textbf{96}, 106802 (2006).
+\bibitem{Yao_Topology}
+Y. Yao, F. Ye, X.-L. Qi, S.-C. Zhang, and Z. Fang, Spin-orbit gap of graphene: First-principles calculations, \textit{Phys. Rev. B.} \textbf{75}, 041401(R) (2007).
+\bibitem{Min_Topology}
+H. Min, J. E. Hill, N. A. Sinitsyn, B. R. Sahu, L. Kleinman, and A. H. MacDonald, Intrinsic and Rashba spin-orbit interactions in graphene sheets, \textit{Phys. Rev. B.} \textbf{74}, 165310 (2006).
 \bibitem{Konig_Topology}
 M. König, \textit{et al.}, Quantum Spin Hall Insulator State in HgTe Quantum Wells, \textit{Science} \textbf{318}, 5851, pp. 766-770 (2007).
 \bibitem{Liu_Topology}
@@ -328,6 +567,30 @@ Y. Xia \textit{et al.}, Observation of a large-gap topological-insulator class w
 \bibitem{Chen_Topology}
 Y. L. Chen \textit{et al.}, Experimental Realization of a Three-Dimensional Topological Insulator, Bi$_2$Te$_3$,  \textit{Science} \textbf{325}, 5937 pp.178-181 (2009).
 
+
+%state of art
+\bibitem{Halperin_State}
+B. I. Halperin, Quantized Hall conductance, current-carrying edge states, and the existence of extended states in a two-dimensional disordered potential. \textit{Phys. Rev. B.} \textbf{25}, 2185 (1982).
+\bibitem{Murakami_State}
+S. Murakami, N. Nagaosa, and S.-C. Zhang, Spin-Hall Insulator. \textit{Phys. Rev. Lett.} \textbf{93}, 156804 (2006).
+\bibitem{Roth_State}
+A. Roth  \textit{et al.}, Nonlocal Transport in the Quantum Spin Hall State. \textit{Science} \textbf{17}, 5938, pp. 294-297 (2009).
+\bibitem{Buttiker_State}
+M. Büttiker, Edge-State Physics Without Magnetic Fields. \textit{Science} \textbf{325}, 5938, pp. 278-279 (2009).
+\bibitem{Brune_State}
+C. Brüne \textit{et al.}, Spin polarization of the quantum spin Hall edge states. \textit{Nature Physics} \textit{8}, pp. 485-490 (2012).
+\bibitem{Hankiewicz_State}
+E. M. Hankiewicz, L. W. Molenkamp, T. Jungwirth, and J. Sinova, Manifestation of the spin Hall effect through charge-transport in the mesoscopic regime. \textit{Phys. Rev. B.} \textbf{70}, 241301(R) (2004).  
+\bibitem{Valenzuela_State}
+S. O. Valenzuela, and M. Tinkham, Direct electronic measurement of the spin Hall effect. \textit{Nature} \textit{442}, pp. 176-179 (2006).
+\bibitem{Huber_State}
+M. E. Huber \textit{et al.}, Gradiometric micro-SQUID susceptometer for scanning measurements of mesoscopic samples. \textit{Rev. Sci. Instrum.} \textbf{79}, 053704 (2008).
+\bibitem{Nowack_State}
+K. C. Nowack \textit{et al.}, Imaging currents in HgTe quantum wells in the quantum spin Hall regime. \textit{Nature Materials} \textbf{12}, pp. 787-791 (2013).
+\bibitem{Spanton_State}
+E. M. Spanton \textit{et al.}, Images of Edge Current in InAs/GaSb Quantum Wells. \textit{Phys. Rev. Lett.} \textbf{113}, 026804 (2014).
+
+
 %MCT
 \bibitem{Landauer_MCT}
 M. Büttiker, Absence of backscattering in the quantum Hall effect in multiprobe conductors, \textit{Phys. Rev. B} \textbf{38}, 9375 (1988).
@@ -337,6 +600,26 @@ W. Zawadzki, Electron transport phenomena in small-gap semiconductors. \textit{A
 K. S. Novoselov, \textit{et al.}, Electric Field Effect in Atomically Thin Carbon Films. \textit{Science} \textbf{306}, 5696 pp. 666-669 (2004).
 \bibitem{Wallace_MCT}
 P.R. Wallace, The Band Theory of Graphite. \textit{Phys. Rev.} \textbf{71} 622 (1947).
+
+%MCT bulk
+\bibitem{Orlita_MCT}
+M. Orlita, \textit{et al.}, Observation of three-dimensional massless Kane fermions in a zinc-blende crystal. \textit{Nature Physics} \textbf{10}, pp. 233-238 (2014).
+\bibitem{Malcolm_MCT}
+J. D. Malcolm and E. J. Nicol, Magneto-optics of massless Kane fermions: Role of the flat band and unusual Berry phase, \textit{Phys. Rev. B} \textbf{92} 035118 (2015).
+\bibitem{Weiler_MCT}
+M. H. Weiler, \textit{Semiconductors and Semimetals}. Vol. 16, pp. 119–191, Elsevier (1981).
+\bibitem{Capper_MCT}
+P. Capper and J. W. Garland, \textit{Mercury Cadmium Telluride: Growth, Properties and Applications}. Wiley Series in Materials for Electronic and Optoelectronic Applications (2010).
+\bibitem{Teppe_MCT}
+F. Teppe, \textit{et al.}, Tempeature-driven massless Kane fermions in HgCdTe crystals. \textit{Nature Communications} \textbf{7}, 12576 (2016).
+\bibitem{Novik_MCT}
+E. G. Novik, \textit{et al.}, Band structure of semimagnetic Hg$_{1-y}$Mn$_y$Te quantum wells. \textit{Phys. Rev. B} \textbf{72} 035321 (2005).
+\bibitem{Kane_MCT}
+E. O. Kane, \textit{Band structure of narrow gap semiconductors.} (1980).
+\bibitem{Kane_Model}
+E. O. Kane, Band structure of indium antimonide. \textit{J. Phys. Chem. Solids} \textbf{1}, pp. 249-261 (1957).
+\bibitem{Jiang_MCT}
+Z. Jiang, \textit{et al.}, Infrared spectroscopy of Landau levels of graphene. \textit{Phys. Rev. Lett.} \textbf{98} 197403 (2007).
 
 
 %GaSb/InAs
@@ -351,7 +634,7 @@ I. Vurgaftman, J. R. Meyer and L. R. Ram-Mohan, Band parameters for III–V comp
 \bibitem{Tuttle_InAs_concentration}
 G. Tuttle, H. Kroemer and J. H. English, Electron concentrations and mobilities in AlSb/InAs/AlSb quantum wells, \textit{J. Appl. Phys.} \textbf{65}, 5239 (1989).
 \bibitem{Kroemer_review}
-H. Kroemer, The 6.1 Å family (InAs, GaSb, AlSb) and its heterostructures: a selective review, \textit{Physica E} \textbf{20}, 196-203 (2004). 
+H. Kroemer, The 6.1 Å family (InAs, GaSb, AlSb) and its heterostructures: a selective review, \textit{Physica E} \textbf{20}, pp. 196-203 (2004). 
 \bibitem{Nguyen_SurfaceDonor}
 C. Ngyuen, B. Brar, H. Kroemer and J. H. English, Surface donor contribution to electron sheet concentrations in not-intentionally doped InAs-AlSb quantum wells, \textit{Appl. Phys.Lett.} \textbf{60}, 1854 (1992).
 \bibitem{Kroemer_TammStates}
@@ -402,6 +685,33 @@ Y. Naveh and B. Laikhtman, Band-structure tailoring by electric field in a weakl
 E. E. Mendez, L. L. Chang and L. Esaki, Two-Dimensional Quantum States in Multi-Heterostructures of Three Constituents, \textit{Surface Science} \textbf{13} 474-478 (1982).
 \bibitem{Cooper_ElectricField}
 L. J. Cooper, \textit{et al.}, Resistance resonance induced by electron-hole hybridization in a strongly coupled InAs/GaSb/AlSb heterostructure \textit{Phys. Rev. B} \textbf{57} 11915 (1998).
+%TRILAYER
+\bibitem{Murakami_Trilayer}
+S. Murakami, \textit{et al.}, Tuning phase transition between quantum spin Hall and ordinary insulating phases. \textit{Phys. Rev. B} \textbf{76} 205304 (2007).
+%SAMPLES
+\bibitem{Dvoretsky_Samples}
+S. Dvoretsky, \textit{et al.}, Growth of HgTe Quantum Wells for IR to THz Detectors. \textit{J. Electron. Mater.} \textbf{39}, 918 (2010). 
+
+
+\bibitem{Knez1_State}
+I. Knez, R. R. Du and G. Sullivan, Finite conductivity in mesoscopic Hall bars of inverted InAs/GaSb quantum wells. \textit{Phys. Rev. B} \textbf{81} 201301(R) (2010).
+\bibitem{Naveh_State}
+Y. Naveh and B. Laikhthman, Magnetotransport of coupled electron-holes. \textit{Europhys. Lett.} \textbf{55}, pp. 545-551 (2001).
+\bibitem{Suzuki_State}
+K. Suzuki, Y. Harada, K. Onomitsu, and K. Muraki, Edge channel transport in the InAs/GaSb topological insulating phase. \textit{Phys. Rev. B} \textbf{87}  235311 (2013).
+\bibitem{Knez2_State}
+I. Knez, R. R. Du and G. Sullivan, Evidence for Helical Edge Modes in Inverted InAs/GaSb Quantum Wells. \textit{Phys. Rev. Lett.} \textbf{107} 136603 (2011).
+\bibitem{Zhou_State}
+B. Zhou, H.-Z. Lu, R.-L. Chu, S.-Q. Shen, and Q. Niu, Finite Size Effects on Helical Edge States in a Quantum Spin-Hall System. \textit{Phys. Rev. Lett.} \textbf{101} 246807 (2008).
+\bibitem{Charpentier_State}
+C. Charpentier, \textit{et al.}, Suppression of bulk conductivity in InAs/GaSb broken gap composite quantum wells. \textit{Appl. Phys. Lett.} \textbf{103}, 112102 (2013).
+\bibitem{Du_State}
+L. Du, I. Knez, G. Sullivan, and R.-R. Du, Observation of Quantum Spin Hall States in InAs/GaSb Bilayers under Broken Time-Reversal Symmetry. \textit{arXiv:1306.1925 [cond-mat.mes-hall]}
+\bibitem{Knez3_State}
+ I. Knez, \textit{et al.}, Observation of Edge Transport in the Disordered Regime of Topologically Insulating InAs/GaSb Quantum Wells. \textit{Phys. Rev. Lett.} \textbf{112}, 026602 (2014).
+\bibitem{Kuzmenko_MCTBulk}
+A. B. Kuzmenko, \textit{et al.}, Universal optical conductance of graphite. \textit{Phys. Rev. Lett.} \textbf{100}, 117401 (2008).
+
 
 \end{thebibliography}
 \end{document}
