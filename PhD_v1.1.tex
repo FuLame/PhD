@@ -234,7 +234,13 @@ At the end there is a brief summary with a conclusion and some perspectives and 
 
 \chapter{Optical properties of matter}
 \label{chpt:optical}
+\wciecie
+In this chapter the principal properties of matter, related to optical phenomena are presented. From the point of view of spectroscopy, the interaction between light and solid state systems is crucial. This chapter explains the mechanism of absorption of light inside a solid state system. The absorption mechanism in solids is based on two pieces. The first piece depends on a probability of transition, while the second is based on an optical joint density of states, and its dependence on external conditions like temperature and magnetic field. 
 
+The chapter starts with a derivation of absorption coefficient from the basic laws of electrodynamics (Maxwell's equations) via an introduction of the complex dielectric function and complex optical conductivity. Later, the probability (also called rate or strength) of optical transition is explained via a perturbation Hamiltonian. This probability, related to the Fermi Golden rule, is based on an interaction of quantum states taking part in transitions. 
+
+Further, the density of states for all dimensional systems is presented for linear and parabolic electronic dispersion relations, and how does it change while magnetic field is applied. All the concept in this chapter are presented in rather qualitative way, under two assumptions. The first assumption is that all the transitions are direct -- they take place at \textbf{\textit{k}} = 0, which is valid since the momentum of a photon is negligible in comparison to the momentum of an electron. A phonon is needed in order to execute a indirect transition, making it a three-body process, thus of much lower probability. The second assumption is that the fields of an electromagnetic wave are small so the calculations require only terms linear with $\vec{E}$ and $\vec{B}$. This assumption is valid, because the only sources of light intense enough to be considered in terms of nonlinear optics are the strongest lasers, usually working in a pulse mode, which are not in the scope of this work. 
+ 
 \section{Review of Fundamental Relations for Optical Phenomena}
 \wciecie
 All solids are characterized by a set of properties which can be studied by electromagnetic radiation -- light. Light allows to investigate the energy band structure, impurity levels, lattice vibrations, excitons, localized defects and many more. The studies are based on measuring certain observables, which manifest themselves via interaction of light with matter. The most important observables are the dielectric function $\varepsilon (\omega)$ and the optical conductivity $\sigma (\omega)$, which is directly related to the energy structure of solids. 
@@ -326,12 +332,12 @@ The absorption of light by a semiconductor can be described classically in the t
 \label{eq:L-B_law}
 I(z) = I_0 e^{-\alpha (\omega) z},
 \end{equation}
-where $\alpha$ is an absorption coefficient of a solid. The absorption coefficient is closely related to the quantum-mechanical transition rate $W_{if}$ from the initial state $i$ to the final state $f$ is given by the Fermi Golden rule. This rate can be expressed by
+where $\alpha$ is an absorption coefficient of a solid. The absorption coefficient is closely related to a quantum-mechanical transition rate $W_{if}$ given by the Fermi Golden Rule. The Fermi Golden Rule expresses the probability per unit time that a photon of energy $\hbar\omega$ excites an electron from the initial state $\bra{\psi_i}$ of energy $E_i$ to the final state $\ket{\psi_f}$ of energy $E_f$:
 \begin{equation}
-W_{if} = \frac{2\pi}{\hbar} \rho (E) |\mathcal{H}_{if}'|^2.
+W_{if} = \frac{2\pi}{\hbar} |\bra{\psi_i}\mathcal{H}_{if}'\ket{\psi_f}|^2 \delta [E_f(\vec{k}) - E_i(\vec{k})-\hbar\omega].
 \label{eq:FermiGolderRule}
 \end{equation}
-In this expression, the matrix element $\mathcal{H}_{if}'$ corresponds to the optical external perturbation on the electrons a $\rho (E)$ is the density of states (DOS) function describing the initial and final states with energy difference $E$, associated with an energy of the excitation photon ($E = \hbar \omega$). It is easy to see that the Hamiltonian $\mathcal{H}_{if}'$ can be interpreted as a optical perturbation. A standard one-electron Hamiltonian without magnetic field takes form of:
+In this expression, the matrix element $\mathcal{H}_{if}'$ corresponds to the external optical perturbation and $\delta$-function $\delta [E_f(\vec{k}) - E_i(\vec{k})-\hbar\omega]$ is expresses the energy conservation in an optical transition at the given point of Brillouin zone, which will be further related to the joint density of states (DOS) function describing the initial and final states with energy difference $E$, associated with an energy of the excitation photon ($E = \hbar \omega$). It can be explained that the Hamiltonian $\mathcal{H}_{if}'$ can be interpreted as a optical perturbation. A standard one-electron Hamiltonian without magnetic field takes form of:
 \begin{equation}
 \label{eq:Perturbed_Hamiltonian}
 \mathcal{H}_0 = \frac{p^2}{2m} + V(\vec{r}),
@@ -365,11 +371,58 @@ In summary, according to Equation expressing the Fermi Golden rule \ref{eq:Fermi
 
 
 
-\subsection{Joint density of states}
+\section{Density of states}
+\wciecie
+The standard density of states can be quickly derived assuming Born-Karman's periodic boundary conditions for the Bloch functions describing electronic states of a finite periodic crystal lattice. Considering that the states in reciprocal space are evenly distributed, thus neglecting spin of electrons the \textbf{\textit{k}}-space density of states takes form of
+\begin{equation}
+\label{eq:DOS_k}
+\rho_{D} (k) = \frac{1}{(2\pi)^{D}},
+\end{equation}
+where $D$ is the dimensionality of the system. Due to the Fermi exclusion principle one state can be occupied by a pair of electrons with opposite spins. This means that the appropriate DOS functions in three (bulk systems) and two (quantum wells) dimensions take look like:
+\begin{equation}
+\label{eq:DOS_2}
+\rho_{3D} (k) = \frac{2}{(2\pi)^{3}}, \rho_{2D} (k) = \frac{2}{(2\pi)^{2}}.
+\end{equation}
+This function describes the momentum-depended density of states per volume (surface) unit of a reciprocal space of a finite crystal. Knowing that the DOS function is related to the amount of energy states per unit of energy $\rho (E) = dN/dE$, using a chain rule a relation to the reciprocal space can be found
+\begin{equation}
+\label{eq:DOS_3}
+\rho (E) = \frac{dN}{dE} = \frac{dN}{dk}\frac{dk}{dE},
+\end{equation}
+where $dN = \rho_D (k) dV_k$. The DOS function $\rho_D (k)$ and an element of volume in \textbf{\textit{k}}-space $dV_k$ have to take forms of a proper dimension. Now only a dispersion relation $E(k)$ is needed to calculate the energy-depended DOS function. 
+ 
 \myparagraph{DOS in parabolic band}
 \wciecie
+In the case of parabolic bands and effective mass approximation the dispersion relation takes form of:
+\begin{equation}
+\label{eq:DOS_4}
+E(k) = \frac{\hbar^2k^2}{2m^*},
+\end{equation}
+thus
+\begin{equation}
+\label{eq:DOS_5}
+\frac{dk}{dE} = \frac{m^*}{\hbar^2} \frac{1}{k}.
+\end{equation}
 
-The DOS function $\rho$ from Equation \ref{eq:L-B_law} is energy-dependent it has to be calculated at the energy $E = \hbar \omega$ of the excitation photons, since the initial and final states are separated in energy by $E$. Because of that, the function $\rho (E)$ was named \textit{optical joint density of states}.
+If the element of volume $dV_k$ is equal to the difference of volumes of two balls (in 3D) or two discs (in 2D) with radii $k+dk$ and $k$, then the amount of states in the element of volume can be expressed in as  
+\begin{eqnarray}
+\label{eq:DOS_6}
+\begin{aligned}
+dN_{3D} = \rho_D (k) dV_k = \frac{2}{(2\pi)^3} \cdot 4\pi k^2 dk,\\
+dN_{2D} = \rho_D (k) dV_k = \frac{2}{(2\pi)^2} \cdot 2\pi k dk.
+\end{aligned}
+\end{eqnarray}
+
+Substituting Equations \ref{eq:DOS_5} and \ref{eq:DOS_6} into Equation \ref{eq:DOS_4} gives the DOS function per unit energy for parabolic bands 
+\begin{eqnarray}
+\label{eq:DOS_7}
+\begin{aligned}
+\rho_{3D}(E) = \frac{1}{2\pi^2} \left(\frac{2m^*}{\hbar^2} \right)^{(3/2)} (E)^{(1/2)},\\
+\rho_{2D}(E) = \frac{m^*}{\pi\hbar^2}, 
+\end{aligned}
+\end{eqnarray}
+
+
+The DOS function $\rho$ from Equation \ref{eq:DOS_2} is energy-dependent it has to be calculated at the energy $E = \hbar \omega$ of the excitation photons, since the initial and final states are separated in energy by $E$. Because of that, the function $\rho (E)$ was named \textit{optical joint density of states}.
 
 
 
