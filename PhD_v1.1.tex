@@ -245,6 +245,7 @@ Further, the density of states for all dimensional systems is presented for line
 \wciecie
 All solids are characterized by a set of properties which can be studied by electromagnetic radiation -- light. Light allows to investigate the energy band structure, impurity levels, lattice vibrations, excitons, localized defects and many more. The studies are based on measuring certain observables, which manifest themselves via interaction of light with matter. The most important observables are the dielectric function $\varepsilon (\omega)$ and the optical conductivity $\sigma (\omega)$, which is directly related to the energy structure of solids. 
 \subsection{The dielectric function and optical conductivity}
+\label{section:Maxwell_equations}
 \wciecie
 The (complex) dielectric function and the (complex) optical conductivity can be found in the basic equations of electromagnetism -- the Maxwell's equations, given here in CGS units and assuming no charge density:
 \begin{eqnarray}
@@ -326,6 +327,7 @@ where $\tilde{n}$ and $\tilde{k}$ are real and imaginary parts of the coefficien
 The absorption coefficient depends on the frequency of the light. It is responsible for energy dissipation of the wave inside a solid. The rate of decay is strongly related to the properties of medium $\mu$, $\varepsilon$, and $\sigma$, which is reflected in the band structure, carrier density, etc.
 
 \subsection{Probability of absorption}
+\label{section:oscillator_strength}
 \wciecie
 The absorption of light by a semiconductor can be described classically in the terms of Beer-Lambert's law. It states that if a beam of light of given intensity $I_0$ penetrates the surface of a solid, the intensity of the light decreases with the penetration depth $z$ as
 \begin{equation}
@@ -372,6 +374,7 @@ In summary, according to Equation expressing the Fermi Golden rule \ref{eq:Fermi
 
 
 \section{Density of states}
+\label{section:DOS}
 \wciecie
 The standard density of states can be quickly derived assuming Born-Karman's periodic boundary conditions for the Bloch functions describing electronic states of a finite periodic crystal lattice. Considering that the states in reciprocal space are evenly distributed, thus neglecting spin of electrons the \textbf{\textit{k}}-space density of states takes form of
 \begin{equation}
@@ -390,7 +393,7 @@ This function describes the momentum-depended density of states per volume (surf
 \end{equation}
 where $dN = \rho_D (k) dV_k$. The DOS function $\rho_D (k)$ and an element of volume in \textbf{\textit{k}}-space $dV_k$ have to take forms of a proper dimension. Now only a dispersion relation $E(k)$ is needed to calculate the energy-depended DOS function. 
  
-\myparagraph{DOS in parabolic band}
+\subsection{DOS in parabolic band}
 \wciecie
 In the case of parabolic bands and effective mass approximation the dispersion relation takes form of:
 \begin{equation}
@@ -407,37 +410,30 @@ If the element of volume $dV_k$ is equal to the difference of volumes of two bal
 \begin{eqnarray}
 \label{eq:DOS_6}
 \begin{aligned}
-dN_{3D} = \rho_D (k) dV_k = \frac{2}{(2\pi)^3} \cdot 4\pi k^2 dk,\\
-dN_{2D} = \rho_D (k) dV_k = \frac{2}{(2\pi)^2} \cdot 2\pi k dk.
+dN_{3D} = \rho_{3D} (k) dV_k = \frac{2}{(2\pi)^3} \cdot 4\pi k^2 dk,\\
+dN_{2D} = \rho_{2D} (k) dV_k = \frac{2}{(2\pi)^2} \cdot 2\pi k dk.
 \end{aligned}
 \end{eqnarray}
 
-Substituting Equations \ref{eq:DOS_5} and \ref{eq:DOS_6} into Equation \ref{eq:DOS_4} gives the DOS function per unit energy for parabolic bands 
+Substituting Equations \ref{eq:DOS_5} and \ref{eq:DOS_6} into Equation \ref{eq:DOS_4} gives the DOS function per unit energy for parabolic bands for 3, 2, 1, and 0 dimensions:
 \begin{eqnarray}
 \label{eq:DOS_7}
-\begin{aligned}
-\rho_{3D}(E) = \frac{1}{2\pi^2} \left(\frac{2m^*}{\hbar^2} \right)^{(3/2)} (E)^{(1/2)},\\
-\rho_{2D}(E) = \frac{m^*}{\pi\hbar^2}, 
-\end{aligned}
+\rho_{3D}(E) = \frac{1}{2\pi^2} \left(\frac{2m^*}{\hbar^2} \right)^{\frac{3}{2}} E^\frac{1}{2}, \\
+\rho_{2D}(E) = \frac{m^*}{\pi\hbar^2}\sum_i \mathcal{H}(E-E_i),\\
+\rho_{1D}(E) = \frac{1}{\pi}\left(\frac{m^*}{\hbar^2}\right)^{\frac{1}{2}} \sum_i \frac{\mathcal{H}(E-E_i)}{(E-E_i)^{-\frac{1}{2}}} ,\\ 
+\rho_{0}(E) = 2\sum_i \delta(E-E_i),
 \end{eqnarray}
+where $\mathcal{H}(E-E_i)$ is the Heaviside function, equals 1 if $E > E_i$ and the summation is over $i$ states. In a 0D system the values of $k$ are quantizated in all directions. All the available states exist only at a set of discrete energies The DOS of a 0D system is described by a delta function. 
 
-
-The DOS function $\rho$ from Equation \ref{eq:DOS_2} is energy-dependent it has to be calculated at the energy $E = \hbar \omega$ of the excitation photons, since the initial and final states are separated in energy by $E$. Because of that, the function $\rho (E)$ was named \textit{optical joint density of states}.
-
-
-
+Not all states take part in an optical transition. The conservation of energy rule requires that a difference of energies of available states has to be equal to an energy of an exciting photon $\hbar\omega$. This requires a modification of the calculated DOS functions \ref{eq:DOS_7} by substituting $E$ by a term $\hbar\omega-\Delta E$, where $\Delta E$ is a difference of energy between the final and initial states. Because of that, the function $\rho_j (E)$ was named \textit{optical joint density of states}, and for the 3D case it takes form of:
 \begin{equation}
-\label{abs_coeff2}
-\alpha (\omega) = A \sum_{i,f} P_{if} n_i n_f,
+\label{eq:3D_jointDOS}
+\rho_j (\omega) = \frac{1}{2\pi^2} \left(\frac{2m^*}{\hbar^2} \right)^{(3/2)} (\hbar\omega-E_g)^{\frac{1}{2}}.
 \end{equation}
+The only energy range, where there exist physical solutions of Equation \ref{eq:3D_jointDOS}, requires that $\hbar\omega \geq \Delta E$.
 
-\begin{equation}
-\label{abs_coeff}
-\alpha (\omega) = \frac{1}{2\pi^2} \left(\frac{2m^*}{\hbar^2} \right)^{(3/2)} (\hbar\omega-E_g)^{(1/2)} ,
-\end{equation}
-
-
-\section{Interband and intraband transitions}
+\myparagraph{Example: Interband transitions}
+\wciecie
 Generally, in semiconductors at low frequencies, the main electronic conduction mechanism is associated with free carriers. As the incident photon energy becomes comparable with the size of energy gap, an absorption may occur. A photon can excite an electron from an occupied state in the valence band into an empty state in conduction band. As the photon is absorbed, an excited electronic state and a hole in the valence band are created. This process is called an interband optical transition and is represented schematically in Figure \ref{fig:Absorption1}. In intrinsic case of semiconductor the valence band is fully occupied and the conduction band completely empty. A photon carrying energy $h\nu$ gets absorbed if its energy is similar to the value of energy gap. In the process of absorption its energy is transferred to an occupied electronic state in the valence band (schematically shown as a full red point), which results in its excitation into a 
 
 
@@ -448,6 +444,140 @@ Generally, in semiconductors at low frequencies, the main electronic conduction 
 	\caption{\textit{Left panel: A layer structure of sample A. The active region of the system is 5 $\mu$m thick Hg$_{1-x}$Cd$_x$Te layer, marked on yellow on the skech. Right panel: A function of cadmium content $x$ as a function of sample depth.}}
 	\label{fig:Absorption1}
 \end{figure} 
+
+\subsection{DOS in linear band}
+\wciecie
+In the case of linear band the dispersion relation takes form of:
+\begin{equation}
+\label{eq:DOS_lin1}
+E(\vec{k}) = \hbar v_f \vec{k},
+\end{equation}
+thus
+\begin{equation}
+\label{eq:DOS_lin2}
+\frac{dk}{dE} = \frac{1}{\hbar v_f}.
+\end{equation}
+
+The dispersion relation does not influence the element of volume $dV_k$, thus the DOS function per unit energy for linear bands for 3, 2, 1, and 0 dimensions:
+\begin{eqnarray}
+\label{eq:DOS_lin4}
+\rho_{3D}(E) = \frac{E^2}{\hbar^3 v_f^3 \pi^2}, \\
+\rho_{2D}(E) = \frac{E}{\hbar^2 v_f^2 \pi},\\
+\rho_{1D}(E) = \frac{2}{\hbar v_f \pi},
+\end{eqnarray}
+In a 0D system the values of $k$ are quantized in all directions. All the available states exist only at a set of discrete energies The DOS of a 0D system is described by a delta function. 
+
+\subsection{Magnetic field}
+\label{section:DOS_at_magneticField}
+\wciecie
+\subsubsection{Landau level quantization}
+ADD LL DERIVATION FROM HAMILTONIAN
+
+The presence of magnetic field causes changes in the movement of electrons in a periodic lattice of a solid. These changes force the energy bands to collapse into a set of LLs. If the magnetic field is applied in the $z$-direction, according to Equation
+\begin{equation}
+\label{eq:LL1}
+E_n = \hbar\omega_c\left( n+\frac{1}{2} \right) + E(k_z),
+\end{equation}
+where $\omega_c = \frac{eB_z}{m_c^*}$ is the cyclotron frequency, and $n$ = 0, 1, 2... is an integer quantum number corresponding to the different LL.
+
+\subsubsection{DOS in magnetic field}
+\wciecie
+As seen from Equation \ref{eq:LL1}, magnetic field influences the 3D allowed states only in a plane perpendicular ($k_x,k_y$) to the applied magnetic field direction ($z$). This results in a collapse of DOS function of $k$-space into a set of concentric tubes parallel to $\vec{B}$. It can be interpreted as a "reduction" of available DOS by two dimensions -- from 3D to 1D, which is presented in Figure \ref{fig:DOS1}. 
+
+In 2D the quantization in $z$-direction is given by the quantum well, so the allowed energy states are fully quantized, as in a 0D quantum dot system. This results in an appearance of a distinct LL ladder of states in form of delta functions. However, in real-life systems those levels are broaden due to the scattering effects.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{gfx/Spectro/DOS1.png}
+	\vspace{-10pt}
+	\caption{\textit{\textbf{Panel (a)} Electron energy bands for a 3D solid as a function of the $z$-direction wave vector for different Landau levels ($n$ = 0, 1, 2...). \textbf{Panel (b)} density of states function for the Landau levels compared with the free electron gas for the case $B$ = 0. Image comes from the work \cite{Martinez_Nanotechnology}.}}
+	\label{fig:DOS1}
+\end{figure}
+
+
+
+\subsection{Fermi level}
+\label{section:Fermi_level}
+\wciecie
+The Fermi level is the total electrochemical potential for electrons in a solid. It describes the thermodynamic work necessary to add one electron to the system. In the framework of band structure theory the Fermi level can be understood as an energy level of an electron, which, at the state of thermodynamic equilibrium, would have a 0.5 probability of being occupied at given time.
+
+From the optical properties of a solid point of view, the Fermi Golden Rule (Equation \ref{eq:FermiGolderRule}) only describes the strength (or probability) of transitions between two states. However, if a transition is to be executed, the initial state has to be occupied by an electron, which can be excited by a photon. Moreover, the final state has to be unoccupied, as the Pauli exclusion principle forbids two electron to occupy the same quantum state. 
+
+The total concentration of electron in a solid has to be distributed on available states. This distribution is governed by two factors -- the DOS function (Equation \ref{eq:DOS_3}) and, as the electrons are fermions, the Fermi-Dirac distribution:
+\begin{equation}
+\label{eq:Fermi_distribution}
+f(E) = \frac{1}{1+exp\left(\frac{E-E_f}{k_B T}\right)},
+\end{equation}
+where $E_f$ is the Fermi energy, and $k_B$ is Boltzmann's constant. As stated in Equation \ref{eq:Fermi_distribution}, the Fermi distribution depends on temperature. For $T$ = 0 K it resembles a step function -- all states below the Fermi level are occupied with probability 1, and all states above are completely empty, as presented in Figure \ref{fig:Fermi_Distribution} in black curve. As the temperature increases, the Fermi distribution gets smoother -- the population of electron states of energy above $E_f$ increases at the expense of electron states of energy below $E_f$. This effect has a profound consequences in the optical properties of a solid, as they vary with a change of temperature.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{gfx/Spectro/Fermi_Distribution.png}
+	\vspace{-10pt}
+	\caption{\textit{Fermi distribution as for various temperatures in range $0 K \geq T \leq 300 K$. The Fermi level $E_f$ = 0 meV. The horizontal grey dashed line marks the probability 0.5.}}
+	\label{fig:Fermi_Distribution}
+\end{figure}
+
+\subsubsection{Temperature effects}
+\wciecie
+To summarize the part of this chapter dealing with the optical properties of solids a real-life example will be given, which will be useful to understand and interpret the experimental results presented in this thesis.
+\begin{itemize}
+\item In Section \ref{section:Maxwell_equations} a derivation of the absorption coefficient was given based on Maxwell's equations, which is a root of interaction between light and matter.
+\item In Section \ref{section:oscillator_strength} a probability of transition was given, expressed as a strength of a transition. This probability describes a potential intensity of a transition.
+\item In Section \ref{section:DOS} a density of states function was derived for 3D, 2D, 1D, and 0D systems, for parabolic and linear bands. The DOS described the amount of states per an unit of energy which can be potentially filled with electrons.
+\item In Section \ref{section:DOS_at_magneticField} an influence of magnetic field on the band structure (LL quantization) and on the DOS function was given. The DOS function at magnetic field is responsible for a shape of transition.
+\end{itemize}
+At the beginning of this section (\ref{section:Fermi_level}) a concept of Fermi level and electron distribution was given. The way how the electrons are distributed on the bands is crucial for the shape of an absorption spectra. This means that even if the given transition's strength is high, and there are sufficient electron states related to the transition (which is governed by the joint density of states), but the electron distribution is not right, the transition does not occur. The right electron distribution requires the initial state to be occupied while the final state must be empty. Figure \ref{fig:Transitions_vs_Ef} illustrates this concept. It shows an example of LL structure (two levels) and an potentially observed absorption line due to the transitions between those LLs. Panel (a) shows the Fermi distribution of electrons at $T$ = 0 K with the position of chemical potential is marked with a purple line, which also extends into Panel (b). This means that only the electron states with $E \leq E_f$ (lower than the purple line) are occupied, which is represented as thick lines. The unoccupied states are represented by a thin line. The whole magnetic field range is divided into three regions A, B, and C. Panel (c) shows the peak of expected transition line. At given magnetic field its value is equal to the difference of energies of LLs from panel (b) at the same field. The shape of the transition is linear, as the difference of linear LLs is linear as well. In a case of LLs with a square-root relation $E \propto \sqrt{B}$, the transition shape would be square-root as well. 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=12cm]{gfx/Spectro/Transitions_vs_Ef.png}
+	\vspace{-10pt}
+	\caption{\textit{Obsadz}}
+	\label{fig:Transitions_vs_Ef}
+\end{figure}
+
+The assumption is made that the transition strength is high at the whole range and there are enough states in both initial (blue line) and final (green line) states. 
+
+\myparagraph{Region A:}
+\wciecie
+The transition is forbidden by the Pauli principle, which is symbolized by a red arrow. Despite the fact that initial states are occupied, there are no empty states at the final level, as all states are occupied as well. This is why there is no observed transition in this region (Panel (c)).
+
+\myparagraph{Region B:}
+\wciecie
+At the beginning of region B the higher in energy LL (green) crosses the chemical potential, which means its electronic states are no longer occupied (thin line). This renders the transition possible, which is represented by a black arrow. The position of the transition is plotted on Panel (c). The intensity of transition is the same in the whole region.
+
+\myparagraph{Region C:}
+\wciecie
+At the beginning of region C the lower in energy LL (blue) crosses the chemical potential, which means that both LLs are not occupied. If there are no occupied states in initial states there are no electrons which can interact with a photon and be excited to higher level. The transition is not possible, which is marked with a red arrow. Also, there is no absorption marked on Panel (c).
+ 
+The description above explains the requirements which have to be met in order the transition to be observed. An appearance of a transition and its disappearance give an important information about the position of chemical position, which usually has to be confirmed via transport measurements.
+
+The situation slightly changes if temperature is elevated. The Fermi distribution changes shape, as presented in Figure \ref{fig:Transitions_vs_Ef_vsT} (Panel (a)). This means that not all states with $E < E_f$ are occupied and not all states with $E > E_f$ are empty, especially those close to $E_f$. Instead, the probability of occupation decreases smoothly with increasing energy (and with magnetic field -- especially in the case of LL structure as in Figure \ref{fig:Transitions_vs_Ef_vsT} or other LL structures, where $E(B)$ is a monotonic function). This effect is schematically represented with horizontal solid grey lines, which mark the region of energy, where both LLs are partially occupied. Because of this the Region B is broader in comparison to the case of $T = 0$ K.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=12cm]{gfx/Spectro/Transitions_vs_Ef_vsT.png}
+	\vspace{-10pt}
+	\caption{\textit{Obsadz}}
+	\label{fig:Transitions_vs_Ef_vsT}
+\end{figure}
+
+\myparagraph{Region A:}
+\wciecie
+Region A is similar to the $T = 0$ K case. All states on both LLs are occupied so the transition is forbidden due to the Pauli exclusion principle. 
+
+\myparagraph{Region B:}
+\wciecie
+As soon as the higher (green) LL passes the bottom grey line, the probability of occupation decreases and some empty states emerge. Electrons from lower (blue) LL can be excited to those empty states, which results in an appearance of absorption line. The amount of absorbed light, thus the value of the maximum of absorption line, is lower that in the case of $T = 0$ K, as the amount of available electrons is lower. As the energy increases the electron distribution shifts -- more empty states appear in higher LL and the transition gains intensity. 
+
+As the magnetic field increases, the lower LL passes the bottom grey line. This means that some empty states start to appear. This potentially would decrease the intensity of the transition, because there is less electrons to excite. However, at the same time, there is still more occupied states than the empty states. The amount of empty states increases thus the intensity of the transition is more or less the same.
+
+In the middle of region B all of the states in higher LL are empty, and with increasing magnetic field the amount of occupied states in lower LL decreases -- the intensity of the transition decreases as well.
+
+At the magnetic field of value close to the end of region B, there are only few occupied states in the lower LL, to the transition is very weak. Despite this, the range where the transition was observed is still broader than in the case of $T = 0$ K.
+
+\myparagraph{Region C:}
+\wciecie
+In the region C of the magnetic field, as both LLs are higher in energy than the top grey line, and the amount of occupied states in lower LL is negligible, there are no electrons to absorb the light. This means that the transition vanishes (Panel (c)).
 
 \section{FIR Spectroscopy}
 \wciecie
@@ -460,21 +590,7 @@ The same principle applies to topological insulators and narrow-gap semiconducto
 A primary goal of a spectrometer is to produce spectra of investigated matter. A spectrum is a plot of measured light intensity versus wavelength. Usually the $y$-axis of a spectrum represents absorbance or transmittance. Absorbance is a measure of the amount of light absorbed by a sample. It is usually characterized by a positive peaks in a spectrum. Transmittance, on the other hand, is a measure of the amount of light transmitted through a sample. It is characterized by negative minima or "dips" in a spectrum. Absorbance and transmittance are directly related to each other.
 
 Spectra are used to characterize samples and give an insight to the energetic structure of sample. The peak positions in an infrared spectrum correlate with an optical transition between distinct energy levels within sample. 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=12cm]{gfx/Spectro/Transitions_vs_Ef.png}
-	\vspace{-10pt}
-	\caption{\textit{Obsadz}}
-	\label{fig:Transitions_vs_Ef}
-\end{figure}
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=12cm]{gfx/Spectro/Transitions_vs_Ef_vsT.png}
-	\vspace{-10pt}
-	\caption{\textit{Obsadz}}
-	\label{fig:Transitions_vs_Ef_vsT}
-\end{figure}
 
 \clearpage
 \section{Experimental set-up}
@@ -1915,9 +2031,13 @@ N. Castro, \textit{et al.} The electronic properties of graphene. \textit{Review
 M. Schultz, \textit{et al.} Crossing of conduction- and valence-subband Landau levels in an inverted HgTe/CdTe quantum well. \textit{Phys. Rev. B} \textbf{57}, 14772 (1998).
 \bibitem{Zholudev_MCT_QW_anticrossing}
 M. S. Zholudev, \textit{et al.} Anticrossing of Landau levels in HgTe/CdHgTe (013) quantum wells with an inverted band structure. \textit{Jetp Lett.} \textbf{100}, 790 (2015).
-
+\bibitem{Martinez_Nanotechnology}
+J. M. Martínez-Duart, R. J. Martín-Palma, and F. Agulló-Rueda. \textit{Nanotechnology for microelectronics and optoelectronics}. ISBN-13: 978 0080 445533. Elsevier (2006).
 
 \end{thebibliography}
+
+\appendix
+\chapter{Appendix A}
 
 \begin{equation}
 \label{1}
@@ -1961,6 +2081,8 @@ Ak_+ & -\mathcal{M}(k) & 0 & 0 \\
 
 where $\epsilon_k(k_x, k_y) = C - D(k_x^2, k_y^2)$, $\mathcal{M}(k) = M - B(k_x^2, k_y^2)$, $k_pm = k_x \pm ik_y$, and \textit{A, B, C, D, M} depend on the specified QW width.
 
+%\appendix
+\chapter{Appendix B}
 
 
 \end{document}
