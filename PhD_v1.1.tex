@@ -674,29 +674,39 @@ The minima on red and blue spectra, which are related to the sample itself have 
 
 The rest of minima are absent in transmission spectra, which means that they are related to the absorption by the experimental set-up, rather than by the investigated sample.
 
+\myparagraph{Fourier spectrometer}
+A Fourier spectrometer is
+
+\myparagraph{Bolometer}
+A bolometer is
+
+
+
 \clearpage
 \section{Experimental set-up}
 \wciecie
-The experimental work of this thesis is based on the infrared/THz magnetospectroscopy measurements of TI and NGS. The spectroscopy experiments were performed using a specially customized Oxford liquid helium cryostat coupled to a Bruker Fourier spectrometer IFS 66v/S. The schematics of the system is presented on Figure \ref{fig:Experimental_setup}. At the bottom of the cryostat a chamber was placed (white space), separated from the rest of the system by a diamond window, which is well transparent in infrared range and isolates thermally the chamber itself. A composite germanium bolometer QGEB/X was placed inside the chamber, which is cooled by liquid helium. A presence of liquid helium assures that the bolometer is kept at low temperature. Sensitivity of the bolometer is strongly related to operational temperature, and decreases drastically with increasing temperature. 
+The experimental work of this thesis is based on the infrared/THz magnetospectroscopy measurements of TI and NGS. The spectroscopy experiments were performed using a specially customized Oxford liquid helium cryostat coupled to a Bruker Fourier spectrometer IFS 66v/S. The schematics of the system is presented on Figure \ref{fig:Experimental_setup}. 
 
-A thermal separation provided by a diamond window assures the optimal environment for the bolometer while the temperature can be varied in the vicinity of the sample in a broad range. The sample order is supplied with a temperature sensor and a heater. A combination of these two devices is used to set the temperature at the sample space on demand up to around 140 K. Higher temperatures are difficult to obtain due to the thermal radiation emitted by the sample and its surroundings, which heats up the bolometer decreasing its sensitivity. The temperature in the cryostat can be decreased to around 1.6 K, by lowering the liquid helium pressure. At ambient pressure the boiling temperature of helium is equal to 4.2 K. At the $\lambda$ point helium becomes superfluid -- at around 22 mbar the temperature reaches around 1.8 K, which is the lowest possible in this experimental set-up.
+At the bottom of the cryostat a chamber was placed (white space), separated from the rest of the system by a diamond window, which is well transparent in infrared range and isolates thermally the chamber itself. A composite germanium bolometer QGEB/X was placed inside the chamber, cooled by liquid helium. A helium bath assures that the bolometer is kept at low temperature. Sensitivity of the bolometer is strongly related to operational temperature, and decreases drastically with increasing temperature. 
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=10cm]{gfx/Spectro/Setup.png}
 	\vspace{-10pt}
-	\caption{\textit{Obsadz}}
+	\caption{\textit{Sketch of the experimental set-up.}}
 	\label{fig:Experimental_setup}
 \end{figure}
 
-A system of two superconductive coils was embedded into the cryostat \ref{fig:Experimental_setup}. The main coil (Coil 1) is capable of creating a constant and homogeneous magnetic field of inductance up to 16 T in the vicinity of the sample. At the same time, the second coil (Coil 2) compensates the magnetic field created by the Coil 1 in the vicinity of the bolometer. This procedure is required to maintain zero magnetic field at the position of the bolometer. This system allows to perform measurements in a broad range of temperatures and magnetic fields, while preserving optimal environment for the bolometer.
+A thermal separation provided by a diamond window assures the optimal environment for the bolometer while the temperature can be varied in the vicinity of the sample in a broad range. The sample order is supplied with a temperature sensor and a heater. A combination of these two devices is used to set the temperature at the sample space on demand up to around 140 K. Higher temperatures are difficult to obtain due to the thermal radiation emitted by the sample and its surroundings, which heats up the bolometer decreasing its sensitivity. The temperature in the cryostat can be decreased to around 1.6 K, by lowering the liquid helium pressure. At ambient pressure the boiling temperature of helium is equal to 4.2 K. At the $\lambda$ point helium becomes superfluid -- at around 22 mbar the temperature reaches around 1.8 K, which is the lowest possible in this experimental set-up.
 
-In the experiment a globar lamp integrated with the spectrometer was used as a radiation source. Globar is a broadband thermal (blackbody) emitter, which is typically used for infrared spectroscopy. It is a silicon carbide rod heated electrically up to couple of hundreds degrees Celsius. It radiation is suitable for spectroscopy as it is continuous and resembles the blackbody radiation.
+A system of two superconductive coils was embedded into the cryostat (Figure \ref{fig:Experimental_setup}). The main coil (Coil 1) is capable of creating a constant and homogeneous magnetic field of inductance up to 16 T in the vicinity of the sample. At the same time, the second coil (Coil 2) compensates the magnetic field created by the Coil 1 in the vicinity of the bolometer. This procedure is required to maintain zero magnetic field at the position of the bolometer. This system allows to perform measurements in a broad range of temperatures and magnetic fields, while preserving optimal environment for the bolometer.
+
+In the experiment a globar lamp integrated with the spectrometer was used as a radiation source. Globar is a broadband thermal emitter, which is typically used for infrared spectroscopy. It is a silicon carbide rod heated electrically up to couple of hundreds degrees Celsius. Its radiation is suitable for spectroscopy as it is continuous and resembles the blackbody radiation.
 
 The emitted radiation passes through the spectrometer, where it becomes...
 
 
-The radiation is delivered to the cryostat via a waveguide, which ends with a light-focusing cone. The focused light passes through and interacts with the sample and the unabsorbed light is detected by the bolometer. An electrical response of the bolometer is passed back to the spectrometer, and the final spectra are calculated.
+The radiation is delivered to the cryostat via a waveguide, which ends with a light-focusing cone. The focused light passes through and interacts with the sample. The unabsorbed light is detected by the bolometer. An electrical response of the bolometer is passed back to the spectrometer, and the final spectra are calculated.
 
 
 \chapter{HgCdTe bulk systems}
@@ -1719,142 +1729,56 @@ The effective mass of electrons, obtained from the linear fitting of $\delta$ li
 \clearpage
 \subsection{Summary}
 \wciecie
+The FIR magneto-optical results presented in this chapter prove that temperature can be used as an adjustable external parameter to control a band structure of HgTe/CdTe QW and, as a consequence, to induce a topological TI-metal-semiconductor phase transition. Two samples were investigated -- one in semiconducting state at the whole temperature range, while the other is a TI at low temperature and undergoes a phase transition at $T_c = 90$ K, characterized by a band gap closure and vanishing crossing of zero-mode LLs. 
 
-velocity \cite{Ludwig_MCT_QW}
-
-mass \cite{Orlita_MCT_QW}
-
+The energy gap of sample A is positive at all temperatures and its value increase with increasing temperature. This behavior is presented on Figure \ref{fig:110624_AllTemp}. The Figure Figure \ref{fig:110624_AllTemp} presents the energy values of minimas of transmission as a function of magnetic field for sample A (open symbols), and the results of numerical calculations based on 8-band Kane model for different temperatures.   
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/110624/110624_AllTemp.png}
 	\vspace{-10pt}
-	\caption{\textit{Obsadz}}
+	\caption{\textit{Energy of $\alpha_1$ (green curve), $\alpha_2$ (purple curve), and $\beta$ (orange curve) transitions as a function of magnetic field for sample A at $T$ = 2 K, 15 K, 30 K, 50 K and 70 K. The experimental data corresponding to minima of transmission is represented by open symbols. The value of band gap is indicated with a blue arrow. The reststrahlen bands are covered by grey areas.}}
 	\label{fig:110624_AllTemp}
 \end{figure}
+The black arrow points to the value of a band gap at given temperature. The experimental results and theoretical predictions are in a good agreement. Sample A is almost gapless at $T$ = 2 K, and its band gap value increases to $E_g$ = 23.2 meV at $T$ = 70 K.
+
+The evolution of energy gap and inter- and intra-LL transitions for sample B is presented in Figure \ref{fig:091222C_AllTemp}. At $T < T_c = 90$ K the sample has an inverted band structure and negative energy gap, characterized by the relative position of zero-mode LLs. 
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/091222C/091222C_AllTemp.png}
 	\vspace{-10pt}
-	\caption{\textit{Obsadz}}
+	\caption{\textit{Energy of $\alpha$ (orange curve), $\alpha'$ (red curve), $\beta$ (blue curve), $\gamma$ (grey curve), and $\delta$ (green curve) transitions as a function of magnetic field for sample B at $T$ = 2 K, 50 K, 90 K, 110 K and 130 K. The experimental data corresponding to minima of transmission is represented by open symbols. The value of negative (positive) band gap is indicated with a red (blue) arrow. The gappless state corresponding to the gap closure (black arrow) takes place at $T_c$ = 90 K. The reststrahlen bands are covered by grey areas.}}
 	\label{fig:091222C_AllTemp}
 \end{figure}
 
-universal velocity
+At $T$ = 2 K (and $T$ = 30 K, see Appendix) an additional transition $\alpha'$ appears in the spectra in a small magnetic field range, which corresponds to the avoided crossing of zero-mode LLs. This anticrossing is a direct proof of an inverted phase. The $\alpha'$ transition is forbidden by the selection rules. However, because BIA causes a mixing of zero-mode LLs and an activation of the transition $\alpha'$, its appearance is possible and was previously reported in \cite{Orlita_MCT_QW}\cite{Zholudev_MCT_QW}\cite{Zholudev_MCT_QW_anticrossing}.
 
-kane vs dirac calculations
+At $T > T_c = 90$ K the sample is in a semiconducting phase. The zero-mode LLs are inverted in relation to $T < T_c$. The band gap is positive, which is represented by a blue arrow in Figure \ref{fig:091222C_AllTemp}, and reaches up to 12 meV at $T$ = 130 K. 
+
+At the critical value $T = T_c$ the band gap vanishes (black arrow) and the system hosts massless Dirac fermions. The appearance of massless particle is characterized by a square-root dependence of energy of LL transitions on magnetic field. However, in a case of HgTe QWs this is valid only in the range of quasimomenta, where the band structure can be approximated by the Dirac Hamiltonian. This reduces the characteristic $E \propto \sqrt{B}$ dependence to the electrons in the vicinity of the $\Gamma$ point of the Brillouin zone, where \textbf{\textit{k}} $\approx 0$. The terms proportional to \textbf{\textit{k}}$^2$ in the Hamiltonian become relevant at higher values of \textbf{\textit{k}}. As a consequence, at high magnetic field the transition dependence on $B$ becomes a linear function. 
+
+Figure \ref{fig:BHZvsKane} shows energies of transitions $\alpha$, $\beta$, and $\gamma$ as a function of $\sqrt{B}$ in the gapless case -- in the presence of the Dirac cone in the vicinity of the $\Gamma$ point. The presented LLs transitions $\beta$ and $\gamma$ do not follow a square-root magnetic field dependence over the whole magnetic field range. 
+
+On the other hand the transition $\alpha$ (solid red curve in Figure \ref{fig:BHZvsKane}) has a square-root-like dependence (which means that the position of solid curve coincides with the position of dotted curve). However, this behavior is not related to the conical band dispersion, but is a consequence of the mutual compensation of the high order \textbf{\textit{k}} terms in the 8-band Kane model.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=12cm]{gfx/MCT/sqw/BHZvsKane.png}
+	\vspace{-10pt}
+	\caption{\textit{Energy evolution of transitions $\alpha$, $\beta$, and $\gamma$ as a function of $\sqrt{B}$ at $T$ = 90 K approximated by Dirac Hamiltonian (dotted curves) and calculated using 8-band Kane Hamiltonian (solid curves).}}
+	\label{fig:BHZvsKane}
+\end{figure}
+
+velocity \cite{Ludwig_MCT_QW}
+
+mass \cite{Orlita_MCT_QW}
+universal velocity
 
 pressure paper gamma 7 band?
 
 \chapter{MCT thick layers}
 \label{chpt:MCT_TL}
 \wciecie
-
-
-\chapter{InAs/GaSb Quantum Wells}
-\wciecie
-The first system, where QSH phase was theoretically predicted and experimentally observed, is MCT QW. It allows to investigate and understand easily the physics of topological insulators and phase transitions and is still a subject of great interest of scientists. However, despite the remarkable progress of development of the MCT growth method, there still are plenty of technological challenges, preventing from the wide use of HgTe/CdTe QW in device and industry applications. The first most important problem is the difficulty of processing of mercury-based compounds. Because Hg is highly volatile and quickly diffuses in temperatures above $\SI{80}{\degreeCelsius}$ \cite{Daumer_MCT_temperature}, it excludes the use of standard processing technologies. The second important problem is the general use of Hg and Cd elements, which are highly toxic.
-
-There is a system based on III-V semiconductor groups, which can be used as an alternative to MCT-based systems. The growth and processing of III-V semiconductors is well known as well and their toxicity is relatively low compared to MCT. InAs/GaSb QW also exhibit a band inversion and QSH phase, however, the mechanism behind it differs from the one, responsible for band inversion in HgTe/CdTe QW.
-
-\section{General properties}
-There is a group of well lattice matched materials, so called 6.1 Å family, which consists of compounds such as InAs, GaSb, and AlSb. The name origins from a common lattice constant value, which is similar for all compounds and equals approximately 6.1 Å at the room temperature. InAs, GaSb, And AlSb crystallize in the zincblende structure. The similarity of the lattice constant allows growing lattice-matched heterostructures, without strain or other lattice-mismatch defects, like dislocations etc. The exact values of the lattice constants are 6.0584 Å for InAs, 6.0959 Å for GaSb, and 6.1355 Å for AlSb at 300 K \cite{Sze}.
-
-Both InAs and GaSb are direct-gap semiconductor, with the exact value of energy gap measured at the $\Gamma$ point is $E_g^{InAs} = 415-0.276 T^2/(T-83)$ for InAs \cite{Fang_InAs}, and $E_g^{GaSb} = 813 - 0.108 T^2/(T-10.3)$ for GaSb \cite{Wu_GaSb}. AlSb has an indirect gap – the gap measured at the $X$ point equals to $E_g^{AlSb} = 1696 - 0.390 T^2/(T+140)$ \cite{Vurgaftman_AlSb}. The values of energy gaps at 300 K are equal to 350 meV for InAs, 727 meV for GaSb, and 1616 meV for AlSb. This wide range of gaps allows to create high energy electron confinement in quantum wells due to the high energy gap in AlSb barriers, which translates to deep quantum well with barriers as high as 1350 meV. The values of energy gap and lattice constants of 6.1 Å family are presented on Figure \ref{fig:BandStructure_InAs_GaSb}.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=10cm]{gfx/Introduction/InAs-GaSb/BandStructure_InAs_GaSb.png}
-	\vspace{-10pt}
-	\caption{\textit{Obsadz}}
-	\label{fig:BandStructure_InAs_GaSb}
-\end{figure} 
-
-\subsection{Carrier concentration}
-Because of an extraordinary depth of quantum well, there are multiple sources of electrons, which can influence the carrier density in the quantum well. Consequently, even not-intentionally doped structures have relatively high carrier concentration, of the order of magnitude of $1 \cdot 10^{12}$ cm$^{-2}$ \cite{Tuttle_InAs_concentration}. This particularly high concentration is mainly caused by three sources -- conventional shallow bulk donors, surface states, and deep donors at or near the interfaces. 
-\begin{itemize}
-\item \textbf{Conventional shallow donors and modulation doping} \newline 
-Because of high barriers a modulation doping technique can be applied in those systems. It means that the donors are placed in the barrier instead of in the quantum well, and supplied electrons tunnel into the well leaving the ionized impurities away from the active part of the quantum well, and consequently reducing scattering and hence enhancing carrier mobility in comparison with bulk-doped quantum well. This method is widely used in structures, where both high concentration and mobility matters.
-
-\item \textbf{Surface states} \newline
-The states on the surface also take part in populating the quantum well. Electrons in the layers, placed outside barriers, can tunnel inside the well. The effect exists as a consequence of the extreme depth of the quantum well itself and strongly depends on the energetic location of the surface states and the chemical nature of the surface coverage \cite{Kroemer_review}. The top surface is usually made of either GaSb or InAs cap layers, which prevent against the oxidation of the structure. The cap layer can exhibit very high density of states (of the order of $10^{12}$ cm$^{-2}$), at the energies 0.85 eV below the conduction band edge of the AlSb barrier \cite{Nguyen_SurfaceDonor}. As a consequence the electrons will flow into the well until the electric field in the barrier pulls the surface states down to the same energy as the Fermi level inside the well. The barrier thickness strongly influences the tunneling, hence can suppress this effect.
-
-\item \textbf{Interface donors and defects} \newline
-Another source of electrons, responsible for such a high concentration, even in low temperature limit, might be connected with interface donors and/or defects. A study of temperature dependence of the electron concentration suggested that there exist a donor level less than 50 meV above the bottom of the bulk conduction band of InAs, which implies a level below the bottom of the quantum well, and
-below the Fermi level in the well at the observed electron concentrations. But in this case only a small fraction of the donors will be ionized, calling for a donor a concentration much higher than the observed electron concentrations, on the order of about $3 \cdot 10^{12}$ donors cm$^{-2}$ per well \cite{Kroemer_review}. The nature of these donors is not clear. Kroemer proposed that they are not ordinary point defects, but are Tamm states at the InAs–AlSb interface \cite{Kroemer_TammStates}, inherent to the band structure of that interface. Alternatively, Shen et al. \cite{Shen_TammStates} proposed that the donors are very deep bulk donor states associated with AlSb antisite defects, that is, Al atoms on Sb sites.
-\end{itemize}
-
-\subsection{Carrier mobility}
-One of the most interesting properties of InAs is the second highest electron mobility of all semiconductors (the first being InSb). This is a result of one of the smallest electron effective mass, only 0.023 of the free electron mass. This property makes this material very interesting, especially from a device perspective -- high mobility allows to create faster electronics (eg. HEMTs). Also, high mobility improves transport properties -- allows to  observe quantum effects such as Shubnikov-de Haas oscillations or QHE.
-
-There are multiple factors influencing the mobility of carriers in the quantum well. The is a strong dependence on the well width and on the electron sheet concentration, as well as on the quality of growth. Especially at low temperatures, where mobility is limited by impurity and interface scattering, the growth quality plays a very important role \cite{Nguyen_Mobility}.
-
-\begin{itemize}
-\item \textbf{Quantum well width} \newline  
-Both room-temperature and low-temperature mobilities are significantly reduced in narrow wells due to the dominance of interface roughness scattering. The mobility peaks for well widths around 125 Å, and then decays again, most probably due to the onset of scattering by misfit dislocations nucleated as the quantum well width exceeds the critical layer thickness imposed by the 1.3\% lattice mismatch between InAs and AlSb \cite{Bolognesi_Width}. As a result, the majority of studies have used a 15 nm InAs quantum well for transport studies of this systems [all kroemer + Li, Journal of Crystal Growth 301–302 (2007) 181–184].
-
-\item \textbf{Layers interfaces} \newline
-There is an evidence, that the mobility can depend on the interfaces between separate layers themselves. Tuttle found that because both anion and cation change across an InAs-AlSb interface, it is possible to grow such wells with two different types of interfaces, one with an InSb-like bond configuration, the other AlAs-like. Electron mobility and concentration were found to depend very strongly on the manner in which the quantum wells' interfaces were grown, indicating that high mobilities are seen only if the bottom interface is InSb-like. The AlAs type of interfaces can introduce a sheet of donor defects, which increase the scattering, hence lower the mobility \cite{Tuttle_Interface}. Jenichen examined the interfaces in InAs\slash AlSb superlattices via X-ray scattering, and claims that strong interface roughness and intermixing is definitely present at those sites \cite{Jenichen_Interfaces}.
-
-\item \textbf{Buffer} \newline
-There were studies showing that not only the active part of QW influences the mobility and transport properties. Li showed by magneto-transport, Atomic Force Microscopy and X-Ray Diffraction that the electron mobility of AlSb/InAs/AlSb quantum well with GaSb buffer is higher than that with AlSb buffer though the surface and crystal qualities of AlSb buffer are better than GaSb buffer. The crystal quality can be increased by improving the growth process. Because of InAs relaxation on AlSb buffer, mismatch dislocations will appear in the InAs layer and the interfaces of InAs QW will get rough, which is suggested as the reason leading to the lower mobility of InAs quantum well grown on AlSb buffer than on GaSb buffer \cite{Li_Buffer}. 
-
-Thomas investigated this matter as well, and found that GaSb buffers provide atomically flat interfaces on the scale of the electron Fermi wavelength for the quantum wells. In contrast, AlSb buffers generate a very rough interface on the same scale. The low temperature mobility of their samples with GaSb buffer ($\mu = 240000$ cm$^2$/Vs) was seven times greater than of the samples with the AlSb buffer ($\mu = 35000$ cm$^2$/Vs), for concentration $n = 5.5 \cdot 10^{11}$ cm$^{-2}$. For the concentration of $n = 1.3 \cdot 10^{12}$ cm$^{-2}$ the difference was a bit smaller, but the mobilities were enormous $\mu = 944000$ cm$^2$/Vs and $\mu = 244000$ cm$^2$/Vs for GaSb and AlSb respectively \cite{Nguyen_Mobility}\cite{Thomas_Buffer}\cite{Nguyen_Buffer}.
-
-\item \textbf{Carrier concentration} \newline
-There are generally two ways to change the electron concentration of the sample -- with and without altering the sample structure. The first is doping, which was already mentioned. Doping with donors, provides additional carriers into the structure, which tunnel into the QW and increase its carrier density. On the other hand it introduces scattering centers, which gradually lower the concentration, even with a modulation doping technique \cite{Nguyen_Buffer}. 
-
-The latter is based on gating technique or photoexcitation effects like persistent photoconductivity effect, which will be discussed later. Structure with a gate allow to continuously tune the carrier concentration in a relatively broad rage. However there is a strong relation between electron concentration and mobility. Nguyen et al investigated this dependence in gated InAs/AlSb quantum wells and found that the dependence is not monotonic -- mobility increases as the first subband gets populated, peaks, and has a minimum when the second subband is populated, then increases again \cite{Nguyen_Mobility}.
-
-\end{itemize}
-
-\section{Band ordering}
-The title of the most bizarre lineup of the 6.1 Å family belongs to the InAs/GaSb heterojunctions. It was found already back in 1977 by Sasaki et al. \cite{Sasaki_BandOrdering}, that they exhibit a broken gap band ordering -- at the interface, the bottom of the condunction band of InAs has lower energy states than the valence band states of GaSb, with a break gap of 150 meV. This discovery most likely attracted that much attention and interest in the entire 6.1 Å family. This particular band ordering was also predicted theoretically -- in the same year Frensley \cite{Frensley_BandOrdering} had claimed that there is a possibility of such a lineup to exist. Also, Harrison using LCAO theory \cite{Harrison_BandOrdering} suggested a similar prediction. Quantum wells of InAs/GaSb sandwiched between layers of AlSb were named broken-gap quantum wells (BGQW) or composite quantum wells (CQW). The band structure of InAs/GaSb CQW is presented on Figure \ref{fig:BandStructure_InAs_GaSb2}A. The valence band of AlSb lies about 0.4 eV lower than the valence band of GaSb, while the conduction band of AlSb lies approximately 0.4 eV higher than the conduction band of AlSb. As a consequence, AlSb can be used as a quantum well barrier in CQW systems.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=10cm]{gfx/Introduction/InAs-GaSb/BandStructure_InAs_GaSb2.png}
-	\vspace{-10pt}
-	\caption{\textit{Obsadz}}
-	\label{fig:BandStructure_InAs_GaSb2}
-\end{figure} 
-
-The quantum well width governs two fundamentally different regimes of the system. Similarly to MCT QW the energy position of levels in a QW depends strongly on QW width. However, in the case of InAs/GaSb CQW, where none of the compounds used has an inverted structure by itself, the relative position of $E_1$ in InAs well and $H_1$ in GaSb well decides whether the CQW is in an inverted regime or not. For thin layers $E_1$ lies higher in energy than $H_1$ and the structure is in the normal state. On the other hand, for sufficiently thick layers the band order is reversed. In the past, the inverted regime was considered as a semimetallic \cite{Chang_BandStructure}. 
-
-Since the transition between an inverted regime and a normal regime has to be smooth and continuous, there must be a point, where the $E_1 = H_1$, so the momentum and carrier energy in the two wells are close to be equal. In this state the system is strongly coupled, and both the electron states and the hole states are mixed. This mixing leads to hybridization of the bands or, simply, to lifting of degeneracy of the levels. As a consequence, in analogy to bonding and antibonding states, a relativly small (of the order of a few of meV) hybridization gap appears. Thus, the semimetallic band dispersion relation in Figure \ref{fig:BandStructure_InAs_GaSb2}B (dashed), becomes nonmonotonic (full line), with a mini-gap $\Delta$. Because of this, a InAs/GaSb CQW in an inverted regime is not a semimetal, but has a gap \cite{Altarelli_BandStructure}. The presence of the gap means that the bulk of the sample is resisitive, as long as the Fermi energy lies within the gap, which is a case in a theoretical intrinsic case. The existence of the gap was discovered experimentally by Yang \cite{Yang_BandStructure} and Lakrimi \cite{Lakrimi_BandStructure}. The presence of the hybridization gap makes this system different from HgTe/CdTe QW. This is a consequence of inversion asymmetry present in InAs/GaSb CQW -- the QW is not symmetrical in the growth direction, which is not the case for HgTe/CdTe systems.
-
-Because of the broken gap alignment, the CQW in the inverted regime should have equal intrinsic density of both two-dimensional electron gas (2DEG) and two-dimensional hole gas (2DHG). However, in the actual samples there are localized states at interfaces, defects or inhomogeneities, which potentially lead to unbalanced concentrations of carriers. Magnetotransport studies indicate that the electron density dominates over the hole density \cite{Petchsingh_BandOrdering}\cite{Munekata_BandOrdering}, which is partially caused by surplus of electrons, tunneled from the high surface states. As a consequence, the Fermi level is set around 130 meV above the bottom of the conduction band of InAs \cite{Nguyen_Mobility}, which is different from its bulk value.
-
-\subsection{Magnetic field tunability}
-Magnetic field can be used to induce a electron and hole recombination in GaSb/InAs QW in inverted regime. Energy spectrum of 2DEG and 2DHG in magnetic field tends to quantize into a discrete levels called Landau levels. Energy of these levels increases for electrons and decreases for holes as the magnetic field gets stronger, which is a consequence of the opposite sign of carriers. Works of Lo \cite{Lo_MagneticField} and Smith \cite{Smith_MagneticField} show that it is possible, by applying external magnetic field, to bring the hole Landau level and the electron Landau level to the same value of energy, thus effectively crossing them and force electrons to recombine with holes, which leads to semiconductor to semimetal phase transition.
-
-\subsection{Electric field tunability}
-There were studies showing that band relative position can be altered also with electric field. Naveh et al. Found that applying small electric fields in a growth direction of AlSb-InAs-GaSb-AlSb QW, any value can be achieved for such parameters as the energy gaps, effective masses, and carrier types and densities in the material, which is a consequence of a strong electron-hole coupling in this system \cite{Naveh_ElectricField}. The electron and hole levels in this system, when subjected to an external electrical field, usually by a metallic gate on the top (and/or the bottom) of the structure, shift in opposite directions, approaching each other and eventually crossing. In the intrinsic case, thus when $n_H$ = $n_E$, Fermi energy lies somewhere between the first electron level ($E_1$) and the first hole level ($H_1$), and with increasing electric field $H_1$ crosses it first, removing the holes from the system, and $E_1$ follows at higher voltages applied between the gate and the channel, depleting completely the region of carriers. It gives a possibility to control the concentrations of carriers by relatively small electric field and in consequence, induce a semimetal to semiconductor phase transition \cite{Mendez_ElectricField}.
-
-However, to control both the band structure and the Fermi level position, there is a need to use two gate configuration. A top gate and a back gate are used to tune the concentration of electrons and holes, respectively. Two gate configuration is required because of the screening of top gate induced electric field by electrons in InAs layer. Also, a very important issue is resolved in this way – electron and hole densities can be tuned almost indepentently, with respect to the total charge in the system. This idea was used by Cooper \cite{Cooper_ElectricField} to study a coupling of electrons and holes in InAs/GaSb/AlSb systems as a function of temperature and concentration. The two gate configuration was used as a concept in a theoretical work of Liu, in which the idea of a topological insulator based on a InAs/GaSb/AlSb QW was introduced \cite{Liu_Topology}.
-
-\section{Trilayer QW}
-Since the prediction of QSH effect in InAs/GaSb CQW most of the investigation considered only two layered (InAs layer and GaSb) structure. This introduced an inversion asymmetry into the structure, which does not exist in the case of HgTe/CdTe QW (which is symmetrical). As a consequence, the crossing of $E_1$ and $H_1$ subbands did not occur at the $\Gamma$ point of the Brillouin zone \cite{Murakami_Trilayer} (\ref{fig:BandStructure_InAs_GaSb2}), which had further implications on the shape of Landau levels.
-
-In order to eliminate the problem of asymmetry in a growth direction, Kristophenko [] proposed to attach an additional layer of InAs or GaSb to the structure, which restores the inversion symmetry in the system and brings the crossing of the $E_1$ and $H_1$ subbands at the $\Gamma$ point, as in the case of HgTe/CdTe QW. The layer order and the band structure for InAs-designed (with an additional InAs layer) and GaSb-designed (with an additional GaSb layer) quantum wells are presented on Figure \ref{fig:TrilayerBandStructure1}.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=12cm]{gfx/Introduction/InAs-GaSb/TrilayerBandStructure1.png}
-	\vspace{-10pt}
-	\caption{\textit{Obsadz}}
-	\label{fig:TrilayerBandStructure1}
-\end{figure} 
-
-This new class of structures, based on InAs/GaSb, which differ from the broken-gap QWs by the band-gap inversion at the $\Gamma$ point. As hybridization between electron-like and heavy-hole-like subbands vanishes at \textbf{\textit{k}} = 0, the crossing of $E_1$ and $H_1$ subbands at the $\Gamma$ point results in the gapless state with 2D massless DFs.
-
-These materials have zincblende lattice structure and direct energy gaps in the vicinity of $\Gamma$ point, thus the system can be well described by 8-band Kane model \cite{Kane_Model}, like in the case of a BGQW \cite{Liu_Topology}. However, trilayer structure can be considered as a double QW with a middle barrier. In the case of InAs-designed QW, a GaSb layer in the middle plays a role of barrier separating two QW for electrons, and at the same time is a single QW for holes. On the other hand, GaSb-designed QW has a barrier of InAs in the middle, separating two QW for holes, being a single QW for electron itself at the same time. The energy levels in the wells are sensitive to the QW width, like in the case of QW mentioned before. Since the relative position of $E_1$ and $H_1$ subbands decide whether the whole structure is inverted or not, it means that there is a possibility to drive the system from inverted regime to normal, simply by changing the QW width.  
-
-\section{Topological properties}
-The band structure of InAs/GaSb QW is inverted because of the unique relative band alignment of InAs and GaSb layers. As a consequence, the valence band of GaSb is higher energetically than the conduction band of InAs. A smooth connection of bands inside and outside of the sample with a matter of different topology (a regular one, e.g. vacuum or trivial insulator) leads to a rise of gapless states at the boundary with a linear dispersion relation. The mechanism of a band inversion differs from the one, which causes the inversion of the band structure of HgTe/CdTe QW, where the SOC was responsible for pushing the $\Gamma_8$ bands above the $\Gamma_6$ bands. 
-
-
-%From the topological insulator point of view a InAs/GaSb CQW, for a particular space of parameters, exhibits an inverted band order phase with gapless boundary states described by a linear dispersion relation. The bulk of the sample is insulating, because there is a small gap. Those boundary states are protected by the time-reversal symmetry from elastic backscattering and are topologically robust to small perturbations. This means that InAs/GaSb QW should be in a topologically nontrivial QSH phase.
 
 
 
@@ -2164,7 +2088,109 @@ Ak_+ & -\mathcal{M}(k) & 0 & 0 \\
 where $\epsilon_k(k_x, k_y) = C - D(k_x^2, k_y^2)$, $\mathcal{M}(k) = M - B(k_x^2, k_y^2)$, $k_pm = k_x \pm ik_y$, and \textit{A, B, C, D, M} depend on the specified QW width.
 
 %\appendix
-\chapter{Appendix B}
+\chapter{InAs/GaSb QWs}
+\wciecie
+The first system, where QSH phase was theoretically predicted and experimentally observed, is MCT QW. It allows to investigate and understand easily the physics of topological insulators and phase transitions and is still a subject of great interest of scientists. However, despite the remarkable progress of development of the MCT growth method, there still are plenty of technological challenges, preventing from the wide use of HgTe/CdTe QW in device and industry applications. The first most important problem is the difficulty of processing of mercury-based compounds. Because Hg is highly volatile and quickly diffuses in temperatures above $\SI{80}{\degreeCelsius}$ \cite{Daumer_MCT_temperature}, it excludes the use of standard processing technologies. The second important problem is the general use of Hg and Cd elements, which are highly toxic.
 
+There is a system based on III-V semiconductor groups, which can be used as an alternative to MCT-based systems. The growth and processing of III-V semiconductors is well known as well and their toxicity is relatively low compared to MCT. InAs/GaSb QW also exhibit a band inversion and QSH phase, however, the mechanism behind it differs from the one, responsible for band inversion in HgTe/CdTe QW.
+
+\section{General properties}
+There is a group of well lattice matched materials, so called 6.1 Å family, which consists of compounds such as InAs, GaSb, and AlSb. The name origins from a common lattice constant value, which is similar for all compounds and equals approximately 6.1 Å at the room temperature. InAs, GaSb, And AlSb crystallize in the zincblende structure. The similarity of the lattice constant allows growing lattice-matched heterostructures, without strain or other lattice-mismatch defects, like dislocations etc. The exact values of the lattice constants are 6.0584 Å for InAs, 6.0959 Å for GaSb, and 6.1355 Å for AlSb at 300 K \cite{Sze}.
+
+Both InAs and GaSb are direct-gap semiconductor, with the exact value of energy gap measured at the $\Gamma$ point is $E_g^{InAs} = 415-0.276 T^2/(T-83)$ for InAs \cite{Fang_InAs}, and $E_g^{GaSb} = 813 - 0.108 T^2/(T-10.3)$ for GaSb \cite{Wu_GaSb}. AlSb has an indirect gap – the gap measured at the $X$ point equals to $E_g^{AlSb} = 1696 - 0.390 T^2/(T+140)$ \cite{Vurgaftman_AlSb}. The values of energy gaps at 300 K are equal to 350 meV for InAs, 727 meV for GaSb, and 1616 meV for AlSb. This wide range of gaps allows to create high energy electron confinement in quantum wells due to the high energy gap in AlSb barriers, which translates to deep quantum well with barriers as high as 1350 meV. The values of energy gap and lattice constants of 6.1 Å family are presented on Figure \ref{fig:BandStructure_InAs_GaSb}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=10cm]{gfx/Introduction/InAs-GaSb/BandStructure_InAs_GaSb.png}
+	\vspace{-10pt}
+	\caption{\textit{Obsadz}}
+	\label{fig:BandStructure_InAs_GaSb}
+\end{figure} 
+
+\subsection{Carrier concentration}
+Because of an extraordinary depth of quantum well, there are multiple sources of electrons, which can influence the carrier density in the quantum well. Consequently, even not-intentionally doped structures have relatively high carrier concentration, of the order of magnitude of $1 \cdot 10^{12}$ cm$^{-2}$ \cite{Tuttle_InAs_concentration}. This particularly high concentration is mainly caused by three sources -- conventional shallow bulk donors, surface states, and deep donors at or near the interfaces. 
+\begin{itemize}
+\item \textbf{Conventional shallow donors and modulation doping} \newline 
+Because of high barriers a modulation doping technique can be applied in those systems. It means that the donors are placed in the barrier instead of in the quantum well, and supplied electrons tunnel into the well leaving the ionized impurities away from the active part of the quantum well, and consequently reducing scattering and hence enhancing carrier mobility in comparison with bulk-doped quantum well. This method is widely used in structures, where both high concentration and mobility matters.
+
+\item \textbf{Surface states} \newline
+The states on the surface also take part in populating the quantum well. Electrons in the layers, placed outside barriers, can tunnel inside the well. The effect exists as a consequence of the extreme depth of the quantum well itself and strongly depends on the energetic location of the surface states and the chemical nature of the surface coverage \cite{Kroemer_review}. The top surface is usually made of either GaSb or InAs cap layers, which prevent against the oxidation of the structure. The cap layer can exhibit very high density of states (of the order of $10^{12}$ cm$^{-2}$), at the energies 0.85 eV below the conduction band edge of the AlSb barrier \cite{Nguyen_SurfaceDonor}. As a consequence the electrons will flow into the well until the electric field in the barrier pulls the surface states down to the same energy as the Fermi level inside the well. The barrier thickness strongly influences the tunneling, hence can suppress this effect.
+
+\item \textbf{Interface donors and defects} \newline
+Another source of electrons, responsible for such a high concentration, even in low temperature limit, might be connected with interface donors and/or defects. A study of temperature dependence of the electron concentration suggested that there exist a donor level less than 50 meV above the bottom of the bulk conduction band of InAs, which implies a level below the bottom of the quantum well, and
+below the Fermi level in the well at the observed electron concentrations. But in this case only a small fraction of the donors will be ionized, calling for a donor a concentration much higher than the observed electron concentrations, on the order of about $3 \cdot 10^{12}$ donors cm$^{-2}$ per well \cite{Kroemer_review}. The nature of these donors is not clear. Kroemer proposed that they are not ordinary point defects, but are Tamm states at the InAs–AlSb interface \cite{Kroemer_TammStates}, inherent to the band structure of that interface. Alternatively, Shen et al. \cite{Shen_TammStates} proposed that the donors are very deep bulk donor states associated with AlSb antisite defects, that is, Al atoms on Sb sites.
+\end{itemize}
+
+\subsection{Carrier mobility}
+One of the most interesting properties of InAs is the second highest electron mobility of all semiconductors (the first being InSb). This is a result of one of the smallest electron effective mass, only 0.023 of the free electron mass. This property makes this material very interesting, especially from a device perspective -- high mobility allows to create faster electronics (eg. HEMTs). Also, high mobility improves transport properties -- allows to  observe quantum effects such as Shubnikov-de Haas oscillations or QHE.
+
+There are multiple factors influencing the mobility of carriers in the quantum well. The is a strong dependence on the well width and on the electron sheet concentration, as well as on the quality of growth. Especially at low temperatures, where mobility is limited by impurity and interface scattering, the growth quality plays a very important role \cite{Nguyen_Mobility}.
+
+\begin{itemize}
+\item \textbf{Quantum well width} \newline  
+Both room-temperature and low-temperature mobilities are significantly reduced in narrow wells due to the dominance of interface roughness scattering. The mobility peaks for well widths around 125 Å, and then decays again, most probably due to the onset of scattering by misfit dislocations nucleated as the quantum well width exceeds the critical layer thickness imposed by the 1.3\% lattice mismatch between InAs and AlSb \cite{Bolognesi_Width}. As a result, the majority of studies have used a 15 nm InAs quantum well for transport studies of this systems [all kroemer + Li, Journal of Crystal Growth 301–302 (2007) 181–184].
+
+\item \textbf{Layers interfaces} \newline
+There is an evidence, that the mobility can depend on the interfaces between separate layers themselves. Tuttle found that because both anion and cation change across an InAs-AlSb interface, it is possible to grow such wells with two different types of interfaces, one with an InSb-like bond configuration, the other AlAs-like. Electron mobility and concentration were found to depend very strongly on the manner in which the quantum wells' interfaces were grown, indicating that high mobilities are seen only if the bottom interface is InSb-like. The AlAs type of interfaces can introduce a sheet of donor defects, which increase the scattering, hence lower the mobility \cite{Tuttle_Interface}. Jenichen examined the interfaces in InAs\slash AlSb superlattices via X-ray scattering, and claims that strong interface roughness and intermixing is definitely present at those sites \cite{Jenichen_Interfaces}.
+
+\item \textbf{Buffer} \newline
+There were studies showing that not only the active part of QW influences the mobility and transport properties. Li showed by magneto-transport, Atomic Force Microscopy and X-Ray Diffraction that the electron mobility of AlSb/InAs/AlSb quantum well with GaSb buffer is higher than that with AlSb buffer though the surface and crystal qualities of AlSb buffer are better than GaSb buffer. The crystal quality can be increased by improving the growth process. Because of InAs relaxation on AlSb buffer, mismatch dislocations will appear in the InAs layer and the interfaces of InAs QW will get rough, which is suggested as the reason leading to the lower mobility of InAs quantum well grown on AlSb buffer than on GaSb buffer \cite{Li_Buffer}. 
+
+Thomas investigated this matter as well, and found that GaSb buffers provide atomically flat interfaces on the scale of the electron Fermi wavelength for the quantum wells. In contrast, AlSb buffers generate a very rough interface on the same scale. The low temperature mobility of their samples with GaSb buffer ($\mu = 240000$ cm$^2$/Vs) was seven times greater than of the samples with the AlSb buffer ($\mu = 35000$ cm$^2$/Vs), for concentration $n = 5.5 \cdot 10^{11}$ cm$^{-2}$. For the concentration of $n = 1.3 \cdot 10^{12}$ cm$^{-2}$ the difference was a bit smaller, but the mobilities were enormous $\mu = 944000$ cm$^2$/Vs and $\mu = 244000$ cm$^2$/Vs for GaSb and AlSb respectively \cite{Nguyen_Mobility}\cite{Thomas_Buffer}\cite{Nguyen_Buffer}.
+
+\item \textbf{Carrier concentration} \newline
+There are generally two ways to change the electron concentration of the sample -- with and without altering the sample structure. The first is doping, which was already mentioned. Doping with donors, provides additional carriers into the structure, which tunnel into the QW and increase its carrier density. On the other hand it introduces scattering centers, which gradually lower the concentration, even with a modulation doping technique \cite{Nguyen_Buffer}. 
+
+The latter is based on gating technique or photoexcitation effects like persistent photoconductivity effect, which will be discussed later. Structure with a gate allow to continuously tune the carrier concentration in a relatively broad rage. However there is a strong relation between electron concentration and mobility. Nguyen et al investigated this dependence in gated InAs/AlSb quantum wells and found that the dependence is not monotonic -- mobility increases as the first subband gets populated, peaks, and has a minimum when the second subband is populated, then increases again \cite{Nguyen_Mobility}.
+
+\end{itemize}
+
+\section{Band ordering}
+The title of the most bizarre lineup of the 6.1 Å family belongs to the InAs/GaSb heterojunctions. It was found already back in 1977 by Sasaki et al. \cite{Sasaki_BandOrdering}, that they exhibit a broken gap band ordering -- at the interface, the bottom of the condunction band of InAs has lower energy states than the valence band states of GaSb, with a break gap of 150 meV. This discovery most likely attracted that much attention and interest in the entire 6.1 Å family. This particular band ordering was also predicted theoretically -- in the same year Frensley \cite{Frensley_BandOrdering} had claimed that there is a possibility of such a lineup to exist. Also, Harrison using LCAO theory \cite{Harrison_BandOrdering} suggested a similar prediction. Quantum wells of InAs/GaSb sandwiched between layers of AlSb were named broken-gap quantum wells (BGQW) or composite quantum wells (CQW). The band structure of InAs/GaSb CQW is presented on Figure \ref{fig:BandStructure_InAs_GaSb2}A. The valence band of AlSb lies about 0.4 eV lower than the valence band of GaSb, while the conduction band of AlSb lies approximately 0.4 eV higher than the conduction band of AlSb. As a consequence, AlSb can be used as a quantum well barrier in CQW systems.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=10cm]{gfx/Introduction/InAs-GaSb/BandStructure_InAs_GaSb2.png}
+	\vspace{-10pt}
+	\caption{\textit{Obsadz}}
+	\label{fig:BandStructure_InAs_GaSb2}
+\end{figure} 
+
+The quantum well width governs two fundamentally different regimes of the system. Similarly to MCT QW the energy position of levels in a QW depends strongly on QW width. However, in the case of InAs/GaSb CQW, where none of the compounds used has an inverted structure by itself, the relative position of $E_1$ in InAs well and $H_1$ in GaSb well decides whether the CQW is in an inverted regime or not. For thin layers $E_1$ lies higher in energy than $H_1$ and the structure is in the normal state. On the other hand, for sufficiently thick layers the band order is reversed. In the past, the inverted regime was considered as a semimetallic \cite{Chang_BandStructure}. 
+
+Since the transition between an inverted regime and a normal regime has to be smooth and continuous, there must be a point, where the $E_1 = H_1$, so the momentum and carrier energy in the two wells are close to be equal. In this state the system is strongly coupled, and both the electron states and the hole states are mixed. This mixing leads to hybridization of the bands or, simply, to lifting of degeneracy of the levels. As a consequence, in analogy to bonding and antibonding states, a relativly small (of the order of a few of meV) hybridization gap appears. Thus, the semimetallic band dispersion relation in Figure \ref{fig:BandStructure_InAs_GaSb2}B (dashed), becomes nonmonotonic (full line), with a mini-gap $\Delta$. Because of this, a InAs/GaSb CQW in an inverted regime is not a semimetal, but has a gap \cite{Altarelli_BandStructure}. The presence of the gap means that the bulk of the sample is resisitive, as long as the Fermi energy lies within the gap, which is a case in a theoretical intrinsic case. The existence of the gap was discovered experimentally by Yang \cite{Yang_BandStructure} and Lakrimi \cite{Lakrimi_BandStructure}. The presence of the hybridization gap makes this system different from HgTe/CdTe QW. This is a consequence of inversion asymmetry present in InAs/GaSb CQW -- the QW is not symmetrical in the growth direction, which is not the case for HgTe/CdTe systems.
+
+Because of the broken gap alignment, the CQW in the inverted regime should have equal intrinsic density of both two-dimensional electron gas (2DEG) and two-dimensional hole gas (2DHG). However, in the actual samples there are localized states at interfaces, defects or inhomogeneities, which potentially lead to unbalanced concentrations of carriers. Magnetotransport studies indicate that the electron density dominates over the hole density \cite{Petchsingh_BandOrdering}\cite{Munekata_BandOrdering}, which is partially caused by surplus of electrons, tunneled from the high surface states. As a consequence, the Fermi level is set around 130 meV above the bottom of the conduction band of InAs \cite{Nguyen_Mobility}, which is different from its bulk value.
+
+\subsection{Magnetic field tunability}
+Magnetic field can be used to induce a electron and hole recombination in GaSb/InAs QW in inverted regime. Energy spectrum of 2DEG and 2DHG in magnetic field tends to quantize into a discrete levels called Landau levels. Energy of these levels increases for electrons and decreases for holes as the magnetic field gets stronger, which is a consequence of the opposite sign of carriers. Works of Lo \cite{Lo_MagneticField} and Smith \cite{Smith_MagneticField} show that it is possible, by applying external magnetic field, to bring the hole Landau level and the electron Landau level to the same value of energy, thus effectively crossing them and force electrons to recombine with holes, which leads to semiconductor to semimetal phase transition.
+
+\subsection{Electric field tunability}
+There were studies showing that band relative position can be altered also with electric field. Naveh et al. Found that applying small electric fields in a growth direction of AlSb-InAs-GaSb-AlSb QW, any value can be achieved for such parameters as the energy gaps, effective masses, and carrier types and densities in the material, which is a consequence of a strong electron-hole coupling in this system \cite{Naveh_ElectricField}. The electron and hole levels in this system, when subjected to an external electrical field, usually by a metallic gate on the top (and/or the bottom) of the structure, shift in opposite directions, approaching each other and eventually crossing. In the intrinsic case, thus when $n_H$ = $n_E$, Fermi energy lies somewhere between the first electron level ($E_1$) and the first hole level ($H_1$), and with increasing electric field $H_1$ crosses it first, removing the holes from the system, and $E_1$ follows at higher voltages applied between the gate and the channel, depleting completely the region of carriers. It gives a possibility to control the concentrations of carriers by relatively small electric field and in consequence, induce a semimetal to semiconductor phase transition \cite{Mendez_ElectricField}.
+
+However, to control both the band structure and the Fermi level position, there is a need to use two gate configuration. A top gate and a back gate are used to tune the concentration of electrons and holes, respectively. Two gate configuration is required because of the screening of top gate induced electric field by electrons in InAs layer. Also, a very important issue is resolved in this way – electron and hole densities can be tuned almost indepentently, with respect to the total charge in the system. This idea was used by Cooper \cite{Cooper_ElectricField} to study a coupling of electrons and holes in InAs/GaSb/AlSb systems as a function of temperature and concentration. The two gate configuration was used as a concept in a theoretical work of Liu, in which the idea of a topological insulator based on a InAs/GaSb/AlSb QW was introduced \cite{Liu_Topology}.
+
+\section{Trilayer QW}
+Since the prediction of QSH effect in InAs/GaSb CQW most of the investigation considered only two layered (InAs layer and GaSb) structure. This introduced an inversion asymmetry into the structure, which does not exist in the case of HgTe/CdTe QW (which is symmetrical). As a consequence, the crossing of $E_1$ and $H_1$ subbands did not occur at the $\Gamma$ point of the Brillouin zone \cite{Murakami_Trilayer} (\ref{fig:BandStructure_InAs_GaSb2}), which had further implications on the shape of Landau levels.
+
+In order to eliminate the problem of asymmetry in a growth direction, Kristophenko [] proposed to attach an additional layer of InAs or GaSb to the structure, which restores the inversion symmetry in the system and brings the crossing of the $E_1$ and $H_1$ subbands at the $\Gamma$ point, as in the case of HgTe/CdTe QW. The layer order and the band structure for InAs-designed (with an additional InAs layer) and GaSb-designed (with an additional GaSb layer) quantum wells are presented on Figure \ref{fig:TrilayerBandStructure1}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=12cm]{gfx/Introduction/InAs-GaSb/TrilayerBandStructure1.png}
+	\vspace{-10pt}
+	\caption{\textit{Obsadz}}
+	\label{fig:TrilayerBandStructure1}
+\end{figure} 
+
+This new class of structures, based on InAs/GaSb, which differ from the broken-gap QWs by the band-gap inversion at the $\Gamma$ point. As hybridization between electron-like and heavy-hole-like subbands vanishes at \textbf{\textit{k}} = 0, the crossing of $E_1$ and $H_1$ subbands at the $\Gamma$ point results in the gapless state with 2D massless DFs.
+
+These materials have zincblende lattice structure and direct energy gaps in the vicinity of $\Gamma$ point, thus the system can be well described by 8-band Kane model \cite{Kane_Model}, like in the case of a BGQW \cite{Liu_Topology}. However, trilayer structure can be considered as a double QW with a middle barrier. In the case of InAs-designed QW, a GaSb layer in the middle plays a role of barrier separating two QW for electrons, and at the same time is a single QW for holes. On the other hand, GaSb-designed QW has a barrier of InAs in the middle, separating two QW for holes, being a single QW for electron itself at the same time. The energy levels in the wells are sensitive to the QW width, like in the case of QW mentioned before. Since the relative position of $E_1$ and $H_1$ subbands decide whether the whole structure is inverted or not, it means that there is a possibility to drive the system from inverted regime to normal, simply by changing the QW width.  
+
+\section{Topological properties}
+The band structure of InAs/GaSb QW is inverted because of the unique relative band alignment of InAs and GaSb layers. As a consequence, the valence band of GaSb is higher energetically than the conduction band of InAs. A smooth connection of bands inside and outside of the sample with a matter of different topology (a regular one, e.g. vacuum or trivial insulator) leads to a rise of gapless states at the boundary with a linear dispersion relation. The mechanism of a band inversion differs from the one, which causes the inversion of the band structure of HgTe/CdTe QW, where the SOC was responsible for pushing the $\Gamma_8$ bands above the $\Gamma_6$ bands. 
+
+
+%From the topological insulator point of view a InAs/GaSb CQW, for a particular space of parameters, exhibits an inverted band order phase with gapless boundary states described by a linear dispersion relation. The bulk of the sample is insulating, because there is a small gap. Those boundary states are protected by the time-reversal symmetry from elastic backscattering and are topologically robust to small perturbations. This means that InAs/GaSb QW should be in a topologically nontrivial QSH phase.
 
 \end{document}
