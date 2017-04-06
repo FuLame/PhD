@@ -64,6 +64,7 @@
 \newpage
 
 \chapter{Introduction}
+\label{chpt:Intro}
 \wciecie
 Since the dawn of science, people always wanted to encounter new frontiers and cross them, expanding the boundaries of the universal knowledge. Even in the modern times, it is still our duty to explore the matter around us and the laws governing it. Although throughout the 19th  and 20th century, chemistry succeed in finding and classifying most of the elements -- building blocks of matter, there is still plenty of work to do in discovery and classification of the distinct states of matter, called phases. Matter in the quantum approach can form different phases, such as crystalline solids, magnets and superconductors.  
 
@@ -1777,13 +1778,33 @@ The experimental points are in a fair agreement with the theoretical calculation
 \section{MCT thin layers}
 \label{chpt:MCT_TL}
 \wciecie
-The systems where HgTe layer, sandwiched between CdTe, has thickness more than $x$ nm are called thin layers or slobs. These systems can be considered to be in an intermediate state between bulk and QW systems. The quantum confinement is still present but it is too small to open a band gap, therefore the system is semimetallic, like bulk HgTe. ARPES measurements \cite{Chang_strainedMCT} allowed to resolve topological-like features connecting heavy and light holes, which proved that the boundary states are still present in the system but they are buried deep in the heavy hole band.
+The systems where HgTe layer, sandwiched between CdTe, is thicker than $x$ nm are called thin layers or slobs. These systems can be considered to be in an intermediate state between bulk and QW. The quantum confinement is still present but it is too small to open a band gap, therefore the system is semimetallic, like bulk HgTe. The solution to this problem is to apply a bi-axial strain to the material \cite{Brune_State2}. This can be achieved by growing a layer of HgTe on a substrate with a different lattice constant, which opens an energy gap. If the chemical potential lies inside the band gap, the only conducting states left are topological surface states. 
 
 \subsection{Strain}
 \wciecie
-The lattice constant of HgTe grown on CdTe is 0.3 \% larger than that of bulk HgTe. The critical thickness required for lattice relaxation for this mismatch is around 200 nm, which means that thinner layers are subjected to a substrate-induced strain.
+The lattice constant of HgTe grown on CdTe is 0.3 \% larger than that of bulk HgTe, which leads to an apperance of strain. As long as a HgTe layer is not thicker than around 150 nm (150 nm \cite{Crauste_StrainedMCT}, 200 nm \cite{Brune_State2}), the layer adopts the lattice constant of the substrate and it is strained homogenously. However, in thicker layers the strain starts to be partially relaxed via the formation of dislocations. In a fully strained system a band gap can be increased to approximately 20 meV \cite{Brune_State2}\cite{Crauste_StrainedMCT}. Using a different substrate, like Cd$_{0.96}$Zn$_{0.04}$Te \cite{Leubner_State}, it is possible to apply stronger strain which increases the value of the band gap. However, the stronger strain makes the structure more prone to relax via exhibiting dislocations, reducing the maximal possible width.
 
-The edge states exist at the interface of two-dimensional HgTe layer of QW with the vacuum (air) at the boundary of the system, which renders then one-dimensional, as presented in the introduction in Figure \ref{fig:QSHE_HgTe}. These states are available for electrons taking part in carrier transport, but do not take active part in light absorption. Only electrons on the surfaces perpendicular to the beam of light can absorb photons. Therefore, a question arises -- are the states at the interface between HgTe QW and CdTe barriers topological? The topology of HgTe is different than CdTe, which should cause the topologically protected surface states to arise.
+\subsection{Boundary states}
+\wciecie
+One of the most prominent features of narrow HgTe QWs (with thickness close to the critical) is an existence of one-dimensional channels of conductance on an interface, as presented in Chapter \ref{chpt:Intro} in Figure \ref{fig:QSHE_HgTe}. These states are available for electrons taking part in carrier transport, but do not take active part in light absorption. It has to be stressed that their presence is not related with interfaces between HgTe QW and CdTe barriers, but an one-dimensional interface between HgTe QW and the surrounding vacuum (or air, as it has similar dielectric constant). The presence of CdTe barriers is required to provide the quantum confinement, which opens the bulk gap and suppresses the bulk conduction. 
+
+It is often neglected that the 2D interfaces between QW and barriers are still present in the system. The QW and barriers are characterized by a different Chern number, therefore a set of states with linear dispersion relation should appear at interface as well. This states are interesting from the point of view of magneto-optics, because only electrons on the surfaces perpendicular to the beam of light can absorb photons. The Figure \ref{fig:Layers_ARPES} shows the results of the ARPES measurements, which allowed to resolve topological-like features connecting heavy and light holes, which proved that the boundary states are still present in the system but they are buried deep in the heavy hole band. 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=14cm]{gfx/MCT/layers/ARPES.png}
+	\vspace{-10pt}
+	\caption{\textit{High resolution ARPES spectra for a maximally strained [100] HgTe/vacuum interface in the vicinity of the $\Gamma$-point measured at room temperature. \textbf{Panel (a):} Energy-momentum intensity spectrum after background subtraction. \textbf{Panel (b):} The second derivative of the intensity data to enhance the contrast. \textbf{Panel (c):} Intensity spectrum at different energies. Raw data on the left and its second derivative on the right. The cone structure has a circular section up to $\approx$ 0.4 eV. Images come from the work of Brüne \textit{et al.} \cite{Brune_State2}.}}
+	\label{fig:Layers_ARPES}
+\end{figure} 
+
+The edge states on the interface between HgTe and vacuum can be considered one dimensional as long as the thickness of HgTe layer is small. If the thickness is increased, the 1D edge transforms into a 2D surface, and an appearance of interface surface states should occur.
+
+\subsection{Band structure}
+The HgTe/CdTe interface states are difficult to probe because the center of the Dirac cone lies well below the top of heavy-hole band.
+Separated systems
+
+\subsubsection{Magnetic field}
 
 \subsection{Experiment}
 \subsubsection{Samples description}
@@ -1802,9 +1823,9 @@ The edge states exist at the interface of two-dimensional HgTe layer of QW with 
 \begin{thebibliography}{99}
 %Introduction topology
 \bibitem{Anderson_Topology}
-Anderson P. W. (1997), Basic Notions of Condensed Matter Physics (Westview Press).
+P. W. Anderson. \textit{Basic Notions of Condensed Matter Physics} (Westview Press), (1997)
 \bibitem{Landau_Topology}
-Landau L. D., and E. M. Lifshitz (1980), Statistical Physics (Pergamon Press, Oxford).
+L. D. Landau and E. M. Lifshitz. \textit{Statistical Physics} (Pergamon Press, Oxford), (1980).
 \bibitem{Josephson_Topology}
 B. D. Josephson, Possible new effects in superconductive tunneling, \textit{Phys. Lett.} \textbf{1} pp. 251–253 
 \bibitem{Klitzing_Topology}
@@ -2302,7 +2323,13 @@ H_{BIA} =
 
 
 \section{Sample B}
-
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/091222C/Map_HgTeSQW_091222C_30K.png}
+	\vspace{-10pt}
+	\caption{\textit{False color map of transmission of Sample B as a function of energy and magnetic field at $T$ = 30 K. Blue color represents areas where transmission is equal to 1, while lightblue/yellow/red colors indicate where absorption takes place. An anticrossing of transitions originating from the zero-mode Landau levels is visible close to $B_c = 5$ T. }}
+	\label{fig:Map_SQW_30K}
+\end{figure}
 \end{document}
 
 
