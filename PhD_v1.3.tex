@@ -589,7 +589,37 @@ At the magnetic field of value close to the end of region B, there are only few 
 \wciecie
 The filling factor $\nu =$ 0. In the region C of the magnetic field, as both LLs are higher in energy than the top grey line, and the amount of occupied states in lower LL is negligible, there are no electrons to absorb the light. This means that the transition vanishes (Panel (c)).
 
+\clearpage
 \section{Experimental set-up}
+
+\subsection{FIR Spectroscopy}
+\wciecie
+
+%Spectroscopy can be performed in a broad range of electromagnetic spectrum, because it is based on absorption of radiation due to the quantization of energy levels, which takes place at a broad scale. For example, matter can interact with radiation of mid-infrared and far-infrared range differently. Many kinds of molecules, both organic and inorganic, can potentially absorb a far-infrared photon and convert its energy into a vibration mode. However, absorbing an energetically lower photon of microwave range, can increase rotational energy of the molecule, which is commonly used in, for example, a microwave oven. Visible light can be used to determine the band structure of regular semiconductors, as their band gap usually lies in near-infrared up to UV ranges.
+
+%The same principle applies to the spectroscopy of topological insulators (TI) and narrow-gap semiconductors (NGS). However, the energy of the light has to be adapted to the band structure. This means that only infrared and THz light can probe the band gap of TIs and NGS. Moreover, as magnetic field is applied, an additional quantization appears in a form of Landau levels. At reasonably low magnetic field the energy difference between LLs is comparable with the band gap, and can be also probed using THz light.
+%Spectroscopy is a branch of physics that deals with the investigation of the interactions between radiation and matter. These interactions include absorption, reflection, emission, or scattering. The term \textit{radiation} does not refer only to photons -- electromagnetic (EM) radiation, it also involves other types of particles, like neutrons, electrons, and protons, which also can be used to study matter. From the point of view of this thesis however, only EM radiation is relevant, or rather a small part of EM spectrum -- infrared/terahertz radiation.
+
+The whole EM spectrum includes all the frequencies -- from low energetic radio waves ($\approx 10^0$ Hz) to high energy gamma rays (up to $10^{22}$ Hz). There is no a single spectroscopic method which allows to study light and matter at the whole EM spectrum. As the properties of matter differ with the frequency, different spectroscopic techniques have to be used to investigate specific physical phenomena in given spectral region. For example in solid state physics the electronic energy levels span over a wide energies in a range from few meV   to few eV. This corresponds to energies of photons from far-infrared (FIR), through visible, to ultraviolet range.
+
+The parts of EM spectrum, relevant in the scope of this thesis, are the THz and FIR regions, as they allows to investigate physical phenomena in narrow-gap semiconductors (NGS) and topological insulators (TI). In general, the THz region spans over the frequency domain between 0.3 THz to 30 THz, which translates to 10 - 1000 cm$^{-1}$, or $\approx 1.25$ - 125 meV. This energy range covers most of the possible inter- and intra-LL transitions in NGS and TI, which allows to investigate their band structure in a thorough way.  
+
+\myparagraph{Fourier spectrometer}
+\wciecie
+Fourier transform spectrometer has a Michelson interferometer in its core. Michelson interferometer consists of two mirrors, one in a fixed position and one is moveable, and a beamsplitter. Light from the source is split into two paths and gets reflected by the mirrors. By scanning the movable mirror over some distance, the relative optical path of two beams is varied, and an interference pattern is created that encodes the spectrum of the source. The interference pattern is a Fourier transform signal of the original spectrum. The Fourier spectrometer has some advantages over the regular spectrometers:
+\begin{itemize}
+\item it can scan multiple wavelengths simultaneously, greatly increasing the operational speed, 
+\item high speed allows to increase the number of measurements, increasing the signal-to-noise ratio,
+\item it does not require prism/grating to split the beam in order to analyze it.
+\end{itemize}
+
+A coupling of Fourier spectrometer as a source of light and a bolometer as a detector can be used to perform spectroscopy of solid state systems quickly and effectively.
+
+\myparagraph{Bolometer}
+\wciecie
+A bolometer is a device used to measure the power of incident electromagnetic radiation through heating of an absorptive element. Any radiation illuminating the absorptive element raises its temperature -- the higher the absorbed power, the higher the increase of temperature. The temperature change can be measured directly with an attached resistive thermometer, or the resistance of the absorptive element itself can be used as a thermometer. Nowadays, most of the bolometers are based on semiconductor or superconductor absorptive elements, which allows them to operate at cryogenic temperatures, significantly increasing the sensitivity.
+
+\subsection{Experiment}
 \wciecie
 The experimental work of this thesis is based on the infrared/THz magnetospectroscopy measurements of TI and NGS. The spectroscopy experiments were performed using a specially customized Oxford liquid helium cryostat coupled to a Bruker Fourier spectrometer IFS 66v/S. The schematics of the system is presented on Figure \ref{fig:Experimental_setup}. 
 
@@ -609,37 +639,11 @@ A system of two superconductive coils was embedded into the cryostat (Figure \re
 
 In the experiment a globar lamp integrated with the spectrometer was used as a radiation source. Globar is a broadband thermal emitter, which is typically used for infrared spectroscopy. It is a silicon carbide rod heated electrically up to couple of hundreds degrees Celsius. Its radiation is suitable for spectroscopy as it is continuous and resembles the blackbody radiation.
 
-The emitted radiation passes through the spectrometer, where it becomes...
+The radiation is delivered to the cryostat via a waveguide, which ends with a light-focusing cone. The focused light passes through and interacts with the sample. The unabsorbed light is detected by the bolometer. An electrical response of the bolometer is passed back to the spectrometer, where the Fourier transform occurs and the final spectra are calculated.
 
-
-The radiation is delivered to the cryostat via a waveguide, which ends with a light-focusing cone. The focused light passes through and interacts with the sample. The unabsorbed light is detected by the bolometer. An electrical response of the bolometer is passed back to the spectrometer, and the final spectra are calculated.
-
-\subsection{FIR Spectroscopy}
-\wciecie
-
-%Spectroscopy can be performed in a broad range of electromagnetic spectrum, because it is based on absorption of radiation due to the quantization of energy levels, which takes place at a broad scale. For example, matter can interact with radiation of mid-infrared and far-infrared range differently. Many kinds of molecules, both organic and inorganic, can potentially absorb a far-infrared photon and convert its energy into a vibration mode. However, absorbing an energetically lower photon of microwave range, can increase rotational energy of the molecule, which is commonly used in, for example, a microwave oven. Visible light can be used to determine the band structure of regular semiconductors, as their band gap usually lies in near-infrared up to UV ranges.
-
-%The same principle applies to the spectroscopy of topological insulators (TI) and narrow-gap semiconductors (NGS). However, the energy of the light has to be adapted to the band structure. This means that only infrared and THz light can probe the band gap of TIs and NGS. Moreover, as magnetic field is applied, an additional quantization appears in a form of Landau levels. At reasonably low magnetic field the energy difference between LLs is comparable with the band gap, and can be also probed using THz light.
-%Spectroscopy is a branch of physics that deals with the investigation of the interactions between radiation and matter. These interactions include absorption, reflection, emission, or scattering. The term \textit{radiation} does not refer only to photons -- electromagnetic (EM) radiation, it also involves other types of particles, like neutrons, electrons, and protons, which also can be used to study matter. From the point of view of this thesis however, only EM radiation is relevant, or rather a small part of EM spectrum -- infrared/terahertz radiation.
-
-The whole EM spectrum includes all the frequencies -- from low energetic radio waves ($\approx 10^0$ Hz) to high energy gamma rays (up to $10^{22}$ Hz). There is no a single spectroscopic method which allows to study light and matter at the whole EM spectrum. As the properties of matter differ with the frequency, different spectroscopic techniques have to be used to investigate specific physical phenomena in given spectral region. For example in solid state physics the electronic energy levels span over a wide energies in a range from few meV   to few eV. This corresponds to energies of photons from far-infrared (FIR), through visible, to ultraviolet range.
-
-The parts of EM spectrum, concerning this thesis, are the THz and FIR regions, as they allows to investigate physical phenomena in narrow-gap semiconductors (NGS) and topological insulators (TI). In general, the THz region spans over the frequency domain between 0.3 THz to 30 THz, which translates to 10 - 1000 cm$^{-1}$, or $\approx 1.25$ - 125 meV. This energy range covers most of the possible inter- and intra-LL transitions in NGS and TI, which allows to investigate their band structure in a thorough way.  
-
-\myparagraph{Fourier spectrometer}
-\wciecie
-The base principle of Fourier transform spectrometer is a Michelson interferometer with a movable mirror. By scanning the movable mirror over some distance, an interference pattern is produced that encodes the spectrum of the source (in fact, it turns out to be its Fourier transform Eric Weisstein's World of Math).
-
-In its simplest form, a Fourier transform spectrometer consists of two mirrors, with a beamsplitter placed at the vertex of the right angle and oriented at a 45° angle relative to the two mirrors. Radiation incident on the beamsplitter from one of the two "ports" is then divided into two parts, each of which propagates down one of the two arms and is reflected off one of the mirrors. The two beams are then recombined and transmitted out the other port. When the position of one mirror is continuously varied along the axis of the corresponding arm, an interference pattern is swept out as the two phase-shifted beams interfere with each other. 
-
-\myparagraph{Bolometer}
-\wciecie
-A bolometer is a device used to measure the power of incident electromagnetic radiation through heating of an absorptive element. Any radiation illuminating the absorptive element raises its temperature -- the higher the absorbed power, the higher the increase of temperature. The temperature change can be measured directly with an attached resistive thermometer, or the resistance of the absorptive element itself can be used as a thermometer. Nowadays, most of the bolometers are based on semiconductor or superconductor absorptive elements, which allows them to operate at cryogenic temperatures, significantly increasing the sensitivity.
-
-\subsubsection{Analysis of spectroscopic data}
+\myparagraph{Analysis of spectroscopic data}
 \wciecie
 %A spectrum is a plot of measured light intensity versus wavelength. Usually the $y$-axis of a spectrum represents absorbance or transmittance. Absorbance is a measure of the amount of light absorbed by a sample. It is usually characterized by a positive peaks in a spectrum. Transmittance, on the other hand, is a measure of the amount of light transmitted through a sample. It is characterized by negative minima or "dips" in a spectrum. Absorbance and transmittance are directly related to each other via the energy conservation.
-
 Spectra are used to characterize samples and give an insight to their energetic structure. The peak positions in an FIR spectrum correlate with an optical transitions between distinct energy levels within sample. The standard way to obtain a transmission spectrum is to acquire a spectrum with respect to some reference. A reference spectrum allows to remove features, which are related to the experimental set-up itself, and do not provide any useful information about the sample. For example, in magneto-spectroscopy, a spectrum taken at zero magnetic field ($T_{B=0T}$) can serve as a reference to a different spectrum, taken at nonzero magnetic field ($T_{B\neq 0T}$). Both of the obtained spectra are influenced by all of the optical parts of the set-up, therefore a formula for the measured reference spectrum can be expressed as 
 \begin{equation}
 \label{eq:Spectra1}
