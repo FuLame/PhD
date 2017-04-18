@@ -536,61 +536,9 @@ As stated in Equation \ref{eq:Fermi_distribution}, the Fermi distribution depend
 	\label{fig:Fermi_Distribution}
 \end{figure}
 
-At the beginning of this section (\ref{section:Fermi_level}) a concept of Fermi level and electron distribution was given. The way how the electrons are distributed on the bands is crucial for the shape of an absorption spectra. This means that even if the given transition's strength is high, and there are sufficient electron states related to the transition (which is governed by the joint density of states), but the electron distribution is not right, the transition does not occur. The right electron distribution requires the initial state to be occupied while the final state must be empty. 
+At the beginning of this section (\ref{section:Fermi_level}) a concept of Fermi level and electron distribution was given. The way how the electrons are distributed on the bands is crucial for the shape of an absorption spectra. This means that even if the given transition's strength is high, and there are sufficient electron states related to the transition (which is governed by the joint density of states), the transition might not occur, unless the initial state is occupied while the final state is be empty. 
 
-Figure \ref{fig:Transitions_vs_Ef} illustrates this concept. It shows an example of LL structure (two levels) and an potentially observed absorption line due to the transitions between those LLs. Panel (a) shows the Fermi distribution of electrons at $T$ = 0 K with the position of chemical potential is marked with a purple line, which also extends into Panel (b). This means that only the electron states with $E \leq E_f$ (lower than the purple line) are occupied, which is represented as thick lines. The unoccupied states are represented by a thin line. The whole magnetic field range is divided into three regions A, B, and C. Panel (c) shows the peak of expected transition line. At given magnetic field its value is equal to the difference of energies of LLs from panel (b) at the same field. The dispersion of the transition is linear, as the difference of linear LLs is linear as well. In a case of LLs with a square-root relation $E \propto \sqrt{B}$, the transition dispersion would be square-root as well. 
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=12cm]{gfx/Spectro/Transitions_vs_Ef.png}
-	\vspace{-10pt}
-	\caption{\textit{\textbf{Panel (a)}: The Fermi distribution at $T$ = 0 K. \textbf{Panel (b)}: Plot of two Landau levels divided into three regions, depending if a transition between those Landau levels can occur. The chemical potential is marked with a horizontal purple line. Region 1 -- the transition is forbidden due to the lack of empty final states (red arrow). Region 2 -- the transition is allowed (black arrow). Region 3 -- the transition in not possible due to the lack of carriers in initial states (red arrow). \textbf{Panel (c)}: Position of expected transition in an absorption spectra.}}
-	\label{fig:Transitions_vs_Ef}
-\end{figure}
-
-The assumption is made that the transition strength is high at the whole range and there are enough states in both initial (blue line) and final (green line) states. 
-
-\myparagraph{Region A:}
-\wciecie
-The filling factor $\nu =$ 2. The transition is forbidden by the Pauli principle, which is symbolized by a red arrow. Despite the fact that initial states are occupied, there are no empty states at the final level, as all states are occupied as well. This is why there is no observed transition in this region (Panel (c)).
-
-\myparagraph{Region B:}
-\wciecie
-The filling factor $\nu =$ 1. At the beginning of region B the higher in energy LL (green) crosses the chemical potential, which means its electronic states are no longer occupied (thin line). This renders the transition possible, which is represented by a black arrow. The position of the transition is plotted on Panel (c). The intensity of transition is the same in the whole region.
-
-\myparagraph{Region C:}
-\wciecie
-The filling factor $\nu =$ 0. At the beginning of region C the lower in energy LL (blue) crosses the chemical potential, which means that both LLs are not occupied. If there are no occupied states in initial states there are no electrons which can interact with a photon and be excited to higher level. The transition is not possible, which is marked with a red arrow. Also, there is no absorption marked on Panel (c).
- 
-The description above explains the requirements which have to be met in order the transition to be observed. An appearance of a transition and its disappearance give an important information about the position of chemical position, which usually has to be confirmed via transport measurements.
-
-The situation slightly changes if temperature is elevated. The Fermi distribution changes shape, as presented in Figure \ref{fig:Transitions_vs_Ef_vsT} (Panel (a)). This means that not all states with $E < E_f$ are occupied and not all states with $E > E_f$ are empty, especially those close to $E_f$. Instead, the probability of occupation decreases smoothly with increasing energy (and with magnetic field -- especially in the case of LL structure as in Figure \ref{fig:Transitions_vs_Ef_vsT} or other LL structures, where $E(B)$ is a monotonic function). This effect is schematically represented with horizontal solid grey lines, which mark the region of energy, where both LLs are partially occupied. Because of this the Region B is broader in comparison to the case of $T = 0$ K.
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=12cm]{gfx/Spectro/Transitions_vs_Ef_vsT.png}
-	\vspace{-10pt}
-	\caption{\textit{Obsadz}}
-	\label{fig:Transitions_vs_Ef_vsT}
-\end{figure}
-
-\myparagraph{Region A:}
-\wciecie
-The filling factor $\nu =$ 2. Region A is similar to the $T = 0$ K case. All states on both LLs are occupied so the transition is forbidden due to the Pauli exclusion principle. 
-
-\myparagraph{Region B':}
-\wciecie
-The filling factor $\nu =$ 1. As soon as the higher (green) LL passes the bottom grey line, the probability of occupation decreases and some empty states emerge. Electrons from lower (blue) LL can be excited to those empty states, which results in an appearance of absorption line. The amount of absorbed light, thus the value of the maximum of absorption line, is lower that in the case of $T = 0$ K, as the amount of available electrons is lower. As the energy increases the electron distribution shifts -- more empty states appear in higher LL and the transition gains intensity. 
-
-As the magnetic field increases, the lower LL passes the bottom grey line. This means that some empty states start to appear. This potentially would decrease the intensity of the transition, because there is less electrons to excite. However, at the same time, there is still more occupied states than the empty states. The amount of empty states increases thus the intensity of the transition is more or less the same.
-
-In the middle of region B all of the states in higher LL are empty, and with increasing magnetic field the amount of occupied states in lower LL decreases -- the intensity of the transition decreases as well.
-
-At the magnetic field of value close to the end of region B, there are only few occupied states in the lower LL, to the transition is very weak. Despite this, the range where the transition was observed is still broader than in the case of $T = 0$ K.
-
-\myparagraph{Region C:}
-\wciecie
-The filling factor $\nu =$ 0. In the region C of the magnetic field, as both LLs are higher in energy than the top grey line, and the amount of occupied states in lower LL is negligible, there are no electrons to absorb the light. This means that the transition vanishes (Panel (c)).
-
+At low temperature an occupation of given level varies very rapidly while crossing the Fermi energy -- the bands are either completely filled or empty. With increasing temperature the electron distribution is smoother as a function of energy and some levels with energy close to the Fermi energy are occupied partially, meaning that there are possibilities to execute  transitions into and from these partially occupied levels. 
 
 \section{Experimental methods}
 
@@ -605,21 +553,6 @@ The filling factor $\nu =$ 0. In the region C of the magnetic field, as both LLs
 The whole EM spectrum includes all the frequencies -- from low energetic radio waves ($\approx 10^0$ Hz) to high energy gamma rays (up to $10^{22}$ Hz). There is no a single spectroscopic method which allows to study light and matter at the whole EM spectrum. As the properties of matter differ with the frequency, different spectroscopic techniques have to be used to investigate specific physical phenomena in given spectral region. For example in solid state physics the electronic energy levels span over a wide energies in a range from few meV   to few eV. This corresponds to energies of photons from far-infrared (FIR), through visible, to ultraviolet range.
 
 The parts of EM spectrum, relevant in the scope of this thesis, are the THz and FIR regions, as they allows to investigate physical phenomena in narrow-gap semiconductors (NGS) and topological insulators (TI). In general, the THz region spans over the frequency domain between 0.3 THz to 30 THz, which translates to 10 - 1000 cm$^{-1}$, or $\approx 1.25$ - 125 meV. This energy range covers most of the possible inter- and intra-LL transitions in NGS and TI, which allows to investigate their band structure in a thorough way.  
-
-\myparagraph{Fourier spectrometer}
-\wciecie
-Fourier transform spectrometer has a Michelson interferometer in its core. Michelson interferometer consists of two mirrors, one in a fixed position and one is moveable, and a beamsplitter. Light from the source is split into two paths and gets reflected by the mirrors. By scanning the movable mirror over some distance, the relative optical path of two beams is varied, and an interference pattern is created that encodes the spectrum of the source. The interference pattern is a Fourier transform signal of the original spectrum. The Fourier spectrometer has some advantages over the regular spectrometers:
-\begin{itemize}
-\item it can scan multiple wavelengths simultaneously, greatly increasing the operational speed, 
-\item high speed allows to increase the number of measurements, increasing the signal-to-noise ratio,
-\item it does not require prism/grating to split the beam in order to analyze it.
-\end{itemize}
-
-A coupling of Fourier spectrometer as a source of light and a bolometer as a detector can be used to perform spectroscopy of solid state systems quickly and effectively.
-
-\myparagraph{Bolometer}
-\wciecie
-A bolometer is a device used to measure the power of incident electromagnetic radiation through heating of an absorptive element. Any radiation illuminating the absorptive element raises its temperature -- the higher the absorbed power, the higher the increase of temperature. The temperature change can be measured directly with an attached resistive thermometer, or the resistance of the absorptive element itself can be used as a thermometer. Nowadays, most of the bolometers are based on semiconductor or superconductor absorptive elements, which allows them to operate at cryogenic temperatures, significantly increasing the sensitivity.
 
 \subsection{Experimental set-up}
 \wciecie
@@ -642,6 +575,21 @@ A system of two superconductive coils was embedded into the cryostat (Figure \re
 In the experiment a globar lamp integrated with the spectrometer was used as a radiation source. Globar is a broadband thermal emitter, which is typically used for infrared spectroscopy. It is a silicon carbide rod heated electrically up to couple of hundreds degrees Celsius. Its radiation is suitable for spectroscopy as it is continuous and resembles the blackbody radiation.
 
 The radiation is delivered to the cryostat via a waveguide, which ends with a light-focusing cone. The focused light passes through and interacts with the sample. The unabsorbed light is detected by the bolometer. An electrical response of the bolometer is passed back to the spectrometer, where the Fourier transform occurs and the final spectra are calculated.
+
+\myparagraph{Fourier spectrometer}
+\wciecie
+Fourier transform spectrometer has a Michelson interferometer in its core. Michelson interferometer consists of two mirrors, one in a fixed position and one is moveable, and a beamsplitter. Light from the source is split into two paths and gets reflected by the mirrors. By scanning the movable mirror over some distance, the relative optical path of two beams is varied, and an interference pattern is created that encodes the spectrum of the source. The interference pattern is a Fourier transform signal of the original spectrum. The Fourier spectrometer has some advantages over the regular spectrometers:
+\begin{itemize}
+\item it can scan multiple wavelengths simultaneously, greatly increasing the operational speed, 
+\item high speed allows to increase the number of measurements, increasing the signal-to-noise ratio,
+\item it does not require prism/grating to split the beam in order to analyze it.
+\end{itemize}
+
+A coupling of Fourier spectrometer as a source of light and a bolometer as a detector can be used to perform spectroscopy of solid state systems quickly and effectively.
+
+\myparagraph{Bolometer}
+\wciecie
+A bolometer is a device used to measure the power of incident electromagnetic radiation through heating of an absorptive element. Any radiation illuminating the absorptive element raises its temperature -- the higher the absorbed power, the higher the increase of temperature. The temperature change can be measured directly with an attached resistive thermometer, or the resistance of the absorptive element itself can be used as a thermometer. Nowadays, most of the bolometers are based on semiconductor or superconductor absorptive elements, which allows them to operate at cryogenic temperatures, significantly increasing the sensitivity.
 
 \myparagraph{Analysis of spectroscopic data}
 \wciecie
@@ -727,6 +675,8 @@ Both compounds, HgTe and CdTe, are well lattice-matched, having the lattice cons
 \wciecie
 The earliest studies of Hg$_{1-x}$Cd$_x$Te crystals were aimed at development of infrared detectors, especially for radar applications. In 1958, Lawson \textit{et al.} syntesized for the first time a mixed crystal of HgCdTe at the Royal Radar Establishment in England. His work was published \cite{Lawson_MCT} a year later. Because of its extraordinary properties, HgCdTe was recognized early as the most versatile material for detection over the whole infrared range, with a special attention put on the wavelength of around 10 $\mu$m. This is the range of the second wide atmospheric window, which made it of great interest for communication applications. Moreover, it covers the range of the maximum of thermal radiation at the room temperature, which opened a way for possible applications for everyday life. 
 
+Following studies were focused on determining the band gap of mixed compounds with composition ranging from $x \approx 0.2$ to $x \approx 0.6$ by optical methods \cite{Schmit_MCT_bulk}\cite{Scott_MCT_bulk} (based on a detection of the absorption edge), which provided the band structure parameters for a wide range of temperatures and empirical formulae for the value of the band gap as a function of Cd content and temperature. Moreover, an indication of semimetal-to-semiconductor phase transition was observed. The studies of samples with band gap close to were performed by \cite{Groves_MCT_bulk} and \cite{Saur_MCT_bulk}. Further magnetooptical studies performed on samples with small energy gap \cite{Kim_MCT_bulk} explored the properties of the band structure in semimetalic regime. The first extensive magnetospectroscopic studies of HgCdTe in semiconducting \cite{Guldner_MCT_bulk1} and semimetallic \cite{Guldner_MCT_bulk2} phase were performed by Guldner \textit{et al.}. The investigations allowed to explore the phenomena like the band structure evolution at the point of phase transitions or polaron anomalies.
+
 Recently, as the growth techniques have gradually advanced over the years, the quality of structures based on HgCdTe improved significantly. Especially, a Molecular Beam Epitaxy (MBE) method gives a possibility to grow structures of immense quality. Despite this, the growth of Hg-based structures is still a challenging task and requires a lot of experience and know-how to be done properly. That is why there are only few laboratories in the world (like CEA-LETI, Würzburg or Novosibirsk) where the growth process was mastered.
 
 MBE method is an epitaxial method of growing crystalline films on top of a monocrystal substrate. MBE takes place in a ultra-high vacuum environment (around $10^{-10}$ mbar). The vacuum prevents deposition of unwanted molecules, reducing the amount of non-intentional impurities. In a solid source MBE, pure elements are heated separately in effusion cells or electron beam evaporators until they start to slowly sublimate. The gaseous elements are delivered to the wafer, where they condensate, forming a crystal. They may also react with each other, creating mixed crystals. The quality of the growth can be controlled in-situ by reflection high energy electron diffraction, which provides information of the thickness of each layer, even down to a monolayer of atoms. There are also different methods of epitaxial crystal growth, which will not be described in this work. The most popular and widely used are: liquid phase epitaxy, vapor phase epitaxy, and metalorganic chemical vapor deposition.
@@ -759,13 +709,13 @@ A Hg$_{1-x}$Cd$_x$Te crystal is a regular semiconductor for cadmium content high
 	\centering
 	\includegraphics[width=10cm]{gfx/MCT/bulk/MCT_bandStructure.png}
 	\vspace{-10pt}
-	\caption{\textit{A dispersion relation in Hg$_{1-x}$Cd$_x$Te system for different cadmium content $x$. Blue surface represents an electron band, while red surfaces represent light- and heavy-hole bands. Heavy hole band is almost dispersionless, as the effective mass of heavy-hole is large in comparison to the mass of light-hole and electron. On the left side a semiconducting phase is shown, where the band gap is positive and the conduction band is formed by a $\Gamma_6$ band. On the right side the band structure is inverted. The band gap is negative and the conduction band is formed by a $\Gamma_8$ band. For both regular and inverted band orders the bands are parabolic. For a critical concentration $x_c$ the band gap vanishes and the system resembles a Dirac-like dispersion relation with additional flat band (heavy-hole). Courtesy of Orlita et al \cite{Orlita_MCT}.}}
+	\caption{\textit{A dispersion relation in Hg$_{1-x}$Cd$_x$Te system for different cadmium content $x$. Blue surface represents an electron band, while red surfaces represent light- and heavy-hole bands. Heavy hole band is almost dispersionless, as the effective mass of heavy-hole is large in comparison to the mass of light-hole and electron. On the left side a semiconducting phase is shown, where the band gap is positive and the conduction band is formed by a $\Gamma_6$ band. On the right side the band structure is inverted. The band gap is negative and the conduction band is formed by a $\Gamma_8$ band. For both regular and inverted band orders the bands are parabolic. For a critical concentration $x_c$ the band gap vanishes and the system resembles a Dirac-like dispersion relation with additional flat band (heavy-hole). Courtesy of Orlita \textit{et al.} \cite{Orlita_MCT}.}}
 	\label{fig:MCT_bandStructure}
 \end{figure} 
 
 As was mentioned before, the band structure depends on more parameters than only the cadmium content. Considering temperature as the second parameter, the point of closing the band gap becomes a curve on the two dimensional $(x, T)$ parameter space. This clarifies that the critical contentration $x_c \approx 0.17$ is valid only for temperatures close to the absolute zero. However, samples with a little lower cadmium content have the critical temperature elevated. Our team \cite{Teppe_MCT} for the first time used the temperature as an external parameter to induce a topological phase transition and investigate the Kane fermions arising in the gapless state. The two samples used in that experiment had the cadmium content of $x_A = 0.175$ and $x_B = 0.155$. This allowed to study the physics of Kane fermions at higher temperatures, as the temperature of phase transition of the sample B was around 77 K.  
 
-The temperature is an important factor considering the physical phenomena occurring in solid state materials, especially in narrow-gap semiconductors like MCT. Temperature also influences the energy structure via lattice thermal expansion. This modifies the Hamiltonian and the band structure in the consequence. In the case of narrow gap semiconductors, especially if the dependence on temperature is significant, it can lead to a gap closure, as in the case of MCT. The energy gap depends on cadmium content $x$ and temperature $T$, and that dependence can be expressed (following Laurenti \textit{et al.} \cite{Laurenti_MCT_bulk}) as
+The temperature is an important factor considering the physical phenomena occurring in solid state materials, especially in narrow-gap semiconductors like MCT. Temperature also influences the energy structure via lattice thermal expansion. This modifies the Hamiltonian and the band structure in the consequence, by elevating the hole band energy. In the case of narrow gap semiconductors, especially if the dependence on temperature is significant, it can lead to a gap closure, as in the case of MCT. The energy gap depends on cadmium content $x$ and temperature $T$, and that dependence can be expressed (following Laurenti \textit{et al.} \cite{Laurenti_MCT_bulk}) as
 
 \begin{equation}
 \begin{aligned}
@@ -788,15 +738,17 @@ The appearance of Kane fermions in not restricted only to the gapless state, whe
 
 Cd$_3$As$_2$ has been identified as a 3D topological Dirac semimetal, where a topological phase is stable under ambiend conditions \cite{Liu_CdAs}, which brought again a considerable interest in the electronic properties of this compound, upon which investigations started in the late sixties \cite{Roseman_CdAs}\cite{Bodnar_CdAs}. This compound was firstly expected to contain the Dirac-like particles. ARPES measurements confirmed those expectations, claiming that the electronic bands of Cd$_3$As$_2$ consist of a single pair of symmetry-protected 3D Dirac nodes, located close to the $\Gamma$ point of the Brillouin zone, which span over a few hundred meV \cite{Borisenko_CdAs}\cite{Neupane_CdAs}, or even eV \cite{Liu_CdAs}. However, a recent optical reflectivity experiments performed by Akrap \textit{et al.} \cite{Akrap_CdAs} shed some light on that matter. As it turns out, the electronic bands of Cd$_3$As$_2$ are quite different if considered in high and low energy scales. 
 
-In high energy scales, in the order of few hundreds of meV, the band structure resembles a set of two conical bands, which originate from the Kane model applied to a narrow gap semiconductor. The bands are not symmetry protected and they host a genuine Kane fermions. However, at low energy scales, of the order of few meV, the band structure may be formed by two sets of twin Dirac cones, which are protected by symmetry. This means that the excitations of higher energy behave accordingly to Kane particles, while lower energy, if present, are Dirac-like. The band structure and its similarities with Dirac and Kane systems are presented in Figure \ref{fig:CdAs_bandStructure}. 
+In high energy scales, in the order of few hundreds of meV, the band structure resembles a set of two conical bands, which originate from the Kane model applied to a narrow gap semiconductor. The bands are not symmetry protected and they host a genuine Kane fermions. However, at low energy scales, of the order of few meV, the band structure may be formed by two sets of twin Dirac cones, which are protected by symmetry. This means that the excitations of higher energy behave accordingly to Kane particles, while lower energy, if present, are Dirac-like. 
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=10cm]{gfx/CdAs.png}
-	\vspace{-10pt}
-	\caption{\textit{Idealized Landau levels of a) Dirac and b) Kane electrons in the quantum limit and their relative energy scale. The n = 0 LLs typical for Dirac electrons, dispersing linearly with the momentum, are absent for Kane electrons. The solid arrows show cyclotron resonance modes active in the quantum limit, the dashed arrows those which vanish when the quantum limit is reached. In the central inset the band structure and respective energy scales are presented. Dirac approach is valid for low energy scales, while Kane is valid for the general picture. Courtesy of Akrap et al. \cite{Akrap_CdAs}.}}
-	\label{fig:CdAs_bandStructure}
-\end{figure} 
+%The band structure and its similarities with Dirac and Kane systems are presented in Figure \ref{fig:CdAs_bandStructure}. 
+
+%\begin{figure}[ht]
+%	\centering
+%	\includegraphics[width=10cm]{gfx/CdAs.png}
+%	\vspace{-10pt}
+%	\caption{\textit{Idealized Landau levels of a) Dirac and b) Kane electrons in the quantum limit and their relative energy scale. The n = 0 LLs typical for Dirac electrons, dispersing linearly with the momentum, are absent for Kane electrons. The solid arrows show cyclotron resonance modes active in the quantum limit, the dashed arrows those which vanish when the quantum limit is reached. In the central inset the band structure and respective energy scales are presented. Dirac approach is valid for low energy scales, while Kane is valid for the general picture. Courtesy of Akrap et al. \cite{Akrap_CdAs}.}}
+%	\label{fig:CdAs_bandStructure}
+%\end{figure} 
 
 \subsection{The simplified Kane model}
 \wciecie
@@ -896,7 +848,7 @@ The analysis of the absorption coefficient, presented on Figure \ref{fig:Samples
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=8cm]{gfx/MCT/Bulk/MCT_AbsorptCoeff.png}
+	\includegraphics[width=14cm]{gfx/MCT/Bulk/MCT_AbsorptCoeff.png}
 	\vspace{-10pt}
 	\caption{\textit{Optical absorption of pseudo-relativistic Kane fermions in Hg$_{1-x}$Cd$_x$Te at $T$ = 4.2 K. Zero field absorption coefficients exhibit a linear behavior reflecting the relativistic character of the 3D carriers. The band gap values of 4 $\pm$ 2 meV and -20 $\pm$ 4 meV for sample A and B, respectively, are extracted from fits (dashed lines). The inset depicts inter-band transitions that contribute to the linear optical absorption.}}	
 \label{fig:Samples_MCT_AbsorptCoeff}
@@ -924,9 +876,10 @@ This chapter presents experimental results which can be considered as a direct e
 	\label{fig:Orlita_MCT}
 \end{figure}
 
-Those results proved that magnetospectroscopy can be used as a detailed probe of the energy structure of topological insulators and narrow-band semiconductors. Moreover, magnetospectroscopy does not require any particular sample preparation, in contrast to transport measurements, which require further adaptation of a sample -- contacts deposition, etching and/or more. This is especially important in a case of MCT systems, as the processing is a challenging task due to the instability of the sample structure at high temperatures required by processing.
+%Magnetospectroscopy can be used as a detailed probe of the energy structure of topological insulators and narrow-band semiconductors. Moreover, magnetospectroscopy does not require any particular sample preparation, in contrast to transport measurements, which require further adaptation of a sample -- contacts deposition, etching and/or more. This is especially important in a case of MCT systems, as the processing is a challenging task due to the instability of the sample structure at high temperatures required by processing.
 
 The two main findings, presented in this chapter, are prove that temperature can be used as an easy-controllable external parameter to alter a band structure of given MCT-based sample and even tune it over a topological phase transition. This is the case for HgCdTe bulk samples as well as the QWs. However, in the case of a bulk systems the dependence on temperature is stronger (and the results are more explicit) than in the case of QWs. 
+
 
 \myparagraph{Experimental details}
 \wciecie
@@ -1041,7 +994,7 @@ At the temperature of 77 K the band gap increases further to 36 meV. The transit
 	\label{fig:Map_110429_77K}
 \end{figure} 
 
-The temperature is high enough to lift the chemical potential up to around 45 meV, which causes transitions A and B to gain intensity above this energy, while transitions C and D become fainter. The horizontal feature, related to absorption on Hg vacancies becomes more pronounced. Also, at this temperature it is accompanied by a second feature, at energies around 20 meV, just above the Reststrahlen band of HgTe. The proximity of the position of that new feature to the Reststrahlen band is not a coincidence -- this absorption is caused by existence of states related to the electron-phonon interaction.
+The temperature is high enough to lift the chemical potential up to around 45 meV, which causes transitions A and B to gain intensity above this energy, while transitions C and D become fainter. The horizontal feature, related to absorption on Hg vacancies becomes more pronounced. Also, at this temperature it is accompanied by a second feature, at energies around 20 meV, just above the reststrahlen band of HgTe. This absorption is related to the energy of TO CdTe-like phonons, arising in magnetoabsorption due to the electron-phonon interaction. The frequency of these phonon modes is independent on temperature \cite{Sheregii_MCT_bulk}.
 
 The fits to experimental data allowed to estimate the effective rest mass to be equal to $\tilde m = 3.19 \pm 0.41 \cdot 10^{-3}$ $m_0$, and the carrier velocity to be equal to $\tilde{c} = 1.049 \pm 0.052 \cdot 10^6$ m/s. 
 
@@ -1211,11 +1164,8 @@ An interband transition A, for the first time for sample B, does not converge at
 	\caption{\textit{False color map of transmission of Sample B as a function of energy and magnetic field at $T$ = 120 K. The scale of magnetic field is presented in a $\sqrt{B}$ scale. Blue color represents areas where transmission is equal to 1, while lightblue/yellow/red colors indicate where absorption takes place. White curves show fits of the energy difference of Landau levels to the experimental points. White arrow points the value of the band gap.}}
 	\label{fig:Map_101007_120K}
 \end{figure} 
-Due to the chemical potential, which lies at more than 80 meV above the heavy hole band, the transition A is not visible at small magnetic field. Because of the same reason the transition D vanishes at high magnetic fields. However, the fit to experimental points is very accurate for available data (Figure \ref{fig:Spectra_101007_120K}). The temperature related features become even stronger, as the thermal energy at 120 K is higher than 10 meV.
+Due to the chemical potential, which lies at more than 80 meV above the heavy hole band, the transition A is not visible at small magnetic field. Because of the same reason the transition D vanishes at high magnetic fields. However, the fit to experimental points is very accurate for available data (Figure \ref{fig:Spectra_101007_120K}). 
 
-The fits allowed to estimate the effective rest mass to be equal to $\tilde m = 2.15 \pm 0.46 \cdot 10^{-3}$ $m_0$, and the carrier velocity to be equal to $\tilde{c} = 1.010 \pm 0.007 \cdot 10^6$ m/s.
-
-\clearpage
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTbulk/101007/Trans120K.png}
@@ -1223,7 +1173,9 @@ The fits allowed to estimate the effective rest mass to be equal to $\tilde m = 
 	\caption{\textit{\textbf{Left panel:} Points corresponding to the minima of transmission for sample B at $T$ = 120 K with fits showing the expected transition evolution as a function of magnetic field. \textbf{Right panel:} Transmission spectra plotted at magnetic fields in range from 0 to 16 T, with symbols corresponding to the transitions from left panel. Open (full) symbols represent intraband (interband) transitions.}}
 	\label{fig:Spectra_101007_120K}
 \end{figure}
+The temperature related features become even stronger, as the thermal energy at 120 K is higher than 10 meV.
 
+The fits allowed to estimate the effective rest mass to be equal to $\tilde m = 2.15 \pm 0.46 \cdot 10^{-3}$ $m_0$, and the carrier velocity to be equal to $\tilde{c} = 1.010 \pm 0.007 \cdot 10^6$ m/s.
 
 \subsection{Summary}
 The results presented in this chapter show in a direct and straightforward way the evolution of the band structure of bulk Hg$_{1-x}$Cd$_{x}$Te characterized by a cadmium concentration close to the critical. Results based on two samples were shown and compared to easily highlight the difference of the band structure between regular and inverted phase systems. The temperature evolution of the band gap and a semiconductor-to-semimetal phase transition was studied by the means of magnetospectroscopy. 
@@ -1259,13 +1211,13 @@ Each and every transition was fitted according to the model in Equation \ref{Eq:
 
 Interestingly, the Dirac-like Kane fermion velocity $\tilde{c}$ is nearly constant over the whole range of temperatures for both samples with Cd contents of 0.155 and 0.175. The extracted value of $\tilde{c} = (1.07 \pm 0.05)\cdot 10^6$ m/s is in a very good agreement with the theoretical value defined by $\tilde{c} = \sqrt{2 P^2/3\hbar^2}$, which equals to $1.05 \cdot 10^6$ m/s for the well-accepted value of $E_p = 2m_0 P^2/ \hbar^2 \approx 18.8$ eV. Therefore, this universal value of $\tilde{c}$ allows to determine the particle rest-mass for bandgap values in the vicinity of the semimetal-to-semiconductor phase transition induced by temperature, Cd content, or other external parameter (e.g. pressure).
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=14cm]{gfx/wyniki/MCTbulk/Gfactor.png}
-	\vspace{-10pt}
-	\caption{\textit{Obsadz}}
-	\label{fig:Bulk_gfactor}
-\end{figure}
+%\begin{figure}[ht]
+%	\centering
+%	\includegraphics[width=14cm]{gfx/wyniki/MCTbulk/Gfactor.png}
+%	\vspace{-10pt}
+%	\caption{\textit{Obsadz}}
+%	\label{fig:Bulk_gfactor}
+%\end{figure}
 
 There are two points limiting the applicability of the simplified Kane model, considering the $\Gamma_6$ and $\Gamma_8$ band only, for the actual HgCdTe crystals. The first one, already mentioned, is related with the presence of other bands, considered as remote and not included in the model. The energy gap between the second and the lowest conduction bands in CdTe exceeds 4 eV, while the corresponding gap in HgTe is about 3 eV. Therefore, the cut-off energies for conduction bands in the simplified model should be lower than 3 eV. For the valence band, the cut-off energy is defined by the energy difference $\Delta \approx$ 1 eV between the split-off $\Gamma_7$ band, and the heavy-hole band. The second limitation is attributed to the flat heavy-hole band, characterized by an infinite effective mass in the model. To ignore the parabolic terms in the electron dispersion of the heavy-hole band, one has to consider sufficiently low energies $E$, such that the relativistic mass of the fermions $E/\tilde{c}^2$ should be significantly lower than the heavy-hole mass $m_{hh}$. Assuming $m_{hh} \approx 0.5$ $m_0$, where $m_0$ is the free electron mass, a cut-off energy is estimated to be equal to about 3 eV for the flat band approximation, which exceeds $\Delta$.
 \begin{figure}[ht]
@@ -1956,6 +1908,10 @@ C. Petchsingh, Cyclotron Resonance Studies on InAs/GaSb heterostructures, Wolfso
 H. Munekata, E. E. Mendez, Y. Iye and L. Esaki, Densities and mobilities of coexisting electrons and holes in GaSb/InAs/GaSb Quantum Wells, \textit{Surface Science} \textbf{174}, pp. 449-453 (1986).
 \bibitem{Lo_MagneticField}
 I. Lo, W. C. Mitchel and J.-P. Cheng, Magnetic-field-induced free electron and hole recombination in semimetallic Al$_x$Ga$_{1-x}$Sb/InAs quantum wells, \textit{Phys. Rev. B} \textbf{48}, 9118 (1993).
+\bibitem{Guldner_MCT_bulk1}
+Y. Guldner, C. Rigaux, A. Mycielski, and Y. Couder. Magnetooptical Investigation of Hg$_{1-x}$Cd$_x$Te Mixed Crystals. \textit{Phys. Stat. Sol. (b)} \textbf{81}, 615 (1977).
+\bibitem{Guldner_MCT_bulk2}
+Y. Guldner, C. Rigaux, A. Mycielski, and Y. Couder. Magnetooptical Investigation of Hg$_{1-x}$Cd$_x$Te Mixed Crystals. \textit{Phys. Stat. Sol. (b)} \textbf{82}, 149 (1977).
 \bibitem{Smith_MagneticField}
 T. P. Smith, H. Munekata, L. L. Chang, F. F. Fang and L. Esaki, Magnetic-Field-Induced Transitions in InAs/Ga$_{1-x}$Al$_x$Sb Heterostructures, \textit{Surface Science} \textbf{196}, pp. 687-693 (1988).
 \bibitem{Naveh_ElectricField}
@@ -1984,6 +1940,8 @@ K. Suzuki, Y. Harada, K. Onomitsu, and K. Muraki, Edge channel transport in the 
 I. Knez, R. R. Du and G. Sullivan, Evidence for Helical Edge Modes in Inverted InAs/GaSb Quantum Wells. \textit{Phys. Rev. Lett.} \textbf{107} 136603 (2011).
 \bibitem{Zhou_State}
 B. Zhou, H.-Z. Lu, R.-L. Chu, S.-Q. Shen, and Q. Niu, Finite Size Effects on Helical Edge States in a Quantum Spin-Hall System. \textit{Phys. Rev. Lett.} \textbf{101} 246807 (2008).
+\bibitem{Sheregii_MCT_bulk}
+E. M. Sheregii, J. Cebulski, A. Marcelli, and M. Piccinini. Temperature dependence discontinuity of the phonon mode frequencies caused by a zero-gap state in HgCdTe alloys. \textit{Phys. Rev. Lett.} \textbf{102}, 045504 (2009). 
 \bibitem{Charpentier_State}
 C. Charpentier, \textit{et al.}, Suppression of bulk conductivity in InAs/GaSb broken gap composite quantum wells. \textit{Appl. Phys. Lett.} \textbf{103}, 112102 (2013).
 \bibitem{Du_State}
@@ -2000,6 +1958,10 @@ T. Akiho, \textit{et al.}, Engineering quantum spin Hall insulators by strained-
 L. Du, \textit{et al.}, Strain-Engineering of InAs/GaInSb Topological Insulator Towards Majorana Platform. \textit{arXiv:1608.06588} (2016.)
 \bibitem{Brune_State2}
 C. Brüne, \textit{et al.} Quantum Hall Effect from the Topological Surface States of Strained Bulk HgTe. \textit{Phys. Rev. Lett.} \textbf{106}, 126803 (2011).
+\bibitem{Groves_MCT_bulk}
+S. H. Groves, T. C. Harman, and C. R. Pidgeon. Interband Magnetoreflection of Hg$_{1-x}$Cd$_x$Te. \textit{Solid State Commun.} \textbf{9}, 451 (1971).
+\bibitem{Kim_MCT_bulk}
+R. S. Kim and S. Narita. Far-Infrared Interband Magnetoabsorption and Band Structure of Hg$_{1-x}$Cd$_x$Te Alloys. \textit{Phys. Stat. Sol. B} \textbf{73}, 741 (1976).
 \bibitem{Pankratov_State}
 O. A. Pankratov, Electronic properties of band-inverted heterojunctions: supersymmetry in narrow-gap semiconductors. \textit{Semicond. Sci. Technol.} \textbf{5}, S204 (1990).
 \bibitem{Pfeuffer_State}
@@ -2020,6 +1982,8 @@ M. Zholudev, \textit{et al.}, Magnetospectroscopy of two-dimensional HgTe-based 
 W. D. Lawson, S. Nielson, E. H. Putley, and A. S Young, Preparation and properties of HgTe and mixed crystals of HgTe-CdTe. \textit{J. Phys. Chem. Solids} \textbf{9} 325-329 (1959).
 \bibitem{Krishtopenko_pressure}
 S. S. Krishtopenko, \textit{et al.}, Pressure- and temperature-driven phase transitions in HgTe quantum wells. \textit{Phys. Rev. B} \textbf{94}, 245402 (2016).
+\bibitem{Saur_MCT_bulk}
+W. D. Saur. Long Wavelength Mercury-Cadmium Telluride Photoconductive Infrared Detectors. \textit{Infrared Phys.} \textbf{8}, 255 (1968).
 \bibitem{Daumer_MCT_temperature}
 V. Daumer, \textit{et al.}, Quasiballistic transport in HgTe quantum-well nanostructures. \textit{Appl. Phys. Lett.} \textbf{83}, 1376-1378 (2003).
 \bibitem{Liu_CdAs}
@@ -2060,6 +2024,10 @@ B. Büttner, \textit{et al.} Single valley Dirac fermions in zero-gap HgTe quant
 J. Ludwig, \textit{et al.} Cyclotron resonance of single-valley Dirac fermions in nearly gapless HgTe quantum wells. \textit{Phys. Rev. B} \textbf{89}, 241406 (2014).
 \bibitem{Castro_graphene}
 N. Castro, \textit{et al.} The electronic properties of graphene. \textit{Reviews of Modern Physics} \textbf{81}, 109 (2009).
+\bibitem{Schmit_MCT_bulk} 
+J. L. Schmit and E. L. Stelzer. Temperature and Alloy Compositional Dependences of the Energy Gap of Hg$_{1-x}$Cd$_x$Te. \textit{J. Appl. Phys.} \textbf{40}, 4865 (1969).
+\bibitem{Scott_MCT_bulk}
+M. W. Scott. Energy Gap in Hg$_{1-x}$Cd$_x$Te by Optical Absorption. \textit{J. Appl. Phys.} \textbf{40}, 4077 (1969).
 \bibitem{Schultz}
 M. Schultz, \textit{et al.} Crossing of conduction- and valence-subband Landau levels in an inverted HgTe/CdTe quantum well. \textit{Phys. Rev. B} \textbf{57}, 14772 (1998).
 \bibitem{Zholudev_MCT_QW_anticrossing}
