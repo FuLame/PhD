@@ -828,7 +828,7 @@ The MCT bulk samples were grown using a standard MBE on a (013)-oriented semi-in
 
 \myparagraph{Sample characterization}
 \wciecie
-To estimate the properties of the samples, like carrier concentration, the transport measurements were performed at magnetic field as a function of temperature. Samples were contacted with indium balls in a Van der Pauw configuration and placed in perpendicular quantized magnetic field (Voigt configuration). The Hall measurements allowed to establish a carrier concentrations of the structures for temperatures in a range of 2 K -- 140 K. The result is presented in Figure \ref{fig:Samples_MCT_Transport}. The electron concentration in both samples is comparable (one order of magnitude difference) and ranges from $n_A \approx 3 \cdot 10^{14}$ cm$^{-3}$ for sample A and $n_B \approx 2 \cdot 10^{15}$ cm$^{-3}$ sample B at $T = 2$ K up to $n_A \approx 8 \cdot 10^{15}$ cm$^{-3}$ and $n_B \approx 9 \cdot 10^{16}$ cm$^{-3}$ at $T = 140$ K for sample A and sample B, respectively. Relatively low concentration allowed to perform the transmission measurements as the absorption was moderate.
+To estimate the properties of the samples, like carrier concentration, the transport measurements were performed at magnetic field as a function of temperature. Samples were contacted with indium balls in a Van der Pauw configuration and placed in perpendicular quantized magnetic field (Voigt configuration). The carrier concentrations of the structures for temperatures in a range of 2 K -- 140 K were established based on low-field part of Hall measurements, which results are presented in Appendix \ref{Appendix_bulk}. The result is presented in Figure \ref{fig:Samples_MCT_Transport}. The electron concentration in both samples is comparable (one order of magnitude difference) and ranges from $n_A \approx 3 \cdot 10^{14}$ cm$^{-3}$ for sample A and $n_B \approx 2 \cdot 10^{15}$ cm$^{-3}$ sample B at $T = 2$ K up to $n_A \approx 8 \cdot 10^{15}$ cm$^{-3}$ and $n_B \approx 9 \cdot 10^{16}$ cm$^{-3}$ at $T = 140$ K for sample A and sample B, respectively. Relatively low concentration allowed to perform the transmission measurements as the absorption was moderate. 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=10cm]{gfx/MCT/Bulk/Concentration_vs_T.png}
@@ -842,7 +842,7 @@ The dependence of absorption coefficient on incident photon frequency $\lambda (
 \label{eq:linear_abs_coeff}
 \alpha (\hbar\omega) = \frac{B}{\hbar\omega} \left[ (\Delta + b)\sqrt{(\Delta+b)^2-b^2} + \frac{1}{8}(\Delta+2b)\sqrt{(\Delta-2b)^2-4b^2}\right],
 \end{equation}
-where $\Delta = \hbar\omega - E_g$, and parameters $b$ and $B$ depend on cadmium content and can be determined by fitting. The situation is qualitatively different from 2D Dirac systems like graphene, where the absorption coefficient is independent on frequency \cite{Kuzmenko_MCTBulk}.
+where $\Delta = \hbar\omega - E_g$, and parameters $b$ and $B$ depend on cadmium content and can be determined by fitting. The first term in bracket represents absorption coefficient involving the heavy-hole band, while the second term represents the contribution of the light-hole band. The situation is qualitatively different from 2D Dirac systems like graphene, where the absorption coefficient is independent on frequency \cite{Kuzmenko_MCTBulk}.
 
 The analysis of the absorption coefficient, presented on Figure \ref{fig:Samples_MCT_AbsorptCoeff}, provided two pieces of information. The first one -- the dependence of absorption coefficient is indeed linear as a function of photon energy (and its frequency), even up to 300 meV, which is a sign that the system is three-dimensional. Moreover, the fits of Equation \ref{eq:linear_abs_coeff} to the experimental data, excluding the influence of phonon absorption, indicate that the samples differ from each other, as the cadmium content is different.
 
@@ -1695,16 +1695,18 @@ The calculated LLs transitions, based on the Kane model (solid curves), $\beta$ 
 
 A characteristic property of NGS with non-parabolic dispersion is a sub-linear dependence of cyclotron resonance on magnetic field. At low fields, the dependence is linear and allows to extract the effective (cyclotron) mass of electrons. However, at higher fields the linear cyclotron resonance line evolves into a transition denoted as $\delta$ \cite{Orlita_MCT_QW}. The value obtained from the average of fits of $\delta$ transition at low magnetic fields, is equal to $m^* = eB/\omega_c = 0.022 \pm 0.004$ $m_0$, which exactly matches previous results from works \cite{Orlita_MCT_QW}\cite{Zholudev_MCT_QW}. 
 
-universal velocity???
+
 velocity \cite{Ludwig_MCT_QW}
 
-The experimental points are in a fair agreement with the theoretical calculations. However, small discrepancies are unquestionable. The model...  SAMPLE B
+The experimental results for sample A are in a fair agreement with the theoretical calculations. However, there are unquestionable discrepancies between the theory and experimental results of sample B, reaching around 10\%. The origin of these discrepancies is not totally clear, as there are many factors that could possibly be omitted in considerations. One of these factors is the electron-electron interaction, which can be relevant in the case of sample B, as there is one order of magnitude difference in carrier concentration, and can perturb the result. Consequently, sample B was doped on both sides in the barriers, and this donor states can influence the results as well. Moreover, as was already highlighted in \cite{Zholudev_MCT_QW} mercury-based heterostructures, can degrade with time via mercury diffusion. This process is especially critical to structures with sharp interfaces, like QWs, because the QW parameters like the shape of the well, the cadmium content in the barriers can change with time. This has a profound influence on the obtained results as the investigated structure is different than expected (at the time of growth).  
 
 \clearpage
-\section{MCT thin layers}
+\section{MCT thick QWs}
 \label{chpt:MCT_TL}
 \wciecie
-The systems where HgTe layer, sandwiched between CdTe, is thicker than $x$ nm are called thin layers or slobs. These systems can be considered to be in an intermediate state between bulk and QW. The quantum confinement is still present but it is too small to open a band gap, therefore the system is semimetallic, like bulk HgTe. The solution to this problem is to apply a bi-axial strain to the material \cite{Brune_State2}. This can be achieved by growing a layer of HgTe on a substrate with a different lattice constant, which opens an energy gap. If the chemical potential lies inside the band gap, the only conducting states left are topological surface states. 
+In thin HgTe QWs the band gap is formed by quantum confinement which results from an interaction between states at the interfaces with barriers, and exists as long as the wave functions of these interface states overlap. For the case of wider QWs this interaction is smaller, as well as the resulting energy gap. As the thickness increases, the quantum confinement is still present but becomes too small to open an energy gap, therefore the system becomes semimetallic. If a QW thickness is increased even more, the relative distances between consecutive levels within the well shrink. If the process continues up to a point where the level broadening (for example due to temperature) is higher than the distance between the levels, they merge and form a band, and the system is considered as bulk.
+
+The systems in which HgTe layer, sandwiched between CdTe, is wide enough to neglect the interface interactions, but not wide enough to cause the merging of the levels into bands, are called films or slobs. These systems can be considered to be in an intermediate state between bulk and QW. However, these systems are semimetallic, as the quantum confinement is low -- a different mechanism is necessary to open an energy gap. The solution to this problem is to apply a bi-axial strain to the material \cite{Brune_State2}. This can be achieved by growing a layer of HgTe on a substrate with a different lattice constant, which opens an energy gap. If the chemical potential lies inside the band gap, the only conducting states left are topological surface states. 
 
 \subsection{Strain}
 \wciecie
@@ -1744,7 +1746,15 @@ Separated systems
 \end{figure} 
 
 
+\chapter{Conclusions}
+\wciecie
+In this thesis topological properties of various mercury-cadmium-telluride structures were described. Particular attention was paid to Hg$_{1-x}$Cd$_{x}$Te bulk systems and HgTe/CdTe quantum wells, both thin -- with thickness close to the critical and thick -- with applied strain. These systems are characterized by a small (positive or negative) energy gap, and a possibility of temperature induced phase transition was studied.
 
+The experimental part of this thesis was divided into three parts, according to the investigated system. All the magnetospectroscopy experiments were performed using Fourier spectrometer in a custom-designed experimental set-up, described in Chapter \ref{chpt:optical}. 
+
+The first experimental part deals with a study of two bulk Hg$_{1-x}$Cd$_{x}$Te samples with cadmium content close to the critical, meaning that the band gap was designed to be close to zero at low temperature. One sample had a positive energy gap and exhibited semiconducting behavior, while the other had a negative gap and exhibited semimetallic behavior. As the temperature increased to the band gap of the second sample got smaller and finally experienced a gap closure and reopening with a positive value, rendering the system semiconducting. The experimental results prove that this behavior is related to the change of topology of the system -- a topological phase transition.
+
+There are more systems similar to Hg$_{1-x}$Cd$_{x}$Te bulk, for example Pb$_{1-x}$Sn$_{x}$Te or Pb$_{1-x}$Sn$_{x}$Se, which
 
 \begin{thebibliography}{99}
 %Introduction topology
@@ -2192,7 +2202,43 @@ The band structure of InAs/GaSb QW is inverted because of the unique relative ba
 \label{Appendix_bulk}
 \wciecie
 This appendix contains the remaining results of magnetospectroscopy on bulk MCT samples, not shown in Chapter \ref{chpt:HgCdTe bulk systems}.
-\section{Sample A}
+
+\section{Magnetotransport measurements}
+\subsection{Sample A}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=14cm]{gfx/wyniki/MCTbulk/Appendix/110429/Rxx.png}
+	\vspace{-10pt}
+	\caption{\textit{Landau level graph of sample A as a function of magnetic field at $T$ = 20 K. Colored lines represent Landau levels, characterized by a different value of $\varepsilon$, $n$, and $\sigma$, as described in indices of $L$ on the right side of the graph. The electron band Landau levels (with $\varepsilon$ = 1) have a near-$\sqrt{B}$ behavior. The heavy-hole Landau level, plotted in black, is fully degenerated. The vertical arrows with a corresponding capital letter represent observed transitions between Landau levels in this system. Solid arrows (A and B) are interband transitions.}}
+	\label{fig:110429_Rxx}
+\end{figure}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=14cm]{gfx/wyniki/MCTbulk/Appendix/110429/Rh.png}
+	\vspace{-10pt}
+	\caption{\textit{Landau level graph of sample A as a function of magnetic field at $T$ = 20 K. Colored lines represent Landau levels, characterized by a different value of $\varepsilon$, $n$, and $\sigma$, as described in indices of $L$ on the right side of the graph. The electron band Landau levels (with $\varepsilon$ = 1) have a near-$\sqrt{B}$ behavior. The heavy-hole Landau level, plotted in black, is fully degenerated. The vertical arrows with a corresponding capital letter represent observed transitions between Landau levels in this system. Solid arrows (A and B) are interband transitions.}}
+	\label{fig:110429_Rh}
+\end{figure}
+
+\subsection{Sample B}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=14cm]{gfx/wyniki/MCTbulk/Appendix/101007/Rxx.png}
+	\vspace{-10pt}
+	\caption{\textit{Landau level graph of sample A as a function of magnetic field at $T$ = 20 K. Colored lines represent Landau levels, characterized by a different value of $\varepsilon$, $n$, and $\sigma$, as described in indices of $L$ on the right side of the graph. The electron band Landau levels (with $\varepsilon$ = 1) have a near-$\sqrt{B}$ behavior. The heavy-hole Landau level, plotted in black, is fully degenerated. The vertical arrows with a corresponding capital letter represent observed transitions between Landau levels in this system. Solid arrows (A and B) are interband transitions.}}
+	\label{fig:101007_Rxx}
+\end{figure}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=14cm]{gfx/wyniki/MCTbulk/Appendix/101007/Rh.png}
+	\vspace{-10pt}
+	\caption{\textit{Landau level graph of sample A as a function of magnetic field at $T$ = 20 K. Colored lines represent Landau levels, characterized by a different value of $\varepsilon$, $n$, and $\sigma$, as described in indices of $L$ on the right side of the graph. The electron band Landau levels (with $\varepsilon$ = 1) have a near-$\sqrt{B}$ behavior. The heavy-hole Landau level, plotted in black, is fully degenerated. The vertical arrows with a corresponding capital letter represent observed transitions between Landau levels in this system. Solid arrows (A and B) are interband transitions.}}
+	\label{fig:101007_Rh}
+\end{figure}
+
+
+\section{Magnetospectroscopy measurements}
+\subsection{Sample A}
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=10cm]{gfx/wyniki/MCTbulk/Appendix/110429/LL20.png}
@@ -2224,7 +2270,7 @@ This appendix contains the remaining results of magnetospectroscopy on bulk MCT 
 \end{figure} 
 
 \clearpage
-\section{Sample B}
+\subsection{Sample B}
 \myparagraph{Temperature 20 K}
 \begin{figure}[H]
 	\centering
