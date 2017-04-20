@@ -198,7 +198,7 @@ This idea was implemented and further developed by Du \cite{Du_State2}. An inves
 
 \myparagraph{Strained MCT layers}
 \wciecie
-The studies conducted in 1985 by Volkov and Pankratov \cite{Volkow_strainedMCT} on strained HgTe/CdTe quantum wells revealed an increase of energy gap and an emergence of the interface states which lie within the gap. Bernevig, Hughes and Zhang \cite{Bernevig_Topology2} as well as Fu and Kane \cite{Kane_Fu} identified strained HgTe as a 3D topological insulator. Soon after Dai \textit{et al.} published results of numerical calculations supporting the existence of boundary states in strained HgTe. These findings were followed by ARPES measurements \cite{Brune_State} \cite{Crauste_StrainedMCT}, reporting an observation of the surface states and an opening of the gap between the light-hole and heavy-hole.
+The studies conducted in 1985 by Volkov and Pankratov \cite{Volkow_strainedMCT} on strained HgTe/CdTe quantum wells revealed an increase of energy gap and an emergence of the interface states which lie within the gap. Bernevig, Hughes and Zhang \cite{Bernevig_Topology2} as well as Fu and Kane \cite{Kane_Fu} identified strained HgTe as a 3D topological insulator. Soon after Dai \textit{et al.} \cite{Dai_MCT_layers} published results of numerical calculations supporting the existence of boundary states in strained HgTe. These findings were followed by ARPES measurements \cite{Brune_State} \cite{Crauste_StrainedMCT}, reporting an observation of the surface states and an opening of the gap between the light-hole and heavy-hole.
  
 A standard approach to the strain engineering of HgTe involve the usage of MBE grown substrates based on pure CdTe and Cd$_{0.96}$Zn$_{0.04}$Te. Both of those materials have the lattice constant larger than HgTe, which results in a tensile strain in the epilayers. Under such conditions, the largest gap achieved are $E_g = 17$ meV and 25 meV for QWs grown on CdTe and Cd$_{0.96}$Zn$_{0.04}$Te, respectively \cite{Pfeuffer_State}. In order to obtain a larger gap a stronger strain is required. However, highly strained structures often suffer from low crystal quality. 
 
@@ -1704,9 +1704,11 @@ The experimental results for sample A are in a fair agreement with the theoretic
 \section{MCT thick QWs}
 \label{chpt:MCT_TL}
 \wciecie
+The existence of Dirac-like surface states in bulk HgTe has been known since the eighties \cite{Dyakonov_MCT_layers}\cite{Chang_MCT_layers}, however their topological nature has never been investigated in detail. 
+
 In thin HgTe QWs the band gap is formed by quantum confinement which results from an interaction between states at the interfaces with barriers, and exists as long as the wave functions of these interface states overlap. For the case of wider QWs this interaction is smaller, as well as the resulting energy gap. As the thickness increases, the quantum confinement is still present but becomes too small to open an energy gap, therefore the system becomes semimetallic. If a QW thickness is increased even more, the relative distances between consecutive levels within the well shrink. If the process continues up to a point where the level broadening (for example due to temperature) is higher than the distance between the levels, they merge and form a band, and the system is considered as bulk.
 
-The systems in which HgTe layer, sandwiched between CdTe, is wide enough to neglect the interface interactions, but not wide enough to cause the merging of the levels into bands, are called films or slobs. These systems can be considered to be in an intermediate state between bulk and QW. However, these systems are semimetallic, as the quantum confinement is low -- a different mechanism is necessary to open an energy gap. The solution to this problem is to apply a bi-axial strain to the material \cite{Brune_State2}. This can be achieved by growing a layer of HgTe on a substrate with a different lattice constant, which opens an energy gap. If the chemical potential lies inside the band gap, the only conducting states left are topological surface states. 
+The systems in which HgTe layer, sandwiched between CdTe, is wide enough to neglect the interface interactions, but not wide enough to cause the merging of the levels into bands, are called films. These systems can be considered to be in an intermediate state between bulk and QW. However, these systems are semimetallic, as the quantum confinement is low -- a different mechanism is necessary to open an energy gap. The solution to this problem is to apply a strain to the material \cite{Dai_MCT_layers}. This can be achieved by growing a layer of HgTe on a substrate with a different lattice constant, which opens an energy gap. If the chemical potential lies inside the band gap, the only conducting states left are topological surface states. 
 
 \subsection{Strain}
 \wciecie
@@ -1716,7 +1718,7 @@ The lattice constant of HgTe grown on CdTe is 0.3 \% larger than that of bulk Hg
 \wciecie
 One of the most prominent features of narrow HgTe QWs (with thickness close to the critical) is an existence of one-dimensional channels of conductance on an interface, as presented in Chapter \ref{chpt:Intro} in Figure \ref{fig:QSHE_HgTe}. These states are available for electrons taking part in carrier transport, but do not take active part in light absorption. It has to be stressed that their presence is not related with interfaces between HgTe QW and CdTe barriers, but an one-dimensional interface between HgTe QW and the surrounding vacuum (or air, as it has similar dielectric constant). The presence of CdTe barriers is required to provide the quantum confinement, which opens the bulk gap and suppresses the bulk conduction. 
 
-It is often neglected that the 2D interfaces between QW and barriers are still present in the system. The QW and barriers are characterized by a different Chern number, therefore a set of states with linear dispersion relation should appear at interface as well. This states are interesting from the point of view of magneto-optics, because only electrons on the surfaces perpendicular to the beam of light can absorb photons. The Figure \ref{fig:Layers_ARPES} shows the results of the ARPES measurements, which allowed to resolve topological-like features connecting heavy and light holes, which proved that the boundary states are still present in the system but they are buried deep in the heavy hole band. 
+It is often neglected that the 2D interfaces between QW and barriers are still present in the system. The QW and barriers are characterized by a different topology, therefore a set of states with linear dispersion relation should appear at interface as well. This states are interesting from the point of view of magneto-optics, because only electrons on the surfaces perpendicular to the beam of light can absorb photons. The Figure \ref{fig:Layers_ARPES} shows the results of the ARPES measurements, which allowed to resolve topological-like features connecting heavy and light holes, which proved that the boundary states are still present in the system but they are buried deep in the heavy hole band. 
 
 \begin{figure}[ht]
 	\centering
@@ -1729,6 +1731,41 @@ It is often neglected that the 2D interfaces between QW and barriers are still p
 The edge states on the interface between HgTe and vacuum can be considered one dimensional as long as the thickness of HgTe layer is small. If the thickness is increased, the 1D edge transforms into a 2D surface, and an appearance of interface surface states should occur.
 
 \subsection{Band structure}
+\wciecie
+The band structure of bulk HgTe is presented in Figure \ref{fig:BandStructure_HgTe_CdTe} in the introduction to MCT-based structures in Chapter \ref{chpt:HgCdTe bulk systems}. In the presence of strain an insulating energy gap opens between the heavy-hole (HH) and light-hole (LH) bands by pushing the HH band downward in energy. To understand better the processes occurring here, it is useful to ignore the HH band and consider the LH and E bands only. According to the Kane model, the coupling of the LH and E bands, which takes place in the vicinity of the $\Gamma$ point, can be represented by a 3D anisotropic massive Dirac Hamiltonian. The Dirac Hamiltonian conserves the parity symmetry, therefore the bands can be labeled by parity eigenvalues. The coupling is linear, thus there must be one even and one odd band. It the odd parity band lies energetically below the even band, there will be a nontrivial $\mathbb{Z}_2$ topological invariant, which indicates an odd number of pairs of surface states that cross at invariant points \cite{Dai_MCT_layers}\cite{Kane_Fu}. The presence of the HH band only changes the features of the dispersion, it does not however change the presence of the surface states, nor their protected crossing, as long as the strain-induced gap is opened.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=14cm]{gfx/MCT/layers/BS.png}
+	\vspace{-10pt}
+	\caption{\textit{Band structure near $\Gamma$ point for \textbf{Panel (a):} decoupled heavy-hole (HH) band and \textbf{Panel (b):} full HH band coupling. Surface states are located in the bulk gap in both subfigures and are shown in red. Gap due to strain is artificially large so that surface states are clearly visible. The image comes from the work of Dai \textit{et al.} \cite{Dai_MCT_layers}.}}
+	\label{fig:BS_MCT_layers}
+\end{figure} 
+
+To prove the claims from the previous paragraph, Dai \textit{et al.} solved the 6-band Kane model on a cylinder (which changes the boundary conditions and rendering the calculations easier), which gives a quantitative picture of the band structure of strained HgTe. Panel (a) of Figure \ref{fig:BS_MCT_layers} presents the band structure while the HH band is uncoupled from LH and E bands, therefore it is completely flat. The surface states are presented in red, and their crossing takes place in the energy gap at the $\Gamma$ point. On Panel (b) of the same Figure the situation changes as the HH band is coupled to E band. This coupling does not change the crossing of the surface states.
+
+The band structure and the dispersion of surface states, depend on the cadmium content and the thickness of the film. Increased cadmium content shrinks both the strain gap (because of reduced lattice mismatch) and a band gap (the difference between $\Gamma_6$ and $\Gamma_8$ bands). The thickness of the film changes the effective quantum confinement and the relative position of LH and E bands. The dispersion of surface states can be related to a mutual interaction between them. This interaction gets stronger as the overlapping of the wave functions of the bottom and the top surfaces increases. The typical penetration length is approximately $\delta \approx 20$ nm, as is presented in Figure \ref{fig:PenetrationLength}, taken from the work of Dantscher \textit{et al.} \cite{Ganichev_MCT_layers}. It shows the result of six-band $k\cdot p$ calculations for the (013)-oriented 80 nm thick structure. The states are localized at the film interfaces, and predominantly formed by the heavy-hole states $\psi_{\Gamma_8, \pm 3/2}$.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=11cm]{gfx/MCT/layers/PenetrationLength.png}
+	\vspace{-10pt}
+	\caption{\textit{Wave functions of surface states in (013)-grown 80-nm strained HgTe film. Calculations are carried out for the electron energy $E$ = 11 meV, the wave vector components $k_x > 0$ and $k_y = 0$, and the built-in electric field $E_z = 2$ kV/cm. Image comes from the work of Dantscher \textit{et al.} \cite{Ganichev_MCT_layers}.}}
+	\label{fig:PenetrationLength}
+\end{figure} 
+
+For films thicker than $L > 2\delta \approx 40$ nm, the wave functions are well separated -- the interaction is negligible and does not change much as the thickness increases. The Dirac points of the surface states are deep in the valence band, which leads to level mixing and deviation of the dispersion relation from the linear one \cite{Ganichev_MCT_layers}. Because of this, the energy of surface states at the $\Gamma$ point is similar to the energy of the top of the HH band. This situation is conserved even for thicker structures. However, the interaction of the surface states in films with thickness smaller than $2\delta$ opens an energy gap and effectively lifts the dispersion of surface states above the HH band (?).
+
+
+
+The calculations based on the Kane model 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=12cm]{gfx/MCT/layers/BS50nm.png}
+	\vspace{-10pt}
+	\caption{\textit{\textbf{Left panel:} Layer structure of sample A. The active region of the system is 5 $\mu$m thick Hg$_{1-x}$Cd$_x$Te layer, marked on yellow on the sketch. \textbf{Right panel:} Function of cadmium content $x$ as a function of sample depth.}}
+	\label{fig:BS50nm}
+\end{figure} 
+
 The HgTe/CdTe interface states are difficult to probe because the center of the Dirac cone lies well below the top of heavy-hole band.
 Separated systems
 
@@ -1748,15 +1785,19 @@ Separated systems
 
 \chapter{Conclusions}
 \wciecie
-In this thesis topological properties of various mercury-cadmium-telluride structures were described. Particular attention was paid to Hg$_{1-x}$Cd$_{x}$Te bulk systems and HgTe/CdTe quantum wells, both thin -- with thickness close to the critical and thick -- with applied strain. These systems are characterized by a small (positive or negative) energy gap, and a possibility of temperature induced phase transition was studied.
+In this thesis topological properties of various mercury-cadmium-telluride structures were described. Particular attention was paid to Hg$_{1-x}$Cd$_{x}$Te bulk systems and HgTe/CdTe quantum wells, both thin -- with thickness close to the critical and thick -- with applied strain. These systems are characterized by a small (positive or negative) energy gap, and a possibility of temperature induced phase transition was studied. The study of bulk systems was motivated by a renewal of interest in this compounds of physical community, as MCT bulk was studied thoroughly in sixties and seventies of previous century. However, most of those studies were aimed at development of tunable infrared detectors. Nowadays, as the progress of growing techniques allowed to grow structures of the highest quality, and the discovery of topological phases of matter and their strong relation to narrow (and negative) gap semiconductors took place, it was quickly realized that MCT structures are a perfect field to study the fundamental physics.
 
 The experimental part of this thesis was divided into three parts, according to the investigated system. All the magnetospectroscopy experiments were performed using Fourier spectrometer in a custom-designed experimental set-up, described in Chapter \ref{chpt:optical}. 
 
 The first experimental part deals with a study of two bulk Hg$_{1-x}$Cd$_{x}$Te samples with cadmium content close to the critical, meaning that the band gap was designed to be close to zero at low temperature. One sample had a positive energy gap and exhibited semiconducting behavior, while the other had a negative gap and exhibited semimetallic behavior. As the temperature increased to the band gap of the second sample got smaller and finally experienced a gap closure and reopening with a positive value, rendering the system semiconducting. The experimental results prove that this behavior is related to the change of topology of the system -- a topological phase transition.
 
+
 There are more systems similar to Hg$_{1-x}$Cd$_{x}$Te bulk, for example Pb$_{1-x}$Sn$_{x}$Te or Pb$_{1-x}$Sn$_{x}$Se, which
 
-\begin{thebibliography}{99}
+\begin{thebibliography}{199}
+\bibitem{Ganichev_MCT_layers}
+K.-M. Dantscher, \textit{et al.} Cyclotron-resonance-assisted photocurrents in surface states of a three-dimensional topological insulator base on a strained high-mobility HgTe film. \textit{Phys. Rev. B} \textbf{92}, 165314 (2015).
+
 %Introduction topology
 \bibitem{Anderson_Topology}
 P. W. Anderson. \textit{Basic Notions of Condensed Matter Physics} (Westview Press), (1997)
@@ -1787,7 +1828,7 @@ Y. Yao, F. Ye, X.-L. Qi, S.-C. Zhang, and Z. Fang, Spin-orbit gap of graphene: F
 \bibitem{Min_Topology}
 H. Min, J. E. Hill, N. A. Sinitsyn, B. R. Sahu, L. Kleinman, and A. H. MacDonald, Intrinsic and Rashba spin-orbit interactions in graphene sheets, \textit{Phys. Rev. B.} \textbf{74}, 165310 (2006).
 \bibitem{Konig_Topology}
-M. König, \textit{et al.}, Quantum Spin Hall Insulator State in HgTe Quantum Wells, \textit{Science} \textbf{318}, 5851, pp. 766-770 (2007).
+M. König, \textit{et al.}. Quantum Spin Hall Insulator State in HgTe Quantum Wells, \textit{Science} \textbf{318}, 5851, pp. 766-770 (2007).
 \bibitem{Konig_MCT_SQW}
 M. König, \textit{et al.} The Quantum Spin Hall Effect: Theory and Experiment. \textit{J. Phys. Soc. Jpn} \textbf{77}, 031007 (2008).
 \bibitem{Liu_Topology}
@@ -2044,6 +2085,12 @@ M. Schultz, \textit{et al.} Crossing of conduction- and valence-subband Landau l
 M. S. Zholudev, \textit{et al.} Anticrossing of Landau levels in HgTe/CdHgTe (013) quantum wells with an inverted band structure. \textit{Jetp Lett.} \textbf{100}, 790 (2015).
 \bibitem{Martinez_Nanotechnology}
 J. M. Martínez-Duart, R. J. Martín-Palma, and F. Agulló-Rueda. \textit{Nanotechnology for microelectronics and optoelectronics}. ISBN-13: 978 0080 445533. Elsevier (2006).
+\bibitem{Dai_MCT_layers}
+X. Dai, T. L. hughes, X.-L. Qi, Z. Fang, and S.-C. Zhang. Helical edge and surface states in HgTe quantum wells and bulk insulators. \textit{Phys. Rev. B} \textbf{77}, 125319 (2008). 
+\bibitem{Dyakonov_MCT_layers} 
+M. Dyakonov and A. Khaetskii. Surface states in a gapless semiconductor. \textit{JETP Lett.} \textbf{33}, 110 (1981).
+\bibitem{Chang_MCT_layers}
+Y.-C. Chang, J. N. Schulman, G. Bastard, Y. Guldner, and M. Voos. Effects of quasi-interface states in HgTe-CdTe superlattices. \textit{Phys. Rev. B} \textbf{31}, 2557(R) (1985).
 
 \end{thebibliography}
 
