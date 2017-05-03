@@ -625,7 +625,7 @@ To obtain a complete evolution of optical transition as a function of magnetic f
 \label{eq:Spectra5}
 T(\omega) = \frac{T_{sample,B\neq 0T}(\omega)}{ T_{sample,B=0T}(\omega)}\cdot \frac{S_{det,B = 0T}(\omega)}{ S_{det,B\neq 0T}(\omega)},
 \end{equation}
-however this is not the case in our experimental set-up.
+
 
 \begin{figure}[ht]
 	\centering
@@ -1195,7 +1195,7 @@ Those conditions were met by the sample B with cadmium concentration of $x$ = 0.
 
 These results are the first evidence of a temperature induced phase transition measured by THz magnetospectroscopy in bulk MCT structures with well-chosen chemical composition. The genuine Kane fermions were observed at the critical temperature of 77 K. In order to describe the data, the simplified Kane model was used. It allowed to determine the pseudo-relativistic Dirac-like Kane fermions parameters $\tilde{m}$ and $\tilde{c}$ as a function of temperature and the cadmium concentration. The nonzero rest mass obtained from fits at the critical temperature corresponds to the limit of precision of the experimental set-up. The results are in agreement with theoretical predictions and are consistent with the data obtained previously by Orlita \textit{et al.} \cite{Orlita_MCT}.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTbulk/Transitions_allT.png}
 	\vspace{-10pt}
@@ -1206,15 +1206,15 @@ The temperature evolution of the magnetic field evolution of the transitions is 
 
 Each and every transition was fitted according to the model in Equation \ref{Eq:MCT_LLs}. One fit provided a set of values of $\tilde{c}$ and $\tilde{m}$. All of the obtained values are plotted on Figure \ref{fig:Bulk_MassVelocity}. Top panel a) presents the rest mass and bottom panel b) presents the velocity. Error bars on the Figure \ref{fig:Bulk_MassVelocity} come from the standard deviation of the values taken for every transition at given temperature.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTbulk/MassVelocity.png}
 	\vspace{-10pt}
-	\caption{\textit{Parameters $\tilde{m}$ and $\tilde{c}$ obtained from fits to the experimental data as a function of temperature. \textbf{Panel a)} rest mass of Kane fermions. For sample B the mass changes sign at the $T_c$, while for sample A the mass is always positive. \textbf{Panel b)} velocity of Kane fermions. Velocity is constant at all temperatures, for both samples, which is highlighted by a dashed blue line at $v = 1.07 \cdot 10^6$ m/s. }}
+	\caption{\textit{Parameters $\tilde{m}$ and $\tilde{c}$ obtained from fits to the experimental data as a function of temperature. \textbf{Panel a)} rest mass of Kane fermions. For Sample B the mass changes sign at the $T_c$, while for sample A the mass is always positive. \textbf{Panel b)} velocity of Kane fermions. Velocity is constant at all temperatures, for both samples, which is highlighted by a dashed blue line at $v = 1.07 \cdot 10^6$ m/s. }}
 	\label{fig:Bulk_MassVelocity}
 \end{figure}
 
-Interestingly, the Dirac-like Kane fermion velocity $\tilde{c}$ is nearly constant over the whole range of temperatures for both samples with Cd contents of 0.155 and 0.175. The extracted value of $\tilde{c} = (1.07 \pm 0.05)\cdot 10^6$ m/s is in a very good agreement with the theoretical value defined by $\tilde{c} = \sqrt{2 P^2/3\hbar^2}$, which equals to $1.05 \cdot 10^6$ m/s for the well-accepted value of $E_p = 2m_0 P^2/ \hbar^2 \approx 18.8$ eV. Therefore, this universal value of $\tilde{c}$ allows to determine the particle rest-mass for bandgap values in the vicinity of the semimetal-to-semiconductor phase transition induced by temperature, Cd content, or other external parameter (e.g. pressure).
+Interestingly, the Dirac-like Kane fermion velocity $\tilde{c}$ is nearly constant over the whole range of temperatures for both samples with Cd contents of 0.155 and 0.175. The extracted value of $\tilde{c} = (1.07 \pm 0.05)\cdot 10^6$ m/s is in a very good agreement with the theoretical value defined by $\tilde{c} = \sqrt{2 P^2/3\hbar^2}$, which equals to $1.05 \cdot 10^6$ m/s for the well-accepted value of $E_p = 2m_0 P^2/ \hbar^2 \approx 18.8$ eV. Therefore, this universal value of $\tilde{c}$ allows to determine the particle rest-mass for band gap values in the vicinity of the semimetal-to-semiconductor phase transition induced by temperature, Cd content, or other external parameter (e.g. pressure).
 
 %\begin{figure}[ht]
 %	\centering
@@ -1225,6 +1225,9 @@ Interestingly, the Dirac-like Kane fermion velocity $\tilde{c}$ is nearly consta
 %\end{figure}
 
 There are two points limiting the applicability of the simplified Kane model, considering the $\Gamma_6$ and $\Gamma_8$ band only, for the actual HgCdTe crystals. The first one, already mentioned, is related with the presence of other bands, considered as remote and not included in the model. The energy gap between the second and the lowest conduction bands in CdTe exceeds 4 eV, while the corresponding gap in HgTe is about 3 eV. Therefore, the cut-off energies for conduction bands in the simplified model should be lower than 3 eV. For the valence band, the cut-off energy is defined by the energy difference $\Delta \approx$ 1 eV between the split-off $\Gamma_7$ band, and the heavy-hole band. The second limitation is attributed to the flat heavy-hole band, characterized by an infinite effective mass in the model. To ignore the parabolic terms in the electron dispersion of the heavy-hole band, one has to consider sufficiently low energies $E$, such that the relativistic mass of the fermions $E/\tilde{c}^2$ should be significantly lower than the heavy-hole mass $m_{hh}$. Assuming $m_{hh} \approx 0.5$ $m_0$, where $m_0$ is the free electron mass, a cut-off energy is estimated to be equal to about 3 eV for the flat band approximation, which exceeds $\Delta$.
+
+
+The Hamiltonian of the bulk MCT can be rewritten in the Weyl basis -- in this sense bulk MCT is referred to as an $s$ = 1 pseudospin Dirac-Weyl material. The Dirac-Weyl semimetals have 2$s+1$ bands in the form of nested Dirac cones. Moreover, those described by an integer $s = 1, 2,...$ contain a zero-energy flat band \cite{Malcolm_MCT2}. In this sense the graphene is a $s$ = 1/2 pseudospin Dirac-Weyl system, as its dispersion exhibits a Dirac cone at each of the two distinct K points in the hexagonal Brillouin zone. The comparison of the band structures of graphene (1/2 pseudospin Dirac-Weyl material) and bulk MCT (1 pseudospin Dirac-Weyl material) is presented in Figure \ref{fig:DiracVsKane}. The main difference is already mentioned presence of flat band in the vortex, but also the Dirac cone is placed in a different point of the Brillouin zone.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=14cm]{gfx/MCT/bulk/DiracVsKane.png}
@@ -1233,17 +1236,6 @@ There are two points limiting the applicability of the simplified Kane model, co
 	\label{fig:DiracVsKane}
 \end{figure}
 
-%\begin{table}[h]
-%\centering
-%\begin{tabular}{ c | c | c }	
-%& \textbf{Dirac fermions} & \textbf{Kane fermions} \\
-%\hline\hline
-%Hamiltonian $\hat{H}$ & $ \beta mc^2 + c\alpha_x p_x + c\alpha_y p_y + c\alpha_z p_z$ & $\tilde{\beta} \tilde{m}\tilde{c}^2 + \tilde{c}\tilde{\alpha}_x p_x + \tilde{c}\tilde{\alpha}_y p_y + \tilde{c}\tilde{\alpha}_z p_z$ \\ \hline
-%LL energy & $E_n = \mathrm{sgn}(n) \sqrt{2e\hbar \tilde{c}^2B|n|}$ \cite{Jiang_MCT}& $E_{\xi,n,\sigma} = \xi^2 \tilde{m}\tilde{c}^2 \pm \xi \sqrt{\tilde{m}^2\tilde{c}^4 + \frac{1}{2}e\hbar\tilde{c}^2B\sigma_n}$ \\ \hline
-%Example material & Graphene & Bulk HgCdTe \\ \hline
-%Carrier velocity [m/s] & $(1.093 \pm 0.004) \cdot 10^6$ \cite{Graphen_velocity} & $(1.07 \pm 0.05)\cdot 10^6$ \\ \hline 
-%\end{tabular}
-%\end{table}
 
 
 
@@ -1806,17 +1798,17 @@ A second parameter which can modify the band structure is the thickness of the f
 	\label{fig:PenetrationLength}
 \end{figure} 
 
-For films thicker than $L > 2\delta \approx 40$ nm, the wave functions are well separated -- the interaction is negligible and the band structure does not qualitatively change as the thickness increases \cite{Baum_MCT_layers}. The Dirac points of the surface states lies deep in the HH band, which leads to level mixing and deviation of the dispersion relation from the linear one \cite{Ganichev_MCT_layers}. Because of this, the energy of surface states at the $\Gamma$ point is similar to the energy of the top of the HH band. This situation is conserved even for thicker structures. However, the interaction of the surface states in films with thickness smaller than $2\delta$ leads to a hybridization and opens an energy gap as a consequence \cite{Baum_MCT_layers}. 
+The results of the calculations of band structure based on the Kane model for 50, 25, and 15 nm thick strained HgTe films are presented in Figure \ref{fig:Ek_all}. The LH and HH bands are represented as blue and red curves, respectively. The bands are split due to the residual quantum confinement. The surface states are represented as black solid curves. If SIA is present in the structure, the degeneracy of states on the bottom and top surfaces is lifted, which leads to a splitting of dispersion of surface states, not shown in the Figure. Black dotted curves represent the dispersion of the surface states in the absence of the HH band. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=12cm]{gfx/MCT/layers/BS50nm.png}
+	\includegraphics[width=15cm]{gfx/MCT/layers/Ek_all.png}
 	\vspace{-10pt}
-	\caption{\textit{Band structure of a 50 nm thick strained HgTe film. The surface states are plotted in orange. The red curves represent the HH states $H_{2,3,4,...}$, while the blue curves represent the LH states $E_{2,3,4,...}$. The system is in the inverted band order, therefore the surface states at $k = 0$ are dominantly formed of the $H_1$ band.}}
-	\label{fig:BS50nm}
+	\caption{\textit{Band structure calculations strained HgTe films with thickness of \textbf{Panel (a)}: 50 nm, \textbf{Panel (b)}: 25 nm, and \textbf{Panel (c)}: 15 nm. The dispersion relations of the surface states are plotted as solid black curves. Dotted black curves represent the dispersion relations of the surface states in the absence of HH band. The HH and the LH subbands are plotted as red curves and blue curves, respectively. The system is in the inverted band order, therefore the surface states at $k = 0$ are dominantly formed by the $H_1$ band.}}
+	\label{fig:Ek_all}
 \end{figure} 
 
-The result of the calculations of band structure based on the Kane model for 50 nm thick strained HgTe film is presented in Figure \ref{fig:BS50nm}. The LH and HH bands are represented as blue and red curves, respectively. The bands are split due to the residual quantum confinement. The surface states are represented as orange curve. If SIA is present in the structure, the degeneracy of states on the bottom and top surfaces is lifted, which leads to a splitting of dispersion of surface states, not shown in the Figure.   
+For films thicker than $L > 2\delta \approx 40$ nm (Panel (a)), the wave functions are well separated -- the interaction is negligible and the band structure does not qualitatively change as the thickness increases \cite{Baum_MCT_layers}. The Dirac points of the surface states lies deep in the HH band, which leads to level mixing and deviation of the dispersion relation from the linear one \cite{Ganichev_MCT_layers}. Because of this, the energy of surface states at the $\Gamma$ point is similar to the energy of the top of the HH band. This situation is conserved even for thicker structures. However, the interaction of the surface states in films with thickness smaller than $2\delta$ leads to a hybridization and opens an energy gap as a consequence \cite{Baum_MCT_layers}, which is visible in Figure \ref{fig:Ek_all} on Panel (b). With decreasing thickness the strength of the quantum confinement increases, which increases the distance in energy of the subbands (Panel (c)). If the process continues and the thickness reaches $d_c$ = 6.3 nm, a phase transition occurs and the structure becomes semiconducting (as stated in Chapter \ref{chpt:MCT_QW}). 
 
 \subsubsection{Magnetic field}
 \wciecie
@@ -1833,11 +1825,12 @@ The LL spectrum of 50 nm film is presented in Figure \ref{fig:LL_50nm}
 \end{figure} 
 
 \subsection{Experiment}
+\wciecie
 The magneto-spectroscopy study of strained HgTe 3D TIs could potentially provide an insight into the energy structure of the surface states, and how does it change with the parameters of the system. The study can also reveal what those states are in detail, which is important to understand the origin and their relation with the bulk states.
  
 \subsubsection{Samples description}
 \wciecie
-The investigated samples were grown using the MBE method in CEA-LETI (Grenoble, France). The growth process and samples characterization is thoroughly presented in a Ph.D. thesis of Candice Thomas \cite{Thomas_PhD}. They consist of a 0.7 mm (100) CdTe substrate followed by 200 nm CdTe buffer layer. The active part of the structure is formed by a HgTe layer (of various thcknesses) enclosed within two 30 nm Hg$_{0.3}$Cd$_{0.7}$Te barriers. The layer structure of the samples is presented in Figure \ref{Samples_layers}. Three samples were investigated, characterized by thicknesses of $d =$ 15, 25, and 50 nm. Table \ref{tab:MCT_films_properties} presents the main characteristics of the samples like the nominal thickness, the measured thickness, and the carrier concentration. The latter was used to estimate the position of the chemical potential, under assumptions that the measured concentration at $T = 55$ mK is the same as at $T$ = 2 K, and that the sample processing does not influence the concentration.
+The investigated samples were grown using the MBE method in CEA-LETI (Grenoble, France). The growth process and samples characterization is thoroughly presented in a Ph.D. thesis of Candice Thomas \cite{Thomas_PhD}. They consist of a 0.7 mm (100) CdTe substrate followed by 200 nm CdTe buffer layer. The active part of the structure is formed by a HgTe layer (of various thicknesses) enclosed within two 30 nm Hg$_{0.3}$Cd$_{0.7}$Te barriers. The layer structure of the samples is presented in Figure \ref{fig:Samples_layers}. Three samples were investigated, characterized by thicknesses of $d =$ 15, 25, and 50 nm. Table \ref{tab:MCT_films_properties} presents the main characteristics of the samples like the nominal thickness, the measured thickness, and the carrier concentration. The latter was used to estimate the position of the chemical potential, under assumptions that the measured concentration at $T = 55$ mK is the same as at $T$ = 2 K, and that the sample processing does not influence the concentration.
 
 \begin{figure}[ht]
 	\centering
@@ -1865,11 +1858,12 @@ Sample C & 15 nm & 15.5 nm & $2.3\cdot10^{11}$ cm$^{-2}$\\ \hline
 \subsubsection{Results}
 \myparagraph{Related experimental works}
 \wciecie
-One of the first THz magneto-optical studies of strained and unstrained HgTe films were focused on investigations of the THz magneto-optical Faraday effect conducted by Shuvaev \textit{et al.} \cite{Shuvaev_MCT_films2}\cite{Shuvaev_MCT_films3}, and Hancock \textit{et al.} \cite{Hancock_MCT_films}. Soon after the work of Shuvaev \textit{et al.} \cite{Shuvaev_MCT_films1} published a work in which the CR line in HgTe was observed. These studies were followed by the work of Datscher \textit{et al.} \cite{Ganichev_MCT_layers}, where the CR lines of the surface states were observed using polarized light.
+One of the first THz magneto-optical studies of strained and unstrained HgTe films were focused on investigations of the THz magneto-optical Faraday effect conducted by Shuvaev \textit{et al.} \cite{Shuvaev_MCT_films2}\cite{Shuvaev_MCT_films3}, and Hancock \textit{et al.} \cite{Hancock_MCT_films}. Soon after the work of Shuvaev \textit{et al.} \cite{Shuvaev_MCT_films1} published a work in which the CR line in HgTe was observed. 
 
-The main experimental part of this Chapter is related with a study of Sample A (50 nm), as it allowed to observe the surface states. The magneto-transmission measurements were performed on Sample B and C as well, but the interpretation of the results is still missing. 
+Recently, a very interesting study has been published by Datscher \textit{et al.} \cite{Ganichev_MCT_layers}. That study presents results of investigations of strained HgTe films by the means of magneto-transport and magneto-optics, which were focused on cyclotron-resonance-induced photocurrents by THz radiation. Because of the fact that the surface electrons are expected to be spin-locked, an absorption of polarized light results of macroscopic surface spin polarization. This effect was investigated for various temperatures and the differences were attributed to the change of carrier concentration.
 
-\clearpage
+The main experimental part of this Chapter is related with a study of Sample A (50 nm), as it allowed to observe the surface states. The magneto-transmission measurements were performed on Sample B and C as well, but the interpretation of the results is still missing. All the spectra were taken at $T$ = 2 K with a bolometer placed directly under the investigated sample. In order to obtain a final transmission spectra, an additional reference spectra without the sample was recorded and Equation \ref{eq:Spectra5} was used. The spectral resolution of measurements was 4 cm$^{-1}$.
+
 \myparagraph{Sample A}
 \begin{figure}[H]
 	\centering
@@ -1884,50 +1878,30 @@ The main experimental part of this Chapter is related with a study of Sample A (
 	\centering
 	\includegraphics[width=12cm]{gfx/wyniki/MCTfilms/Spectra50nm.png}
 	\vspace{-10pt}
-	\caption{\textit{Transmission spectra of Sample A measured at $T$ = 2 K, plotted for magnetic fields in range from 1 to 16 T every 1 T.}}
+	\caption{\textit{Transmission spectra of Sample A measured at $T$ = 2 K, plotted every 1 T for magnetic fields in range from 1 to 16 T.}}
 	\label{fig:Spectra50nm}
 \end{figure}
 
-\clearpage
-\myparagraph{Sample B}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=12cm]{gfx/wyniki/MCTfilms/Points25nm.png}
-	\vspace{-10pt}
-	\caption{\textit{Points corresponding to the minima of transmission for Sample B at $T$ = 2 K.}}
-	\label{fig:Points25nm}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=12cm]{gfx/wyniki/MCTfilms/Spectra25nm.png}
-	\vspace{-10pt}
-	\caption{\textit{Transmission spectra of Sample B measured at $T$ = 2 K, plotted for magnetic fields in range from 1 to 16 T every 1 T.}}
-	\label{fig:Spectra25nm}
-\end{figure}
-
-\clearpage
-\myparagraph{Sample C}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=12cm]{gfx/wyniki/MCTfilms/Points15nm.png}
-	\vspace{-10pt}
-	\caption{\textit{Points corresponding to the minima of transmission for Sample C at $T$ = 2 K.}}
-	\label{fig:Points15nm}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=12cm]{gfx/wyniki/MCTfilms/Spectra15nm.png}
-	\vspace{-10pt}
-	\caption{\textit{Transmission spectra of Sample C measured at $T$ = 2 K, plotted for magnetic fields in range from 1 to 16 T every 1 T.}}
-	\label{fig:Spectra15nm}
-\end{figure}
 
 \subsection{Summary}
+\wciecie
+In this section an overview of strained HgTe films was presented. It was explained that strain opens an energy gap in an otherwise semimetallic HgTe, transforming it into a 3D TI. Numerical calculations of the band structure were presented, along its dependence on the film thickness and Cd content. It was shown that topological phase transitions can be induced by those two parameters:
+\begin{itemize}
+\item by the Cd content -- in a similar manner as in the bulk HgCdTe. The system remains a TI, characterized by an inverted band order, as long as the Cd content is low. Increasing of Cd concentration renders the structure more CdTe-like, up to a point of critical concentration, when a phase transition occurs,
+\item by the film thickness -- the quantum confinement and mutual interaction of the surface states can change the band structure as well, especially the energy differences between the subbands. For thick films the quantum confinement is low and the interaction (governed by the overlapping of the wave functions) between the surface states is negligible. With decreasing thickness the subbands start to separate and change positions. At small thickness the structure resembles a thin QW, and finally at the critical thickness a topological phase transition occurs, as well as a band inversion.
+\end{itemize}
 
+It was also stated that those parameters influence also the composition of the surface states, which always are formed by a mixture of $E_1$ and $H_1$ bands, and only at $k$ = 0 it is possible to determine which one is a dominant factor. This information is necessary to grasp the origin of the surface states, and understand that they are not separated, but indeed form an integral part of the whole system.
+
+The preliminary experimental results of Fourier magneto-spectroscopy were shown as well as its interpretation for one of the samples. Multiple absorption lines were observed and some were attributed to the transitions from the surface states. The transmission spectra are extraordinarily reach in transitions, reflecting the complicated nature of the LL structure of the system, formed by many subbands originating from the electron, HH, and LH bands. 
+
+Two more samples were investigated but the interpretation of the obtained results is still missing. The results gathered on different samples vary, which proves that the band structure indeed depends on the thickness of the film. The remaining results are presented in Appendix \ref{Appendix_films}. 
+
+It is clear that despite the fact that a HgTe film is generally considered as 3D TI, the influence of the quantum confinement on the band structure cannot be neglected. In this sense, the 2D approach can be successfully used to describe energy levels of a HgTe film. 
 
 \chapter{Conclusions and outlook}
 \wciecie
-Selected topological properties of various mercury-cadmium-telluride structures were investigated in this thesis. Particular attention was paid to Hg$_{1-x}$Cd$_{x}$Te 3D Kane semimetal systems, as well as to 2D and 3D TIs based on HgTe/CdTe QWs and thick films. These systems are characterized by a small (positive or negative) energy gap, which gave a possibility to study phase transitions between regular and inverted band order phase. The experimental part of this thesis was divided into three main parts, according to the investigated systems. All the magnetospectroscopy experiments were performed using Fourier spectrometer in a custom-designed experimental set-up, described in Chapter \ref{chpt:optical}. The calculations of the band structure were performed based on the Kane model, which is successfully being used for decades to model MCT-based compounds.
+Selected topological properties of various mercury-cadmium-telluride structures were investigated in this thesis. Particular attention was paid to Hg$_{1-x}$Cd$_{x}$Te 3D Kane semimetal systems, as well as to 2D and 3D TIs based on HgTe/CdTe QWs and thick films. These systems are characterized by a small (positive or negative) energy gap, which gave a possibility to study phase transitions between regular and inverted band order phase. The experimental part of this thesis was divided into three main parts, according to the investigated systems. All the magneto-spectroscopy experiments were performed using Fourier spectrometer in a custom-designed experimental set-up, described in Chapter \ref{chpt:optical}. The calculations of the band structure were performed based on the Kane model, which is successfully being used for decades to model MCT-based compounds.
 
 The first experimental part deals with a study of two bulk Hg$_{1-x}$Cd$_{x}$Te samples. The study of bulk systems was motivated by a renewal of interest in this compounds of physical community, as MCT bulk was studied thoroughly in sixties and seventies of the XX century. However, most of those studies were aimed at a development of tunable infrared detectors. Nowadays, as the progress of crystal manufacturing techniques allowed to grow structures of the highest quality, and the discovery of topological phases of matter and their strong relation to narrow (and negative) gap semiconductors took place, it was quickly realized that MCT structures are perfect candidates to study the fundamental quantum and relativistic physics. 
 
@@ -2100,7 +2074,9 @@ E. O. Kane, Band structure of indium antimonide. \textit{J. Phys. Chem. Solids} 
 \bibitem{Orlita_MCT}
 M. Orlita, \textit{et al.}, Observation of three-dimensional massless Kane fermions in a zinc-blende crystal. \textit{Nature Physics} \textbf{10}, pp. 233-238 (2014).
 \bibitem{Malcolm_MCT}
-J. D. Malcolm and E. J. Nicol, Magneto-optics of massless Kane fermions: Role of the flat band and unusual Berry phase, \textit{Phys. Rev. B} \textbf{92} 035118 (2015).
+J. D. Malcolm and E. J. Nicol. Magneto-optics of massless Kane fermions: Role of the flat band and unusual Berry phase, \textit{Phys. Rev. B} \textbf{92} 035118 (2015).
+\bibitem{Malcolm_MCT2}
+J. D. Malcolm and E. J. Nicol. Magneto-optics of general pseudospin-s two-dimensional Dirac-Weyl fermions. \textit{Phys. Rev. B} \textbf{90} 035405 (2014).
 \bibitem{Weiler_MCT}
 M. H. Weiler, \textit{Semiconductors and Semimetals}. Vol. 16, pp. 119–191, Elsevier (1981).
 \bibitem{Capper_MCT}
@@ -2697,6 +2673,42 @@ H_{BIA} =
 	\vspace{-10pt}
 	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of transmission for sample B at $T$ = 100 K with theoretical predictions of transitions as a function of magnetic field. Solid symbols represent interband transitions, while open symbols represent intraband transitions. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
 	\label{fig:Summary_SQW_100K}
+\end{figure}
+
+
+\chapter{MCT films}
+\label{Appendix_films}
+\myparagraph{Sample B}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{gfx/wyniki/MCTfilms/Points25nm.png}
+	\vspace{-10pt}
+	\caption{\textit{Points corresponding to the minima of transmission for Sample B at $T$ = 2 K.}}
+	\label{fig:Points25nm}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{gfx/wyniki/MCTfilms/Spectra25nm.png}
+	\vspace{-10pt}
+	\caption{\textit{Transmission spectra of Sample B measured at $T$ = 2 K, plotted for magnetic fields in range from 1 to 16 T every 1 T.}}
+	\label{fig:Spectra25nm}
+\end{figure}
+
+\clearpage
+\myparagraph{Sample C}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{gfx/wyniki/MCTfilms/Points15nm.png}
+	\vspace{-10pt}
+	\caption{\textit{Points corresponding to the minima of transmission for Sample C at $T$ = 2 K.}}
+	\label{fig:Points15nm}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{gfx/wyniki/MCTfilms/Spectra15nm.png}
+	\vspace{-10pt}
+	\caption{\textit{Transmission spectra of Sample C measured at $T$ = 2 K, plotted for magnetic fields in range from 1 to 16 T every 1 T.}}
+	\label{fig:Spectra15nm}
 \end{figure}
 
 
