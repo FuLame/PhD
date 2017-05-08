@@ -1,0 +1,302 @@
+﻿\bibitem{Anderson_Topology}
+P. W. Anderson. \textit{Basic Notions of Condensed Matter Physics} (Westview Press), (1997).
+\bibitem{Landau_Topology}
+L. D. Landau and E. M. Lifshitz. \textit{Statistical Physics} (Pergamon Press, Oxford), (1980).
+\bibitem{Josephson_Topology}
+B. D. Josephson. Possible new effects in superconductive tunneling. \textit{Phys. Lett.} \textbf{1}, pp. 251–253 (1962).
+\bibitem{Klitzing_Topology}
+K. v. Klitzing, G. Dorda, and M. Pepper. New Method for High-Accuracy Determination of the Fine-Structure Constant Based on Quantized Hall Resistance. \textit{Phys. Rev. Lett.} \textbf{45}, 494 (1980).
+\bibitem{Tsui_Topology}
+D. C. Tsui, H. L. Stormer, and A. C. Gossard. Two-Dimensional Magnetotransport in the Extreme Quantum Limit. \textit{Phys. Rev. Lett.} \textbf{48}, 1559 (1982).
+\bibitem{Laughlin_Topology}
+R. B. Laughlin. Quantized Hall conductivity in two dimensions. \textit{Phys. Rev. B} \textbf{23}, 5632 (1981).
+\bibitem{Thouless_Topology}
+D. J. Thouless, M. Kohmoto, M. P. Nightingale, and M. den Nijs. Quantized Hall Conductance in a Two-Dimensional Periodic Potential. \textit{Phys. Rev. Lett.} \textbf{49}, 405 (1982).
+\bibitem{Berry_phase}
+M. V. Berry. Quantal Phase Factors Accompanying Adiabatic Changes. \textit{Proceedings of the Royal Society A.} \textbf{392}, 1802, pp. 45-57 (1984).
+\bibitem{Berezinski1}
+V. L. Berezinski. Destruction of Long-range Order in One-dimensional and Two-dimensional Systems Having a Continuous Symmetry Group I. Classical Systems. \textit{Zh. Eksp. Teor. Fiz} \textbf{59}, pp. 907-920 (1970) [\textit{Sov. Phys.-JETP} \textbf{32}, 493 (1971)].
+\bibitem{Berezinski2}
+V. L. Berezinski. Destruction of Long-range Order in One-dimensional and Two-dimensional Systems Possessing a Continuous Symmetry Group II. Classical Systems. \textit{Zh. Eksp. Teor. Fiz} \textbf{61}, pp. 1144-1156 (1971) [\textit{Sov. Phys.-JETP} \textbf{34}, 610 (1972)].
+\bibitem{Thouless_nobel}
+J. M. Kosterlitz and D. J. Thouless. Ordering, metastability and phase transitions in two-dimensional systems. \textit{Journal of Physics C: Solid State Physics} \textbf{6}, pp. 1181-1203 (1973).
+\bibitem{Kane_Topology2}
+C. L. Kane and E. J. Mele. $\mathbb{Z_2}$ Topological Order and the Quantum Spin Hall Effect. \textit{Phys. Rev. Lett.} \textbf{95}, 146802 (2005).
+\bibitem{Kane_Topology}
+C. L. Kane and E. J. Mele. Quantum Spin Hall Effect in Graphene. \textit{Phys. Rev. Lett.} \textbf{95}, 226801 (2005).
+\bibitem{Konig_Topology}
+M. König, \textit{et al.} Quantum Spin Hall Insulator State in HgTe Quantum Wells. \textit{Science} \textbf{318}, 5851, pp. 766-770 (2007).
+\bibitem{Yao_Topology}
+Y. Yao, F. Ye, X.-L. Qi, S.-C. Zhang, and Z. Fang. Spin-orbit gap of graphene: First-principles calculations. \textit{Phys. Rev. B} \textbf{75}, 041401(R) (2007).
+\bibitem{Min_Topology}
+H. Min, J. E. Hill, N. A. Sinitsyn, B. R. Sahu, L. Kleinman, and A. H. MacDonald. Intrinsic and Rashba spin-orbit interactions in graphene sheets. \textit{Phys. Rev. B} \textbf{74}, 165310 (2006).
+\bibitem{Bernevig_Topology2}
+B. A. Bernevig, T. L. Hughes, and S.-C. Zhang. Quantum Spin Hall Effect and Topological Phase Transition in HgTe Quantum Wells. \textit{Science} \textbf{314}, 5806, pp. 1757-1761 (2006).
+\bibitem{Bernevig_Topology1}
+B. A. Bernevig and S.-C. Zhang. Quantum Spin Hall Effect. \textit{Phys. Rev. Lett.} \textbf{96}, 106802 (2006).
+\bibitem{Landauer_MCT}
+M. Buttiker. Absence of backscattering in the quantum Hall effect in multiprobe conductors. \textit{Phys. Rev. B} \textbf{38}, 9375 (1988).
+\bibitem{Liu_Topology}
+C. Liu, T. L. Hughes, X.-L. Qi, K. Wang, and S.-C. Zhang. Quantum Spin Hall Effect in Inverted Type-II Semiconductors. \textit{Phys. Rev. Lett.} \textbf{100}, 236601 (2008).
+\bibitem{Xia_Topology}
+Y. Xia \textit{et al.} Observation of a large-gap topological-insulator class with a single Dirac cone on the surface. \textit{Nature Physics} \textbf{5}, pp.398-402 (2009).
+\bibitem{Fu_Topology}
+L. Fu, C. L. Kane, and E. J. Mele. Topological Insulators in Three Dimensions. \textit{Phys. Rev. Lett.} \textbf{98}, 106803 (2007).
+\bibitem{Hsieh}
+D. Hsieh \textit{et al.} A topological Dirac insulator in a quantum spin Hall phase. \textit{Nature} \textbf{452}, pp. 970-974 (2008).
+\bibitem{Zhang_Topology}
+H. Zhang \textit{et al.} Topological insulators in Bi$_2$Se$_3$, Bi$_2$Te$_3$ and Sb$_2$Te$_3$ with a single Dirac cone on the surface. \textit{Nature Physics} \textbf{5}, pp. 438-442 (2009).
+\bibitem{Chen_Topology}
+Y. L. Chen \textit{et al.} Experimental Realization of a Three-Dimensional Topological Insulator Bi$_2$Te$_3$. \textit{Science} \textbf{325}, 5937 pp. 178-181 (2009).
+\bibitem{Brahlek_State}
+M. Brahlek \textit{et al.} Transport properties of topological insulators: Band bending, bulk metal-to-insulator transition, and weak anti-localization. \textit{Solid State Communications} \textbf{215}, pp. 54-62 (2014).
+\bibitem{Brune_State2}
+C. Brüne \textit{et al.} Quantum Hall Effect from the Topological Surface States of Strained Bulk HgTe. \textit{Phys. Rev. Lett.} \textbf{106}, 126803 (2011).
+\bibitem{Kane_Fu}
+L. Fu and C. L. Kane. Topological insulators with inversion symmetry. \textit{Phys. Rev. B} \textbf{76}, 045302 (2007).
+\bibitem{Bernevig_book}
+B. A. Bernevig and T. L. Hughes. \textit{Topological insulators and topological superconductors}. Princeton University Press, 1st edition (2013).
+\bibitem{Zawadzki_Topology}
+W. Zawadzki. \textit{Intraband magneto-optics in InSb-type semiconductors.} Narrow Gap Semiconductors Physics and Applications. \textit{Lecture Notes in Physics} \textbf{133}, Springer, Berlin, Heidelberg (1980).
+\bibitem{Halperin_State}
+B. I. Halperin. Quantized Hall conductance, current-carrying edge states, and the existence of extended states in a two-dimensional disordered potential. \textit{Phys. Rev. B} \textbf{25}, 2185 (1982).
+\bibitem{Murakami_State}
+S. Murakami, N. Nagaosa, and S.-C. Zhang. Spin-Hall Insulator. \textit{Phys. Rev. Lett.} \textbf{93}, 156804 (2006).
+\bibitem{Altarelli_BandStructure}
+M. Altarelli. Electronic structure and semiconductor-semimetal transition in InAs-GaSb superlattices. \textit{Phys. Rev. B} \textbf{28}, 842 (1983).
+\bibitem{Yang_BandStructure}
+M. J. Yang, C. H. Yang, B. R. Bennett, and B. V. Shanabrook. Evidence of a Hybridization Gap in "Semimetallic" InAs/GaSb Systems. \textit{Phys. Rev. Lett.} \textbf{78}, 4613 (1997).
+\bibitem{Roth_State}
+A. Roth  \textit{et al.} Nonlocal Transport in the Quantum Spin Hall State. \textit{Science} \textbf{17}, 5938, pp. 294-297 (2009).
+\bibitem{Buttiker_State}
+M. Buttiker. Edge-State Physics Without Magnetic Fields. \textit{Science} \textbf{325}, 5938, pp. 278-279 (2009).
+\bibitem{Brune_State}
+C. Brüne \textit{et al.} Spin polarization of the quantum spin Hall edge states. \textit{Nature Physics} \textit{8}, pp. 485-490 (2012).
+\bibitem{Hankiewicz_State}
+E. M. Hankiewicz, L. W. Molenkamp, T. Jungwirth, and J. Sinova. Manifestation of the spin Hall effect through charge-transport in the mesoscopic regime. \textit{Phys. Rev. B} \textbf{70}, 241301(R) (2004).  
+\bibitem{Valenzuela_State}
+S. O. Valenzuela and M. Tinkham. Direct electronic measurement of the spin Hall effect. \textit{Nature} \textit{442}, pp. 176-179 (2006).
+\bibitem{Knez1_State}
+I. Knez, R. R. Du, and G. Sullivan. Finite conductivity in mesoscopic Hall bars of inverted InAs/GaSb quantum wells. \textit{Phys. Rev. B} \textbf{81} 201301(R) (2010).
+\bibitem{Naveh_State}
+Y. Naveh and B. Laikhthman. Magnetotransport of coupled electron-holes. \textit{Europhys. Lett.} \textbf{55}, pp. 545-551 (2001).
+\bibitem{Knez2_State}
+I. Knez, R. R. Du, and G. Sullivan. Evidence for Helical Edge Modes in Inverted InAs/GaSb Quantum Wells. \textit{Phys. Rev. Lett.} \textbf{107} 136603 (2011).
+\bibitem{Zhou_State}
+B. Zhou, H.-Z. Lu, R.-L. Chu, S.-Q. Shen, and Q. Niu. Finite Size Effects on Helical Edge States in a Quantum Spin-Hall System. \textit{Phys. Rev. Lett.} \textbf{101} 246807 (2008).
+\bibitem{Suzuki_State}
+K. Suzuki, Y. Harada, K. Onomitsu, and K. Muraki. Edge channel transport in the InAs/GaSb topological insulating phase. \textit{Phys. Rev. B} \textbf{87} 235311 (2013).
+\bibitem{Du_State}
+L. Du, I. Knez, G. Sullivan, and R.-R. Du. Robust Helical Edge Transport in Gated InAs/GaSb Bilayers. \textit{Phys. Rev. Lett.} \textbf{114}, 096802 (2015).
+\bibitem{Knez3_State}
+I. Knez \textit{et al.} Observation of Edge Transport in the Disordered Regime of Topologically Insulating InAs/GaSb Quantum Wells. \textit{Phys. Rev. Lett.} \textbf{112}, 026602 (2014).
+\bibitem{Charpentier_State}
+C. Charpentier \textit{et al.} Suppression of bulk conductivity in InAs/GaSb broken gap composite quantum wells. \textit{Appl. Phys. Lett.} \textbf{103}, 112102 (2013).
+\bibitem{Huber_State}
+M. E. Huber \textit{et al.} Gradiometric micro-SQUID susceptometer for scanning measurements of mesoscopic samples. \textit{Rev. Sci. Instrum.} \textbf{79}, 053704 (2008).
+\bibitem{Nowack_State}
+K. C. Nowack \textit{et al.} Imaging currents in HgTe quantum wells in the quantum spin Hall regime. \textit{Nature Materials} \textbf{12}, pp. 787-791 (2013).
+\bibitem{Spanton_State}
+E. M. Spanton \textit{et al.} Images of Edge Current in InAs/GaSb Quantum Wells. \textit{Phys. Rev. Lett.} \textbf{113}, 026804 (2014).
+\bibitem{Smith_State}
+D. L. Smith and C. Mailhiot. Proposal for strained type II superlattice infrared detectors. \textit{J. Appl. Phys.} \textbf{62}, pp. 2545-2548 (1987). 
+\bibitem{Du_State2}
+L. Du \textit{et al.} Strain-Engineering of InAs/GaInSb Topological Insulator Towards Majorana Platform. \textit{arXiv:1608.06588} (2016).
+\bibitem{Akiho_State}
+T. Akiho \textit{et al.} Engineering quantum spin Hall insulators by strained-layer heterostructures. \textit{arXiv:1608.06751} (2016).
+\bibitem{Volkow_strainedMCT}
+B. A. Volkov and O. A. Pankratov. Two-dimensional massless electrons in an inverted contact. \textit{Zh. Eksp. Teor. Fiz.} \textbf{42}, No. 4, pp. 145-148 (1985).
+\bibitem{Dai_MCT_layers}
+X. Dai, T. L. hughes, X.-L. Qi, Z. Fang, and S.-C. Zhang. Helical edge and surface states in HgTe quantum wells and bulk insulators. \textit{Phys. Rev. B} \textbf{77}, 125319 (2008). 
+\bibitem{Crauste_StrainedMCT}
+O. Crauste \textit{et al.} Topological surface states of strained Mercury-Telluride probed by ARPES. \textit{arXiv:1307.2008 [cond-mat.mes-hall]} (2013).
+\bibitem{Pfeuffer_State}
+A. Pfeuffer-Jeschke. Ph.D. thesis. \textit{Bandstruktur und Landau-Niveaus quecksilberhaltiger II-IV-Heterostrukturen}, Universität Wurzburg (2000).
+\bibitem{Leubner_State}
+P. Leubner, L. Lunczer, C. Brune, H. Buhmann, and L. W. Molenkamp. Strain Engineering of the Band Gap of HgTe Quantum Wells Using Superlattice Virtual Substrates. \textit{Phys. Rev. Lett.} \textbf{117}, 086403 (2016).
+\bibitem{Xu_CTI}
+S.-Y. Xu, \textit{et al.} Observation of a topological crystalline insulator phase and topological phase transition in Pb$_{1-x}$Sn$_{x}$Te. \textit{Nature Communications} \textbf{3}, 1192 (2012).
+\bibitem{Assaf_MCT_layers1}
+B. A. Assaf \textit{et al.} Magnetooptical determination of a topological index. \textit{arXiv:1608.08912 [cond-mat.mes-hall]} (2016).
+\bibitem{Assaf_MCT_layers2}
+T. Phuphachong  \textit{et al.} Direct Landau level Spectroscopy in Pb$_{1-x}$Sn$_x$Se and Pb$_{1-x}$Sn$_x$Te across the Topological Phase Transition: A Review. \textit{Crystals} \textbf{2017}, 7(1), 29.
+\bibitem{Wiedmann_State}
+S. Wiedmann \textit{et al.}. Temperature-driven transition from a semiconductor to a topological insulator. \textit{Phys. Rev. B} \textbf{91}, 205311 (2015).
+\bibitem{Dresselhaus}
+M. S. Dresselhaus. \textit{Solid State Physics Part II: Optical Properties of Solids}.
+\bibitem{Martinez_Nanotechnology}
+J. M. Martínez-Duart, R. J. Martín-Palma, and F. Agulló-Rueda. \textit{Nanotechnology for microelectronics and optoelectronics}. ISBN-13: 978 0080 445533. Elsevier (2006).
+\bibitem{Belluci_DOS}
+S. Bellucci and P. Onorato. Landau levels and edge states in a cylindrical two-dimensional electron gas: A semiclassical approach. \textit{Phys. Rev. B} \textbf{82}, 205305 (2010).
+\bibitem{Lawson_MCT}
+W. D. Lawson, S. Nielson, E. H. Putley, and A. S Young. Preparation and properties of HgTe and mixed crystals of HgTe-CdTe. \textit{J. Phys. Chem. Solids} \textbf{9} 325-329 (1959).
+\bibitem{Schmit_MCT_bulk}
+J. L. Schmit and E. L. Stelzer. Temperature and Alloy Compositional Dependences of the Energy Gap of Hg$_{1-x}$Cd$_x$Te. \textit{J. Appl. Phys.} \textbf{40}, 4865 (1969).
+\bibitem{Scott_MCT_bulk}
+M. W. Scott. Energy Gap in Hg$_{1-x}$Cd$_x$Te by Optical Absorption. \textit{J. Appl. Phys.} \textbf{40}, 4077 (1969).
+\bibitem{Groves_MCT_bulk}
+S. H. Groves, T. C. Harman, and C. R. Pidgeon. Interband Magnetoreflection of Hg$_{1-x}$Cd$_x$Te. \textit{Solid State Commun.} \textbf{9}, 451 (1971).
+\bibitem{Saur_MCT_bulk}
+W. D. Saur. Long Wavelength Mercury-Cadmium Telluride Photoconductive Infrared Detectors. \textit{Infrared Phys.} \textbf{8}, 255 (1968).
+\bibitem{Kim_MCT_bulk}
+R. S. Kim and S. Narita. Far-Infrared Interband Magnetoabsorption and Band Structure of Hg$_{1-x}$Cd$_x$Te Alloys. \textit{Phys. Stat. Sol. B} \textbf{73}, 741 (1976).
+\bibitem{Guldner_MCT_bulk1}
+Y. Guldner, C. Rigaux, A. Mycielski, and Y. Couder. Magnetooptical Investigation of Hg$_{1-x}$Cd$_x$Te Mixed Crystals. \textit{Phys. Stat. Sol. (b)} \textbf{81}, 615 (1977).
+\bibitem{Guldner_MCT_bulk2}
+Y. Guldner, C. Rigaux, A. Mycielski, and Y. Couder. Magnetooptical Investigation of Hg$_{1-x}$Cd$_x$Te Mixed Crystals. \textit{Phys. Stat. Sol. (b)} \textbf{82}, 149 (1977).
+\bibitem{Rigaux_MCT_bulk}
+C. Rigaux. \textit{Interband magnetooptics in narrow gap semiconductors.} In: W. Zawadzki (eds.) Narrow Gap Semiconductors Physics and Applications. \textit{Lecture Notes in Physics} \textbf{133}, Springer, Berlin, Heidelberg (1980).
+\bibitem{Kane_Model}
+E. O. Kane. Band structure of indium antimonide. \textit{J. Phys. Chem. Solids} \textbf{1}, pp. 249-261 (1957).
+\bibitem{Orlita_MCT}
+M. Orlita, \textit{et al.} Observation of three-dimensional massless Kane fermions in a zinc-blende crystal. \textit{Nature Physics} \textbf{10}, pp. 233-238 (2014).
+\bibitem{Malcolm_MCT}
+J. D. Malcolm and E. J. Nicol. Magneto-optics of massless Kane fermions: Role of the flat band and unusual Berry phase, \textit{Phys. Rev. B} \textbf{92} 035118 (2015).
+\bibitem{Weiler_MCT}
+M. H. Weiler. \textit{Semiconductors and Semimetals}. Vol. 16, pp. 119–191, Elsevier (1981).
+\bibitem{Capper_MCT}
+P. Capper and J. W. Garland. \textit{Mercury Cadmium Telluride: Growth, Properties and Applications}. Wiley Series in Materials for Electronic and Optoelectronic Applications (2010).
+\bibitem{Krishtopenko_pressure}
+S. S. Krishtopenko \textit{et al.} Pressure- and temperature-driven phase transitions in HgTe quantum wells. \textit{Phys. Rev. B} \textbf{94}, 245402 (2016).
+\bibitem{Teppe_MCT}
+F. Teppe \textit{et al.} Tempeature-driven massless Kane fermions in HgCdTe crystals. \textit{Nature Communications} \textbf{7}, 12576 (2016).
+\bibitem{Daumer_MCT_temperature}
+V. Daumer \textit{et al.} Quasiballistic transport in HgTe quantum-well nanostructures. \textit{Appl. Phys. Lett.} \textbf{83}, 1376-1378 (2003).
+\bibitem{Laurenti_MCT_bulk}
+J. P. Laurenti, J. Camassel, and A. Bouhemadou. Temperature dependence of the fundamental absorption edge of mercury cadmium telluride. \textit{J. Appl. Phys.} \textbf{67}, 6454 (1990).
+\bibitem{Novik_MCT}
+E. G. Novik \textit{et al.} Band structure of semimagnetic Hg$_{1-y}$Mn$_y$Te quantum wells. \textit{Phys. Rev. B} \textbf{72} 035321 (2005).
+\bibitem{Akrap_CdAs}
+A. Akrap \textit{et al.}. Magneto-Optical Signature of Massless Kane Electrons in Cd$_3$As$_2$. \textit{Phys. Rev. Lett.} \textbf{117}, 136401 (2016). 
+\bibitem{Liu_CdAs}
+Z. K. Liu, \textit{et al.} A stable three-dimensional topological Dirac semimetal Cd$_3$As$_2$. \textit{Nature Materials} \textbf{13}, pp. 677-681 (2014).  
+\bibitem{Roseman_CdAs}
+I. Roseman. Effet Shubnikov de Haas dans Cd$_3$As$_2$: Forme de la surface de Fermi et modele non parabolique de la bande de conduction. \textit{J. Phys. Chem. Solids} \textbf{30}, 1385 (1969).
+\bibitem{Bodnar_CdAs}
+J. Bodnar. in Proc. III Conf. Narrow-Gap Semiconductors, Warsaw, edited by J. Raułszkiewicz, M. Górska, and E. Kaczmarek (Elsevier, 1977) p. 311.
+\bibitem{Borisenko_CdAs}
+S. Borisenko \textit{et al.} Experimental Realization of a Three-Dimensional Dirac Semimetal. \textit{Phys. Rev. Lett.} \textbf{113}, 027603 (2014).
+\bibitem{Neupane_CdAs}
+M. Neupane \textit{et al.} Observation of a three-dimensional topological Dirac semimetal phase in high-mobility Cd$_3$As$_2$. \textit{Nature Communication} \textbf{5}, 3786 (2014).
+\bibitem{Kane_MCT}
+E.O. Kane \textit{Band structure of narrow gap semiconductors.} In: Zawadzki W. (eds) Narrow Gap Semiconductors Physics and Applications. \textit{Lecture Notes in Physics} \textbf{133}, Springer, Berlin, Heidelberg (1980).
+\bibitem{Jiang_MCT}
+Z. Jiang \textit{et al.} Infrared spectroscopy of Landau levels of graphene. \textit{Phys. Rev. Lett.} \textbf{98}, 197403 (2007).
+\bibitem{Chang_MCT_bulk}
+Y. Chang \textit{et al.} Narrow gap HgCdTe absorption behavior near the band edge including nonparabolicity and the Urbach tail. \textit{Appl. Phys. Lett.} \textbf{89}, 062109 (2006).
+\bibitem{Kuzmenko_MCTBulk}
+A. B. Kuzmenko \textit{et al.} Universal optical conductance of graphite. \textit{Phys. Rev. Lett.} \textbf{100}, 117401 (2008).
+\bibitem{Kozlov_MCT_bulk}
+D. V. Kozlov \textit{et al.} Mercury vacancies as divalent acceptors in Hg$_y$Te$_{1-x}$/Cd$_x$Hg$_{1-x}$Te structures with quantum wells. \textit{Semiconductors} \textbf{50}, pp.1662-1668 (2016).
+\bibitem{Sheregii_MCT_bulk}
+E. M. Sheregii, J. Cebulski, A. Marcelli, and M. Piccinini. Temperature dependence discontinuity of the phonon mode frequencies caused by a zero-gap state in HgCdTe alloys. \textit{Phys. Rev. Lett.} \textbf{102}, 045504 (2009). 
+\bibitem{Malcolm_MCT2}
+J. D. Malcolm and E. J. Nicol. Magneto-optics of general pseudospin-s two-dimensional Dirac-Weyl fermions. \textit{Phys. Rev. B} \textbf{90}, 035405 (2014).
+\bibitem{Konig_MCT_SQW}
+M. König, \textit{et al.} The Quantum Spin Hall Effect: Theory and Experiment. \textit{J. Phys. Soc. Jpn} \textbf{77}, 031007 (2008).
+\bibitem{Buttner_MCT_SQW}
+B. Büttner \textit{et al.} Single valley Dirac fermions in zero-gap HgTe quantum wells. \textit{Nature Physics} \textbf{7}, pp. 418-422 (2011).
+\bibitem{Castro_graphene}
+N. Castro \textit{et al.} The electronic properties of graphene. \textit{Reviews of Modern Physics} \textbf{81}, 109 (2009).
+\bibitem{Orlita_MCT_QW}
+M. Orlita \textit{et al.} Fine structure of "zero-mode" Landau levels in HgTe/CdTe quantum wells. \textit{Phys. Rev. B} \textbf{83}, 115307 (2011).
+\bibitem{Zholudev_MCT_QW}
+M. Zholudev \textit{et al.} Magnetospectroscopy of two-dimensional HgTe-based topological insulators around the critical thickness. \textit{Phys. Rev. B} \textbf{86}, 205420 (2012).
+\bibitem{Schultz}
+M. Schultz \textit{et al.} Crossing of conduction- and valence-subband Landau levels in an inverted HgTe/CdTe quantum well. \textit{Phys. Rev. B} \textbf{57}, 14772 (1998).
+\bibitem{Dvoretsky_Samples}
+S. Dvoretsky \textit{et al.} Growth of HgTe Quantum Wells for IR to THz Detectors. \textit{J. Electron. Mater.} \textbf{39}, 918 (2010).
+\bibitem{Zholudev_MCT_QW_anticrossing}
+M. S. Zholudev \textit{et al.} Anticrossing of Landau levels in HgTe/CdHgTe (013) quantum wells with an inverted band structure. \textit{Jetp Lett.} \textbf{100}, 790 (2015).
+\bibitem{Ikonnikov_MCT_SQW}
+A. V. Ikonnikov \textit{et al.} Temperature-dependent magnetospectroscopy of HgTe quantum wells. \textit{Phys. Rev. B} \textbf{94}, 155412 (2016).
+\bibitem{Ludwig_MCT_QW}
+J. Ludwig \textit{et al.} Cyclotron resonance of single-valley Dirac fermions in nearly gapless HgTe quantum wells. \textit{Phys. Rev. B} \textbf{89}, 241406 (2014).
+\bibitem{Dyakonov_MCT_layers}
+M. Dyakonov and A. Khaetskii. Surface states in a gapless semiconductor. \textit{JETP Lett.} \textbf{33}, 110 (1981).
+\bibitem{Chang_MCT_layers}
+Y.-C. Chang, J. N. Schulman, G. Bastard, Y. Guldner, and M. Voos. Effects of quasi-interface states in HgTe-CdTe superlattices. \textit{Phys. Rev. B} \textbf{31}, 2557(R) (1985).
+\bibitem{Qi_MCT_layers}
+X.-L. Qi, T. L. Hughes, and S.-C. Zhang. Topological field theory of time-reversal invariant insulators. \textit{Phys. Rev. B} \textbf{78}, 195424 (2008).
+\bibitem{Oostinga_MCT_layers}
+J. B. Oostinga \textit{et al.} Josephson Supercurrent through the Topological Surface States of Strained Bulk HgTe. \textit{Phys. Rev. X} \textbf{3}, 021007 (2013).
+\bibitem{Fu_MCT_layers}
+L. Fu and C. L. Kane. Superconducting Proximity Effect and Majorana Fermions at the Surface of a Topological Insulator. \textit{Phys. Rev. Lett.} \textbf{100}, 096407 (2008).
+\bibitem{Ganichev_MCT_layers}
+K.-M. Dantscher \textit{et al.} Cyclotron-resonance-assisted photocurrents in surface states of a three-dimensional topological insulator base on a strained high-mobility HgTe film. \textit{Phys. Rev. B} \textbf{92}, 165314 (2015).
+\bibitem{Baum_MCT_layers}
+Y. Baum \textit{et al.} Self-consistent k$\cdot$p calculations for gated thin layers of three-dimensional topological insulators. \textit{Phys. Rev. B} \textbf{89}, 245136 (2014).
+\bibitem{Chu_MCT_layers}
+R.-L. Chu, J. Shi, and S.-Q. Shen. Surface edge state and half-quantized Hall conductance in topological insulators. \textit{Phys. Rev. B} \textbf{84}, 085312 (2011). 
+\bibitem{Thomas_PhD}
+C. Thomas. Ph.D. thesis. \textit{Strained HgTe/CdTe topological insulators, towards spintronic applications}. Université Grenoble Alpes (2016).  
+\bibitem{Shuvaev_MCT_films2}
+A. M. Shuvaev, G. V. Astakhov, A. Pimenov, C. Brüne, H. Buhmann, and L. W. Molenkamp. Giant Magneto-Optical Faraday Effect in HgTe Thin Films in the Terahertz Spectral Range. \textit{Phys. Rev. Lett.} \textbf{106}, 107404 (2011).
+\bibitem{Shuvaev_MCT_films3}
+A. M. Shuvaev, G. V. Astakhov, C. Brüne, H. Buhmann, L. W. Molenkamp, and A. Pimenov. Terahertz quantum Hall effect of Dirac fermions in a topological insulator. \textit{Phys. Rev. B} \textbf{87}, 121104(R) (2013).
+\bibitem{Hancock_MCT_films}
+J. N. Hancock \textit{et al.} Surface State Charge Dynamics of a High-Mobility Three-Dimensional Topological Insulator. \textit{Phys. Rev. Lett.} \textbf{107}, 136803 (2011).
+\bibitem{Shuvaev_MCT_films1}
+A. M. Shuvaev, G. V. Astakhov, C. Brüne, H. Buhmann, L. W. Molenkamp, and A. Pimenov. Terahertz magneto-optical spectroscopy in HgTe thin films. \textit{Semicond. Sci. Technol.} \textbf{27}, 124004 (2012).
+\bibitem{Sze}
+S. M. Sze, \textit{Physics of Semiconductor Devices.} John Wiley and Sons, New York, second edition (1981).
+\bibitem{Fang_InAs}
+Z. M. Fang \textit{et al.} Photoluminescence of InSb, InAs, and InAsSb grown by organometallic vapor phase epitaxy. \textit{J. Appl. Phys.} \textbf{67}, 7034 (1990).
+\bibitem{Wu_GaSb}
+M. Wu and C. Chen. Photoluminescence of high quality GaSb grown from Ga and Sb rich solutions by liquidphase epitaxy. \textit{J. Appl. Phys.} \textbf{72}, 4275 (1992).
+\bibitem{Vurgaftman_AlSb}
+I. Vurgaftman, J. R. Meyer, and L. R. Ram-Mohan. Band parameters for III–V compound semiconductors and their alloys. \textit{J. Appl. Phys.} \textbf{89}, 5815 (2001).
+\bibitem{Kroemer_review}
+H. Kroemer. The 6.1 Å family (InAs, GaSb, AlSb) and its heterostructures: a selective review. \textit{Physica E} \textbf{20}, pp. 196-203 (2004). 
+\bibitem{Tuttle_InAs_concentration}
+G. Tuttle, H. Kroemer, and J. H. English. Electron concentrations and mobilities in AlSb/InAs/AlSb quantum wells. \textit{J. Appl. Phys.} \textbf{65}, 5239 (1989).
+\bibitem{Nguyen_SurfaceDonor}
+C. Ngyuen, B. Brar, H. Kroemer, and J. H. English. Surface donor contribution to electron sheet concentrations in not-intentionally doped InAs-AlSb quantum wells. \textit{Appl. Phys.Lett.} \textbf{60}, 1854 (1992).
+\bibitem{Kroemer_TammStates}
+H. Kroemer, C. Ngyuen, and B. Brar. Are there Tamm-state donors at the InAs–AlSb quantum well interface. \textit{J. Vac. Sci. Technol. B} \textbf{10}, 1769 (1992). 
+\bibitem{Shen_TammStates}
+J. Shen, H. Goronkin, J. D. Dow, and S. Y. Ren. Tamm states and donors at InAs/AlSb interfaces. \textit{J. Appl. Phys.} \textbf{77}, 1576 (1995).
+\bibitem{Nguyen_Mobility}
+C. Nguyen \textit{et al.} Growth of InAs-AlSb Quantum Wells Having Both High Mobilities and High Concentrations. \textit{Journal of Electronic Materials} \textbf{22}, 255-258 (1993).
+\bibitem{Bolognesi_Width}
+C. R. Bolognesi, H. Kroemer, and J. H. English. Well width dependence of electron transport in molecular-beam epitaxially grown InAs/AlSb quantum wells. \textit{J. Vac. Sci. Technol. B} \textbf{10}, 877 (1992).
+\bibitem{Li_InAs}
+Z. H. Li, \textit{et al.} Buffer influence on AlSb/InAs/AlSb quantum wells. \textit{Journal of Crystal Growth} \textbf{301–302}, pp. 181–184 (2007).
+\bibitem{Tuttle_Interface}
+G. Tuttle, H. Kroemer, and J. H. English. Effects of interface layer sequencing on the transport properties of InAs/AlSb quantum wells: Evidence for antisite donors at the InAs/AlSb interface. \textit{J. Appl. Phys.} \textbf{67}, 3032 (1990).
+\bibitem{Jenichen_Interfaces}
+B. Jenichen, S. A. Stepanov, B. Brar, and H. Kroemer. Interface roughness of InAs/AlSb superlattices investigated by X-ray scattering. \textit{J. Appl. Phys.} \textbf{79}, 120 (1996).
+\bibitem{Thomas_Buffer}
+M. Thomas, H.-R. Blank, K. C. Wong, and H. Kroemer. Buffer-dependent mobility and morphology of InAs/(Al,Ga)Sb quantum wells. \textit{Journal of Crystal Growth} \textbf{175/176}, pp. 849-897 (1997).
+\bibitem{Nguyen_Buffer}
+C. Ngyuen, K. Ensslin, and H. Kroemer. Magneto-transport in InAs/AlSb quantum wells with large electron concentration modulation. \textit{Surface Science} \textbf{267}, pp. 549-552 (2007).
+\bibitem{Sasaki_BandOrdering}
+H. Sasaki \textit{et al.} In$_{1-x}$Ga$_x$As-GaSb$_{1-y}$As$_y$ heterojunctions by molecular beam epitaxy. \textit{Appl. Phys. Lett.} \textbf{31}, 211 (1977).
+\bibitem{Frensley_BandOrdering}
+W. R. Frensley and H. Kroemer. Theory of the energy-band lineup at an abrupt semiconductor heterojunction. \textit{Phys. Rev. B} \textbf{16}, 2642 (1977).
+\bibitem{Harrison_BandOrdering}
+W. A. Harrison. Elementary theory of heterojunctions. \textit{J. Vac. Sci. Technol.} \textbf{14}, 1016 (1977).
+\bibitem{Knez_phd}
+I. Knez. Ph.D. thesis. \textit{Transport Properties of Topological Phases in Broken Gap InAs/GaSb Based Quantum Wells}. Rice University (2012).
+\bibitem{Chang_BandStructure}
+L. L. Chang and L. Esaki. Electronic properties of InAs-GaSb superlattices. \textit{Surf. Sci.} \textbf{98}, 70 (1980).
+\bibitem{Lakrimi_BandStructure}
+M. Lakrimi \textit{et al.} Minigaps and Novel Giant Negative Magnetoresistance in InAs/GaSb Semimetallic Superlattices.  \textit{Phys. Rev. Lett.} \textbf{79}, 3034 (1997).
+\bibitem{Petchsingh_BandOrdering}
+C. Petchsingh. \textit{Cyclotron Resonance Studies on InAs/GaSb heterostructures}. Wolfson College, University of Oxford, 2002.
+\bibitem{Munekata_BandOrdering}
+H. Munekata, E. E. Mendez, Y. Iye, and L. Esaki. Densities and mobilities of coexisting electrons and holes in GaSb/InAs/GaSb Quantum Wells. \textit{Surface Science} \textbf{174}, pp. 449-453 (1986).
+\bibitem{Lo_MagneticField}
+I. Lo, W. C. Mitchel, and J.-P. Cheng. Magnetic-field-induced free electron and hole recombination in semimetallic Al$_x$Ga$_{1-x}$Sb/InAs quantum wells. \textit{Phys. Rev. B} \textbf{48}, 9118 (1993).
+\bibitem{Smith_MagneticField}
+T. P. Smith, H. Munekata, L. L. Chang, F. F. Fang, and L. Esaki. Magnetic-Field-Induced Transitions in InAs/Ga$_{1-x}$Al$_x$Sb Heterostructures. \textit{Surface Science} \textbf{196}, pp. 687-693 (1988).
+\bibitem{Naveh_ElectricField}
+Y. Naveh and B. Laikhtman. Band-structure tailoring by electric field in a weakly coupled electron-hole system. \textit{Appl. Phys. Lett.} \textbf{66}, 1980 (1995).
+\bibitem{Mendez_ElectricField}
+E. E. Mendez, L. L. Chang, and L. Esaki. Two-Dimensional Quantum States in Multi-Heterostructures of Three Constituents. \textit{Surface Science} \textbf{13}, pp. 474-478 (1982).
+\bibitem{Cooper_ElectricField}
+L. J. Cooper \textit{et al.} Resistance resonance induced by electron-hole hybridization in a strongly coupled InAs/GaSb/AlSb heterostructure. \textit{Phys. Rev. B} \textbf{57}, 11915 (1998).
+\bibitem{Murakami_Trilayer}
+S. Murakami \textit{et al.}. Tuning phase transition between quantum spin Hall and ordinary insulating phases. \textit{Phys. Rev. B} \textbf{76}, 205304 (2007).
+\bibitem{Yu_InAs}
+Yu. G. Sadofyev, A. Ramamoorhty, B. Naser, J. P. Bird, S. R. Jonson, and Y.-H. Zhang. Large $g$-factor enhancement in high-mobility InAs/AlSb quantum wells. \textit{Appl. Phys. Lett.} \textbf{81}, 1833 (2002).
