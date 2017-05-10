@@ -236,15 +236,15 @@ At the end, a brief summary with a conclusion and some perspectives and ideas fo
 \chapter{Optical properties of matter}
 \label{chpt:optical}
 \wciecie
-In this chapter the principal properties of matter, related to optical phenomena, are presented. From the point of view of spectroscopy, the interaction between light and solid state systems is crucial. This chapter explains the mechanism of an absorption of light inside a solid state system via optical transitions, which is based on two pieces. The first piece depends on a probability of transition, while the second is based on an optical joint density of states, and its dependence on external conditions like temperature and magnetic field. 
+In this chapter the principal properties of matter, related to optical phenomena, are presented. From the point of view of spectroscopy, an interaction between light and solid state systems is crucial. This chapter explains the mechanism of an absorption of light inside a solid state system via optical transitions, which is based on two pieces. The first piece depends on a probability of transition, while the second is based on an optical joint density of states, and its dependence on external conditions like temperature and magnetic field. 
 
-The chapter starts with an introduction of an absorption coefficient. Later, a probability (also called rate or strength) of optical transition is explained via a perturbation Hamiltonian. This probability, related to the Fermi Golden rule, is based on an interaction of quantum states taking part in transitions. 
+The chapter starts with an introduction of an absorption coefficient via the electromagnetic wave equation. Later, a probability (also called rate or strength) of an optical transition is explained via a perturbation Hamiltonian. This probability, related to the Fermi Golden rule, is based on an interaction of quantum states taking part in transitions. 
 
-Further, the density of states for all-dimensional systems is presented for linear and parabolic electronic dispersion relations, and how does it change while magnetic field is applied. All the concepts in this chapter are presented in rather qualitative way, under two assumptions. The first assumption is that all the transitions are direct -- they take place at \textbf{\textit{k}} = 0, which is valid since the momentum of a photon is negligible in comparison to the momentum of an electron. The second assumption is that the fields of an electromagnetic wave are small, therefore the calculations require only terms linear with $\vec{E}$ and $\vec{B}$. This assumption is valid, because the only sources of light intense enough to be considered in terms of the nonlinear optics are the strongest lasers, usually working in a pulse mode, which are not in the scope of this work. 
+Further, the density of states for all-dimensional systems is presented for linear and parabolic electronic dispersion relations, and is explained how does it change while magnetic field is applied. All the concepts in this chapter are presented in a rather qualitative way, under two assumptions. The first assumption is that all the transitions are direct -- they take place at \textbf{\textit{k}} = 0, which is valid since the momentum of a photon is negligible in comparison to the momentum of an electron. The second assumption is that the fields of an electromagnetic wave are small, therefore the calculations require only terms linear with $\vec{E}$ and $\vec{B}$. This assumption is valid, because the only sources of light intense enough to be considered in terms of the nonlinear optics are the strongest lasers, usually working in a pulse mode, which are not in the scope of this work. 
  
 \section{Review of Fundamental Relations for Optical Phenomena}
 \wciecie
-The absorption spectroscopy allows to investigate the energy band structure, impurity levels, lattice vibrations, excitons, localized defects and many more. The studies are based on measuring certain quantities, which manifest themselves via interaction of light with matter. The most important quantities are the dielectric function $\varepsilon (\omega)$ and the optical conductivity $\sigma (\omega)$, which is directly related to the energy structure of solids. 
+The absorption spectroscopy allows to investigate an energy band structure, impurity levels, lattice vibrations, excitons, localized defects and many more. The studies are based on measuring certain quantities, which manifest themselves via an interaction of light with matter. The most important quantities are the dielectric function $\varepsilon (\omega)$ and the optical conductivity $\sigma (\omega)$, which are directly related to the energy structure of solids. 
 \subsection{The dielectric function and optical conductivity}
 \label{section:Maxwell_equations}
 \wciecie
@@ -255,25 +255,24 @@ The wave equation for electromagnetic waves can be derived from the basic equati
 \end{equation}
 where $\sigma$ represents the electrical conductivity of space. 
 
-In vacuum, where $\mu = 1$, $\varepsilon = 1$, and $\sigma = 0$, the electromagnetic wave propagates freely and infinitely. However, if the electrical conductivity of the medium is finite, the behavior of the wave is governed by the coefficient of refraction in form:
+In the vacuum, where $\mu = 1$, $\varepsilon = 1$, and $\sigma = 0$, the electromagnetic wave propagates freely and infinitely. However, if the electrical conductivity of the medium is finite, the behavior of the wave is governed by the coefficient of refraction in form:
 \begin{equation}
 \label{eq:Solution_K6}
 N = \sqrt{\mu\varepsilon_c} = \sqrt{\mu\varepsilon \left(1 + \frac{4\pi i \sigma}{\varepsilon \omega} \right)} = \tilde{n}(\omega) + i\tilde{k}(\omega),
 \end{equation}
-where $\tilde{n}$ and $\tilde{k}$ are real and imaginary parts of the coefficient of refraction. The coefficient $\tilde{k}$ is responsible for an exponential decay of an amplitude of a wave, thus it is often called the extinction coefficient. It can be related with the absorption coefficient via a relation
+where $\tilde{n}$ and $\tilde{k}$ are real and imaginary parts of the coefficient of refraction. The coefficient $\tilde{k}$ is responsible for an exponential decay of an amplitude of the wave, thus it is often called the extinction coefficient. It can be related with the absorption coefficient via a relation
 \begin{equation}
 \label{eq:Solution_K7}
 \alpha (\omega) = \frac{2\omega}{c} \tilde{k}(\omega).
 \end{equation}
+The absorption coefficient depends on a frequency of the light. It is responsible for energy dissipation of the wave inside a solid. The rate of decay is strongly related to the properties of medium $\mu$, $\varepsilon$, and $\sigma$, which is reflected in the band structure, carrier density, etc.
 
-The absorption coefficient depends on the frequency of the light. It is responsible for energy dissipation of the wave inside a solid. The rate of decay is strongly related to the properties of medium $\mu$, $\varepsilon$, and $\sigma$, which is reflected in the band structure, carrier density, etc.
-
-Absorption coefficient takes different values for different optical processes. The full description of dispersion of absorption coefficient in solids can be found in the book of Dresselhaus \cite{Dresselhaus}. The dominant processes described in this thesis are direct optical transitions. In this case the absorption coefficient can be described as
+The absorption coefficient takes different values for different optical processes. The full description of dispersion of absorption coefficient in solids can be found in the book of Dresselhaus \cite{Dresselhaus}. The dominant processes described in this thesis are direct optical transitions. In this case the absorption coefficient can be written as
 \begin{equation}
 \label{eq:abs_coeff1}
 \alpha (\omega) = \frac{\hbar\omega \times \mathrm{numer\, of\, transitions/unit\, volume/unit\, time}}{\mathrm{incident\, electromagnetic\, flux}}.
 \end{equation}
-The denominator in Equation \ref{eq:abs_coeff1}, incident electromagnetic flux, can be calculated from the Poynting vector and is proportional to $\omega^2$. The numerator of the Equation is related with the probability of transition, which is governed by the quantum-mechanical transition rate and the joint density of states. This means that the effective absorption coefficient for optical transitions can be expressed as:
+The denominator in Equation \ref{eq:abs_coeff1} (incident electromagnetic flux) can be calculated from the Poynting vector and is proportional to $\omega^2$. The numerator of the Equation is related with the probability of transition, which is governed by the quantum-mechanical transition rate and the joint density of states. This means that the effective absorption coefficient for optical transitions can be expressed as:
 \begin{equation}
 \label{eq:abs_coeff1}
 \alpha (\omega) \propto \frac{1}{\omega} \times \mathrm{DOS}(\omega),
@@ -283,20 +282,20 @@ where DOS is the density of states.
 \subsection{Probability of absorption}
 \label{section:oscillator_strength}
 \wciecie
-The absorption of light by a semiconductor can be described classically in the terms of Beer-Lambert's law. It states that if a beam of light of given intensity $I_0$ penetrates the surface of a solid, the intensity of the light decreases with the penetration depth $z$ as
+The absorption of light in a semiconductor can be described classically in the terms of the Beer-Lambert's law. It states that if a beam of light of given intensity $I_0$ penetrates a surface of a solid, then an intensity of the light decreases with the penetration depth $z$ as
 \begin{equation}
 \label{eq:L-B_law}
 I(z) = I_0 e^{-\alpha (\omega) z},
 \end{equation}
-where $\alpha$ is an absorption coefficient of a solid. The absorption coefficient is closely related to a quantum-mechanical transition rate $W_{if}$ given by the Fermi Golden Rule. The Fermi Golden Rule expresses the probability per unit time that a photon of energy $\hbar\omega$ excites an electron from the initial state $\bra{\psi_i}$ to the final state $\ket{\psi_f}$:
+where $\alpha$ is an absorption coefficient of a solid. The absorption coefficient is closely related to a quantum-mechanical transition rate $W_{if}$ given by the Fermi Golden Rule. The Fermi Golden Rule expresses the probability per unit time that a photon of energy $\hbar\omega$ excites an electron from an initial state $\bra{\psi_i}$ to a final state $\ket{\psi_f}$:
 \begin{equation}
 W_{if} = \frac{2\pi}{\hbar} |\bra{\psi_f}\mathcal{H}_{if}'\ket{\psi_i}|^2 \rho_j(\hbar\omega).
 \label{eq:FermiGolderRule}
 \end{equation}
 %W_{if} = \frac{2\pi}{\hbar} |\bra{\psi_f}\mathcal{H}_{if}'\ket{\psi_i}|^2 \delta [E_f(\vec{k}) - E_i(\vec{k})-\hbar\omega].
-In this expression, the matrix element $\mathcal{H}_{if}'$ corresponds to the external optical perturbation, and $\rho_j(\hbar\omega)$ expresses the the joint density of states (DOS) function describing the density of states associated with an energy of the excitation photon ($E = \hbar \omega$). 
+In this expression, the matrix element $\mathcal{H}_{if}'$ corresponds to an external optical perturbation, and $\rho_j(\hbar\omega)$ expresses the joint density of states (DOS) function describing a density of states associated with an energy of the excitation photon ($E = \hbar \omega$). 
 
-The derivation of perturbation Hamiltonian $\mathcal{H}_{if}'$ starts from a standard one-electron Hamiltonian without magnetic field, which takes form of:
+The derivation of perturbation Hamiltonian $\mathcal{H}_{if}'$ starts with a standard one-electron Hamiltonian without magnetic field, which takes form of:
 \begin{equation}
 \label{eq:Perturbed_Hamiltonian}
 \mathcal{H}_0 = \frac{p^2}{2m} + V(\vec{r}),
@@ -308,33 +307,32 @@ The single electron Hamiltonian in the presence of magnetic field changes via a 
 \label{eq:Perturbed_Hamiltonian2}
 \mathcal{H}_{B} = \frac{1}{2m}\left( \vec{p} - \frac{e}{c}\vec{A}\right)^2 + V(\vec{r}) = \underbrace{\frac{p^2}{2m} + V(\vec{r})}_{\mathcal{H}_0} \underbrace{-\frac{e}{mc}\vec{A}\cdot\vec{p}+\frac{e^2 A^2}{2mc^2}}_{\text{perturbation}},
 \end{equation}
-where the first part resembles the Hamiltonian $\mathcal{H}_0$ from Equation \ref{eq:Perturbed_Hamiltonian}, and the second is a perturbation. The optical fields are usually very weak in comparison with fields inside a crystal, thus only the term linear with $\vec{A}$ remains in a good approximation. The expression for the perturbation Hamiltonian is
+where the first part resembles the Hamiltonian $\mathcal{H}_0$ from Equation \ref{eq:Perturbed_Hamiltonian}, and the second is a perturbation. The optical fields are usually very weak in comparison with fields inside a crystal, thus in a good approximation only the term linear with $\vec{A}$ remains. The expression for the perturbation Hamiltonian is
 \begin{equation}
 \label{eq:Perturbed_Hamiltonian3}
 \mathcal{H}' = -\frac{e}{mc}\vec{A}\cdot\vec{p}+\frac{e^2 A^2}{2mc^2} \approx -\frac{e}{mc}\vec{A}\cdot\vec{p}.
 \end{equation}
 
-The matrix element, $\bra{\psi_f}\mathcal{H}'\ket{\psi_i}$ coupling the initial and final states through the optical fields, determines the strength of optical transitions, which depends on the electromagnetic field perturbation $\mathcal{H}'$.
-
+The matrix element, $\bra{\psi_f}\mathcal{H}'\ket{\psi_i}$ expressing the coupling of the initial and final states through the optical fields, determines the strength of optical transitions, which depends on the electromagnetic field perturbation $\mathcal{H}'$.
 
 \section{Density of states and optical transitions}
 \label{section:DOS}
 \wciecie
-The standard density of states can be quickly derived assuming Born-Karman's periodic boundary conditions for the Bloch functions describing electronic states of a finite periodic crystal lattice. Considering that the states in reciprocal space are evenly distributed, and the electron spin degeneracy, the \textbf{\textit{k}}-space density of states takes form of
+The standard density of states can be quickly derived assuming Born-Karman's periodic boundary conditions for the Bloch functions describing electronic states of a finite periodic crystal lattice. Assuming that the states in the reciprocal space are evenly distributed, and considering the electron spin degeneracy, the \textbf{\textit{k}}-space density of states takes form of
 \begin{equation}
 \label{eq:DOS_2}
-\rho_{3D} (k) = \frac{2}{(2\pi)^{3}},\quad \rho_{2D} (k) = \frac{2}{(2\pi)^{2}},\quad \rho_{1D} (k) = \frac{2}{2\pi}.
+\rho_{3D} (k) = \frac{2}{(2\pi)^{3}},\quad \rho_{2D} (k) = \frac{2}{(2\pi)^{2}},\quad \rho_{1D} (k) = \frac{2}{2\pi},
 \end{equation}
-For three, two, and one dimensions, respectively. This function describes the momentum-depended density of states per volume (surface) unit of a reciprocal space of a finite crystal. Knowing that the DOS function is related to the amount of energy states per unit of energy $\rho (E) = dN/dE$, a relation to the reciprocal space can be found by
+for three, two, and one dimensions, respectively. This function describes the momentum-depended density of states per volume (surface) unit of the reciprocal space of a finite crystal. Knowing that the DOS function is related to the amount of energy states per unit of energy $\rho (E) = dN/dE$, a relation to the reciprocal space can be found by
 \begin{equation}
 \label{eq:DOS_3}
 \rho (E) = \frac{dN}{dE} = \frac{dN}{dk}\frac{dk}{dE},
 \end{equation}
-where $dN = \rho_D (k) dV_k$. The DOS function $\rho_D (k)$ and an element of volume in \textbf{\textit{k}}-space $dV_k$ have to take forms of a proper dimension. Now only a dispersion relation $E(k)$ is needed to calculate the energy-depended DOS function. Two cases of energy dispersion relation will be described -- parabolic and linear.
+where $dN = \rho_D (k) dV_k$. The DOS function $\rho_D (k)$ and an element of volume in \textbf{\textit{k}}-space $dV_k$ have to take forms of a proper dimension. Now only a dispersion relation $E(k)$ is needed to calculate the energy-depended DOS function. Two cases of an energy dispersion relation will be described -- parabolic and linear.
  
 \subsection{DOS in parabolic band}
 \wciecie
-In the case of parabolic bands and effective mass approximation the dispersion relation takes form of:
+In the case of parabolic bands and in the effective mass approximation the dispersion relation takes form of:
 \begin{equation}
 \label{eq:DOS_4}
 E(k) = \frac{\hbar^2k^2}{2m^*},
@@ -344,8 +342,7 @@ thus
 \label{eq:DOS_5}
 \frac{dk}{dE} = \frac{m^*}{\hbar^2} \frac{1}{k}.
 \end{equation}
-
-If the element of volume $dV_k$ is equal to the difference of volumes of two balls (in 3D) or two discs (in 2D) with radii $k+dk$ and $k$, then the amount of states in the element of volume can be expressed in as  
+If the element of volume $dV_k$ is equal to the difference of volumes of two balls (in 3D) or two discs (in 2D) with radii $k+dk$ and $k$, then the amount of states in the element of volume can be expressed as:
 \begin{eqnarray}
 \label{eq:DOS_6}
 \begin{aligned}
@@ -354,7 +351,6 @@ dN_{2D} = \rho_{2D} (k) dV_k = \frac{2}{(2\pi)^2} \cdot 2\pi k dk, \\
 dN_{1D} = \rho_{1D} (k) dV_k = \frac{2}{2\pi} \cdot dk.
 \end{aligned}
 \end{eqnarray}
-
 Substituting Equations \ref{eq:DOS_5} and \ref{eq:DOS_6} into Equation \ref{eq:DOS_4} gives the DOS function per unit energy for parabolic bands for 3, 2, and 1 dimensions:
 \begin{eqnarray}
 \label{eq:DOS_7}
@@ -384,7 +380,6 @@ thus
 \label{eq:DOS_lin2}
 \frac{dk}{dE} = \frac{1}{\hbar v_f}.
 \end{equation}
-
 The dispersion relation does not influence the element of volume $dV_k$, therefore the DOS function per unit energy for linear bands for 3, 2, and 1 dimensions:
 \begin{eqnarray}
 \label{eq:DOS_lin4}
@@ -395,22 +390,22 @@ The dispersion relation does not influence the element of volume $dV_k$, therefo
 
 \myparagraph{Optical Joint Density of States}
 \wciecie
-Not all states take part in an optical transition. The conservation of energy requires that a difference of energies of available states has to be equal to an energy of an exciting photon $\hbar\omega$. This requires a modification of the calculated DOS functions \ref{eq:DOS_7} by substituting $E$ by a term $\hbar\omega-\Delta E$, where $\Delta E$ is a difference of energy between the final and initial states. Because of that, the function $\rho_j (E)$ was named \textit{optical joint density of states}, and for the 3D parabolic band case it takes form of:
+Not all states take part in an optical transition. The conservation of energy requires that a difference of energies of available states has to be equal to the energy of an exciting photon $\hbar\omega$. This requires a modification of the calculated DOS functions \ref{eq:DOS_7} by substituting $E$ by a term $\hbar\omega-\Delta E$, where $\Delta E$ is a difference of energy between the final and the initial states. Because of that, the function $\rho_j (E)$ was named \textit{optical joint density of states}, and for the case of the 3D parabolic band it takes form of:
 \begin{equation}
 \label{eq:3D_jointDOS}
 \rho_j (\omega) = \frac{1}{2\pi^2} \left(\frac{2m^*}{\hbar^2} \right)^{(3/2)} (\hbar\omega-\Delta E)^{\frac{1}{2}}.
 \end{equation}
-The only energy range, where there exist physical solutions of Equation \ref{eq:3D_jointDOS}, requires that $\hbar\omega \geq \Delta E$.
+The only energy range, where the physical solutions of Equation \ref{eq:3D_jointDOS} exist, requires that $\hbar\omega \geq \Delta E$.
 
 \subsection{Optical transitions}
 \wciecie
-The process called interband optical transition is based on an absorption of a photon by an electron, which results in an excitation of electron into a different energy band. Apart from interband transitions there exist also intraband transitions. All transitions taking place within a single band are regarded as intraband. This however requires splitting of the band into subbands, which can be stimulated, for example, by magnetic field.
+The process called interband optical transition is based on an absorption of a photon by an electron, which results in an excitation of an electron into a different energy band. There are also intraband transitions, which take place between levels of a single band. This however requires splitting of the band into subbands, which can be stimulated, for example, by magnetic field or a quantum confinement.
 
 There are few rules, which optical transitions have to obey:
 \begin{itemize}
 \item There is a threshold energy, related to the difference of energies of the initial and final states. Obviously, photons carrying lower energies than this threshold are not absorbed as there are no final states available for the electrons to be excited to. The photons carrying higher energy may or may not be absorbed, depending on the internal band structure and allowed relaxation processes in the system.
 
-\item The transitions are either direct or indirect. The conservation of momentum yields that $\vec{k_v} = \vec{k_c} \pm \vec{k_{\hbar\omega}}$. The momentum of a photon $\vec{k_{\hbar\omega}}$ is few orders of magnitude smaller than the dimensions of the Brillouin zone, thus $\vec{k_{\hbar\omega}}$ can be neglected, rendering  $\vec{k_v} \approx \vec{k_c}$. However, the transition can still be indirect if a phonon is involved. Nevertheless this process is a three-body process thus its probability is much lower than the probability of a direct transition.
+\item The transitions are either direct or indirect. The conservation of momentum yields that $\vec{k_v} = \vec{k_c} \pm \vec{k_{\hbar\omega}}$. The momentum of a photon $\vec{k_{\hbar\omega}}$ is few orders of magnitude smaller than the dimensions of the Brillouin zone, thus $\vec{k_{\hbar\omega}}$ can be neglected, rendering  $\vec{k_v} \approx \vec{k_c}$. However, the transition can still be indirect if a phonon is involved. Nevertheless this is a three-body process thus its probability is much lower than the probability of a direct transition.
 
 \item A transition occurs of course from an occupied initial state into an empty final state. If the final state is occupied, due to the Pauli Exclusion Principle, the process cannot take place. Similarly, if the initial state is empty, there is no electron to absorb a photon and the transition does not occur.
 
@@ -429,12 +424,12 @@ There are few rules, which optical transitions have to obey:
 
 %In the process of absorption the energy of the photon is transferred into an occupied electronic state in the valence band (schematically shown as a full red point), which results in its excitation into an unoccupied state in the conduction band (open blue point). After the absorption process is complete, the system remains with a hole (the empty state in the valence band) and an excited electron in the conduction band (Panel (b) of Figure \ref{fig:Absorption1}). Later, the electron may or may not relax to a ground state through a recombination process (with the hole in the valence band).
 
-\subsection{Magnetic field}
+\subsection{DOS in magnetic field}
 \label{section:DOS_at_magneticField}
 \wciecie
-The presence of magnetic field causes changes in the movement of electrons in a solid, forcing the energy bands to split into a set of levels. Without the magnetic field all the states in \textit{k}-space are distributed evenly. If the magnetic field is applied in the $z$-direction, only states in the $x,y$ plane are affected, as they lie in a perpendicular plane to $B$. An application of magnetic field acts as a form of quantum confinement, creating an additional quantization of energy and momentum states. This limits the available states in \textit{k}-space to concentric rings (in 2D) or tubes (in 3D) with \textbf{\textit{k}} = 0 in the center. 
+The presence of magnetic field causes changes in the movement of electrons in a solid, forcing the energy bands to split into a set of levels. Without the magnetic field all the states in \textit{k}-space are distributed evenly. If the magnetic field is applied in the $z$-direction, only the states in the $x,y$ plane are affected, as they lie in a perpendicular plane to $B$. An application of magnetic field acts as a form of quantum confinement, creating an additional quantization of energy and momentum states. This limits the available states in \textit{k}-space to concentric rings (in 2D) or tubes (in 3D) with \textbf{\textit{k}} = 0 in the center. 
 
-To calculate the available energy states for electrons with parabolic dispersion in magnetic field the two-dimensional Hamiltonian has to be used:
+To calculate the available energy states for electrons with a parabolic dispersion in magnetic field the two-dimensional Hamiltonian can be used:
 \begin{equation}
 \label{eq:LL0}
 \mathcal{H} = \frac{\hat{\mathbf{P}}^2}{2m}.  
@@ -444,43 +439,43 @@ The canonical momentum $\mathbf{\hat{P}}$ is
 \label{eq:LL1}
 \hat{\mathbf{P}} = \frac{\hbar}{i}\nabla + \frac{e}{c}\mathbf{A}.  
 \end{equation}
-The magnetic potential is, assuming the Landau gauge, expressed by $\mathbf{A} = (0, Bx, 0)$. The Schrödinger equation takes form:
+The magnetic potential is, assuming the Landau gauge, expressed as $\mathbf{A} = (0, Bx, 0)$. The Schrödinger equation takes form:
 \begin{equation}
 \label{eq:LL2}
 \mathcal{H}\psi(\vec{r}) = \frac{\hbar^2}{2m} \left[ -\nabla_x^2 + \left( \frac{1}{i}\nabla_y - \frac{eB}{\hbar c}x \right)^2 \right] \psi(\vec{r}) = E\psi(\vec{r}).
 \end{equation}
-The choice of gauge grants that the Hamiltonian is independent of $y$, thus $x, y$ wavefunctions can be separated
+The choice of gauge grants that the Hamiltonian is independent of $y$, thus $x, y$ wave functions can be separated:
 \begin{equation}
 \label{eq:LL2.5}
 \psi (x,y) = e^{iky}\phi (x). 
 \end{equation}
-Moreover, by separating the wavefunction, the result is a one-dimensional Schrödinger equation $\mathcal{H}_x \phi(x) = E \phi(x)$, with the effective Hamiltonian:
+Moreover, by separating the wave functions, the result is a one-dimensional Schrödinger equation $\mathcal{H}_x \phi(x) = E \phi(x)$, with the effective Hamiltonian:
 \begin{equation}
 \label{eq:LL3}
 \mathcal{H}_x = \frac{\hbar^2}{2m} \left[ -\nabla_x^2 +(x-x_k)^2 \right].
 \end{equation}
-This Hamiltonian expresses a one-dimensional harmonic oscillator centered at $x_k = l_B^2 k$, where $l_B = \sqrt{\frac{\hbar c}{eB}}$ is the magnetic length. Its solution is a set of equidistant energy levels, called Landau Levels (LLs), which energy can be described by
+This Hamiltonian expresses a one-dimensional harmonic oscillator centered at $x_k = l_B^2 k$, where $l_B = \sqrt{\frac{\hbar c}{eB}}$ is the magnetic length. Its solution is a set of equidistant energy levels, called Landau Levels (LLs), which energy can be described by:
 \begin{equation}
 \label{eq:LL4}
 E_n = \hbar\omega_c\left( n+\frac{1}{2} \right),
 \end{equation}
 where $\omega_c = \frac{eB_z}{m_c^*}$ is the cyclotron frequency, and $n$ = 0, 1, 2... is an integer quantum number corresponding to different LLs. The Equation \ref{eq:LL4} is valid for a 2D system. In a 3D case the energy of LLs takes form $E_{n,z} = E_n + E(z) = \hbar\omega_c\left( n+\frac{1}{2} \right)+ E(z)$.
 
-The amount of independent states in a system of dimensions $L_x \times L_y$ can be estimated using the boundary conditions for the function $\psi$ (Equation \ref{eq:LL2.5}) in the $y$-direction:
+The amount of independent states in a system of dimensions $L_x \times L_y$ can be estimated using boundary conditions for the function $\psi$ (Equation \ref{eq:LL2.5}) in the $y$-direction:
 \begin{equation}
 \label{eq:LL5}
 k = \frac{2\pi}{L_y}m_y,
 \end{equation}
-for any integer $m_y$. This means that the allowed values of $x_k$ are separated by $\Delta x = l_B^2 \Delta k = 2\pi l_B^2/L_y$. If $L_y \gg l_B$, which is not the case only for 1D systems, then $\Delta x \ll l_B$ so the energy separation of successive states is much smaller than the width of each. The total number of states is equal to $(L_x L_y)/2\pi l_B^2$ and each LL has $1/(2\pi l_B^2)$ states per unit area. It is convenient to introduce a quantity, which is related to the way how electrons occupy the LLs, called filling factor $\nu$. The filling factor takes only integer numbers and describes the amount of occupied LLs. It is closely related with conductivity in plateau of the QHE $\sigma_{xy} = \nu e^2/h$, and can be expressed as
+for any integer $m_y$. This means that the allowed values of $x_k$ are separated by $\Delta x = l_B^2 \Delta k = 2\pi l_B^2/L_y$. If $L_y \gg l_B$, which is not the case only for 1D systems, then $\Delta x \ll l_B$ so the energy separation of successive states is much smaller than their width. The total number of states is equal to $(L_x L_y)/2\pi l_B^2$ and each LL has $1/(2\pi l_B^2)$ states per unit area. It is convenient to introduce a quantity, which is related to the way how electrons occupy the LLs, called filling factor $\nu$. The filling factor takes only integer values and describes the amount of occupied LLs. It is closely related with conductivity in plateau of the QHE $\sigma_{xy} = \nu e^2/h$, and can be expressed as
 \begin{equation}
 \label{eq:FillingFactor}
 \nu (B) = \frac{n_e}{B}\frac{h}{e},
 \end{equation}
-where $n_e$ is electron concentration. The filling factor expresses the amount of occupied LLs at given magnetic field.
+where $n_e$ is the electron concentration. The filling factor expresses the amount of occupied LLs at given magnetic field.
 
 \myparagraph{Selection Rules}
 \wciecie
-If magnetic field is applied to the sample, the optical transition have to follow a selection rules, described separately for Faraday and Voigt configurations. In the Faraday configuration the magnetic field is parallel to the direction of incident light, which is usually along growth direction and the $z$-axis. In Voigt configuration the magnetic field is perpendicular to the direction of incident light. Only the Faraday configuration is relevant concerning this work, therefore in all calculations and descriptions involving magnetic field it can be assumed that magnetic field is applied in $z$ direction. In the Faraday configuration, in case of unpolarized light, the optical transitions can be executed only between adjacent ($\Delta n = \pm 1$) LLs characterized by the same spin orientation.
+If the magnetic field is applied to a sample, optical transition have to follow a selection rules, described separately for the Faraday and the Voigt configurations. In the Faraday configuration the magnetic field vector is parallel to the direction of incident light, which is usually along growth direction and the $z$-axis. In the Voigt configuration the magnetic field vector is perpendicular to the direction of incident light. Only the Faraday configuration is relevant concerning this work, therefore in all calculations and descriptions involving magnetic field it can be assumed that magnetic field is applied along the $z$ direction. In the Faraday configuration, in case of an unpolarized light, the optical transitions can be executed only between adjacent ($\Delta n = \pm 1$) LLs, characterized by the same spin orientation.
 
 \subsubsection{DOS in magnetic field}
 \wciecie
@@ -488,13 +483,13 @@ Magnetic field influences the 3D allowed states only in a plane perpendicular ($
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=12cm]{gfx/Spectro/DOS1.png}
+	\includegraphics[width=13cm]{gfx/Spectro/DOS1.png}
 	\vspace{-10pt}
-	\caption{\textit{\textbf{Panel (a)} Electron energy bands for a 3D solid as a function of the $z$-direction wave vector for different Landau levels ($n$ = 0, 1, 2...). \textbf{Panel (b)} density of states function for the Landau levels compared with the free electron gas for the case $B$ = 0. Image comes from the work of Martinez \textit{et al.} \cite{Martinez_Nanotechnology}.}}
+	\caption{\textit{\textbf{Panel (a)} Electron energy bands for a 3D solid as a function of the $z$-direction wave vector for different Landau levels ($n$ = 0, 1, 2...). \textbf{Panel (b)} density of states function for the Landau levels compared with the free electron gas for the case $B$ = 0. The image comes from the work of Martinez \textit{et al.} \cite{Martinez_Nanotechnology}.}}
 	\label{fig:DOS1}
 \end{figure}
 
-In 2D the quantization in $z$-direction is given by the quantum well, so the allowed energy states are fully quantized. This results in an appearance of a distinct LL ladder of states in form of delta functions. However, in real-life systems those levels are broaden due to the scattering effects. In systems with parabolic dispersion relation the LLs are equidistant in energy, as states Equation \ref{eq:LL4}. In systems with linear dispersion of bands, the energy difference of LLs has a $\sqrt{B}$-like dependence. Figure \ref{fig:DOS2} presents the DOS(E) function for a case of graphene at $B$ = 5 T. The LLs in forms of broadened delta functions is visible, and the levels are not equidistant. 
+In 2D case the quantization in $z$-direction is provided by the quantum well, therefore the allowed energy states are fully quantized. This results in an appearance of a distinct LL ladder of states in form of delta functions. However, in real-life systems those levels are broaden due to the scattering effects. In systems with parabolic dispersion relation the LLs are equidistant in energy, as states Equation \ref{eq:LL4}. In systems with linear dispersion of bands, the energy difference of LLs has a $\sqrt{B}$-like dependence. Figure \ref{fig:DOS2} presents the DOS(E) function for a case of graphene at $B$ = 5 T. The LLs in forms of broadened delta functions are visible, and the levels are not equidistant. 
 
 \begin{figure}[H]
 	\centering
@@ -509,7 +504,7 @@ In 2D the quantization in $z$-direction is given by the quantum well, so the all
 \wciecie
 %The Fermi level is the total electrochemical potential for electrons in a solid. It describes the thermodynamic work necessary to add one electron to the system. In the framework of band structure theory the Fermi level can be understood as an energy level of an electron, which, at the state of thermodynamic equilibrium, would have a 0.5 probability of being occupied at given time.
 
-From the optical properties of a solid point of view, the Fermi Golden Rule (Equation \ref{eq:FermiGolderRule}) only describes the strength (or probability) of transitions between two states. However, if a transition is to be executed, the initial state has to be occupied by an electron, which can be excited by a photon. Moreover, the final state has to be unoccupied, as the Pauli exclusion principle forbids two electron to occupy the same quantum state. 
+From the point of view of the optical properties of a solid, the Fermi Golden Rule (Equation \ref{eq:FermiGolderRule}) describes only the strength (or probability) of transitions between two states. However, if a transition is to be executed, the initial state has to be occupied by an electron, which can be excited by a photon. Moreover, the final state has to be unoccupied, as the Pauli exclusion principle forbids two electron to occupy the same quantum state. 
 
 The total concentration of electron in a solid has to be distributed on available states. This distribution is governed by two factors -- the DOS function (Equation \ref{eq:DOS_3}) and, as the electrons are fermions, the Fermi-Dirac distribution:
 \begin{equation}
@@ -520,8 +515,7 @@ where $\mu$ is the chemical potential, and $k_B$ is Boltzmann's constant. The ch
 
 \subsubsection{Temperature effects}
 \wciecie
-
-As stated in Equation \ref{eq:Fermi_distribution}, the Fermi distribution depends on temperature. For $T$ = 0 K it resembles a step function -- all states below the Fermi level are occupied with probability 1, and all states above are completely empty, as presented in Figure \ref{fig:Fermi_Distribution} in black curve. As the temperature increases, the Fermi distribution gets smoother -- the population of electron states of energy above $E_f$ increases at the expense of electron states of energy below $E_f$. This effect has a profound consequences in the optical properties of a solid, as they vary with a change of temperature.
+As stated in Equation \ref{eq:Fermi_distribution}, the Fermi distribution depends on temperature. For $T$ = 0 K it resembles a step function -- all states below the Fermi level are occupied with probability 1, and all states above are completely empty, as presented in Figure \ref{fig:Fermi_Distribution} (black curve). As the temperature increases, the Fermi distribution gets smoother -- the population of electron states of energy above $E_f$ increases at the expense of electron states of energy below $E_f$. This effect has a profound consequences concerning the optical properties of a solid, as they vary with a change of temperature.
 
 \begin{figure}[ht]
 	\centering
@@ -536,51 +530,45 @@ At the beginning of this section (\ref{section:Fermi_level}) a concept of Fermi 
 At low temperature an occupation of given level varies very rapidly while crossing the Fermi energy -- the bands are either completely filled or empty. With increasing temperature the electron distribution is smoother as a function of energy and some levels with energy close to the Fermi energy are occupied partially, meaning that there are possibilities to execute  transitions into and from these partially occupied levels. 
 
 \section{Experimental methods}
-
 \subsection{FIR Spectroscopy}
 \wciecie
-
 %Spectroscopy can be performed in a broad range of electromagnetic spectrum, because it is based on absorption of radiation due to the quantization of energy levels, which takes place at a broad scale. For example, matter can interact with radiation of mid-infrared and far-infrared range differently. Many kinds of molecules, both organic and inorganic, can potentially absorb a far-infrared photon and convert its energy into a vibration mode. However, absorbing an energetically lower photon of microwave range, can increase rotational energy of the molecule, which is commonly used in, for example, a microwave oven. Visible light can be used to determine the band structure of regular semiconductors, as their band gap usually lies in near-infrared up to UV ranges.
 
 %The same principle applies to the spectroscopy of topological insulators (TI) and narrow-gap semiconductors (NGS). However, the energy of the light has to be adapted to the band structure. This means that only infrared and THz light can probe the band gap of TIs and NGS. Moreover, as magnetic field is applied, an additional quantization appears in a form of Landau levels. At reasonably low magnetic field the energy difference between LLs is comparable with the band gap, and can be also probed using THz light.
 %Spectroscopy is a branch of physics that deals with the investigation of the interactions between radiation and matter. These interactions include absorption, reflection, emission, or scattering. The term \textit{radiation} does not refer only to photons -- electromagnetic (EM) radiation, it also involves other types of particles, like neutrons, electrons, and protons, which also can be used to study matter. From the point of view of this thesis however, only EM radiation is relevant, or rather a small part of EM spectrum -- infrared/terahertz radiation.
 
-The whole EM spectrum includes all the frequencies -- from low energetic radio waves ($\approx 10^0$ Hz) to high energy gamma rays (up to $10^{22}$ Hz). There is no a single spectroscopic method which allows to study light and matter at the whole EM spectrum. As the properties of matter differ with the frequency, different spectroscopic techniques have to be used to investigate specific physical phenomena in given spectral region. For example in solid state physics the electronic energy levels span over a wide energies in a range from few meV   to few eV. This corresponds to energies of photons from far-infrared (FIR), through visible, to ultraviolet range.
+The whole electromagnetic (EM) spectrum includes all the frequencies -- from low-energetic radio waves ($\approx 10^0$ Hz) to high energy gamma rays (up to $10^{22}$ Hz). There is no single spectroscopic method which allows to study the light and matter at the whole EM spectrum. As the properties of matter differ with the frequency, different spectroscopic techniques have to be used to investigate specific physical phenomena in a given spectral region. For example, in solid state physics the electronic energy levels span over a wide energies in a range from few meV to few eV. This corresponds to energies of photons from far-infrared (FIR), through visible, to ultraviolet range.
 
-The parts of EM spectrum, relevant in the scope of this thesis, are the THz and FIR regions, as they allows to investigate physical phenomena in narrow-gap semiconductors (NGS) and topological insulators (TI). In general, the THz region spans over the frequency domain between 0.3 THz to 30 THz, which translates to 10 - 1000 cm$^{-1}$, or $\approx 1.25$ - 125 meV. This energy range covers most of the possible inter- and intra-LL transitions in NGS and TI, which allows to investigate their band structure in a thorough way.  
+The parts of EM spectrum, relevant in the scope of this thesis, are the THz and FIR regions, as they allows to investigate physical phenomena in narrow-gap semiconductors (NGS) and topological insulators (TI). In general, the THz region spans over the frequency domain between 0.3 THz to 30 THz, which translates to 10 - 1000 cm$^{-1}$, or $\approx 1.25 - 125$ meV. This energy range covers most of the possible inter- and intra-LL transitions in NGSs and TIs, which allows to investigate their band structure in a thorough way.  
 
 \subsection{Experimental set-up}
 \wciecie
-The experimental work of this thesis is based on the infrared/THz magnetospectroscopy measurements of TI and NGS. The spectroscopy experiments were performed using a specially customized Oxford liquid helium cryostat coupled to a Bruker Fourier spectrometer IFS 66v/S. The schematics of the system is presented on Figure \ref{fig:Experimental_setup}. 
-
-At the bottom of the cryostat a chamber was placed (white space), separated from the rest of the system by a diamond window, which is well transparent in infrared range and isolates thermally the chamber itself. A composite germanium bolometer QGEB/X was placed inside the chamber, cooled by liquid helium. A helium bath assures that the bolometer is kept at low temperature. Sensitivity of the bolometer is strongly related to operational temperature, and decreases drastically with increasing temperature. 
+The experimental work of this thesis is based on the infrared/THz magneto-spectroscopy measurements of TIs and NGSs. The spectroscopy experiments were performed using a specially customized Oxford liquid helium cryostat coupled to a Bruker Fourier spectrometer IFS 66v/S. The schematics of the system is presented on Figure \ref{fig:Experimental_setup}. At the bottom of the cryostat an additional chamber was placed (white space), separated from the rest of the system by a diamond window, which is well transparent in the infrared range and isolates thermally the chamber itself. A composite germanium bolometer QGEB/X was placed inside the chamber, being cooled by a liquid helium. A helium bath assures that the bolometer is kept at low temperature at all times. Sensitivity of a bolometer is strongly related to an operational temperature, and decreases drastically with increasing temperature. 
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=10cm]{gfx/Spectro/Setup.png}
+	\includegraphics[width=12cm]{gfx/Spectro/Setup.png}
 	\vspace{-10pt}
-	\caption{\textit{Sketch of the experimental set-up.}}
+	\caption{\textit{Sketch of the experimental set-up. The first part is composed of a Fourier (FT Spectrometer) spectrometer with a Gobar lamp (Source), which works using the Michelson interferometer principle. The radiation is guided (by a Waveguide) into the cryostat. The liquid-helium cryostat is supplied with a liquid nitrogen coating. The sample is placed inside the cryostat in a variable temperature insert (VTI). The superconducting coil (Coil 1) can provide magnetic field with inductance up to 16 T, while the compensating coil (Coil2) keeps the overall magnetic field at zero in the vicinity of the bolometer. Near the sample there is a temperature controller, allowing to vary and stabilize the temperature. The bolometer is separated (by a Diamond Window) from the sample space.}}
 	\label{fig:Experimental_setup}
 \end{figure}
 
-A thermal separation provided by a diamond window assures the optimal environment for the bolometer while the temperature can be varied in the vicinity of the sample in a broad range. The sample order is supplied with a temperature sensor and a heater. A combination of these two devices is used to set the temperature at the sample space on demand up to around 140 K. Higher temperatures are difficult to obtain due to the thermal radiation emitted by the sample and its surroundings, which heats up the bolometer, decreasing its sensitivity. The temperature in the cryostat can be decreased to around 1.6 K, by lowering the liquid helium pressure. At ambient pressure the boiling temperature of helium is equal to 4.2 K. At the $\lambda$ point helium becomes superfluid -- at around 22 mbar the temperature reaches around 1.8 K, which is the lowest possible in this experimental set-up.
+A thermal separation provided by the diamond window assures the optimal environment for the bolometer while the temperature can be varied in the vicinity of the sample in a broad range. A temperature sensor and a heater are place near the sample. A combination of these two devices is used to set the temperature in the vicinity of the sample space on demand up to around 140 K. Higher temperatures are difficult to obtain due to the thermal radiation emitted by the sample and its surroundings, which heats up the bolometer, decreasing its sensitivity. The temperature in the cryostat can be decreased to around 1.6 K, by lowering the liquid helium pressure. At the ambient pressure the boiling temperature of helium is equal to 4.2 K. At the $\lambda$ point helium becomes superfluid -- at around 22 mbar the temperature reaches around 1.8 K, which is the lowest possible in this experimental set-up.
 
 A system of two superconductive coils was embedded into the cryostat (Figure \ref{fig:Experimental_setup}). The main coil (Coil 1) is capable of creating a constant and homogeneous magnetic field of inductance up to 16 T in the vicinity of the sample. At the same time, the second coil (Coil 2) compensates the magnetic field created by the Coil 1 in the vicinity of the bolometer. This procedure is required to maintain zero magnetic field at the position of the bolometer. This system allows to perform measurements in a broad range of temperatures and magnetic fields, while preserving optimal environment for the bolometer.
 
-In the experiment a globar lamp integrated with the spectrometer was used as a radiation source. Globar is a broadband thermal emitter, which is typically used for infrared spectroscopy. It is a silicon carbide rod heated electrically up to couple of hundreds degrees Celsius. Its radiation is suitable for spectroscopy as it is continuous and resembles the blackbody radiation.
-
-The radiation is delivered to the cryostat via a waveguide, which ends with a light-focusing cone. The focused light passes through and interacts with the sample. The unabsorbed light is detected by the bolometer. An electrical response of the bolometer is passed back to the spectrometer, where the Fourier transform occurs and the final spectra are calculated.
+In the experiment a globar lamp integrated with the spectrometer was used as a radiation source. Globar is a broadband thermal emitter, which is typically used for infrared spectroscopy. It is formed by a silicon carbide rod heated electrically up to a couple of hundreds degrees Celsius. Its radiation is suitable for spectroscopy as it is continuous and resembles the blackbody radiation. The radiation is delivered to the cryostat via a waveguide, which ends with a light-focusing cone. The focused light passes through and interacts with the sample. The transmitted light is detected by the bolometer. An electrical response of the bolometer is passed back to the spectrometer, where the Fourier transform occurs and the final spectra are calculated.
 
 \myparagraph{Fourier spectrometer}
 \wciecie
-Fourier transform spectrometer has a Michelson interferometer in its core. Michelson interferometer consists of two mirrors, one in a fixed position and one is moveable, and a beamsplitter. Light from the source is split into two paths and gets reflected by the mirrors. By scanning the movable mirror over some distance, the relative optical path of two beams is varied, and an interference pattern is created that encodes the spectrum of the source. The interference pattern is a Fourier transform signal of the original spectrum. The Fourier spectrometer has some advantages over the regular spectrometers:
+A fourier transform spectrometer has a Michelson interferometer in its core. The Michelson interferometer consists of two mirrors, one in a fixed position and one is moveable, and a beamsplitter. The light from the source is split into two paths and gets reflected by the mirrors. By moving the movable mirror over some distance, the relative optical path of two beams is varied, and an interference pattern is created that encodes the spectrum of the source. The interference pattern is a Fourier transform signal of the original spectrum. The Fourier spectrometer has some advantages over the regular spectrometers:
 \begin{itemize}
 \item it can scan multiple wavelengths simultaneously, greatly increasing the operational speed, 
 \item high speed allows to increase the number of measurements, increasing the signal-to-noise ratio,
 \item it does not require prism/grating to split the beam in order to analyze it.
 \end{itemize}
 
-A coupling of Fourier spectrometer as a source of light and a bolometer as a detector can be used to perform spectroscopy of solid state systems quickly and effectively.
+A coupling of a Fourier spectrometer as a source of light and a bolometer as a detector can be used to perform spectroscopy of solid state systems quickly and effectively.
 
 \myparagraph{Bolometer}
 \wciecie
@@ -589,12 +577,12 @@ A bolometer is a device used to measure the power of incident electromagnetic ra
 \myparagraph{Analysis of spectroscopic data}
 \wciecie
 %A spectrum is a plot of measured light intensity versus wavelength. Usually the $y$-axis of a spectrum represents absorbance or transmittance. Absorbance is a measure of the amount of light absorbed by a sample. It is usually characterized by a positive peaks in a spectrum. Transmittance, on the other hand, is a measure of the amount of light transmitted through a sample. It is characterized by negative minima or "dips" in a spectrum. Absorbance and transmittance are directly related to each other via the energy conservation.
-Spectra are used to characterize samples and give an insight to their energetic structure. The peak positions in an FIR spectrum correlate with an optical transitions between distinct energy levels within sample. The standard way to obtain a transmission spectrum is to acquire a spectrum with respect to some reference. A reference spectrum allows to remove features, which are related to the experimental set-up itself, and do not provide any useful information about the sample. For example, in magneto-spectroscopy, a spectrum taken at zero magnetic field ($T_{B=0T}$) can serve as a reference to a different spectrum, taken at nonzero magnetic field ($T_{B\neq 0T}$). Both of the obtained spectra are influenced by all of the optical parts of the set-up, therefore a formula for the measured reference spectrum can be expressed as 
+Transmission spectra are used to characterize samples and give an insight to their energetic structure. The peak positions in an FIR spectrum correlate with an optical transitions between distinct energy levels within the sample. The standard way to obtain a transmission spectrum is to acquire a spectrum with respect to some reference. A use of a reference spectrum allows to remove features, which are related to the experimental set-up itself, and do not provide any useful information about the sample. For example, in magneto-spectroscopy, a spectrum taken at zero magnetic field ($T_{B=0T}$) can serve as the reference to a different spectrum, taken at nonzero magnetic field ($T_{B\neq 0T}$). Both of the obtained spectra are influenced by all of the optical parts of the set-up, therefore a formula for the measured reference spectrum can be expressed as 
 \begin{equation}
 \label{eq:Spectra1}
 f_{B=0T}(\hbar\omega) = E_{src}(\hbar\omega)\cdot T_{setup}(\hbar\omega)\cdot T_{sample,B=0T}(\hbar\omega)\cdot S_{det}(\hbar\omega),
 \end{equation}
-where $E_{src}$ is the emission spectrum of the source, $T_{setup}$ is the transmission of the elements of the experimental set-up, $T_{sample}$ is the actual transmission through the sample, and $S_{det}$ is the sensitivity of detector. All of those parameters depend on the frequency of light $(\omega)$. A similar formula can be written for a spectrum at nonzero magnetic field
+where $E_{src}$ is the emission spectrum of the source, $T_{setup}$ is the transmission of the elements of the experimental set-up, $T_{sample}$ is the actual transmission through the sample, and $S_{det}$ is the sensitivity of the detector. All of those parameters depend on the frequency of light $(\omega)$. A similar formula can be written for a spectrum at nonzero magnetic field
 \begin{equation}
 \label{eq:Spectra2}
 f_{B\neq 0T}(\omega) = E_{src}(\omega)\cdot T_{setup}(\omega)\cdot T_{sample,B\neq 0T}(\omega)\cdot S_{det}(\omega),
@@ -616,22 +604,22 @@ To obtain a complete evolution of optical transition as a function of magnetic f
 T(\omega) = \frac{T_{sample,B\neq 0T}(\omega)}{ T_{sample,B=0T}(\omega)}\cdot \frac{S_{det,B = 0T}(\omega)}{ S_{det,B\neq 0T}(\omega)},
 \end{equation}
 
-
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=14cm]{gfx/Spectro/Spectra.png}
 	\vspace{-10pt}
-	\caption{\textit{\textbf{Panel (a)}: Transmission spectra calculated from spectra from panel (b). \textbf{Panel (b)}: Spectra obtained at $B$ = 0 T (blue) and $B$ = 8 T (red). The minima present in both spectra are explained by the absorption on the parts of experimental set-up, phonons, impurities. The minima present only in red spectrum correspond to optical transitions marked as $T1$ and $T2$. Each minimum on transmission spectra was connected to a corresponding minimum of the raw spectra.}}
+	\caption{\textit{\textbf{Panel (a)}: Transmission spectra calculated from spectra from panel (b). \textbf{Panel (b)}: Example spectra obtained at $B$ = 0 T (blue) and $B$ = 8 T (red). The minima present in both spectra are explained by the absorption on the parts of experimental set-up, phonons, or impurities. The minima present only in red spectrum correspond to optical transitions marked as $T1$ and $T2$. Each minimum on transmission spectra was connected to a corresponding minimum of the raw spectra.}}
 	\label{fig:Spectra}
-\end{figure}
-An example of infrared spectra, as well as the transmission obtained via the described procedure, is presented in Figure \ref{fig:Spectra}. Panel (b) shows two curves, which are raw spectra obtained by a spectrometer. Both spectra are presented as a plot of counts versus energy, where counts correspond to the intensity of light detected at given energy of light. The blue spectrum was taken at zero magnetic field, while the red spectrum at $B$ = 8 T. The spectra are similar at the whole energy range, except at the vicinity of two energies, 340 cm$^{-1}$ and 475 cm$^{-1}$, where red spectra exhibit a visible minimum, absent in blue spectra. Those minima correspond to optical transitions marked as $T1$ and $T2$. 
+\end{figure} 
+
+An example of infrared spectra, as well as the transmission obtained via the described procedure, is presented in Figure \ref{fig:Spectra}. Panel (b) shows two curves, which are an example of raw spectra obtained by a spectrometer. Both spectra are presented as a plot of counts versus energy, where counts correspond to the intensity of light detected at given energy (wavelength) of light. The blue spectrum was taken at zero magnetic field, while the red spectrum at $B$ = 8 T. The spectra are similar at the whole energy range, except at the vicinity of two wavelengths, 340 cm$^{-1}$ and 475 cm$^{-1}$, where red spectra exhibit a visible minimum, absent in blue spectra. Those minima correspond to optical transitions marked as $T1$ and $T2$.
 
 Those minima are linked with corresponding minima of a transmission spectra presented on Panel (a). The transmission spectrum was obtained by a division of the red spectrum ($T_{B=8T}$) by the blue spectrum ($T_{B=0T}$), and it presents five absorption peaks (with one broad around 260-320 cm$^{-1}$). 
 
 The minima on red and blue spectra, which are related to the sample itself have their corresponding minima on the transmission spectra:
 \begin{itemize}
-\item Two minima around 120 and 150 cm$^{-1}$ correspond to absorption on impurities and defects of the sample. As they are present at both magnetic fields, they potentially could be removed from transmission spectrum by division. It is not the case because the absorption is almost 100\%, which means that the intensity detected is very small, and it results in such artifacts in division of two very small numbers.
-\item The broad absorption around 260-320 cm$^{-1}$ corresponds to absorption by the phonon bands. It remains visible in transmission spectra because of the same reason -- the absorption is almost 100\% leading to division artifacts.
+\item Two minima around 120 and 150 cm$^{-1}$ correspond to an absorption on impurities and defects of the sample. As they are present at both magnetic fields, they potentially could be removed from transmission spectrum by division. It is not the case because the absorption is almost 100\%, which means that the intensity detected is very small (therefore the signal-to-noise ratio is high), and it results in such artifacts in division of two very small numbers.
+\item The broad absorption, visible around 260-320 cm$^{-1}$, corresponds to the absorption by the phonon bands. It remains visible in the transmission spectra because of the same reason -- the absorption is almost 100\% leading to division artifacts.
 \item The actual optical transitions $T1$ and $T2$, which resulted from an evolution of energy levels in magnetic field and transitions between them.
 \end{itemize}
 
