@@ -1188,7 +1188,7 @@ The Hamiltonian of a bulk HgCdTe can be rewritten in the Weyl basis -- in this s
 \section{Overview of thin HgTe Quantum Wells}
 \label{chpt:MCT_QW}
 \wciecie
-A typical HgTe/CdTe QW is formed when a layer of HgTe is sandwiched between two layers of CdTe (or Hg$_{1-x}$Cd$_x$Te), which form barriers for the QW. The positions of energy levels for both electrons and holes, depend on the QW width -- as the QW width varies, the relative positions of the first electron-like subband ($E1$) and the first hole-like subband ($H1$) change. For thin quantum wells with well thickness $d$ $<$ 6.3 nm the quantum confinement is strong and the structure exhibits a normal semiconducting phase with conventional subbands alignment -- the level $E1$ lies above the $H1$ level. 
+A typical HgTe/CdTe QW is formed when a layer of HgTe is sandwiched between two layers of CdTe (or Hg$_{1-x}$Cd$_x$Te), which form barriers for the HgTe layer. Positions of energy levels, for both electrons and holes, depend on the QW width. As the QW width varies, the relative positions of the first electron-like subband ($E1$) and the first hole-like subband ($H1$) change. For thin quantum wells with QW thickness $d$ $<$ 6.3 nm the quantum confinement is strong and the structure exhibits a normal semiconducting phase with a conventional subbands alignment -- the level $E1$ lies above the $H1$ level. 
 
 \begin{figure}[ht]
 	\centering
@@ -1198,16 +1198,13 @@ A typical HgTe/CdTe QW is formed when a layer of HgTe is sandwiched between two 
 	\label{fig:BandStructure_HgTe_CdTe2}
 \end{figure} 
 
-In the opposite case, for quantum wells of thickness $d$ $>$ 6.3 nm, the situation is reversed -- the quantum confinement is weaker and the $H1$ level lies above the $E1$ level, which results in a band inversion. Consequently, for $d_c$ $=$ 6.3 nm the band gap vanishes and the system undergoes a topological phase transition from a trivial insulator to a QSH insulator, and the QW hosts single-valley 2D massless Dirac fermions \cite{Buttner_MCT_SQW}. 
+In an opposite case, for quantum wells with $d$ $>$ 6.3 nm, the situation is reversed -- the quantum confinement is weaker and the $H1$ level lies above the $E1$ level, which results in a band inversion. Consequently, for $d_c$ $=$ 6.3 nm the band gap vanishes and the system undergoes a topological phase transition from a trivial insulator to a QSH insulator, and the QW hosts single-valley 2D massless Dirac fermions \cite{Buttner_MCT_SQW}. 
 
-The other way to understand this is to realize that the structure of a thin QW ($d_{HgTe} \rightarrow 0$) should behave in a similar way to CdTe and have a regular band ordering, i.e. bands with $\Gamma_6$ symmetry form the conduction subbands and the $\Gamma_8$ symmetry bands form the valence subbands. On the other hand, if the QW thickness $d$ is large ($d_{HgTe} \rightarrow \infty$) the structure resembles the properties of HgTe. Somewhere in between, as the thickness reaches the critical value $d_c$ = 6.3 nm, the $\Gamma_6$ and $\Gamma_8$ subbands cross and the structure becomes inverted -- the $\Gamma_6$ bands become valence subbands and the $\Gamma_8$ bands become conduction subbands. The QW states derived from the heavy hole $\Gamma_8$ band are named $H_n$, where $n = 1, 2, 3, ...$ denotes the states existing in the QW. Similarly, the levels originating from the electron $\Gamma_6$ band are named $E_n$. The band structure and first few energy levels of a HgTe/CdTe QW as a function of QW width are shown of Figure \ref{fig:BandStructure_HgTe_CdTe2}.  
+The other way to understand this is to realize that the structure of a thin QW ($d_{HgTe} \rightarrow 0$) should behave like CdTe and have a regular band ordering, i.e. bands with $\Gamma_6$ symmetry form the conduction subbands and the $\Gamma_8$ symmetry bands form the valence subbands. On the other hand, if the $d_{HgTe}$ is large ($d_{HgTe} \rightarrow \infty$) the structure resembles the properties of HgTe, characterized by an inverted band order. Somewhere in between, as the thickness reaches a critical value $d_c$ = 6.3 nm, the $\Gamma_6$ and $\Gamma_8$ subbands cross and the structure becomes inverted -- the $\Gamma_6$ bands become valence subbands and the $\Gamma_8$ bands become conduction subbands. The QW states derived from the heavy-hole band are named $H_n$, where $n = 1, 2, 3, ...$ denotes the states existing in the QW. Similarly, the levels originating from the electron and light-hole bands are named $E_n$. The band structure and first few energy levels of a HgTe/CdTe QW as a function of QW width are shown in Figure \ref{fig:BandStructure_HgTe_CdTe2}.  
 
-
-
-\subsection{The band structure of HgTe/CdTe QW}
+\subsection{The band structure of a HgTe/CdTe QW}
 \wciecie
-The energy dispersion of the E1 and H1 subbands of a HgTe/CdTe QW near the critical thickness can be calculated using an 8-band Kane model. It turns out that near the $\Gamma$ point of the Brillouin zone the dispersion depends linearly on momentum \textbf{\textit{k}}. Using the states (after BHZ \cite{Bernevig_Topology2}) $\ket{E_1,\frac{1}{2}}$, $\ket{H_1,\frac{3}{2}}$, $\ket{E_1,-\frac{1}{2}}$, $\ket{H_1,-\frac{3}{2}}$ as a basis, the effective Hamiltonian for the E1 and H1 subbands takes form of
-
+An energy dispersion of the E1 and H1 subbands of a HgTe/CdTe QW near the critical thickness can be calculated using the 8-band Kane model. It turns out that near the $\Gamma$ point of the Brillouin zone the dispersion depends linearly on momentum \textbf{\textit{k}}. Using the states (after BHZ \cite{Bernevig_Topology2}) $\ket{E_1,\frac{1}{2}}$, $\ket{H_1,\frac{3}{2}}$, $\ket{E_1,-\frac{1}{2}}$, $\ket{H_1,-\frac{3}{2}}$ as a basis, an effective Hamiltonian for the E1 and H1 subbands takes form of:
 \begin{equation}
 \label{eq:MCT_SQW_Hamiltonian}
 \begin{aligned}
@@ -1217,7 +1214,7 @@ H(k) & 0 \\
 H = \epsilon (k) + d_i (k) \sigma_i,
 \end{aligned}
 \end{equation}
-where $\sigma_i$ are Pauli matrices, and
+where $\sigma_i$ are the Pauli matrices, and
 \begin{equation}
 \label{eq:MCT_SQW_Hamiltonian2}
 \begin{aligned}
@@ -1226,31 +1223,30 @@ d_3 = \mathcal{M} - \mathcal{B}(k_x^2 + k_y^2), \\
 \epsilon = \mathcal{C} - \mathcal{D}(k_x^2 + k_y^2).
 \end{aligned}
 \end{equation}
-
 The two components of the Pauli matrices $\sigma$ in Equation \ref{eq:MCT_SQW_Hamiltonian} denote the E1 and H1 subbands, while the two diagonal blocks $H(k)$ and $H^*(-k)$ represent spin-up and spin-down states, connected to each other by the time reversal symmetry. 
 
-In the gapples state, the relativistic mass $M$ in Equation \ref{eq:MCT_SQW_Hamiltonian2} vanishes. By neglecting the nonlinear terms in each spin, $H(k)$ and $H^*(-k)$ can be approximated by the massless Dirac Hamiltonian describing the genuine Dirac fermions. Since HgTe QW does not have any valley degeneracy, the Dirac fermions exist only in a single valley configuration. A comparison of an approximate Dirac-like band structure and results of numerical calculations of band structure based on the Kane model (solid curves) are presented on Figure \ref{fig:MCT_SQW_BS_BHZvsDirac}. As mentioned before, the Dirac approximation (plotted as dotted curves) is valid in the vicinity of \textbf{\textit{k}} = 0, where higher in momentum terms can be neglected.  
+In a gapples state, the relativistic mass $\mathcal{M}$ in Equation \ref{eq:MCT_SQW_Hamiltonian2} vanishes. By neglecting the nonlinear terms in each spin, $H(k)$ and $H^*(-k)$ can be approximated by the massless Dirac Hamiltonian describing the genuine Dirac fermions. Since a HgTe QW does not have any valley degeneracy, the Dirac fermions exist only in a single valley configuration. A comparison of an approximate Dirac-like band structure and the results of numerical calculations of the band structure based on the Kane model (solid curves) are presented in Figure \ref{fig:MCT_SQW_BS_BHZvsDirac}. As mentioned before, the Dirac approximation (plotted as dotted curves) is valid in the vicinity of \textbf{\textit{k}} = 0, where higher in momentum terms can be neglected.  
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=12cm]{gfx/MCT/sqw/MCT_SQW_BS_BHZvsDirac.png}
 	\vspace{-10pt}
-	\caption{\textit{Comparison of band structures obtained using the 8-band Kane model (red and blue solid curves) and the Dirac-type 2D Hamiltonian (black dotted curves) for the gapless state. Blue curve represents an electron level E1, while red curve represents hole level H1.}}
+	\caption{\textit{Comparison of band structures obtained using the 8-band Kane model (red and blue solid curves) and the Dirac-type 2D Hamiltonian (black dotted curves) for a gapless state. Blue curve represents an electron level E1, while red curve represents a hole level H1.}}
 	\label{fig:MCT_SQW_BS_BHZvsDirac}
 \end{figure} 
 
 \subsubsection{The influence of magnetic field on the band structure}
 \wciecie
-The LL structure of HgTe QW at applied magnetic field can be described in two ways. The first way is based on an approximation using Dirac Hamiltonian, which can be solved explicitly to obtain the equations describing the energy of the LLs. The approximation based on Dirac Hamiltonian holds only for a limited range of parameters. The second (more accurate and versatile) approach is based on the 8-bands Kane Hamiltonian. However, its solutions can be found only via numerical calculations.
+The LL structure of a HgTe QW at applied magnetic field can be described in two ways. The first way is based on an approximation using the Dirac Hamiltonian, which can be solved explicitly to obtain the equations describing the energy of the LLs. The approximation based on the Dirac Hamiltonian holds only for a limited range of parameters. The second (more accurate and versatile) approach is based on the 8-bands Kane Hamiltonian. However, its solutions can be found only via numerical calculations.
 
-The Dirac-like Hamiltonian describing HgTe QW in magnetic field takes form of
+The Dirac-like Hamiltonian describing a HgTe QW system in magnetic field takes form of:
 \begin{equation}
 \label{eq:MCT_SQW_MagneticField}
 \hat H_{eff} = H_{BHZ} + H_{Zeeman} + H_{SIA} + H_{BIA} ,
 \end{equation}
-where $\hat{H}_{eff}$ is the effective Hamiltonian from equation \ref{eq:MCT_SQW_Hamiltonian} with a Peierls substitution \textbf{\textit{k}} $\rightarrow$ \textbf{\textit{k}} + $\frac{e}{\hbar}$\textbf{\textit{A}} applied, $H_{Zeeman}$ includes Zeeman effects, $H_{SIA}$ represents the structure inversion asymmetry (SIA), and $H_{BIA}$ bulk inversion asymmetry (BIA). The expressions for $H_{Zeeman}$, $H_{SIA}$, and $H_{BIA}$, as well as the set of parameters used in the model can be found in Appendix \ref{chpt:MCT_QW_Hamiltonians}.
+where $\hat{H}_{eff}$ is the effective Hamiltonian from equation \ref{eq:MCT_SQW_Hamiltonian} with a Peierls substitution \textbf{\textit{k}} $\rightarrow$ \textbf{\textit{k}} + $\frac{e}{\hbar}$\textbf{\textit{A}} applied, $H_{Zeeman}$ includes Zeeman effects, $H_{SIA}$ represents the structure inversion asymmetry (SIA), and $H_{BIA}$ bulk inversion asymmetry (BIA). The expressions for $H_{Zeeman}$, $H_{SIA}$, and $H_{BIA}$ can be found in Appendix \ref{chpt:MCT_QW_Hamiltonians}.
 
-Neglecting the SIA and BIA terms, the Landau level spectrum takes form of
+Neglecting the SIA and BIA terms, the Landau level spectrum takes form of:
 \begin{equation}
 \label{eq:MCT_SQW_LLs}
 \begin{aligned}
@@ -1260,14 +1256,14 @@ E^{\downarrow}_{\alpha}(n) = -\frac{eB_{\perp}}{\hbar}(2\mathcal{D}n-\mathcal{B}
 + \alpha\sqrt{2n\mathcal{A}^2\frac{eB_{\perp}}{\hbar} + \left(\mathcal{M}-B_{\perp} \left(\frac{e}{\hbar}(-\mathcal{D}+2\mathcal{B}n)+\frac{\mu_B}{4}(g_E + g_H)\right)\right)^2}, 
 \end{aligned}
 \end{equation}
-where $n$ = 1, 2, ..., and $\alpha = +1$ for conduction band and $\alpha = -1$ for valence band. The parameter $\mathcal{C}$ is set to zero to put the Dirac point at zero energy. For a sample in a gapless state ($\mathcal{M} = 0$) the expression \ref{eq:MCT_SQW_LLs} (for conduction band $\alpha$ = +1) at low magnetic fields reduces to
+where $n$ = 1, 2, ..., $\alpha = +1$ for conduction band, and $\alpha = -1$ for valence band. The parameter $\mathcal{C}$ is usually set to zero to put the Dirac point at zero energy. For a sample in a gapless state ($\mathcal{M} = 0$) the expression \ref{eq:MCT_SQW_LLs} (for conduction band $\alpha$ = +1) at low magnetic fields reduces to
 \begin{equation}
 \label{eq:MCT_SQW_LLs2}
 E^{\uparrow (\downarrow)}_0 = B_{\perp}\left( -\frac{e}{\hbar}(2\mathcal{D}n+\mathcal{B})+\frac{\mu_B}{4}(g_E + g_H)\right)+\alpha\sqrt{2n\mathcal{A}^2\frac{eB_{\perp}}{\hbar}}
 \end{equation}
-up to linear terms. This is the cause of the square-root magnetic field dependence that became the signature of Dirac fermions in graphene \cite{Castro_graphene}, with an additional linear term describing the large g-factor of the HgTe QW. This model holds for low magnetic field, where the approximations are valid. For the higher magnetic field, the 8-band Kane model has to be used and the magnetic field dependence no longer follows a square-root function.
+up to linear terms. This is an origin of the square-root magnetic field dependence that became the signature of Dirac fermions in graphene \cite{Castro_graphene}, with an additional linear term describing the large $g$-factor of a HgTe QW. This model holds well for low magnetic field regime, where the approximations are valid. For higher magnetic fields, the 8-band Kane model has to be used and the magnetic field dependence no longer follows a pure square-root function.
 
-Meanwhile, the states for $n$ = 0, called \textit{zero-mode} \cite{Bernevig_Topology2}, can be described by equations \ref{eq:MCT_SQW_ZeroMode}. It is worth to mention that these states are labeled with $n$ = 0 only in Dirac-like Hamiltonian approximation. In Kane-model approach, these states are numbered differently. 
+Meanwhile, the states for $n$ = 0, called \textit{zero-mode} \cite{Bernevig_Topology2} LLs, can be described by equations \ref{eq:MCT_SQW_ZeroMode}. It is worth to mention that these states are labeled with $n$ = 0 only in the Dirac-like Hamiltonian approximation. In the Kane-model approach, these states are numbered differently, but still are referred to as zero-mode. 
 \begin{equation}
 \label{eq:MCT_SQW_ZeroMode}
 \begin{aligned}
@@ -1282,56 +1278,54 @@ The spin splitting of those LLs takes form
 \Delta E_s = E^{\uparrow}_0 - E^{\downarrow}_0 = 2\mathcal{M} -\frac{2eB_{\perp}}{\hbar}\mathcal{B}+\frac{\mu_B B_{\perp}}{2}(g_E + g_H). 
 \end{equation}
 
-The detailed LL spectrum of HgTe/CdTe is derived from the 8-band Kane Hamiltonian and requires solving a set of eight coupled differential equations for a given LL. In general, for LLs with $n \leq 0$, there are only 7, 4, and 1 non-trivial solutions for $n = 0$, -1, and -2, respectively. For LLs with higher $n$ indices the results consists of four pairs of spin-split levels. The single LL with $n = -2$ has a pure heavy hole character and its energy decreases linearly with magnetic field. This level, along with one of the levels labeled as $n$ = 0, form a set of zero-mode LLs, already described in Dirac-like Hamiltonian approximation.
+The detailed LL spectrum of a HgTe/CdTe QW is derived from the 8-band Kane Hamiltonian and requires solving a set of eight coupled differential equations for a given LL. In general, for LLs with $n \leq 0$, there are only 7, 4, and 1 non-trivial solutions for $n = 0$, -1, and -2, respectively. For LLs with higher $n$ indices the results consists of four pairs of spin-split levels. The single LL with $n = -2$ has a pure heavy-hole character and its energy decreases linearly with magnetic field. This level, along with one of the levels labeled as $n$ = 0, form a set of zero-mode LLs, already described in Dirac-like Hamiltonian approximation.
 
 \myparagraph{Zero-mode Landau levels}
 \wciecie
-A very particular property of zero-mode LLs manifests itself with a variation of applied magnetic field. For magnetic fields below a critical value $B_c$, the lower zero-mode LL has an electron-like character and arises from the valence band, while the higher zero-mode LL has a heavy hole-like character and arises from the conduction band. The edge channels are present as the structure is in inverted band order phase. However, they are no longer protected by the time-reversal symmetry, as the magnetic field is applied. 
+A very particular property of zero-mode LLs manifests itself with a variation of an applied magnetic field. For magnetic fields below a critical value $B_c$, the lower zero-mode LL has an electron-like character and arises from the valence band, while the higher zero-mode LL has a heavy-hole-like character and arises from the conduction band. The edge channels are present as the structure is in inverted band order phase. However, they are no longer protected by the time-reversal symmetry, as the magnetic field is applied. 
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=12cm]{gfx/MCT/sqw/MCT_SQW_BS_Crossing.png}
 	\vspace{-10pt}
-	\caption{\textit{Landau level structure obtained using the 8-band Kane model for the inverted state. Thick red (n = 0) and grey (n = -2) curves represent zero-mode LLs, which exhibit a crossing around $B_c = 5$ T, marked with a vertical dashed line. The crossing point separates inverted band ordering phase ($B < B_c$) from regular band ordering phase ($B > B_c$). Transitions originating from zero-mode LLs are represented with arrows marked as $\alpha$ and $\alpha'$.}}
+	\caption{\textit{Landau level structure obtained using the 8-band Kane model for an inverted state. Thick red ($n$ = 0) and grey ($n$ = -2) curves represent zero-mode LLs, which exhibit a crossing at $B_c \approx 5$ T, marked with a vertical dashed line. The crossing point separates an inverted band ordering phase ($B < B_c$) from a regular band ordering phase ($B > B_c$). Transitions originating from zero-mode LLs are represented with arrows marked as $\alpha$ and $\alpha'$.}}
 	\label{fig:MCT_SQW_BS_Crossing}
 \end{figure} 
 
-With increasing magnetic field the zero-mode LLs merge and eventually cross themselves, reversing the order of the bands, and turning the system into a semiconducting phase. This critical magnetic field, where the crossing occurs, can be derived from Equation \ref{eq:MCT_SQW_ZeroMode_SpinSplitting}. By substituting $\Delta E_s = 0$ and neglecting small g-factor terms, the expression for the critical magnetic field takes form of $B^c_{\perp} = \frac{\hbar \mathcal{M}}{e\mathcal{B}}$. In the inverted regime $\mathcal{M}/\mathcal{B} > 0$, the crossing takes place at a positive magnetic field value, while in normal regime $\mathcal{M}/\mathcal{B} < 0$, the crossing extrapolates to a negative value of magnetic field. For a gapless QW, the crossing occurs at zero magnetic field. Therefore, the position of the crossing is a well-defined indication of the phase of the system. The zero-mode LLs (thick red and grey curves) and their crossing point (vertical dashed line), separating the inverted phase from the semiconductor phase, is presented in Figure \ref{fig:MCT_SQW_BS_Crossing}. 
+With increasing magnetic field the zero-mode LLs merge and eventually cross themselves, reversing the order of the bands, and turning the system into a semiconducting phase. This critical magnetic field, where the crossing occurs, can be derived from Equation \ref{eq:MCT_SQW_ZeroMode_SpinSplitting}. By substituting $\Delta E_s = 0$ and neglecting small $g$-factor terms, the expression for the critical magnetic field takes form of $B^c_{\perp} = \frac{\hbar \mathcal{M}}{e\mathcal{B}}$. In the inverted regime $\mathcal{M}/\mathcal{B} > 0$, the crossing takes place at a positive magnetic field value, while in the normal regime $\mathcal{M}/\mathcal{B} < 0$, the crossing extrapolates to a negative value of magnetic field. For a gapless QW, the crossing occurs at zero magnetic field. Therefore, the position of the crossing is a well-defined indication of the phase of the system. The zero-mode LLs (thick red and grey curves) and their crossing point (marked with a vertical dashed line), separating the inverted phase from the semiconductor phase, is presented in Figure \ref{fig:MCT_SQW_BS_Crossing}. 
 
-In the case of HgTe/CdTe QWs in a gapped state, the off-diagonal terms of the massless Dirac Hamiltonian have to be completed by the diagonal massive terms. In any case, the zero-mode LLs still appear due to the off-diagonal, linear in \textbf{\textit{k}} terms. Moreover, in a gapped state, the zero-mode LLs are split in energy due to the existence of the mass term, and their position changes monotonically as a function of the temperature or the width of the QW.
+In the case of a HgTe/CdTe QW in a gapped state, the off-diagonal terms of the massless Dirac Hamiltonian have to be completed by the diagonal massive terms. In any case, the zero-mode LLs still appear due to the off-diagonal, linear in \textbf{\textit{k}} terms. Moreover, in a gapped state, the zero-mode LLs are split in energy due to the existence of the mass term, and their position changes monotonically as a function of the temperature or the width of the QW. The magnetic field evolution of the zero-mode LLs in HgTe QWs, and their crossing at $B_c$ can be considered as a field-driven insulator-metal-insulator phase transition. The transport data \cite{Konig_Topology} gave an indication that those LLs simply cross themselves, but also a possibility of a weak anticrossing was considered \cite{Konig_MCT_SQW}.
 
-The magnetic field evolution of the zero-mode LLs in HgTe QWs, and their crossing at $B_c$ can be considered as a field-driven insulator-metal-insulator phase transition. The transport data \cite{Konig_Topology} gave an indication that those LLs simply cross themselves, but also a possibility of a weak anticrossing was considered \cite{Konig_MCT_SQW}.
-
-Indeed, several magnetospectroscopy studies \cite{Orlita_MCT_QW}\cite{Zholudev_MCT_QW} proved that those levels may exhibit an anticrossing in the vicinity of the calculated $B_c$. This effect can be observed in magnetospectroscopy as an evolution of two transitions, which are shown as arrows in Figure \ref{fig:MCT_SQW_BS_Crossing}. First of those transitions is a regular transition from LL $n$ = 0 to LL $n$ = 1, designated as transition $\alpha$, following the notation of Schultz \textit{et al.} \cite{Schultz}. However, a second transition, designated as $\alpha'$, is a transition from LL $n$ = -2 to LL $n$ = 1. This transition does not satisfy the selection rules $\Delta n = \pm 1$, and is forbidden in the electric dipole approximation. The appearance of this transition is related with a coupling between the LLs $n$ = 0 and $n$ = -2, resulting from BIA. The band structure calculations of HgTe QWs often neglect BIA, which is inherently present in zinc-blend crystals. A consequence of BIA is a mixing of the states of the zero-mode LLs in the vicinity of $B_c$. This mixing activates the transition $\alpha'$, rendering it detectable in magneto-optical studies.
+Indeed, several magneto-spectroscopy studies \cite{Orlita_MCT_QW}\cite{Zholudev_MCT_QW} proved that those levels may exhibit an anticrossing in the vicinity of the calculated $B_c$. This effect can be observed in magneto-spectroscopy as an evolution of two transitions, which are shown as arrows in Figure \ref{fig:MCT_SQW_BS_Crossing}. The first of those transitions is a regular transition from LL $n$ = 0 to LL $n$ = 1, designated as transition $\alpha$, following the notation of Schultz \textit{et al.} \cite{Schultz}. However, the second transition, designated as $\alpha'$, is a transition from LL $n = -2$ to LL $n = 1$. This transition does not satisfy the selection rules $\Delta n = \pm 1$ in the Faraday configuration, and is forbidden in the electric dipole approximation. The appearance of this transition is related to a coupling between the LLs $n$ = 0 and $n = -2$, resulting from BIA. The band structure calculations of HgTe QWs often neglect BIA, which is inherently present in zinc-blend crystals. A consequence of BIA is a mixing of the states of the zero-mode LLs in the vicinity of $B_c$. This mixing activates the transition $\alpha'$, rendering it detectable in magneto-optical studies.
 
 \subsubsection{The influence of temperature on the band structure}
 \wciecie
-Apart from the variation of QW thickness, which is inherently an internal parameter of the structure -- once set (at growth) cannot be changed, external paramteres like hydrostatic pressure \cite{Krishtopenko_pressure} and temperature \cite{Wiedmann_State} (as in the case of MCT bulk systems presented in Chapter \ref{chpt:HgCdTe bulk systems}) can be used to induce a phase transition in MCT QW systems. This is a consequence of a strong temperature dependence of energy of E1 level. The temperature dependence of the energy gap and a band order evolution is presented in Figure \ref{fig:SQW_EGvsT} for two systems -- a 6 nm HgTe QW with a regular band order at all temperatures (Panel a)), and a 8 nm HgTe QW with an inverted band order at low temperature (Panel b)). The second system undergoes a temperature-induced phase transition at a critical temperature $T_c$, and turns into a regular semiconductor at higher temperatures. The energy of H1 (and H2) bands does not change with temperature at all, while there is a clear dependence of energy on temperature of E1 band.
+Apart from the variation of a QW thickness, which is inherently an internal parameter of the structure -- once set (at growth) cannot be changed, external paramteres like hydrostatic pressure \cite{Krishtopenko_pressure} and temperature \cite{Wiedmann_State} (as in the case of HgCdTe bulk systems presented in Chapter \ref{chpt:HgCdTe bulk systems}) can be used to induce a phase transition in HgTe QW systems. This is a consequence of a strong temperature dependence of energy of the E1 level. The temperature dependence of the energy gap and a band order evolution is presented in Figure \ref{fig:SQW_EGvsT} for two systems -- a 6 nm HgTe QW with a regular band order at all temperatures (Panel a)), and an 8 nm HgTe QW with an inverted band order at low temperature (Panel b)). The second system undergoes a temperature-induced phase transition at a critical temperature $T_c$, and turns into a regular semiconductor at higher temperatures. The energy of H1 (and H2) bands does not change with temperature at all, while there is a clear dependence of energy on temperature of the E1 band.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=14cm]{gfx/MCT/sqw/SQW_EGvsT.png}
 	\vspace{-10pt}
-	\caption{\textit{Temperature dependence of the electron-like E1 (blue curve) and hole-like H1, H2 (red curves) subbands at zero quasimomentum, calculated for \textbf{Panel (a)} a 6 nm HgTe/CdTe quantum well, and \textbf{Panel (b)} a 8 nm HgTe/CdTe quantum well. At $T = T_c$ the 8 nm quantum well undergoes a phase transition characterized by a band inversion.}}
+	\caption{\textit{Temperature dependence of the electron-like E1 (blue curve) and hole-like H1, H2 (red curves) subbands at $k = 0$, calculated for \textbf{Panel (a)} a 6 nm HgTe/CdTe quantum well, and \textbf{Panel (b)} an 8 nm HgTe/CdTe quantum well. At $T = T_c$ the 8 nm quantum well undergoes a phase transition characterized by a band inversion.}}
 	\label{fig:SQW_EGvsT}
 \end{figure} 
 
-The calculations of the band structure and the band nonparabolicity are based on an 8-band \textbf{\textit{k$\cdot$p}} model which takes into account the temperature dependence of all relevant parameters, including but not limited to the lattice and elastic constants of Hg$_{1-x}$Cd$_x$Te. The 8-band \textbf{\textit{k$\cdot$p}} Hamiltonian takes into account also the interactions between $\Gamma_6$, $\Gamma_8$, and $\Gamma_7$ bands. Despite the fact that the electronic states of HgTe QWs can be described qualitatively by the 6-band \textbf{\textit{k$\cdot$p}} model, only the inclusion of the $\Gamma_7$ band in the calculations allows to obtain the quantitative values of hydrostatic pressure or temperature of the phase transition \cite{Krishtopenko_pressure}. For other HgCdTe-based materials, like bulk systems, this is not the case -- the influence of the $\Gamma_7$ band can be neglected in the calculations \cite{Malcolm_MCT}.
+The calculations of the band structure and the band nonparabolicity are based on the 8-band Kane model which takes into account the temperature dependence of all relevant parameters, including but not limited to the lattice and elastic constants of Hg$_{1-x}$Cd$_x$Te. The model takes into account also the interactions between $\Gamma_6$, $\Gamma_8$, and $\Gamma_7$ bands. Despite the fact that the electronic states of HgTe QWs can be described qualitatively by the 6-band  model, only the inclusion of the $\Gamma_7$ band in the calculations allows to obtain the quantitative values of hydrostatic pressure or temperature of the phase transition \cite{Krishtopenko_pressure}. For other HgCdTe-based materials, like bulk systems, this is not the case -- the influence of the $\Gamma_7$ band can be neglected in the calculations \cite{Malcolm_MCT}.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=14cm]{gfx/MCT/sqw/3d_bandorder_T.png}
 	\vspace{-10pt}
-	\caption{\textit{Dispersion relation of a 8 nm HgTe/CdTe quantum well in \textbf{Panel (a)} the topological insulator phase $T < T_c$, \textbf{Panel (b)} the gapless state $T = T_c$, and \textbf{Panel (c)} the semiconductor phase $T > T_c$. The electron-like E1 subband is represented as a blue surface, while the hole-like H1 subband as a red surface. In the inverted phase the indirect band gap is formed by the presence of side maxima of the E1 subband.}}
+	\caption{\textit{Dispersion relation of an 8 nm HgTe/CdTe quantum well in \textbf{Panel (a)} the topological insulator phase $T < T_c$, \textbf{Panel (b)} the gapless state $T = T_c$, and \textbf{Panel (c)} the semiconductor phase $T > T_c$. The electron-like E1 (hole-like H1) subband is represented as a blue surface (red surface). In the inverted phase the indirect band gap is formed by the presence of side maxima of the E1 subband.}}
 	\label{fig:3D_bandorder_HgTe}
 \end{figure} 
 
-The calculations of the band structure of the 8 nm thick QW revealed that at high temperatures the band order is regular and the energy gap between E1 and H1 bands considerably decreases with decreasing temperature, which is presented in Panel c of Figure \ref{fig:3D_bandorder_HgTe}. At a critical temperature $T_c = 90$ K the band gap vanishes giving rise to massless Dirac fermions (Panel b). Further decrease of temperature induces a phase transition and renders the band structure inverted with an indirect band gap, which arises due to the presence of the side maxima of the valence band (Panel a).
+The calculations of the band structure of the 8 nm thick QW revealed that at high temperatures the band order is regular and the energy gap between E1 and H1 bands considerably decreases with decreasing temperature, which is presented in Panel (c) of Figure \ref{fig:3D_bandorder_HgTe}. At the critical temperature $T_c = 90$ K the band gap vanishes giving rise to massless Dirac fermions (Panel (b)). Further decrease of temperature induces a phase transition and renders the band structure inverted with an indirect band gap, which arises due to the presence of the side maxima of the valence band (Panel (a)).
 
 \subsection{Experiment}
 \subsubsection{Samples}
 \wciecie
-The MCT QW samples were grown using MBE on a (013)-oriented semi-insulating GaAs substrate followed by a relaxed CdTe buffer layer \cite{Dvoretsky_Samples}. The active part of a QW consisted of a (6 nm for sample A, 8 nm for sample B) HgTe layer sandwiched between 40 nm thick Cd$_x$Hg$_{1-x}$Te barriers. A cap layer of CdTe was deposited on top of the structures to prevent oxidation. Sample A remained undoped, while the barriers of sample B were doped on each side with a 15 nm layer of indium with the doping concentration of $6.5\cdot10^{10}$ cm$^{-2}$. This resulted in a formation of a 2D electron gas in the QW of sample B. The QW width $d$ and cadmium concentration in barriers $x$ of investigated structures is given in Table \ref{tab:MCT_QW_properties}.   
+The HgTe QW samples were grown using the MBE technique on a (013)-oriented semi-insulating GaAs substrate followed by a relaxed CdTe buffer layer \cite{Dvoretsky_Samples}. An active part of a QW consists of a (6 nm for Sample A, 8 nm for Sample B) HgTe layer sandwiched between 40 nm thick Cd$_x$Hg$_{1-x}$Te barriers. A cap layer of CdTe was deposited on top of the structures to prevent oxidation. Sample A remained undoped, while the barriers of Sample B were doped on each side with a 15 nm layer of indium with the doping concentration of $6.5\cdot10^{10}$ cm$^{-2}$. This resulted in a formation of a 2D electron gas in the QW of Sample B. The QW width $d$ and cadmium concentration in barriers $x$ of investigated structures is given in Table \ref{tab:MCT_QW_properties}.   
 
 \begin{table}[h]
 \label{tab:MCT_QW_properties}
@@ -1346,11 +1340,11 @@ Sample B & 8 nm & 0.80 & $n = 3\cdot10^{11}$ cm$^{-2}$\\ \hline\hline
 \end{tabular}
 \end{table}
 
-The critical thickness corresponding to a phase transition at different temperatures for HgTe/Hg$_{1-x}$Cd$_{x}$Te samples with $x$ = 0.62 (the same as sample A) and $x$ = 0.80 (the same as sample B) is presented in Figure \ref{fig:SQW_DCvsT}. The 6 nm sample A (represented by a black curve) is in a semiconducting state at the whole temperature range. The 8 nm sample B (red curve) at low temperature is a topological insulator and is expected to exhibit a phase transition at $T = 90$ K followed by an opening of the band gap.
+The critical thickness corresponding to a phase transition at different temperatures for HgTe/Hg$_{1-x}$Cd$_{x}$Te samples with $x$ = 0.62 (the same as Sample A) and $x$ = 0.80 (the same as Sample B) is presented in Figure \ref{fig:SQW_DCvsT}. The 6 nm Sample A (represented by a black curve) is in a semiconducting state at the whole temperature range. The 8 nm Sample B (red curve) at low temperature is a topological insulator and is expected to exhibit a phase transition at $T = 90$ K followed by an opening of the band gap.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=12cm]{gfx/MCT/sqw/SQW_DCvsT.png}
+	\includegraphics[width=13cm]{gfx/MCT/sqw/SQW_DCvsT.png}
 	\vspace{-10pt}
 	\caption{\textit{The critical thickness at different temperatures for HgTe/Hg$_{1-x}$Cd$_{x}$Te samples with $x$ = 0.62 (black curve) and $x$ = 0.80 (red curve).}}
 	\label{fig:SQW_DCvsT}
@@ -1360,68 +1354,69 @@ The critical thickness corresponding to a phase transition at different temperat
 \label{sec:MCT_QW}
 \myparagraph{Related experimental works}
 \wciecie
-The first results, concerning the particular behavior of zero-mode LLs were reported in works of König \cite{Konig_Topology} and Zhang \cite{Zhang_Topology}. It was shown that the magnetic field evolution of those zero-mode LLs in HgTe QWs is an origin of a magnetic field-driven insulator-metal-insulator phase transition, which is characteristic for these systems. It is worth to stress that this transition is not topological insulator-metal-insulator but insulator-metal-insulator, as the magnetic field breaks the time-reversal symmetry and, as a consequence, the topological phase. A crossing of these levels at the critical field was confirmed in \cite{Konig_Topology} by magneto-transport data.
+The first results, concerning the particular behavior of zero-mode LLs were reported in works of König \cite{Konig_Topology} and Zhang \cite{Zhang_Topology}. It was shown that the magnetic field evolution of the zero-mode LLs in HgTe QWs is an origin of a magnetic field-driven insulator-metal-insulator phase transition, which is characteristic for these systems. It is worth to stress that this is not a topological insulator-metal-insulator transition but an insulator-metal-insulator transition, as the magnetic field breaks the time-reversal symmetry and, as a consequence, the topological protection. A crossing of these levels at the critical field was confirmed in \cite{Konig_Topology} by magneto-transport data.
 
-Orlita \textit{et al.} \cite{Orlita_MCT_QW} demonstrated for the first time by magnetospectroscopy measurements on two 8 nm wide HgTe QWs the evolution and an anticrossing of transitions originating from the zero-mode LLs. His findings were confirmed by the work of Zholudev \textit{et al.} \cite{Zholudev_MCT_QW_anticrossing}, in which the anticrossing was observed via magnetospectroscopy as well, and its presence was attributed to BIA. Moreover, it was speculated that some other processes can cause the levels to avoid crossing, e.g. electron-electron interactions \cite{Orlita_MCT_QW}.
+Orlita \textit{et al.} \cite{Orlita_MCT_QW} demonstrated for the first time by magneto-spectroscopy measurements on two 8 nm wide HgTe QWs an evolution and an anticrossing of transitions originating from the zero-mode LLs. These findings were confirmed by the work of Zholudev \textit{et al.} \cite{Zholudev_MCT_QW_anticrossing}, in which the anticrossing was observed via magneto-spectroscopy as well, and its presence was attributed to BIA. Moreover, it was speculated that some other processes can cause the levels to avoid crossing, e.g. electron-electron interactions \cite{Orlita_MCT_QW}.
 
-The first systematic magnetospectroscopy study of HgTe QWs systems with different QW width close to the critical thickness was performed by Zholudev \cite{Zholudev_MCT_QW}. In his experiment a set of four samples was used -- two of them being in inverted regime of thickness, while the other two being in noninverted regime. This allowed to directly observe the difference between two separate topological phases and the band structure that they originate from. An anticrossing of zero-mode LLs was also observed.
+The first systematic magneto-spectroscopy study of HgTe QWs systems with different QW widths close to the critical was performed by Zholudev \cite{Zholudev_MCT_QW}. In his experiment a set of four samples was used -- two of them being in an inverted regime of thickness, while the other two being in a non-inverted regime. This allowed to directly observe the difference between the two separate topological phases and the band structure that they originate from. An anticrossing of zero-mode LLs was also observed.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=14cm]{gfx/MCT/sqw/Ikonnikov_MCT_SQW.png}
+	\includegraphics[width=15cm]{gfx/MCT/sqw/Ikonnikov_MCT_SQW.png}
 	\vspace{-10pt}
-	\caption{\textit{Magnetoresistance and magnetoabsorption spectra obtained at different temperatures on a 8-nm HgTe QW. \textbf{Panel a)} Solid lines 4.2 K, dotted lines 20 K, dashed lines 30 K, using a 14.8-$\mu$m QCL. \textbf{Panel b)} Solid lines 80 K, dotted lines 102 K, dashed lines 174 K, using a CO$_2$ laser emitting at 10.6-$\mu$m. Images come from the work \cite{Ikonnikov_MCT_SQW}.}}
+	\caption{\textit{Magneto-resistance and magneto-absorption spectra obtained at different temperatures on an 8 nm HgTe QW. \textbf{Panel a)} Solid lines 4.2 K, dotted lines 20 K, dashed lines 30 K, using a 14.8-$\mu$m QCL. \textbf{Panel b)} Solid lines 80 K, dotted lines 102 K, dashed lines 174 K, using a CO$_2$ laser emitting at 10.6 $\mu$m. Images come from the work of Ikonnikov \cite{Ikonnikov_MCT_SQW}.}}
 	\label{fig:Ikonnikov_MCT_SQW}
 \end{figure}
 
-The first temperature dependent study of phase transition in MCT QW were done by Ikonnikov \cite{Ikonnikov_MCT_SQW}. The study was conducted in pulsed magnetic fields up to 45 T using monochromatic radiation sources. It revealed a temperature-induced merging of the absorption lines, corresponding to the transitions from the zero-mode LLs. The results are presented in Figure \ref{fig:Ikonnikov_MCT_SQW}.
+The first temperature dependent study of phase transition in HgTe QWs were done by Ikonnikov \cite{Ikonnikov_MCT_SQW}. The study was conducted in pulsed magnetic fields up to 45 T using monochromatic radiation sources. It revealed a temperature-induced merging of the absorption lines, corresponding to the transitions from the zero-mode LLs. The results are presented in Figure \ref{fig:Ikonnikov_MCT_SQW}.
 
-All the magnetospectroscopy studies of Dirac fermions in HgTe mentioned above were conducted either at low temperatures and/or using monochromatic THz sources. In 2015, a magnetotransport study conducted by Wiedmann \textit{et al.} \cite{Wiedmann_State} showed fingerprints of a temperature-induced transition from the TI at 4.2 K to the SC phase at 300 K. However, the critical temperature for the samples used, where the phase transition occurs and the massless Dirac fermions arise, was too high to be determined by this technique. This is caused by a significant degradation of resolution between LLs observed in magnetotransport at high temperatures.
+All the magnetospectroscopy studies of Dirac fermions in HgTe mentioned above were conducted either at low temperatures and/or using monochromatic THz sources. In 2015, a magneto-transport study conducted by Wiedmann \textit{et al.} \cite{Wiedmann_State} showed fingerprints of a temperature-induced transition from the topological insulator at 4.2 K to the semiconductor phase at 300 K. However, the critical temperature for the samples, where the phase transition occurs and the massless Dirac fermions arise, was too high to be determined by this technique. This is caused by a significant degradation of resolution between LLs observed in magneto-transport at high temperatures.
 
 \myparagraph{Experimental details}
 \wciecie
-In this work a set of two samples was investigated in order to determine if a temperature induced topological phase transition takes place in HgTe/CdTe QW. Similarly to the bulk system, the first sample exhibits a semiconducting behavior at the whole range of temperatures, while the second one has an inverted band structure at low temperatures, then undergoes a phase transition at the critical temperature, and finally turns into a regular semiconductor at high temperatures. In contrary to bulk systems, a two-dimensional HgTe/CdTe QW in inverted state is not a semimetal but a topological insulator (if no magnetic field is applied). 
+In this work a set of two samples was investigated in order to determine if a temperature induced topological phase transition takes place in HgTe/CdTe QW. Similarly to the bulk systems, the first QW sample exhibits a semiconducting behavior at the whole range of temperatures, while the second one has an inverted band structure at low temperatures, then undergoes a phase transition at the critical temperature, and finally turns into a regular semiconductor at high temperatures. In contrary to bulk systems, a two-dimensional HgTe/CdTe QW in inverted state is not a semimetal but a topological insulator (if no magnetic field is applied). 
 
-Magnetospectroscopy measurements were performed at magnetic fields up to 16 T and in energy range 80 - 800 cm$^{-1}$ (10 - 100 meV) with a 4 cm$^{-1}$ resolution. The relevant temperature range was between 2 K and 130 K. The infrared transmittance spectra were measured by a Fourier spectrometer with a Globar lamp as a source of radiation. The system was coupled with a liquid helium cryostat. The transmission spectra were obtained by dividing the spectra taken at given magnetic field by the spectra obtained at zero magnetic field.
+Magneto-spectroscopy measurements were performed at magnetic fields up to 16 T and in energy range 80 - 800 cm$^{-1}$ ($\approx$ 10 - 100 meV) with a 4 cm$^{-1}$ resolution. The relevant temperature range was between 2 K and 130 K. The infrared transmittance spectra were measured by a Fourier spectrometer with a Globar lamp as a source of radiation. The system was coupled to a liquid helium cryostat. The transmission spectra were obtained by dividing the spectra taken at given magnetic field by the spectra obtained at zero magnetic field.
 
-In order to interpret the experimental results, a set of temperature-dependent band structure and LL structure calculations based on eight-band \textbf{\textit{k}}$\cdot$\textbf{\textit{p}} Hamiltonian were performed. The calculations took into account a tensile strain in the layers resulting from the mismatch of lattice constants of CdTe buffer, Cd$_{x}$Hg$_{1-x}$Te barriers, and HgTe QW. The energies of LLs were obtained using axial approximation, while the calculations of dispersion relations held also nonaxial terms.
+In order to interpret the experimental results, a set of temperature-dependent band structure and LL structure calculations based on the 8-band Kane Hamiltonian were performed. The calculations took into account a tensile strain in the layers resulting from the mismatch of lattice constants of CdTe buffer, Cd$_{x}$Hg$_{1-x}$Te barriers, and HgTe QW. The energies of LLs were obtained using an axial approximation, while the calculations of dispersion relations held also non-axial terms.
 
-On each and every spectra there is an completely opaque region due to the presence of reststrahlen bands, existing between 16 and 21 meV and 30 and 37 meV corresponding to phonon absorption of HgTe/HgCdTe layers and GaAs substrate, respectively. Because of that, the energy regions corresponding to these bands were covered by grey areas on the spectra.
+On each spectra there is a completely opaque region due to the presence of reststrahlen bands, existing between 16 and 21 meV and 30 and 37 meV corresponding to a phonon absorption of HgTe/HgCdTe layers and a GaAs substrate, respectively. Because of that, the energy regions corresponding to these bands were covered by grey areas on the spectra.
 
+\clearpage
 \subsubsection{Sample A}
 \myparagraph{Temperature 2 K}
 \wciecie
-The results of the LL calculations for temperature of 2 K for sample A are presented in Figure \ref{fig:LL_110624_2K}. Only two bands (E1 and H1) are present. In the Faraday configuration, optical transitions between LLs are required to follow a $\Delta n = \pm 1$ selection rules, provided by the electric dipole approximation (Chapter \ref{chpt:optical}). By taking into account the previous optical studies of HgTe QWs \cite{Schultz}\cite{Orlita_MCT_QW}\cite{Zholudev_MCT_QW}\cite{Ikonnikov_MCT_SQW}\cite{Ludwig_MCT_QW}\cite{Zholudev_MCT_QW_anticrossing}, the transmission spectra are expected to be dominated by the transitions between LLs with low indices. Those transitions are marked in Figure \ref{fig:LL_SQW_2K} by small Greek letters ($\alpha_1$, $\alpha_2$, $\beta$) and solid arrows, as all visible transitions are interband transitions, which is a consequence of the low concentration of holes as dominant carriers in sample A. According to a convention applied in MCT bulk in Chapter \ref{chpt:HgCdTe bulk systems}, dashed arrows are reserved for intraband transitions. 
+The results of the LL calculations for $T =$ 2 K for Sample A are presented in Figure \ref{fig:LL_110624_2K}. Only two bands (E1 and H1) are present. In the Faraday configuration, optical transitions between LLs are required to follow a $\Delta n = \pm 1$ selection rules, provided by the electric dipole approximation (Chapter \ref{chpt:optical}). By taking into account the previous optical studies of HgTe QWs \cite{Schultz}\cite{Orlita_MCT_QW}\cite{Zholudev_MCT_QW}\cite{Ikonnikov_MCT_SQW}\cite{Ludwig_MCT_QW}\cite{Zholudev_MCT_QW_anticrossing}, the transmission spectra are expected to be dominated by the transitions between LLs with low indices. Those transitions are marked in Figure \ref{fig:LL_SQW_2K} by small Greek letters ($\alpha_1$, $\alpha_2$, $\beta$) and solid arrows, as all visible transitions are interband transitions, which is a consequence of the low concentration of holes as dominant carriers in Sample A. According to a convention applied in HgCdTe bulk systems in Chapter \ref{chpt:HgCdTe bulk systems}, dashed arrows are reserved for intraband transitions. 
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/110624/110624_LL2K.png}
 	\vspace{-10pt}
-	\caption{\textit{Landau level graph of sample A as a function of magnetic field at $T$ = 2 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n$ = -2 and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. Solid arrows $\alpha_1$, $\alpha_2$, and $\beta$ indicate interband transitions.}}
+	\caption{\textit{Landau level graph of Sample A as a function of magnetic field at $T$ = 2 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n = -2$ and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. Solid arrows $\alpha_1$, $\alpha_2$, and $\beta$ indicate interband transitions.}}
 	\label{fig:LL_110624_2K}
 \end{figure}
 
-The band gap is equal to 2.7 meV. The electrons from both of the zero-mode LLs, denoted as $n$ = -2 and $n$ = 0, take part in optical transitions, which allowed to confirm that these LLs do not cross (for a positive value of magnetic field). This is a confirmation that the sample is in the semiconducting phase. 
+The band gap is equal to 2.7 meV. The electrons from both of the zero-mode LLs, denoted as $n = -2$ and $n$ = 0, take part in optical transitions, which allowed to confirm that these LLs do not cross (for a positive value of magnetic field). This is an indication that the sample is in a semiconducting phase. 
 
-The expected dependence of transition as a function of magnetic field can be derived from the difference of the calculated LLs. In the Panel a) of Figure \ref{fig:Spectra_110624_2K} these expected transitions are presented along with experimental points corresponding to the minima of transmission of given spectra. There is a strong agreement between the experimental data and the theoretical calculations. The strongest transitions are $\alpha_1$ and $\beta$, which is shown on a waterfall plot in Panel b) of Figure \ref{fig:Spectra_110624_2K}. The spectra are plotted every 1 T and shifted vertically for clarity.
+The expected dependence of energy of transitions on magnetic field can be derived from the difference of the calculated LLs. In the Panel a) of Figure \ref{fig:Spectra_110624_2K} these expected transitions are presented along with experimental points corresponding to the minima of transmission of given spectra. There is a strong agreement between the experimental data and the theoretical calculations. The strongest transitions are $\alpha_1$ and $\beta$, which is shown on a waterfall plot in Panel b) of Figure \ref{fig:Spectra_110624_2K}. The spectra are plotted every 1 T and shifted vertically for clarity.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/110624/110624_spectra2K.png}
 	\vspace{-10pt}
-	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of transmission for sample A at $T$ = 2 K with theoretical predictions of transitions as a function of magnetic field. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
+	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of the transmission of Sample A at $T$ = 2 K with theoretical predictions of transitions as a function of magnetic field. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
 	\label{fig:Spectra_110624_2K}
 \end{figure}
 
 \clearpage
 \myparagraph{Temperature 30 K}
 \wciecie
-At $T$ = 30 K the band structure of sample A slightly changed. The energy difference of zero-mode LLs at zero magnetic field got higher -- the band gap is equal to 10.2 meV. The LL structure is presented in Figure \ref{fig:LL_110624_30K}.
+At $T$ = 30 K the band structure of Sample A slightly changed. The energy difference of zero-mode LLs at zero magnetic field got higher -- the band gap is equal to 10.2 meV. The LL structure is presented in Figure \ref{fig:LL_110624_30K}.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/110624/110624_LL30K.png}
 	\vspace{-10pt}
-	\caption{\textit{Landau level graph of sample A as a function of magnetic field at $T$ = 30 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n$ = -2 and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. Solid arrows $\alpha_1$, $\alpha_2$, and $\beta$ indicate interband transitions.}}
+	\caption{\textit{Landau level graph of Sample A as a function of magnetic field at $T$ = 30 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n = -2$ and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. Solid arrows $\alpha_1$, $\alpha_2$, and $\beta$ indicate interband transitions.}}
 	\label{fig:LL_110624_30K}
 \end{figure}
 
@@ -1429,19 +1424,19 @@ At $T$ = 30 K the band structure of sample A slightly changed. The energy differ
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/110624/110624_spectra30K.png}
 	\vspace{-10pt}
-	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of transmission for sample A at $T$ = 30 K with theoretical predictions of transitions as a function of magnetic field. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
+	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of the transmission of Sample A at $T$ = 30 K with theoretical predictions of transitions as a function of magnetic field. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
 	\label{fig:Spectra_110624_30K}
 \end{figure}
 
 \myparagraph{Temperature 70 K}
 \wciecie
-At $T$ = 70 K the band structure of sample A changed even more. The energy difference of zero-mode LLs at zero magnetic field got a higher -- the band gap is equal to 23.2 meV. The LL structure is presented in Figure \ref{fig:LL_110624_70K}.
+At $T$ = 70 K the band structure of Sample A changed even more. The energy difference of zero-mode LLs at zero magnetic field got a higher -- the band gap is equal to 23.2 meV. The LL structure is presented in Figure \ref{fig:LL_110624_70K}.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/110624/110624_LL70K.png}
 	\vspace{-10pt}
-	\caption{\textit{Landau level graph of sample A as a function of magnetic field at $T$ = 70 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n$ = -2 and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. Solid arrows $\alpha_1$, $\alpha_2$, and $\beta$ indicate interband transitions.}}
+	\caption{\textit{Landau level graph of Sample A as a function of magnetic field at $T$ = 70 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n = -2$ and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. Solid arrows $\alpha_1$, $\alpha_2$, and $\beta$ indicate interband transitions.}}
 	\label{fig:LL_110624_70K}
 \end{figure}
 
@@ -1449,7 +1444,7 @@ At $T$ = 70 K the band structure of sample A changed even more. The energy diffe
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/110624/110624_spectra70K.png}
 	\vspace{-10pt}
-	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of transmission for sample A at $T$ = 70 K with theoretical predictions of transitions as a function of magnetic field. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
+	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of the transmission of Sample A at $T$ = 70 K with theoretical predictions of transitions as a function of magnetic field. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
 	\label{fig:Spectra_110624_70K}
 \end{figure}
 
@@ -1457,18 +1452,17 @@ At $T$ = 70 K the band structure of sample A changed even more. The energy diffe
 \subsubsection{Sample B}
 \myparagraph{Temperature 2 K}
 \wciecie
-
-At $T$ = 2 K Sample B is a topological insulator. The LL structure is presented in Figure \ref{fig:LL_SQW_2K}. The value of the direct band gap is estimated to be $E_g \approx $ 26 meV. It is important to remember that at this temperature the $H1$ band is energetically higher that the $E1$ band, thus the band gap should be considered as negative.
+At $T$ = 2 K Sample B is in a topological insulator phase. The LL structure is presented in Figure \ref{fig:LL_SQW_2K}. The value of the direct band gap is estimated to be $E_g \approx $ 26 meV. It is important to note that at this temperature the $H1$ band is energetically higher that the $E1$ band, thus the band gap should be considered as negative.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/091222C/LL2K.png}
 	\vspace{-10pt}
-	\caption{\textit{Landau level graph of sample B as a function of magnetic field at $T$ = 2 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n$ = -2 and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. Their crossing indicates the point of field induced semiconductor-metal-semiconductor phase transition, and assures that the sample is in the inverted band order phase. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. The solid arrows indicates interband transitions $\alpha$ and $\alpha'$, while dashed arrows indicate intraband transitions $\beta$, $\gamma$, and $\delta$.}}
+	\caption{\textit{Landau level graph of Sample B as a function of magnetic field at $T$ = 2 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n = -2$ and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. Their crossing indicates the point of field induced semiconductor-metal-semiconductor phase transition, and indicates that the sample is in the inverted band order phase. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. The solid arrows indicates interband transitions $\alpha$ and $\alpha'$, while dashed arrows indicate intraband transitions $\beta$, $\gamma$, and $\delta$.}}
 	\label{fig:LL_SQW_2K}
 \end{figure}
 
-The most interesting feature of the LL structure presented in Figure \ref{fig:LL_SQW_2K} is the crossing of the lower level of the conduction band (with hole-like symmetry) with index $n$ = -2, and the upper level of the valence band (with electron-like symmetry) with index $n$ = 0, which takes place at the magnetic field value of $B_c \approx 5$ T. An application of magnetic field breaks the time-reversal symmetry making the boundary states no longer protected, nevertheless the inverted band order is preserved. The situation changes above the critical field -- the zero mode LLs swap and the structure becomes a conventional quantum Hall insulator. 
+The most interesting feature of the LL structure presented in Figure \ref{fig:LL_SQW_2K} is the crossing of the lower level of the conduction band (with hole-like symmetry) with $n = -2$, and the upper level of the valence band (with electron-like symmetry) with index $n = 0$, which takes place at the magnetic field value of $B_c \approx 5$ T. An application of magnetic field breaks the time-reversal symmetry making the boundary states no longer protected, nevertheless the inverted band order is preserved. The situation changes at $B > B_c$ -- the zero mode LLs swap and the structure becomes a conventional quantum Hall insulator. 
  
 %The transition designated as $\alpha$' between LLs $n$ = -2 and $n$ = 1 is not allowed by symmetry and should not be observed in an ideal, axially symmetrical system. However, if the symmetry is broken, the zero-mode LLs can interact and effectively mix, rendering the transition $\alpha$' allowed, thus possibly making it visible in the transmission spectra. 
 
@@ -1476,32 +1470,31 @@ The most interesting feature of the LL structure presented in Figure \ref{fig:LL
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/091222C/Map_HgTeSQW_091222C_2K.png}
 	\vspace{-10pt}
-	\caption{\textit{False color map of transmission of Sample B as a function of energy and magnetic field at $T$ = 2 K. Blue color represents areas where transmission is equal to 1, while lightblue/yellow/red colors indicate where absorption takes place. An anticrossing of transitions originating from the zero-mode Landau levels is visible close to $B_c \approx 5$ T. }}
+	\caption{\textit{False color map of the transmission of Sample B as a function of energy and magnetic field at $T$ = 2 K. Blue color represents areas where the transmission is equal to 1, while lightblue/yellow/red colors indicate where the absorption takes place. An anticrossing of transitions originating from the zero-mode Landau levels is visible close to $B_c \approx 5$ T. }}
 	\label{fig:Map_SQW_2K}
 \end{figure}
 
-There are five visible transitions in the spectra, all of them were marked by a proper arrow on Figure \ref{fig:LL_SQW_2K}. The anticrossing of transitions $\alpha$ and $\alpha$' was already observed and reported \cite{Orlita_MCT_QW}\cite{Zholudev_MCT_QW}\cite{Zholudev_MCT_QW_anticrossing}. Here, the anticrossing is visible at magnetic fields close to the calculated $B_c \approx 5$ T, as presented in Figure \ref{fig:Map_SQW_2K}. However, the anticrossing is visible for magnetic fields from around 4.5 T up to around 8 T. This evident lack of symmetry in regard to $B_c$ is caused by the position of chemical potential in the sample. Below 4.5 T there are no empty states at LL $n$ = 1 so the probability of both $\alpha$ and $\alpha$' transitions is equal to zero. For the same reason the $\beta$ transition starts to be visible from energies higher than 50 meV, which takes place at magnetic field of around 8 T.
+There are five visible transitions in the spectra, all of them were marked by arrows in Figure \ref{fig:LL_SQW_2K}. An anticrossing of transitions $\alpha$ and $\alpha$' was already observed and reported \cite{Orlita_MCT_QW}\cite{Zholudev_MCT_QW}\cite{Zholudev_MCT_QW_anticrossing}. Here, the anticrossing is visible at magnetic fields close to the calculated $B_c \approx 5$ T, as presented in Figure \ref{fig:Map_SQW_2K}. However, the anticrossing is visible for magnetic fields from around 4.5 T up to around 8 T. This evident lack of symmetry in regard to $B_c$ is caused by the position of chemical potential in the sample. Below 4.5 T there are no empty states at LL $n$ = 1 so the probability of both $\alpha$ and $\alpha$' transitions is equal to zero. For the same reason the $\beta$ transition starts to be visible from energies higher than 50 meV, which takes place at magnetic field of around 8 T.
 
-Besides the $\alpha$' transition there are four other ones. The one with the largest intensity at high magnetic field is denoted as $\alpha$. It represents an optical transition between LLs $n$ = 0 and $n$ = 1. This is also the only interband transiton visible at 2 K. Its interpolation to zero magnetic field gives an idea about the value of energy gap in the system. The intraband transition $\beta$, between LLs with $n$ = -2 and $n$ = -1 is energetically close to the transition $\alpha$, and that relative energy difference will change as the temperature increases. Two remaining transitions are $\gamma$ and $\delta$. The $\gamma$ transition is between $n$ = -1 and $n$ = 0. The $\delta$ transition, related to the cyclotron resonance, is between $n$ = 0 and $n$ = 1.
+Besides the $\alpha$' transition there are four other ones. The one with the largest intensity at high magnetic field is denoted as $\alpha$. It represents an optical transition between LLs $n$ = 0 and $n$ = 1. This is also the only interband transition visible at 2 K. Its extrapolation to zero magnetic field gives an idea about the value of energy gap in the system. The intraband transition $\beta$, occurring between LLs with $n$ = -2 and $n$ = -1 is energetically close to the transition $\alpha$, and that relative energy difference will change as the temperature increases. Two remaining transitions are $\gamma$ and $\delta$. The $\gamma$ transition occurs between $n$ = -1 and $n$ = 0. The $\delta$ transition, related to the cyclotron resonance, occurs between $n$ = 0 and $n$ = 1.
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/091222C/Summary2K.png}
+	\includegraphics[width=15cm]{gfx/wyniki/MCTSQW/091222C/Summary2K.png}
 	\vspace{-10pt}
-	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of transmission for sample B at $T$ = 2 K with theoretical predictions of transitions as a function of magnetic field. Solid symbols represent interband transitions, while open symbols represent intraband transitions. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
+	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of the transmission of Sample B at $T$ = 2 K with theoretical predictions of transitions as a function of magnetic field. Full symbols represent interband transitions, while open symbols represent intraband transitions. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
 	\label{fig:Summary_SQW_2K}
 \end{figure}
 
-The expected dependence of transition as a function of magnetic field can be derived from the difference of the calculated LLs. In the left panel of Figure \ref{fig:Summary_SQW_2K} these expected transitions are presented along with experimental points taken from the spectra. Open squares, as well as dashed arrows on LL plot in Figure \ref{fig:LL_SQW_2K}, represent intraband transitions, while full points (and solid arrows) represent interband transitions. There are visible discrepancies between experimental data and the theoretical predictions, which will be discussed in the summary of experimental results.
+The expected dependence of transition on magnetic field can be derived from the difference of the calculated LLs. In the left panel of Figure \ref{fig:Summary_SQW_2K} these expected transitions are presented along with experimental points taken from the spectra. Open squares, as well as dashed arrows on LL plot in Figure \ref{fig:LL_SQW_2K}, represent intraband transitions, while full points (and solid arrows) represent interband transitions. There are visible discrepancies between experimental data and the theoretical predictions, which will be discussed in the summary of experimental results.
 
 The right panel of Figure \ref{fig:Summary_SQW_2K} shows the spectra plotted every 1 T, shifted vertically for clarity. Every minimum was marked with a colored symbol corresponding to the scheme presented on the left panel of the figure. The intensity of $\alpha$ and $\beta$ transition dominate the spectra for the high values of magnetic field, while $\gamma$ dominates the low field region.
 
-At low magnetic field the cyclotron resonance line is linear, which is visible on Figure \ref{fig:Map_SQW_2K} below the first reststrahlen band ($E < 17$ meV). At higher magnetic field the cyclotron resonance line evolves into $\delta$ transition \cite{Orlita_MCT_QW}, not visible due to the particular LL filling factor. The effective mass of electrons, obtained from the linear fitting of cyclotron resonance ($\delta$) line, is equal to $m^* = eB/\omega_c = 0.025 \pm 0.011$ $m_0$.
+At low magnetic field the energy f the cyclotron resonance line depends linearly on magnetic field, which is visible in Figure \ref{fig:Map_SQW_2K} below the first reststrahlen band ($E < 17$ meV). At higher magnetic field the cyclotron resonance line evolves into $\delta$ transition \cite{Orlita_MCT_QW}, not visible due to the particular LL filling factor. The effective mass of electrons, obtained from the linear fitting of cyclotron resonance ($\delta$) line, is equal to $m^* = eB/\omega_c = 0.025 \pm 0.011$ $m_0$.
 
-\clearpage
 \myparagraph{Temperature 50 K}
 \wciecie
-At temperature 50 K the band structure, presented on Figure \ref{fig:LL_SQW_50K}, is visibly different in comparison to the band structure at 2 K. The band gap is smaller and the crossing of LLs with indices $n$ = -2 and $n$ = 0 takes place at smaller magnetic field $B_c \approx 3$ T. This is the reason why the anticrossing is not visible -- the chemical potential lies above the LL $n$ = 1, thus excitations to this level are forbidden. However, $T$ = 2 K is not the only temperature, at which the anticrossing is visible. This is the case for higher temperatures as well. Even at $T$ = 30 K, a faint sign of an anticrossing can be traced on spectra. This is presented in Appendix \ref{Appendix_QW}.
+At temperature 50 K the band structure, presented in Figure \ref{fig:LL_SQW_50K}, is visibly different in comparison to the band structure at 2 K. The band gap is smaller and the crossing of LLs with indices $n = -2$ and $n$ = 0 takes place at a smaller magnetic field value $B_c \approx 3$ T. This is a reason why the anticrossing is not visible -- the chemical potential lies above the LL $n$ = 1, thus excitations to this level are forbidden. However, $T$ = 2 K is not the only temperature at which the anticrossing is visible. This is the case for higher temperatures as well. Even at $T$ = 30 K, a faint sign of an anticrossing can be traced on spectra. This is presented in Appendix \ref{Appendix_QW}.
 
 There are four transitions visible on the spectra -- one interband $\alpha$ and three intraband $\beta$, $\gamma$, and $\delta$. The energy gap, pointed by the $\alpha$ transition at zero magnetic field, is still negative and equal to 13 meV, which is considerably smaller than the energy gap at $T$ = 2 K.
 
@@ -1509,52 +1502,53 @@ There are four transitions visible on the spectra -- one interband $\alpha$ and 
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/091222C/LL50K.png}
 	\vspace{-10pt}
-	\caption{\textit{Landau level graph of sample B as a function of magnetic field at $T$ = 50 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n$ = -2 and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. Their crossing indicates the point of field induced semiconductor-metal-semiconductor phase transition, and assures that the sample is in the inverted band order phase. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. A solid arrow indicates an interband transition $\alpha$, while dashed arrows indicate intraband transitions $\beta$, $\gamma$, and $\delta$.}}
+	\caption{\textit{Landau level graph of Sample B as a function of magnetic field at $T$ = 50 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n = -2$ and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. Their crossing indicates the point of field induced semiconductor-metal-semiconductor phase transition, and indicates that the sample is in the inverted band order phase. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. A solid arrow indicates an interband transition $\alpha$, while dashed arrows indicate intraband transitions $\beta$, $\gamma$, and $\delta$.}}
 	\label{fig:LL_SQW_50K}
 \end{figure}
 
 The transitions $\alpha$ and $\beta$ are relatively close to each other, which makes them difficult to distinguish at some point, as presented on the right panel in Figure \ref{fig:Summary_SQW_50K}. It can be assumed that transition $\alpha$ starts to be detectable around $B$ = 5 T, while transition $\beta$ around $B$ = 9 T. Both of them are visible up to at least 16 T. The two lower in energy transitions, namely $\gamma$ and $\delta$, are visible in intermediate fields and low fields, respectively.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/091222C/Summary50K.png}
+	\includegraphics[width=15cm]{gfx/wyniki/MCTSQW/091222C/Summary50K.png}
 	\vspace{-10pt}
-	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of transmission for sample B at $T$ = 50 K with theoretical predictions of transitions as a function of magnetic field. Solid symbols represent interband transitions, while open symbols represent intraband transitions. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
+	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of the transmission of Sample B at $T$ = 50 K with theoretical predictions of transitions as a function of magnetic field. Full symbols represent interband transitions, while open symbols represent intraband transitions. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
 	\label{fig:Summary_SQW_50K}
 \end{figure}
 
 The effective mass of electrons, obtained from the linear fitting of $\delta$ line, is equal to $m^* = eB/\omega_c = 0.021 \pm 0.003$ $m_0$.
 
+\clearpage
 \myparagraph{Temperature 90 K}
-The temperature of 90 K is critical for Sample B. The band gap vanishes as the $HH1$ band joins the $E1$ band, as presented on Figure \ref{fig:LL_SQW_90K}. It can be thought as the anticrossing of LL $n = 0$ and LL $n = 1$ takes place at $B$ = 0 T. Both transitions $\alpha$ and $\beta$ converge at zero energy at zero magnetic field. At the critical temperature the LL $n$ = -2 belongs to both H1 and E1 bands, thus it is impossible to declare whether transitions $\alpha$ and $\beta$ are interband or intraband. This was marked on the Figure \ref{fig:LL_SQW_90K} by dotted arrows.
+The temperature 90 K is critical for Sample B. The band gap vanishes as the $HH1$ band merges with the $E1$ band at $B = 0$ T, as presented in Figure \ref{fig:LL_SQW_90K}. It can be thought as the anticrossing of LL $n = 0$ and LL $n = 1$ takes place at $B_c$ = 0 T. Both transitions $\alpha$ and $\beta$ converge at zero energy at zero magnetic field. At the critical temperature the LL $n = -2$ is formed by a mixture of both H1 and E1 bands, thus it is impossible to declare whether transitions $\alpha$ and $\beta$ are interband or intraband. This was marked in the Figure \ref{fig:LL_SQW_90K} by dotted arrows.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/091222C/LL90K.png}
 	\vspace{-10pt}
-	\caption{\textit{Landau level graph of sample B as a function of magnetic field at $T$ = 90 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n$ = -2 and $n$ = 0 are zero-mode Landau levels. Their crossing takes place at zero magnetic field, which means that the sample is gapless. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. It is not possible to determine whether $\alpha$ and $\beta$ are inter- or intraband transitions, so they were marked with a dotted line. Dashed arrows indicate intraband transitions $\gamma$ and $\delta$ .}}
+	\caption{\textit{Landau level graph of Sample B as a function of magnetic field at $T$ = 90 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n = -2$ and $n$ = 0 are zero-mode Landau levels. Their crossing takes place at zero magnetic field, which means that the sample is gapless. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. It is not possible to determine whether $\alpha$ and $\beta$ are inter- or intraband transitions, therefore they were marked with a dotted line. Dashed arrows indicate intraband transitions $\gamma$ and $\delta$.}}
 	\label{fig:LL_SQW_90K}
 \end{figure}
 
 The transitions $\alpha$ and $\beta$ are further separated than at $T$ = 50 K, and their intensity is comparable, as presented on right panel of Figure \ref{fig:Summary_SQW_90K}.
 
-\begin{figure}[ht]
+The transition $\alpha$ starts to be visible at around $B$ = 8 T, while the transition $\beta$ as low as $B$ = 4 T. $T$ = 90 K is the first temperature where the transition $\beta$ starts to be visible at lower magnetic field than the transition $\alpha$. Also, at this temperature, $\beta$ has higher energy than $\alpha$. The transition $\gamma$ is visible at intermediate fields, and the transition $\delta$ at low. The effective mass of electrons, obtained from the linear fitting of $\delta$ line, is equal to $m^* = eB/\omega_c = 0.023 \pm 0.012$ $m_0$. 
+
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/091222C/Summary90K.png}
+	\includegraphics[width=15cm]{gfx/wyniki/MCTSQW/091222C/Summary90K.png}
 	\vspace{-10pt}
-	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of transmission for sample B at $T$ = 90 K with theoretical predictions of transitions as a function of magnetic field. Solid symbols represent interband transitions, while open symbols represent intraband transitions. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
+	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of the transmission of Sample B at $T$ = 90 K with theoretical predictions of transitions as a function of magnetic field. Full symbols represent interband transitions, while open symbols represent intraband transitions. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
 	\label{fig:Summary_SQW_90K}
 \end{figure}
-The transition $\alpha$ starts to be visible at around $B$ = 8 T, while the transition $\beta$ as low as $B$ = 4 T. $T$ = 90 K is the first temperature where the transition where $\beta$ starts to be visible at lower magnetic field than the transition $\alpha$. Also, at this temperature, $\beta$ has higher energy than $\alpha$. The transition $\gamma$ is visible at intermediate fields, and the transition $\delta$ at low. The effective mass of electrons, obtained from the linear fitting of $\delta$ line, is equal to $m^* = eB/\omega_c = 0.023 \pm 0.012$ $m_0$. 
 
-\clearpage
 \myparagraph{Temperature 110 K}
 \wciecie
-At temperature 110 K the band order of Sample B is regular and the system is in semiconductor state. The LL $n = -2$ is the highest energetic level of the H1 band, while the LL $n = -0$ is the lowest energetic level of the E1 band. The LL structure is presented in Figure \ref{fig:LL_SQW_110K}. There are four transitions visible -- one interband $\beta$, and three intraband $\alpha$, $\gamma$, and $\delta$. The zero-mode LLs crossing is not present any more, which indicates that a phase transition took place and the system is in regular band order. Because of that, the transition $\beta$ is interband, while the transition $\alpha$ is intraband, which was not the case in inverted regime. The band gap is positive and equal to 6 meV.
+At temperature 110 K the band order of Sample B is regular and the system is in a semiconductor state. The LL $n = -2$ is the highest energetic level of the H1 level, while the LL $n = -0$ is the lowest energetic level of the E1 level. The LL structure is presented in Figure \ref{fig:LL_SQW_110K}. There are four transitions visible -- one interband $\beta$, and three intraband $\alpha$, $\gamma$, and $\delta$. The zero-mode LLs crossing is not present anymore, which indicates that a phase transition took place and the system is in the regular band order. Because of that, the transition $\beta$ is interband, while the transition $\alpha$ is intraband, which was not the case in the inverted regime. The band gap is positive and equal to 6 meV.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/091222C/LL110K.png}
 	\vspace{-10pt}
-	\caption{\textit{Landau level graph of sample B as a function of magnetic field at $T$ = 110 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n = -2$ and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. A solid arrow indicates an interband transition $\beta$, while dashed arrows indicate the intraband transitions $\alpha$, $\gamma$, and $\delta$.}}
+	\caption{\textit{Landau level graph of Sample B as a function of magnetic field at $T$ = 110 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n = -2$ and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. A solid arrow indicates an interband transition $\beta$, while dashed arrows indicate the intraband transitions $\alpha$, $\gamma$, and $\delta$.}}
 	\label{fig:LL_SQW_110K}
 \end{figure}
 
@@ -1562,66 +1556,64 @@ The transitions $\alpha$ and $\beta$ are further apart than at lower temperature
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/091222C/Summary110K.png}
+	\includegraphics[width=15cm]{gfx/wyniki/MCTSQW/091222C/Summary110K.png}
 	\vspace{-10pt}
-	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of transmission for sample B at $T$ = 110 K with theoretical predictions of transitions as a function of magnetic field. Solid symbols represent interband transitions, while open symbols represent intraband transitions. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
+	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of the transmission of Sample B at $T$ = 110 K with theoretical predictions of transitions as a function of magnetic field. Full symbols represent interband transitions, while open symbols represent intraband transitions. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
 	\label{fig:Summary_SQW_110K}
 \end{figure}
 
 \myparagraph{Temperature 130 K}
 \wciecie
-At temperature 130 K Sample B is in semiconductor state. The LL structure is presented in Figure \ref{fig:LL_SQW_110K}. Similar to $T$ = 110 K, there are four transitions visible -- one interband $\beta$, and three intraband $\alpha$, $\gamma$, and $\delta$. The band gap is positive and equal to 12 meV.
+At temperature 130 K Sample B is in a semiconductor state. The LL structure is presented in Figure \ref{fig:LL_SQW_110K}. Similar to $T$ = 110 K, there are four transitions visible -- one interband $\beta$, and three intraband $\alpha$, $\gamma$, and $\delta$. The band gap is positive and equal to 12 meV.
 
-The transitions $\alpha$ and $\beta$ continue to further separate. They start to be visible at around 5 T and their intensity is the highest at high magnetic field. The transition $\gamma$ dominates in the intermediate values of magnetic field, while the transition $\delta$ is visible only at low $B$. The effective mass of electrons, obtained from the linear fitting of $\delta$ line, is equal to $m^* = eB/\omega_c = 0.021 \pm 0.008$ $m_0$.
-
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/091222C/LL130K.png}
+	\includegraphics[width=13cm]{gfx/wyniki/MCTSQW/091222C/LL130K.png}
 	\vspace{-10pt}
-	\caption{\textit{Landau level graph of sample B as a function of magnetic field at $T$ = 130 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n$ = -2 and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. A solid arrow indicates an interband transition $\beta$, while dashed arrows indicate the intraband transitions $\alpha$, $\gamma$, and $\delta$.}}
+	\caption{\textit{Landau level graph of Sample B as a function of magnetic field at $T$ = 130 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n = -2$ and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. A solid arrow indicates an interband transition $\beta$, while dashed arrows indicate the intraband transitions $\alpha$, $\gamma$, and $\delta$.}}
 	\label{fig:LL_SQW_130K}
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/091222C/Summary130K.png}
 	\vspace{-10pt}
-	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of transmission for sample B at $T$ = 130 K with theoretical predictions of transitions as a function of magnetic field. Solid symbols represent interband transitions, while open symbols represent intraband transitions. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
+	\caption{\textit{\textbf{Left Panel:} Points corresponding to the minima of the transmission of Sample B at $T$ = 130 K with theoretical predictions of transitions as a function of magnetic field. Solid symbols represent interband transitions, while open symbols represent intraband transitions. \textbf{Right panel:} Transmission spectra plotted for magnetic fields in range from 1 to 16 T every 1 T, with symbols corresponding to the transitions from left panel.}}
 	\label{fig:Summary_SQW_130K}
 \end{figure}
 
-\clearpage
+The transitions $\alpha$ and $\beta$ continue to further separate. They start to be visible at around 5 T and their intensity is the highest at high magnetic field. The transition $\gamma$ dominates in the intermediate values of magnetic field, while the transition $\delta$ is visible only at low $B$. The effective mass of electrons, obtained from the linear fitting of $\delta$ line, is equal to $m^* = eB/\omega_c = 0.021 \pm 0.008$ $m_0$.
+
 \subsection{Summary}
 \wciecie
 The FIR magneto-optical results presented in this chapter prove that temperature can be used as an adjustable external parameter to control a band structure of HgTe/CdTe QW and, as a consequence, to induce a topological TI-metal-semiconductor phase transition. A set of two samples was investigated -- one sample (A) is in semiconducting state at the whole temperature range, while the other (B) is a TI at low temperature and undergoes a phase transition at $T_c = 90$ K, characterized by a band gap closure and a lack of crossing of zero-mode LLs. 
 
-The energy gap of sample A is positive at all temperatures and its value increase with increasing temperature. This behavior is presented on Figure \ref{fig:110624_AllTemp}. The Figure \ref{fig:110624_AllTemp} presents the energy values of minima of transmission as a function of magnetic field for sample A (open symbols), and the results of numerical calculations based on the 8-band Kane model for different temperatures.   
+The energy gap of Sample A is positive at all temperatures and its value increases with increasing temperature. This behavior is presented in Figure \ref{fig:110624_AllTemp}. The Figure \ref{fig:110624_AllTemp} presents the energy values of minima of the transmission as a function of magnetic field for Sample A (open symbols), and the results of numerical calculations based on the 8-band Kane model for different temperatures.   
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/110624/110624_AllTemp.png}
 	\vspace{-10pt}
-	\caption{\textit{Energy of $\alpha_1$ (green curve), $\alpha_2$ (purple curve), and $\beta$ (orange curve) transitions as a function of magnetic field for sample A at $T$ = 2 K, 15 K, 30 K, 50 K and 70 K. The experimental data corresponding to minima of transmission is represented by open symbols. The value of band gap is indicated with a blue arrow. The reststrahlen bands are covered by grey areas.}}
+	\caption{\textit{Energy of $\alpha_1$ (green curve), $\alpha_2$ (purple curve), and $\beta$ (orange curve) transitions as a function of magnetic field for Sample A at $T$ = 2 K, 15 K, 30 K, 50 K and 70 K. The experimental data corresponding to minima of the transmission is represented by open symbols. The value of band gap is indicated with a blue arrow. The reststrahlen bands are covered by grey areas.}}
 	\label{fig:110624_AllTemp}
 \end{figure}
 The black arrow points to the value of a band gap at given temperature. The experimental results and theoretical predictions are in a good agreement. Sample A is almost gapless at $T$ = 2 K, and its band gap value increases up to $E_g$ = 23.2 meV at $T$ = 70 K.
 
-The evolution of energy gap and inter- and intra-LL transitions for sample B is presented in Figure \ref{fig:091222C_AllTemp}. At $T < T_c = 90$ K the sample has an inverted band structure and negative energy gap, characterized by the relative position of zero-mode LLs. 
+The evolution of energy gap and inter- and intra-LL transitions for Sample B is presented in Figure \ref{fig:091222C_AllTemp}. At $T < T_c = 90$ K the sample has an inverted band structure and negative energy gap, characterized by the relative position of zero-mode LLs. 
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=14cm]{gfx/wyniki/MCTSQW/091222C/091222C_AllTemp.png}
 	\vspace{-10pt}
-	\caption{\textit{Energy of $\alpha$ (orange curve), $\alpha'$ (red curve), $\beta$ (blue curve), $\gamma$ (grey curve), and $\delta$ (green curve) transitions as a function of magnetic field for sample B at $T$ = 2 K, 50 K, 90 K, 110 K and 130 K. The experimental data corresponding to minima of transmission is represented by open symbols. The value of negative (positive) band gap is indicated with a red (blue) arrow. The gappless state corresponding to the gap closure (black arrow) takes place at $T_c$ = 90 K. The reststrahlen bands are covered by grey areas.}}
+	\caption{\textit{Energy of $\alpha$ (orange curve), $\alpha'$ (red curve), $\beta$ (blue curve), $\gamma$ (grey curve), and $\delta$ (green curve) transitions as a function of magnetic field for sample B at $T$ = 2 K, 50 K, 90 K, 110 K and 130 K. The experimental data corresponding to minima of the transmission is represented by open symbols. The value of negative (positive) band gap is indicated with a red (blue) arrow. The gappless state corresponding to the gap closure (black arrow) takes place at $T_c$ = 90 K. The reststrahlen bands are covered by grey areas.}}
 	\label{fig:091222C_AllTemp}
 \end{figure}
 
-At $T$ = 2 K (and $T$ = 30 K, see Appendix \ref{Appendix_QW}) an additional transition $\alpha'$ appears in the spectra in a small magnetic field range, which corresponds to the avoided crossing of zero-mode LLs. This anticrossing is a direct indication of an inverted phase. The $\alpha'$ transition is forbidden by the selection rules. However, because BIA causes a mixing of zero-mode LLs and an activation of the transition $\alpha'$, its appearance is possible and was previously reported in \cite{Orlita_MCT_QW}\cite{Zholudev_MCT_QW}\cite{Zholudev_MCT_QW_anticrossing}.
+At $T$ = 2 K (and $T$ = 30 K, as presented in Appendix \ref{Appendix_QW}) an additional transition $\alpha'$ appears in the spectra in a small magnetic field range, which corresponds to the avoided crossing of zero-mode LLs. This anticrossing is a direct indication of an inverted phase. The $\alpha'$ transition is forbidden by the selection rules. However, because BIA causes a mixing of zero-mode LLs and an activation of the transition $\alpha'$, its appearance is possible and was previously reported in \cite{Orlita_MCT_QW}\cite{Zholudev_MCT_QW}\cite{Zholudev_MCT_QW_anticrossing}.
 
 At $T > T_c = 90$ K the Sample B is in a semiconducting phase. The band gap is positive, which is represented by a blue arrow in Figure \ref{fig:091222C_AllTemp}, and reaches up to 12 meV at $T$ = 130 K. 
 
-At the critical value $T = T_c$ the band gap vanishes (black arrow) and the system hosts massless Dirac fermions. The appearance of massless particle is characterized by a square-root dependence of energy of inter- and intra-LL transitions on magnetic field. However, in the case of HgTe QWs, this is valid only in the range of quasimomenta, where the band structure can be approximated by the Dirac Hamiltonian. This reduces the characteristic $E \propto \sqrt{B}$ dependence to the electrons in the vicinity of the $\Gamma$ point of the Brillouin zone, where \textbf{\textit{k}} $\approx 0$. The terms proportional to \textbf{\textit{k}}$^2$ in the Hamiltonian become relevant at higher values of \textbf{\textit{k}}. As a consequence, at high magnetic field the transition dependence on $B$ becomes a linear function. 
+At the critical value $T = T_c$ the band gap vanishes (black arrow) and the system hosts massless Dirac fermions. The appearance of massless particle is characterized by a square-root dependence of energy of inter- and intra-LL transitions on magnetic field. However, in the case of HgTe QWs, this is valid only in the range of quasimomenta, where the band structure can be approximated by the Dirac Hamiltonian. This reduces the characteristic $E \propto \sqrt{B}$ dependence to the electrons in the vicinity of the $\Gamma$ point of the Brillouin zone, where \textbf{\textit{k}} $\approx 0$. The terms proportional to \textbf{\textit{k}}$^2$ in the Hamiltonian become relevant at higher values of \textbf{\textit{k}}. As a consequence, at high magnetic field the dependence of the energy of the transitions on $B$ becomes linear functions. 
 
-Figure \ref{fig:BHZvsKane} shows a comparison of the evolution of transitions $\alpha$, $\beta$, and $\gamma$ as a function of $\sqrt{B}$ in the gapless case in the presence of the Dirac cone in the vicinity of the $\Gamma$ point. The transitions were calculated using an approximate Dirac approach and the numerical 8-band Kane model. 
- 
+Figure \ref{fig:BHZvsKane} shows a comparison of the evolution of transitions $\alpha$, $\beta$, and $\gamma$ as a function of $\sqrt{B}$ in the gapless case in the presence of the Dirac cone in the vicinity of the $\Gamma$ point. The transitions were calculated using an approximate Dirac approach and the numerical 8-band Kane model. The calculated LLs transitions, based on the Kane model (solid curves), $\beta$ and $\gamma$ do not follow a square-root magnetic field dependence over the whole magnetic field range, which is not the case for the LLs transitions based on Dirac model (dotted curves). On the other hand the transition $\alpha$ (solid red curve in Figure \ref{fig:BHZvsKane}) has a square-root-like dependence (which means that the position of solid curve coincides with the position of dotted curve). However, this behavior is not related to the conical band dispersion, but is a consequence of the mutual compensation of the high order \textbf{\textit{k}} terms in the 8-band Kane model.  
 
 \begin{figure}[ht]
 	\centering
@@ -1631,11 +1623,9 @@ Figure \ref{fig:BHZvsKane} shows a comparison of the evolution of transitions $\
 	\label{fig:BHZvsKane}
 \end{figure}
 
-The calculated LLs transitions, based on the Kane model (solid curves), $\beta$ and $\gamma$ do not follow a square-root magnetic field dependence over the whole magnetic field range, which is not the case for the LLs transitions based on Dirac model (dotted curves). On the other hand the transition $\alpha$ (solid red curve in Figure \ref{fig:BHZvsKane}) has a square-root-like dependence (which means that the position of solid curve coincides with the position of dotted curve). However, this behavior is not related to the conical band dispersion, but is a consequence of the mutual compensation of the high order \textbf{\textit{k}} terms in the 8-band Kane model.
-
 A characteristic property of NGS with non-parabolic dispersion is a sub-linear dependence of cyclotron resonance on magnetic field. At low fields, the dependence is linear and allows to extract the effective (cyclotron) mass of electrons. However, at higher fields the linear cyclotron resonance line evolves into a transition denoted as $\delta$ \cite{Orlita_MCT_QW}. The value obtained from the average of fits of $\delta$ transition at low magnetic fields, is equal to $m^* = eB/\omega_c = 0.022 \pm 0.004$ $m_0$, which exactly matches previous results from works \cite{Orlita_MCT_QW}\cite{Zholudev_MCT_QW}. 
 
-The experimental results for sample A are in a fair agreement with the theoretical calculations. However, there are unquestionable discrepancies between the theory and experimental results of sample B, reaching around 10\%. The origin of these discrepancies is not totally clear, as there are many factors that could possibly be omitted in considerations. One of these factors is the electron-electron interaction, which can be relevant in the case of sample B, as there is one order of magnitude difference in carrier concentration, and can perturb the result. Consequently, sample B was doped on both sides in the barriers, and this donor states can influence the results as well. Moreover, as was already highlighted in \cite{Zholudev_MCT_QW} mercury-based heterostructures, can degrade with time via mercury diffusion. This process is especially critical to structures with sharp interfaces, like QWs, because the QW parameters like the shape of the well, the cadmium content in the barriers can change with time. This has a profound influence on the obtained results as the investigated structure is different than expected (at the time of growth).  
+The experimental results for Sample A are in a fair agreement with the theoretical calculations. However, there are unquestionable discrepancies between the theory and experimental results of Sample B, reaching around 10\%. The origin of these discrepancies is not totally clear, as there are many factors that could possibly be omitted in considerations. One of these factors is an electron-electron interaction, which can be relevant in the case of Sample B, as there is one order of magnitude difference in carrier concentration, and can perturb the result. In addition, Sample B was doped on both sides in the barriers, and this donor states can influence the results as well. Moreover, as was already highlighted in \cite{Zholudev_MCT_QW} mercury-based heterostructures, can degrade with time via mercury diffusion. This process is especially critical to structures with sharp interfaces, like QWs, because the QW parameters like the shape of the well, the cadmium content in the barriers can change with time. This has a profound influence on the obtained results as the investigated structure is different than expected (at the time of growth).  
 
 \clearpage
 \section{MCT thin films}
@@ -2090,7 +2080,7 @@ The whole structure was designed to exhibit high carrier concentration, accordin
 
 \subsection{Experimental details}
 \wciecie
-The magneto-spectroscopy study of InAs/GaSb provides information about the energy structure of this system, especially related to the hybridization and strain-induced band gap. All experiments were performed at $T$ = 2 K, in magnetic fields from 0 T to 16 T. The radiation source was a globar lamp coupled to a Fourier spectrometer. The spectral range was from around 10 meV to around 100 meV, with 0.5 meV resolution. Grey rectangles represent reststrahlen bands.
+The magneto-spectroscopy study of InAs/GaSb provides information about the energy structure of this system, especially related to the hybridization and strain-induced band gap. All experiments were performed at $T$ = 2 K, in magnetic fields from 0 T to 16 T. The radiation source was a globar lamp coupled to a Fourier spectrometer. The spectral range was from around 10 meV to around 100 meV, with 0.5 meV resolution. The infrared transmittance spectra were measured by a Fourier spectrometer with a Globar lamp as a source of radiation. The system was coupled to a liquid helium cryostat. The transmission spectra were obtained by dividing the spectra taken at given magnetic field by the spectra obtained at zero magnetic field. On each spectra there is a completely opaque region due to the presence of reststrahlen bands, existing between 32 and 38 meV corresponding to a phonon absorption of a GaAs substrate. Because of that, the energy regions corresponding to these bands were covered by grey areas on the spectra.
 
 
 \subsection{Results}
@@ -2358,9 +2348,14 @@ H_{BIA} =
 
 \clearpage
 \section{Experimental results}
+This Appendix presents results of magneto-spectroscopy performed on HgTe/CdTe QWs characterized by thicknesses close to the critical. Those results supplementary to those in the Chapter \ref{chpt:MCT_QW}. Magneto-spectroscopy measurements were performed at magnetic fields up to 16 T and in energy range 80 - 800 cm$^{-1}$ ($\approx$ 10 - 100 meV) with a 4 cm$^{-1}$ resolution. The infrared transmittance spectra were measured by a Fourier spectrometer with a Globar lamp as a source of radiation. The system was coupled to a liquid helium cryostat. The transmission spectra were obtained by dividing the spectra taken at given magnetic field by the spectra obtained at zero magnetic field.
+
+In order to interpret the experimental results, a set of temperature-dependent band structure and LL structure calculations based on the 8-band Kane Hamiltonian were performed. The calculations took into account a tensile strain in the layers resulting from the mismatch of lattice constants of CdTe buffer, Cd$_{x}$Hg$_{1-x}$Te barriers, and HgTe QW. The energies of LLs were obtained using an axial approximation, while the calculations of dispersion relations held also non-axial terms.
+
+On each spectra there is a completely opaque region due to the presence of reststrahlen bands, existing between 16 and 21 meV and 30 and 37 meV corresponding to a phonon absorption of HgTe/HgCdTe layers and a GaAs substrate, respectively. Because of that, the energy regions corresponding to these bands were covered by grey areas on the spectra.
+
 \subsection{Sample A}
 \wciecie
-This Appendix presents results of magneto-spectroscopy performed on HgTe/CdTe QWs characterized by thicknesses close to the critical. Those results supplementary to those in the Chapter \ref{chpt:MCT_QW}. The measurements were performed at $T$ = 2 K with 0.5 meV resolution. 
 
 \myparagraph{Temperature 15 K}
 \wciecie
@@ -2368,7 +2363,7 @@ This Appendix presents results of magneto-spectroscopy performed on HgTe/CdTe QW
 	\centering
 	\includegraphics[width=10cm]{gfx/wyniki/MCTSQW/110624/LL15K.png}
 	\vspace{-10pt}
-	\caption{\textit{Landau level graph of sample A as a function of magnetic field at $T$ = 15 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n$ = -2 and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. Solid arrows $\alpha_1$, $\alpha_2$, and $\beta$ indicate interband transitions.}}
+	\caption{\textit{Landau level graph of sample A as a function of magnetic field at $T$ = 15 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n = -2$ and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. Solid arrows $\alpha_1$, $\alpha_2$, and $\beta$ indicate interband transitions.}}
 	\label{fig:LL_110624_15K}
 \end{figure}
 
@@ -2387,7 +2382,7 @@ This Appendix presents results of magneto-spectroscopy performed on HgTe/CdTe QW
 	\centering
 	\includegraphics[width=10cm]{gfx/wyniki/MCTSQW/110624/LL50K.png}
 	\vspace{-10pt}
-	\caption{\textit{Landau level graph of sample A as a function of magnetic field at $T$ = 50 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n$ = -2 and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. Solid arrows $\alpha_1$, $\alpha_2$, and $\beta$ indicate interband transitions.}}
+	\caption{\textit{Landau level graph of sample A as a function of magnetic field at $T$ = 50 K. Colored lines represent Landau levels, characterized by a different value of $n$, as described as indices of $L$ on the right side of the graph. The Landau levels with $n = -2$ and $n$ = 0 are zero-mode Landau levels. The energy of those levels at zero magnetic field is an indication of the band gap. The vertical arrows with corresponding Greek letters represent observed transitions between Landau levels in this system. Solid arrows $\alpha_1$, $\alpha_2$, and $\beta$ indicate interband transitions.}}
 	\label{fig:LL_110624_50K}
 \end{figure}
 
